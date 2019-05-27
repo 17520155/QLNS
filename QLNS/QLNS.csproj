@@ -46,14 +46,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormQLNS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormQLNS.Designer.cs">
+      <DependentUpon>FormQLNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemDauSach.Designer.cs">
+      <DependentUpon>FormThemDauSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemKH.Designer.cs">
+      <DependentUpon>FormThemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemNhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemNhaXuatBan.Designer.cs">
+      <DependentUpon>FormThemNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemSach.Designer.cs">
+      <DependentUpon>FormThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemTacGia.Designer.cs">
+      <DependentUpon>FormThemTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemTheLoai.Designer.cs">
+      <DependentUpon>FormThemTheLoai.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormQLNS.resx">
+      <DependentUpon>FormQLNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemDauSach.resx">
+      <DependentUpon>FormThemDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemKH.resx">
+      <DependentUpon>FormThemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemNhaXuatBan.resx">
+      <DependentUpon>FormThemNhaXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemSach.resx">
+      <DependentUpon>FormThemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemTacGia.resx">
+      <DependentUpon>FormThemTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemTheLoai.resx">
+      <DependentUpon>FormThemTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
