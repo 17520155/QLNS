@@ -404,6 +404,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMenu.Controls.Add(this.buttonThayDoiQuyDinh);
             this.panelMenu.Controls.Add(this.labelThayDoiCaiDat);
             this.panelMenu.Controls.Add(this.buttonBaoCaoCongNo);
@@ -643,6 +644,7 @@
             // panelNhapSach
             // 
             this.panelNhapSach.BackColor = System.Drawing.Color.White;
+            this.panelNhapSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelNhapSach.Controls.Add(this.buttonNS_Luu);
             this.panelNhapSach.Controls.Add(this.buttonNS_Moi);
             this.panelNhapSach.Controls.Add(this.textBoxNS_TongTien);
@@ -971,6 +973,7 @@
             // panelQuanLySach
             // 
             this.panelQuanLySach.BackColor = System.Drawing.Color.White;
+            this.panelQuanLySach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelQuanLySach.Controls.Add(this.buttonQLS_Luu);
             this.panelQuanLySach.Controls.Add(this.dataGridViewQLS_DanhSachSach);
             this.panelQuanLySach.Controls.Add(this.labelQLS);
@@ -1301,6 +1304,7 @@
             // panelQuanLyDauSach
             // 
             this.panelQuanLyDauSach.BackColor = System.Drawing.Color.White;
+            this.panelQuanLyDauSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelQuanLyDauSach.Controls.Add(this.buttonQLDS_Luu);
             this.panelQuanLyDauSach.Controls.Add(this.dataGridViewQLDS_DanhSachDauSach);
             this.panelQuanLyDauSach.Controls.Add(this.labelQLDS);
@@ -1652,10 +1656,11 @@
             // panelQuanLyKhac
             // 
             this.panelQuanLyKhac.BackColor = System.Drawing.Color.White;
-            this.panelQuanLyKhac.Controls.Add(this.groupBoxQLK_QLNXB);
+            this.panelQuanLyKhac.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelQuanLyKhac.Controls.Add(this.groupBoxQLK_QLTL);
             this.panelQuanLyKhac.Controls.Add(this.labelQLK);
             this.panelQuanLyKhac.Controls.Add(this.groupBoxQLK_QLTG);
+            this.panelQuanLyKhac.Controls.Add(this.groupBoxQLK_QLNXB);
             this.panelQuanLyKhac.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelQuanLyKhac.Location = new System.Drawing.Point(293, 12);
             this.panelQuanLyKhac.Name = "panelQuanLyKhac";
@@ -2061,6 +2066,7 @@
             // panelLapHoaDonBanSach
             // 
             this.panelLapHoaDonBanSach.BackColor = System.Drawing.Color.White;
+            this.panelLapHoaDonBanSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLapHoaDonBanSach.Controls.Add(this.textBox2);
             this.panelLapHoaDonBanSach.Controls.Add(this.labelLHDBS_ConLai);
             this.panelLapHoaDonBanSach.Controls.Add(this.textBoxLHDBS_SoTienTra);
@@ -2526,6 +2532,7 @@
             // panelQuanLyKhachHang
             // 
             this.panelQuanLyKhachHang.BackColor = System.Drawing.Color.White;
+            this.panelQuanLyKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelQuanLyKhachHang.Controls.Add(this.buttonQLKH_Luu);
             this.panelQuanLyKhachHang.Controls.Add(this.dataGridViewQLKH_DanhSachKH);
             this.panelQuanLyKhachHang.Controls.Add(this.labelQLKH);
@@ -2760,6 +2767,7 @@
             // panelLapPhieuThuTien
             // 
             this.panelLapPhieuThuTien.BackColor = System.Drawing.Color.White;
+            this.panelLapPhieuThuTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLapPhieuThuTien.Controls.Add(this.buttonLPTT_Luu);
             this.panelLapPhieuThuTien.Controls.Add(this.dataGridViewLPTT_DanhSachPhieuThu);
             this.panelLapPhieuThuTien.Controls.Add(this.labelLPTT);
@@ -3083,6 +3091,7 @@
             // panelBaoCaoSachTon
             // 
             this.panelBaoCaoSachTon.BackColor = System.Drawing.Color.White;
+            this.panelBaoCaoSachTon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelBaoCaoSachTon.Controls.Add(this.buttonBCST_In);
             this.panelBaoCaoSachTon.Controls.Add(this.buttonBCST_XemBaoCao);
             this.panelBaoCaoSachTon.Controls.Add(this.textBoxBCST_Nam);
@@ -3248,6 +3257,7 @@
             // panelBaoCaoCongNo
             // 
             this.panelBaoCaoCongNo.BackColor = System.Drawing.Color.White;
+            this.panelBaoCaoCongNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelBaoCaoCongNo.Controls.Add(this.buttonBCCN_In);
             this.panelBaoCaoCongNo.Controls.Add(this.buttonBCCN_XemBaoCao);
             this.panelBaoCaoCongNo.Controls.Add(this.textBoxBCCN_Nam);
@@ -3413,6 +3423,7 @@
             // panelThayDoiQuyDinh
             // 
             this.panelThayDoiQuyDinh.BackColor = System.Drawing.Color.White;
+            this.panelThayDoiQuyDinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelThayDoiQuyDinh.Controls.Add(this.radioButtonButtonTDQD_KiemTraSoTienThu_No);
             this.panelThayDoiQuyDinh.Controls.Add(this.radioButtonTDQD_KiemTraSoTienThu_Yes);
             this.panelThayDoiQuyDinh.Controls.Add(this.textBoxTDQD_SoLuongTonToiDa);
@@ -3574,6 +3585,7 @@
             // panelTraCuu
             // 
             this.panelTraCuu.BackColor = System.Drawing.Color.White;
+            this.panelTraCuu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelTraCuu.Controls.Add(this.textBoxTC_NamXuatBan);
             this.panelTraCuu.Controls.Add(this.labelTC_NamXuatBan);
             this.panelTraCuu.Controls.Add(this.textBoxTC_NhaXuatBan);
