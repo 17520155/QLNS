@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.labelThayDoiQuyDinh = new System.Windows.Forms.Label();
@@ -3242,8 +3242,8 @@
             // ColBCST_STT
             // 
             this.ColBCST_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle7;
             this.ColBCST_STT.HeaderText = "STT";
             this.ColBCST_STT.Name = "ColBCST_STT";
             this.ColBCST_STT.ReadOnly = true;
@@ -3509,15 +3509,18 @@
             // 
             // labelTDQD
             // 
+            this.labelTDQD.AutoSize = true;
             this.labelTDQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD.Location = new System.Drawing.Point(428, 89);
+            this.labelTDQD.Location = new System.Drawing.Point(448, 99);
             this.labelTDQD.Name = "labelTDQD";
-            this.labelTDQD.Size = new System.Drawing.Size(262, 32);
+            this.labelTDQD.Size = new System.Drawing.Size(256, 29);
             this.labelTDQD.TabIndex = 2;
             this.labelTDQD.Text = "THAY ĐỔI QUY ĐỊNH";
             // 
             // groupBoxTDQD
             // 
+            this.groupBoxTDQD.AutoSize = true;
+            this.groupBoxTDQD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBoxTDQD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.groupBoxTDQD.Controls.Add(this.radioButtonButtonTDQD_KiemTraSoTienThu_No);
             this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongNhapToiThieu);
@@ -3534,7 +3537,7 @@
             this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiThieu);
             this.groupBoxTDQD.Location = new System.Drawing.Point(298, 152);
             this.groupBoxTDQD.Name = "groupBoxTDQD";
-            this.groupBoxTDQD.Size = new System.Drawing.Size(553, 260);
+            this.groupBoxTDQD.Size = new System.Drawing.Size(519, 243);
             this.groupBoxTDQD.TabIndex = 47;
             this.groupBoxTDQD.TabStop = false;
             // 
@@ -3828,8 +3831,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle8;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -3969,6 +3972,7 @@
             this.panelBaoCaoCongNo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBCCN)).EndInit();
             this.panelThayDoiQuyDinh.ResumeLayout(false);
+            this.panelThayDoiQuyDinh.PerformLayout();
             this.groupBoxTDQD.ResumeLayout(false);
             this.groupBoxTDQD.PerformLayout();
             this.panelTraCuu.ResumeLayout(false);
