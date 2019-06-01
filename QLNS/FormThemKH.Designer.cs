@@ -127,6 +127,7 @@
             this.buttonLuu.TabIndex = 39;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
+            this.buttonLuu.Click += new System.EventHandler(this.buttonLuu_Click);
             // 
             // FormThemKH
             // 

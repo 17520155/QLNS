@@ -115,5 +115,7 @@ namespace QLNS
             Form formThemSach = new FormThemSach();
             formThemSach.ShowDialog();
         }
+
+        
     }
 }
