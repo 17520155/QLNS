@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.labelThayDoiQuyDinh = new System.Windows.Forms.Label();
@@ -371,6 +371,7 @@
             this.ColTC_NhaXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTC_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelTCS = new System.Windows.Forms.Label();
+            this.groupBoxTDQD = new System.Windows.Forms.GroupBox();
             this.panelMenu.SuspendLayout();
             this.panelMenuTHAYDOIQUYDINH.SuspendLayout();
             this.panelMenuKINHDOANH.SuspendLayout();
@@ -409,6 +410,7 @@
             this.panelThayDoiQuyDinh.SuspendLayout();
             this.panelTraCuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).BeginInit();
+            this.groupBoxTDQD.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -445,6 +447,7 @@
             // 
             // labelThayDoiQuyDinh
             // 
+            this.labelThayDoiQuyDinh.AutoSize = true;
             this.labelThayDoiQuyDinh.BackColor = System.Drawing.Color.Transparent;
             this.labelThayDoiQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThayDoiQuyDinh.Location = new System.Drawing.Point(4, 7);
@@ -464,6 +467,7 @@
             // 
             // labelKinhDoanh
             // 
+            this.labelKinhDoanh.AutoSize = true;
             this.labelKinhDoanh.BackColor = System.Drawing.Color.Transparent;
             this.labelKinhDoanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKinhDoanh.Location = new System.Drawing.Point(4, 7);
@@ -483,6 +487,7 @@
             // 
             // labelSach
             // 
+            this.labelSach.AutoSize = true;
             this.labelSach.BackColor = System.Drawing.Color.Transparent;
             this.labelSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSach.Location = new System.Drawing.Point(4, 7);
@@ -3237,8 +3242,8 @@
             // ColBCST_STT
             // 
             this.ColBCST_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle1;
             this.ColBCST_STT.HeaderText = "STT";
             this.ColBCST_STT.Name = "ColBCST_STT";
             this.ColBCST_STT.ReadOnly = true;
@@ -3482,22 +3487,9 @@
             // panelThayDoiQuyDinh
             // 
             this.panelThayDoiQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panelThayDoiQuyDinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelThayDoiQuyDinh.Controls.Add(this.radioButtonButtonTDQD_KiemTraSoTienThu_No);
-            this.panelThayDoiQuyDinh.Controls.Add(this.radioButtonTDQD_KiemTraSoTienThu_Yes);
-            this.panelThayDoiQuyDinh.Controls.Add(this.textBoxTDQD_SoLuongTonToiDa);
-            this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD_SoLuongTonToiDa);
-            this.panelThayDoiQuyDinh.Controls.Add(this.textBoxTDQD_SoTienNoToiDa);
-            this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD_SoTienNoToiDa);
-            this.panelThayDoiQuyDinh.Controls.Add(this.textBoxTDQD_SoLuongTonToiThieu);
-            this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD_SoLuongTonToiThieu);
-            this.panelThayDoiQuyDinh.Controls.Add(this.textBoxTDQD_TiLeDonGiaBan);
-            this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD_TiLeDonGiaBan);
-            this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD_KiemTraSoTienThu);
             this.panelThayDoiQuyDinh.Controls.Add(this.buttonButtonTDQD_Luu);
-            this.panelThayDoiQuyDinh.Controls.Add(this.textBoxTDQD_SoLuongNhapToiThieu);
-            this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD_SoLuongNhapToiThieu);
             this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD);
+            this.panelThayDoiQuyDinh.Controls.Add(this.groupBoxTDQD);
             this.panelThayDoiQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelThayDoiQuyDinh.Location = new System.Drawing.Point(293, 12);
             this.panelThayDoiQuyDinh.Name = "panelThayDoiQuyDinh";
@@ -3507,7 +3499,7 @@
             // radioButtonButtonTDQD_KiemTraSoTienThu_No
             // 
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.AutoSize = true;
-            this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Location = new System.Drawing.Point(661, 228);
+            this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Location = new System.Drawing.Point(441, 198);
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Name = "radioButtonButtonTDQD_KiemTraSoTienThu_No";
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Size = new System.Drawing.Size(72, 22);
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.TabIndex = 46;
@@ -3518,7 +3510,7 @@
             // radioButtonTDQD_KiemTraSoTienThu_Yes
             // 
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.AutoSize = true;
-            this.radioButtonTDQD_KiemTraSoTienThu_Yes.Location = new System.Drawing.Point(575, 228);
+            this.radioButtonTDQD_KiemTraSoTienThu_Yes.Location = new System.Drawing.Point(355, 198);
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.Name = "radioButtonTDQD_KiemTraSoTienThu_Yes";
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.Size = new System.Drawing.Size(49, 22);
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.TabIndex = 45;
@@ -3528,15 +3520,16 @@
             // 
             // textBoxTDQD_SoLuongTonToiDa
             // 
-            this.textBoxTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(577, 103);
+            this.textBoxTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(357, 73);
             this.textBoxTDQD_SoLuongTonToiDa.Name = "textBoxTDQD_SoLuongTonToiDa";
-            this.textBoxTDQD_SoLuongTonToiDa.Size = new System.Drawing.Size(100, 24);
+            this.textBoxTDQD_SoLuongTonToiDa.Size = new System.Drawing.Size(119, 24);
             this.textBoxTDQD_SoLuongTonToiDa.TabIndex = 44;
             // 
             // labelTDQD_SoLuongTonToiDa
             // 
+            this.labelTDQD_SoLuongTonToiDa.AutoSize = true;
             this.labelTDQD_SoLuongTonToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(317, 105);
+            this.labelTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(38, 73);
             this.labelTDQD_SoLuongTonToiDa.Name = "labelTDQD_SoLuongTonToiDa";
             this.labelTDQD_SoLuongTonToiDa.Size = new System.Drawing.Size(254, 20);
             this.labelTDQD_SoLuongTonToiDa.TabIndex = 43;
@@ -3544,15 +3537,16 @@
             // 
             // textBoxTDQD_SoTienNoToiDa
             // 
-            this.textBoxTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(577, 133);
+            this.textBoxTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(357, 103);
             this.textBoxTDQD_SoTienNoToiDa.Name = "textBoxTDQD_SoTienNoToiDa";
-            this.textBoxTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(100, 24);
+            this.textBoxTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(119, 24);
             this.textBoxTDQD_SoTienNoToiDa.TabIndex = 42;
             // 
             // labelTDQD_SoTienNoToiDa
             // 
+            this.labelTDQD_SoTienNoToiDa.AutoSize = true;
             this.labelTDQD_SoTienNoToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(373, 135);
+            this.labelTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(38, 105);
             this.labelTDQD_SoTienNoToiDa.Name = "labelTDQD_SoTienNoToiDa";
             this.labelTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(198, 20);
             this.labelTDQD_SoTienNoToiDa.TabIndex = 41;
@@ -3560,15 +3554,16 @@
             // 
             // textBoxTDQD_SoLuongTonToiThieu
             // 
-            this.textBoxTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(577, 163);
+            this.textBoxTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(357, 133);
             this.textBoxTDQD_SoLuongTonToiThieu.Name = "textBoxTDQD_SoLuongTonToiThieu";
-            this.textBoxTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(100, 24);
+            this.textBoxTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(119, 24);
             this.textBoxTDQD_SoLuongTonToiThieu.TabIndex = 40;
             // 
             // labelTDQD_SoLuongTonToiThieu
             // 
+            this.labelTDQD_SoLuongTonToiThieu.AutoSize = true;
             this.labelTDQD_SoLuongTonToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(310, 165);
+            this.labelTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(38, 135);
             this.labelTDQD_SoLuongTonToiThieu.Name = "labelTDQD_SoLuongTonToiThieu";
             this.labelTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(261, 20);
             this.labelTDQD_SoLuongTonToiThieu.TabIndex = 39;
@@ -3576,15 +3571,16 @@
             // 
             // textBoxTDQD_TiLeDonGiaBan
             // 
-            this.textBoxTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(577, 193);
+            this.textBoxTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(357, 163);
             this.textBoxTDQD_TiLeDonGiaBan.Name = "textBoxTDQD_TiLeDonGiaBan";
-            this.textBoxTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(100, 24);
+            this.textBoxTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(119, 24);
             this.textBoxTDQD_TiLeDonGiaBan.TabIndex = 38;
             // 
             // labelTDQD_TiLeDonGiaBan
             // 
+            this.labelTDQD_TiLeDonGiaBan.AutoSize = true;
             this.labelTDQD_TiLeDonGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(439, 195);
+            this.labelTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(38, 165);
             this.labelTDQD_TiLeDonGiaBan.Name = "labelTDQD_TiLeDonGiaBan";
             this.labelTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(132, 20);
             this.labelTDQD_TiLeDonGiaBan.TabIndex = 37;
@@ -3592,8 +3588,9 @@
             // 
             // labelTDQD_KiemTraSoTienThu
             // 
+            this.labelTDQD_KiemTraSoTienThu.AutoSize = true;
             this.labelTDQD_KiemTraSoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_KiemTraSoTienThu.Location = new System.Drawing.Point(258, 228);
+            this.labelTDQD_KiemTraSoTienThu.Location = new System.Drawing.Point(38, 198);
             this.labelTDQD_KiemTraSoTienThu.Name = "labelTDQD_KiemTraSoTienThu";
             this.labelTDQD_KiemTraSoTienThu.Size = new System.Drawing.Size(313, 20);
             this.labelTDQD_KiemTraSoTienThu.TabIndex = 35;
@@ -3601,25 +3598,27 @@
             // 
             // buttonButtonTDQD_Luu
             // 
+            this.buttonButtonTDQD_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonButtonTDQD_Luu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonButtonTDQD_Luu.Location = new System.Drawing.Point(966, 628);
+            this.buttonButtonTDQD_Luu.Location = new System.Drawing.Point(966, 618);
             this.buttonButtonTDQD_Luu.Name = "buttonButtonTDQD_Luu";
-            this.buttonButtonTDQD_Luu.Size = new System.Drawing.Size(75, 23);
+            this.buttonButtonTDQD_Luu.Size = new System.Drawing.Size(75, 33);
             this.buttonButtonTDQD_Luu.TabIndex = 32;
             this.buttonButtonTDQD_Luu.Text = "Lưu";
             this.buttonButtonTDQD_Luu.UseVisualStyleBackColor = true;
             // 
             // textBoxTDQD_SoLuongNhapToiThieu
             // 
-            this.textBoxTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(577, 73);
+            this.textBoxTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(357, 43);
             this.textBoxTDQD_SoLuongNhapToiThieu.Name = "textBoxTDQD_SoLuongNhapToiThieu";
-            this.textBoxTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(100, 24);
+            this.textBoxTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(119, 24);
             this.textBoxTDQD_SoLuongNhapToiThieu.TabIndex = 30;
             // 
             // labelTDQD_SoLuongNhapToiThieu
             // 
+            this.labelTDQD_SoLuongNhapToiThieu.AutoSize = true;
             this.labelTDQD_SoLuongNhapToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(351, 75);
+            this.labelTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(38, 46);
             this.labelTDQD_SoLuongNhapToiThieu.Name = "labelTDQD_SoLuongNhapToiThieu";
             this.labelTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(220, 20);
             this.labelTDQD_SoLuongNhapToiThieu.TabIndex = 29;
@@ -3627,10 +3626,10 @@
             // 
             // labelTDQD
             // 
-            this.labelTDQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD.Location = new System.Drawing.Point(446, 6);
+            this.labelTDQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD.Location = new System.Drawing.Point(428, 89);
             this.labelTDQD.Name = "labelTDQD";
-            this.labelTDQD.Size = new System.Drawing.Size(206, 25);
+            this.labelTDQD.Size = new System.Drawing.Size(262, 32);
             this.labelTDQD.TabIndex = 2;
             this.labelTDQD.Text = "THAY ĐỔI QUY ĐỊNH";
             // 
@@ -3807,8 +3806,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -3869,9 +3868,34 @@
             this.labelTCS.TabIndex = 2;
             this.labelTCS.Text = "TRA CỨU SÁCH";
             // 
+            // groupBoxTDQD
+            // 
+            this.groupBoxTDQD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.groupBoxTDQD.Controls.Add(this.radioButtonButtonTDQD_KiemTraSoTienThu_No);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongNhapToiThieu);
+            this.groupBoxTDQD.Controls.Add(this.radioButtonTDQD_KiemTraSoTienThu_Yes);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongNhapToiThieu);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiDa);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_KiemTraSoTienThu);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongTonToiDa);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_TiLeDonGiaBan);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoTienNoToiDa);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_TiLeDonGiaBan);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoTienNoToiDa);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongTonToiThieu);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiThieu);
+            this.groupBoxTDQD.Location = new System.Drawing.Point(298, 152);
+            this.groupBoxTDQD.Name = "groupBoxTDQD";
+            this.groupBoxTDQD.Size = new System.Drawing.Size(553, 260);
+            this.groupBoxTDQD.TabIndex = 47;
+            this.groupBoxTDQD.TabStop = false;
+            // 
             // FormQLNS
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1379, 687);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelThayDoiQuyDinh);
@@ -3890,8 +3914,11 @@
             this.Text = "Quản lý nhà sách";
             this.panelMenu.ResumeLayout(false);
             this.panelMenuTHAYDOIQUYDINH.ResumeLayout(false);
+            this.panelMenuTHAYDOIQUYDINH.PerformLayout();
             this.panelMenuKINHDOANH.ResumeLayout(false);
+            this.panelMenuKINHDOANH.PerformLayout();
             this.panelMenuSACH.ResumeLayout(false);
+            this.panelMenuSACH.PerformLayout();
             this.panelNhapSach.ResumeLayout(false);
             this.panelNhapSach.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNS_ChiTietPhieuNhap)).EndInit();
@@ -3943,10 +3970,11 @@
             this.panelBaoCaoCongNo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBCCN)).EndInit();
             this.panelThayDoiQuyDinh.ResumeLayout(false);
-            this.panelThayDoiQuyDinh.PerformLayout();
             this.panelTraCuu.ResumeLayout(false);
             this.panelTraCuu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).EndInit();
+            this.groupBoxTDQD.ResumeLayout(false);
+            this.groupBoxTDQD.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4294,6 +4322,7 @@
         private System.Windows.Forms.Button buttonLPTT_Them;
         private System.Windows.Forms.TextBox textBoxLPTT_Email;
         private System.Windows.Forms.Label labelLPTT_Email;
+        private System.Windows.Forms.GroupBox groupBoxTDQD;
     }
 }
 
