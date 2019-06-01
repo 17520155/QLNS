@@ -22,12 +22,12 @@ namespace QLNS
         public FormQLNS()
         {
             InitializeComponent();
-            panelNhapSach.BringToFront();
+            panelLapPhieuNhapSach.BringToFront();
         }
 
         private void buttonNhapSach_Click(object sender, EventArgs e)
         {
-            panelNhapSach.BringToFront();
+            panelLapPhieuNhapSach.BringToFront();
         }
 
         private void buttonQuanLySach_Click(object sender, EventArgs e)
