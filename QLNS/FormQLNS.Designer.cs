@@ -332,21 +332,22 @@
             this.ColBCCN_NoCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelBCCN = new System.Windows.Forms.Label();
             this.panelThayDoiQuyDinh = new System.Windows.Forms.Panel();
-            this.radioButtonButtonTDQD_KiemTraSoTienThu_No = new System.Windows.Forms.RadioButton();
-            this.radioButtonTDQD_KiemTraSoTienThu_Yes = new System.Windows.Forms.RadioButton();
-            this.textBoxTDQD_SoLuongTonToiDa = new System.Windows.Forms.TextBox();
-            this.labelTDQD_SoLuongTonToiDa = new System.Windows.Forms.Label();
-            this.textBoxTDQD_SoTienNoToiDa = new System.Windows.Forms.TextBox();
-            this.labelTDQD_SoTienNoToiDa = new System.Windows.Forms.Label();
-            this.textBoxTDQD_SoLuongTonToiThieu = new System.Windows.Forms.TextBox();
-            this.labelTDQD_SoLuongTonToiThieu = new System.Windows.Forms.Label();
-            this.textBoxTDQD_TiLeDonGiaBan = new System.Windows.Forms.TextBox();
-            this.labelTDQD_TiLeDonGiaBan = new System.Windows.Forms.Label();
-            this.labelTDQD_KiemTraSoTienThu = new System.Windows.Forms.Label();
             this.buttonButtonTDQD_Luu = new System.Windows.Forms.Button();
-            this.textBoxTDQD_SoLuongNhapToiThieu = new System.Windows.Forms.TextBox();
-            this.labelTDQD_SoLuongNhapToiThieu = new System.Windows.Forms.Label();
             this.labelTDQD = new System.Windows.Forms.Label();
+            this.groupBoxTDQD = new System.Windows.Forms.GroupBox();
+            this.radioButtonButtonTDQD_KiemTraSoTienThu_No = new System.Windows.Forms.RadioButton();
+            this.labelTDQD_SoLuongNhapToiThieu = new System.Windows.Forms.Label();
+            this.radioButtonTDQD_KiemTraSoTienThu_Yes = new System.Windows.Forms.RadioButton();
+            this.textBoxTDQD_SoLuongNhapToiThieu = new System.Windows.Forms.TextBox();
+            this.textBoxTDQD_SoLuongTonToiDa = new System.Windows.Forms.TextBox();
+            this.labelTDQD_KiemTraSoTienThu = new System.Windows.Forms.Label();
+            this.labelTDQD_SoLuongTonToiDa = new System.Windows.Forms.Label();
+            this.labelTDQD_TiLeDonGiaBan = new System.Windows.Forms.Label();
+            this.textBoxTDQD_SoTienNoToiDa = new System.Windows.Forms.TextBox();
+            this.textBoxTDQD_TiLeDonGiaBan = new System.Windows.Forms.TextBox();
+            this.labelTDQD_SoTienNoToiDa = new System.Windows.Forms.Label();
+            this.labelTDQD_SoLuongTonToiThieu = new System.Windows.Forms.Label();
+            this.textBoxTDQD_SoLuongTonToiThieu = new System.Windows.Forms.TextBox();
             this.panelTraCuu = new System.Windows.Forms.Panel();
             this.labelTCS_KetQuaTimKiem = new System.Windows.Forms.Label();
             this.textBoxTC_NamXuatBan = new System.Windows.Forms.TextBox();
@@ -371,7 +372,6 @@
             this.ColTC_NhaXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTC_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelTCS = new System.Windows.Forms.Label();
-            this.groupBoxTDQD = new System.Windows.Forms.GroupBox();
             this.panelMenu.SuspendLayout();
             this.panelMenuTHAYDOIQUYDINH.SuspendLayout();
             this.panelMenuKINHDOANH.SuspendLayout();
@@ -408,9 +408,9 @@
             this.panelBaoCaoCongNo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBCCN)).BeginInit();
             this.panelThayDoiQuyDinh.SuspendLayout();
+            this.groupBoxTDQD.SuspendLayout();
             this.panelTraCuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).BeginInit();
-            this.groupBoxTDQD.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -3496,6 +3496,48 @@
             this.panelThayDoiQuyDinh.Size = new System.Drawing.Size(1070, 663);
             this.panelThayDoiQuyDinh.TabIndex = 34;
             // 
+            // buttonButtonTDQD_Luu
+            // 
+            this.buttonButtonTDQD_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonButtonTDQD_Luu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.buttonButtonTDQD_Luu.Location = new System.Drawing.Point(966, 618);
+            this.buttonButtonTDQD_Luu.Name = "buttonButtonTDQD_Luu";
+            this.buttonButtonTDQD_Luu.Size = new System.Drawing.Size(75, 33);
+            this.buttonButtonTDQD_Luu.TabIndex = 32;
+            this.buttonButtonTDQD_Luu.Text = "Lưu";
+            this.buttonButtonTDQD_Luu.UseVisualStyleBackColor = true;
+            // 
+            // labelTDQD
+            // 
+            this.labelTDQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD.Location = new System.Drawing.Point(428, 89);
+            this.labelTDQD.Name = "labelTDQD";
+            this.labelTDQD.Size = new System.Drawing.Size(262, 32);
+            this.labelTDQD.TabIndex = 2;
+            this.labelTDQD.Text = "THAY ĐỔI QUY ĐỊNH";
+            // 
+            // groupBoxTDQD
+            // 
+            this.groupBoxTDQD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.groupBoxTDQD.Controls.Add(this.radioButtonButtonTDQD_KiemTraSoTienThu_No);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongNhapToiThieu);
+            this.groupBoxTDQD.Controls.Add(this.radioButtonTDQD_KiemTraSoTienThu_Yes);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongNhapToiThieu);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiDa);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_KiemTraSoTienThu);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongTonToiDa);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_TiLeDonGiaBan);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoTienNoToiDa);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_TiLeDonGiaBan);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoTienNoToiDa);
+            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongTonToiThieu);
+            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiThieu);
+            this.groupBoxTDQD.Location = new System.Drawing.Point(298, 152);
+            this.groupBoxTDQD.Name = "groupBoxTDQD";
+            this.groupBoxTDQD.Size = new System.Drawing.Size(553, 260);
+            this.groupBoxTDQD.TabIndex = 47;
+            this.groupBoxTDQD.TabStop = false;
+            // 
             // radioButtonButtonTDQD_KiemTraSoTienThu_No
             // 
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.AutoSize = true;
@@ -3506,6 +3548,16 @@
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.TabStop = true;
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Text = "Không";
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.UseVisualStyleBackColor = true;
+            // 
+            // labelTDQD_SoLuongNhapToiThieu
+            // 
+            this.labelTDQD_SoLuongNhapToiThieu.AutoSize = true;
+            this.labelTDQD_SoLuongNhapToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(38, 46);
+            this.labelTDQD_SoLuongNhapToiThieu.Name = "labelTDQD_SoLuongNhapToiThieu";
+            this.labelTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(220, 20);
+            this.labelTDQD_SoLuongNhapToiThieu.TabIndex = 29;
+            this.labelTDQD_SoLuongNhapToiThieu.Text = "Số lượng sách nhập tối thiểu";
             // 
             // radioButtonTDQD_KiemTraSoTienThu_Yes
             // 
@@ -3518,73 +3570,19 @@
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.Text = "Có";
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.UseVisualStyleBackColor = true;
             // 
+            // textBoxTDQD_SoLuongNhapToiThieu
+            // 
+            this.textBoxTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(357, 43);
+            this.textBoxTDQD_SoLuongNhapToiThieu.Name = "textBoxTDQD_SoLuongNhapToiThieu";
+            this.textBoxTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(119, 24);
+            this.textBoxTDQD_SoLuongNhapToiThieu.TabIndex = 30;
+            // 
             // textBoxTDQD_SoLuongTonToiDa
             // 
             this.textBoxTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(357, 73);
             this.textBoxTDQD_SoLuongTonToiDa.Name = "textBoxTDQD_SoLuongTonToiDa";
             this.textBoxTDQD_SoLuongTonToiDa.Size = new System.Drawing.Size(119, 24);
             this.textBoxTDQD_SoLuongTonToiDa.TabIndex = 44;
-            // 
-            // labelTDQD_SoLuongTonToiDa
-            // 
-            this.labelTDQD_SoLuongTonToiDa.AutoSize = true;
-            this.labelTDQD_SoLuongTonToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(38, 73);
-            this.labelTDQD_SoLuongTonToiDa.Name = "labelTDQD_SoLuongTonToiDa";
-            this.labelTDQD_SoLuongTonToiDa.Size = new System.Drawing.Size(254, 20);
-            this.labelTDQD_SoLuongTonToiDa.TabIndex = 43;
-            this.labelTDQD_SoLuongTonToiDa.Text = "Nhập sách có số lượng tồn ít hơn";
-            // 
-            // textBoxTDQD_SoTienNoToiDa
-            // 
-            this.textBoxTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(357, 103);
-            this.textBoxTDQD_SoTienNoToiDa.Name = "textBoxTDQD_SoTienNoToiDa";
-            this.textBoxTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(119, 24);
-            this.textBoxTDQD_SoTienNoToiDa.TabIndex = 42;
-            // 
-            // labelTDQD_SoTienNoToiDa
-            // 
-            this.labelTDQD_SoTienNoToiDa.AutoSize = true;
-            this.labelTDQD_SoTienNoToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(38, 105);
-            this.labelTDQD_SoTienNoToiDa.Name = "labelTDQD_SoTienNoToiDa";
-            this.labelTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(198, 20);
-            this.labelTDQD_SoTienNoToiDa.TabIndex = 41;
-            this.labelTDQD_SoTienNoToiDa.Text = "Cho khách hàng nợ tối đa";
-            // 
-            // textBoxTDQD_SoLuongTonToiThieu
-            // 
-            this.textBoxTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(357, 133);
-            this.textBoxTDQD_SoLuongTonToiThieu.Name = "textBoxTDQD_SoLuongTonToiThieu";
-            this.textBoxTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(119, 24);
-            this.textBoxTDQD_SoLuongTonToiThieu.TabIndex = 40;
-            // 
-            // labelTDQD_SoLuongTonToiThieu
-            // 
-            this.labelTDQD_SoLuongTonToiThieu.AutoSize = true;
-            this.labelTDQD_SoLuongTonToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(38, 135);
-            this.labelTDQD_SoLuongTonToiThieu.Name = "labelTDQD_SoLuongTonToiThieu";
-            this.labelTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(261, 20);
-            this.labelTDQD_SoLuongTonToiThieu.TabIndex = 39;
-            this.labelTDQD_SoLuongTonToiThieu.Text = "Số lượng tồn sau khi bán ít nhất là";
-            // 
-            // textBoxTDQD_TiLeDonGiaBan
-            // 
-            this.textBoxTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(357, 163);
-            this.textBoxTDQD_TiLeDonGiaBan.Name = "textBoxTDQD_TiLeDonGiaBan";
-            this.textBoxTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(119, 24);
-            this.textBoxTDQD_TiLeDonGiaBan.TabIndex = 38;
-            // 
-            // labelTDQD_TiLeDonGiaBan
-            // 
-            this.labelTDQD_TiLeDonGiaBan.AutoSize = true;
-            this.labelTDQD_TiLeDonGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(38, 165);
-            this.labelTDQD_TiLeDonGiaBan.Name = "labelTDQD_TiLeDonGiaBan";
-            this.labelTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(132, 20);
-            this.labelTDQD_TiLeDonGiaBan.TabIndex = 37;
-            this.labelTDQD_TiLeDonGiaBan.Text = "Tỉ lệ đơn giá bán";
             // 
             // labelTDQD_KiemTraSoTienThu
             // 
@@ -3596,42 +3594,66 @@
             this.labelTDQD_KiemTraSoTienThu.TabIndex = 35;
             this.labelTDQD_KiemTraSoTienThu.Text = "Kiểm tra số tiền thu khi lập phiếu thu tiền";
             // 
-            // buttonButtonTDQD_Luu
+            // labelTDQD_SoLuongTonToiDa
             // 
-            this.buttonButtonTDQD_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonButtonTDQD_Luu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonButtonTDQD_Luu.Location = new System.Drawing.Point(966, 618);
-            this.buttonButtonTDQD_Luu.Name = "buttonButtonTDQD_Luu";
-            this.buttonButtonTDQD_Luu.Size = new System.Drawing.Size(75, 33);
-            this.buttonButtonTDQD_Luu.TabIndex = 32;
-            this.buttonButtonTDQD_Luu.Text = "Lưu";
-            this.buttonButtonTDQD_Luu.UseVisualStyleBackColor = true;
+            this.labelTDQD_SoLuongTonToiDa.AutoSize = true;
+            this.labelTDQD_SoLuongTonToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(38, 73);
+            this.labelTDQD_SoLuongTonToiDa.Name = "labelTDQD_SoLuongTonToiDa";
+            this.labelTDQD_SoLuongTonToiDa.Size = new System.Drawing.Size(254, 20);
+            this.labelTDQD_SoLuongTonToiDa.TabIndex = 43;
+            this.labelTDQD_SoLuongTonToiDa.Text = "Nhập sách có số lượng tồn ít hơn";
             // 
-            // textBoxTDQD_SoLuongNhapToiThieu
+            // labelTDQD_TiLeDonGiaBan
             // 
-            this.textBoxTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(357, 43);
-            this.textBoxTDQD_SoLuongNhapToiThieu.Name = "textBoxTDQD_SoLuongNhapToiThieu";
-            this.textBoxTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(119, 24);
-            this.textBoxTDQD_SoLuongNhapToiThieu.TabIndex = 30;
+            this.labelTDQD_TiLeDonGiaBan.AutoSize = true;
+            this.labelTDQD_TiLeDonGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(38, 165);
+            this.labelTDQD_TiLeDonGiaBan.Name = "labelTDQD_TiLeDonGiaBan";
+            this.labelTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(132, 20);
+            this.labelTDQD_TiLeDonGiaBan.TabIndex = 37;
+            this.labelTDQD_TiLeDonGiaBan.Text = "Tỉ lệ đơn giá bán";
             // 
-            // labelTDQD_SoLuongNhapToiThieu
+            // textBoxTDQD_SoTienNoToiDa
             // 
-            this.labelTDQD_SoLuongNhapToiThieu.AutoSize = true;
-            this.labelTDQD_SoLuongNhapToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(38, 46);
-            this.labelTDQD_SoLuongNhapToiThieu.Name = "labelTDQD_SoLuongNhapToiThieu";
-            this.labelTDQD_SoLuongNhapToiThieu.Size = new System.Drawing.Size(220, 20);
-            this.labelTDQD_SoLuongNhapToiThieu.TabIndex = 29;
-            this.labelTDQD_SoLuongNhapToiThieu.Text = "Số lượng sách nhập tối thiểu";
+            this.textBoxTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(357, 103);
+            this.textBoxTDQD_SoTienNoToiDa.Name = "textBoxTDQD_SoTienNoToiDa";
+            this.textBoxTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(119, 24);
+            this.textBoxTDQD_SoTienNoToiDa.TabIndex = 42;
             // 
-            // labelTDQD
+            // textBoxTDQD_TiLeDonGiaBan
             // 
-            this.labelTDQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTDQD.Location = new System.Drawing.Point(428, 89);
-            this.labelTDQD.Name = "labelTDQD";
-            this.labelTDQD.Size = new System.Drawing.Size(262, 32);
-            this.labelTDQD.TabIndex = 2;
-            this.labelTDQD.Text = "THAY ĐỔI QUY ĐỊNH";
+            this.textBoxTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(357, 163);
+            this.textBoxTDQD_TiLeDonGiaBan.Name = "textBoxTDQD_TiLeDonGiaBan";
+            this.textBoxTDQD_TiLeDonGiaBan.Size = new System.Drawing.Size(119, 24);
+            this.textBoxTDQD_TiLeDonGiaBan.TabIndex = 38;
+            // 
+            // labelTDQD_SoTienNoToiDa
+            // 
+            this.labelTDQD_SoTienNoToiDa.AutoSize = true;
+            this.labelTDQD_SoTienNoToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(38, 105);
+            this.labelTDQD_SoTienNoToiDa.Name = "labelTDQD_SoTienNoToiDa";
+            this.labelTDQD_SoTienNoToiDa.Size = new System.Drawing.Size(198, 20);
+            this.labelTDQD_SoTienNoToiDa.TabIndex = 41;
+            this.labelTDQD_SoTienNoToiDa.Text = "Cho khách hàng nợ tối đa";
+            // 
+            // labelTDQD_SoLuongTonToiThieu
+            // 
+            this.labelTDQD_SoLuongTonToiThieu.AutoSize = true;
+            this.labelTDQD_SoLuongTonToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(38, 135);
+            this.labelTDQD_SoLuongTonToiThieu.Name = "labelTDQD_SoLuongTonToiThieu";
+            this.labelTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(261, 20);
+            this.labelTDQD_SoLuongTonToiThieu.TabIndex = 39;
+            this.labelTDQD_SoLuongTonToiThieu.Text = "Số lượng tồn sau khi bán ít nhất là";
+            // 
+            // textBoxTDQD_SoLuongTonToiThieu
+            // 
+            this.textBoxTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(357, 133);
+            this.textBoxTDQD_SoLuongTonToiThieu.Name = "textBoxTDQD_SoLuongTonToiThieu";
+            this.textBoxTDQD_SoLuongTonToiThieu.Size = new System.Drawing.Size(119, 24);
+            this.textBoxTDQD_SoLuongTonToiThieu.TabIndex = 40;
             // 
             // panelTraCuu
             // 
@@ -3868,32 +3890,9 @@
             this.labelTCS.TabIndex = 2;
             this.labelTCS.Text = "TRA CỨU SÁCH";
             // 
-            // groupBoxTDQD
-            // 
-            this.groupBoxTDQD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.groupBoxTDQD.Controls.Add(this.radioButtonButtonTDQD_KiemTraSoTienThu_No);
-            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongNhapToiThieu);
-            this.groupBoxTDQD.Controls.Add(this.radioButtonTDQD_KiemTraSoTienThu_Yes);
-            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongNhapToiThieu);
-            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiDa);
-            this.groupBoxTDQD.Controls.Add(this.labelTDQD_KiemTraSoTienThu);
-            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongTonToiDa);
-            this.groupBoxTDQD.Controls.Add(this.labelTDQD_TiLeDonGiaBan);
-            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoTienNoToiDa);
-            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_TiLeDonGiaBan);
-            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoTienNoToiDa);
-            this.groupBoxTDQD.Controls.Add(this.labelTDQD_SoLuongTonToiThieu);
-            this.groupBoxTDQD.Controls.Add(this.textBoxTDQD_SoLuongTonToiThieu);
-            this.groupBoxTDQD.Location = new System.Drawing.Point(298, 152);
-            this.groupBoxTDQD.Name = "groupBoxTDQD";
-            this.groupBoxTDQD.Size = new System.Drawing.Size(553, 260);
-            this.groupBoxTDQD.TabIndex = 47;
-            this.groupBoxTDQD.TabStop = false;
-            // 
             // FormQLNS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1379, 687);
@@ -3970,11 +3969,11 @@
             this.panelBaoCaoCongNo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBCCN)).EndInit();
             this.panelThayDoiQuyDinh.ResumeLayout(false);
+            this.groupBoxTDQD.ResumeLayout(false);
+            this.groupBoxTDQD.PerformLayout();
             this.panelTraCuu.ResumeLayout(false);
             this.panelTraCuu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).EndInit();
-            this.groupBoxTDQD.ResumeLayout(false);
-            this.groupBoxTDQD.PerformLayout();
             this.ResumeLayout(false);
 
         }
