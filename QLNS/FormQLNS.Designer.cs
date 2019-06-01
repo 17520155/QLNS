@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.labelThayDoiQuyDinh = new System.Windows.Forms.Label();
@@ -445,7 +445,6 @@
             // 
             // labelThayDoiQuyDinh
             // 
-            this.labelThayDoiQuyDinh.AutoSize = true;
             this.labelThayDoiQuyDinh.BackColor = System.Drawing.Color.Transparent;
             this.labelThayDoiQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThayDoiQuyDinh.Location = new System.Drawing.Point(4, 7);
@@ -465,7 +464,6 @@
             // 
             // labelKinhDoanh
             // 
-            this.labelKinhDoanh.AutoSize = true;
             this.labelKinhDoanh.BackColor = System.Drawing.Color.Transparent;
             this.labelKinhDoanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKinhDoanh.Location = new System.Drawing.Point(4, 7);
@@ -485,7 +483,6 @@
             // 
             // labelSach
             // 
-            this.labelSach.AutoSize = true;
             this.labelSach.BackColor = System.Drawing.Color.Transparent;
             this.labelSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSach.Location = new System.Drawing.Point(4, 7);
@@ -2799,7 +2796,6 @@
             // 
             // labelLPTT_DanhSachPhieuThuTien
             // 
-            this.labelLPTT_DanhSachPhieuThuTien.AutoSize = true;
             this.labelLPTT_DanhSachPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_DanhSachPhieuThuTien.Location = new System.Drawing.Point(29, 365);
             this.labelLPTT_DanhSachPhieuThuTien.Name = "labelLPTT_DanhSachPhieuThuTien";
@@ -2838,7 +2834,7 @@
             // ColLPTT_MaPhieuThu
             // 
             this.ColLPTT_MaPhieuThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_MaPhieuThu.FillWeight = 110F;
+            this.ColLPTT_MaPhieuThu.FillWeight = 110.1932F;
             this.ColLPTT_MaPhieuThu.HeaderText = "Mã phiếu thu";
             this.ColLPTT_MaPhieuThu.Name = "ColLPTT_MaPhieuThu";
             this.ColLPTT_MaPhieuThu.ReadOnly = true;
@@ -2846,7 +2842,7 @@
             // ColLPTT_MaKH
             // 
             this.ColLPTT_MaKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_MaKH.FillWeight = 80F;
+            this.ColLPTT_MaKH.FillWeight = 79.67812F;
             this.ColLPTT_MaKH.HeaderText = "Mã KH";
             this.ColLPTT_MaKH.Name = "ColLPTT_MaKH";
             this.ColLPTT_MaKH.ReadOnly = true;
@@ -2854,7 +2850,7 @@
             // ColLPTT_TenKH
             // 
             this.ColLPTT_TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_TenKH.FillWeight = 120F;
+            this.ColLPTT_TenKH.FillWeight = 120.3648F;
             this.ColLPTT_TenKH.HeaderText = "Tên KH";
             this.ColLPTT_TenKH.Name = "ColLPTT_TenKH";
             this.ColLPTT_TenKH.ReadOnly = true;
@@ -2862,6 +2858,7 @@
             // ColLPTT_DienThoai
             // 
             this.ColLPTT_DienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_DienThoai.FillWeight = 100.0215F;
             this.ColLPTT_DienThoai.HeaderText = "Điện thoại";
             this.ColLPTT_DienThoai.Name = "ColLPTT_DienThoai";
             this.ColLPTT_DienThoai.ReadOnly = true;
@@ -2869,7 +2866,7 @@
             // ColLPTT_Email
             // 
             this.ColLPTT_Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_Email.FillWeight = 90F;
+            this.ColLPTT_Email.FillWeight = 89.8498F;
             this.ColLPTT_Email.HeaderText = "Email";
             this.ColLPTT_Email.Name = "ColLPTT_Email";
             this.ColLPTT_Email.ReadOnly = true;
@@ -2877,6 +2874,7 @@
             // ColLPTT_DiaChi
             // 
             this.ColLPTT_DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_DiaChi.FillWeight = 100.0215F;
             this.ColLPTT_DiaChi.HeaderText = "Địa chỉ";
             this.ColLPTT_DiaChi.Name = "ColLPTT_DiaChi";
             this.ColLPTT_DiaChi.ReadOnly = true;
@@ -2884,7 +2882,7 @@
             // ColLPTT_NgayThu
             // 
             this.ColLPTT_NgayThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_NgayThu.FillWeight = 90F;
+            this.ColLPTT_NgayThu.FillWeight = 89.8498F;
             this.ColLPTT_NgayThu.HeaderText = "Ngày thu";
             this.ColLPTT_NgayThu.Name = "ColLPTT_NgayThu";
             this.ColLPTT_NgayThu.ReadOnly = true;
@@ -2892,6 +2890,7 @@
             // ColLPTT_SoTienTra
             // 
             this.ColLPTT_SoTienTra.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_SoTienTra.FillWeight = 100.0215F;
             this.ColLPTT_SoTienTra.HeaderText = "Số tiền trả";
             this.ColLPTT_SoTienTra.Name = "ColLPTT_SoTienTra";
             this.ColLPTT_SoTienTra.ReadOnly = true;
@@ -2950,7 +2949,6 @@
             // 
             // labelLPTT_MaPhieuThu
             // 
-            this.labelLPTT_MaPhieuThu.AutoSize = true;
             this.labelLPTT_MaPhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_MaPhieuThu.Location = new System.Drawing.Point(44, 37);
             this.labelLPTT_MaPhieuThu.Name = "labelLPTT_MaPhieuThu";
@@ -2977,7 +2975,6 @@
             // 
             // labelLPTT_NgayThu
             // 
-            this.labelLPTT_NgayThu.AutoSize = true;
             this.labelLPTT_NgayThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_NgayThu.Location = new System.Drawing.Point(71, 185);
             this.labelLPTT_NgayThu.Name = "labelLPTT_NgayThu";
@@ -2987,7 +2984,6 @@
             // 
             // labelLPTT_TenKH
             // 
-            this.labelLPTT_TenKH.AutoSize = true;
             this.labelLPTT_TenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_TenKH.Location = new System.Drawing.Point(469, 69);
             this.labelLPTT_TenKH.Name = "labelLPTT_TenKH";
@@ -3006,7 +3002,6 @@
             // 
             // labelLPTT_MaKH
             // 
-            this.labelLPTT_MaKH.AutoSize = true;
             this.labelLPTT_MaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_MaKH.Location = new System.Drawing.Point(83, 68);
             this.labelLPTT_MaKH.Name = "labelLPTT_MaKH";
@@ -3025,7 +3020,6 @@
             // 
             // labelLPTT_DienThoai
             // 
-            this.labelLPTT_DienThoai.AutoSize = true;
             this.labelLPTT_DienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_DienThoai.Location = new System.Drawing.Point(63, 99);
             this.labelLPTT_DienThoai.Name = "labelLPTT_DienThoai";
@@ -3053,7 +3047,6 @@
             // 
             // labelLPTT_DiaChi
             // 
-            this.labelLPTT_DiaChi.AutoSize = true;
             this.labelLPTT_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_DiaChi.Location = new System.Drawing.Point(83, 129);
             this.labelLPTT_DiaChi.Name = "labelLPTT_DiaChi";
@@ -3093,7 +3086,6 @@
             // 
             // labelLPTT_SoTienThu
             // 
-            this.labelLPTT_SoTienThu.AutoSize = true;
             this.labelLPTT_SoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_SoTienThu.Location = new System.Drawing.Point(449, 188);
             this.labelLPTT_SoTienThu.Name = "labelLPTT_SoTienThu";
@@ -3123,7 +3115,6 @@
             // 
             // labelLPTT_Email
             // 
-            this.labelLPTT_Email.AutoSize = true;
             this.labelLPTT_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLPTT_Email.Location = new System.Drawing.Point(482, 98);
             this.labelLPTT_Email.Name = "labelLPTT_Email";
@@ -3246,8 +3237,8 @@
             // ColBCST_STT
             // 
             this.ColBCST_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle3;
             this.ColBCST_STT.HeaderText = "STT";
             this.ColBCST_STT.Name = "ColBCST_STT";
             this.ColBCST_STT.ReadOnly = true;
@@ -3516,7 +3507,7 @@
             // radioButtonButtonTDQD_KiemTraSoTienThu_No
             // 
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.AutoSize = true;
-            this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Location = new System.Drawing.Point(663, 223);
+            this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Location = new System.Drawing.Point(661, 228);
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Name = "radioButtonButtonTDQD_KiemTraSoTienThu_No";
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.Size = new System.Drawing.Size(72, 22);
             this.radioButtonButtonTDQD_KiemTraSoTienThu_No.TabIndex = 46;
@@ -3527,7 +3518,7 @@
             // radioButtonTDQD_KiemTraSoTienThu_Yes
             // 
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.AutoSize = true;
-            this.radioButtonTDQD_KiemTraSoTienThu_Yes.Location = new System.Drawing.Point(577, 223);
+            this.radioButtonTDQD_KiemTraSoTienThu_Yes.Location = new System.Drawing.Point(575, 228);
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.Name = "radioButtonTDQD_KiemTraSoTienThu_Yes";
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.Size = new System.Drawing.Size(49, 22);
             this.radioButtonTDQD_KiemTraSoTienThu_Yes.TabIndex = 45;
@@ -3544,7 +3535,6 @@
             // 
             // labelTDQD_SoLuongTonToiDa
             // 
-            this.labelTDQD_SoLuongTonToiDa.AutoSize = true;
             this.labelTDQD_SoLuongTonToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD_SoLuongTonToiDa.Location = new System.Drawing.Point(317, 105);
             this.labelTDQD_SoLuongTonToiDa.Name = "labelTDQD_SoLuongTonToiDa";
@@ -3561,7 +3551,6 @@
             // 
             // labelTDQD_SoTienNoToiDa
             // 
-            this.labelTDQD_SoTienNoToiDa.AutoSize = true;
             this.labelTDQD_SoTienNoToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD_SoTienNoToiDa.Location = new System.Drawing.Point(373, 135);
             this.labelTDQD_SoTienNoToiDa.Name = "labelTDQD_SoTienNoToiDa";
@@ -3578,7 +3567,6 @@
             // 
             // labelTDQD_SoLuongTonToiThieu
             // 
-            this.labelTDQD_SoLuongTonToiThieu.AutoSize = true;
             this.labelTDQD_SoLuongTonToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD_SoLuongTonToiThieu.Location = new System.Drawing.Point(310, 165);
             this.labelTDQD_SoLuongTonToiThieu.Name = "labelTDQD_SoLuongTonToiThieu";
@@ -3595,7 +3583,6 @@
             // 
             // labelTDQD_TiLeDonGiaBan
             // 
-            this.labelTDQD_TiLeDonGiaBan.AutoSize = true;
             this.labelTDQD_TiLeDonGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD_TiLeDonGiaBan.Location = new System.Drawing.Point(439, 195);
             this.labelTDQD_TiLeDonGiaBan.Name = "labelTDQD_TiLeDonGiaBan";
@@ -3605,7 +3592,6 @@
             // 
             // labelTDQD_KiemTraSoTienThu
             // 
-            this.labelTDQD_KiemTraSoTienThu.AutoSize = true;
             this.labelTDQD_KiemTraSoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD_KiemTraSoTienThu.Location = new System.Drawing.Point(258, 228);
             this.labelTDQD_KiemTraSoTienThu.Name = "labelTDQD_KiemTraSoTienThu";
@@ -3632,7 +3618,6 @@
             // 
             // labelTDQD_SoLuongNhapToiThieu
             // 
-            this.labelTDQD_SoLuongNhapToiThieu.AutoSize = true;
             this.labelTDQD_SoLuongNhapToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD_SoLuongNhapToiThieu.Location = new System.Drawing.Point(351, 75);
             this.labelTDQD_SoLuongNhapToiThieu.Name = "labelTDQD_SoLuongNhapToiThieu";
@@ -3642,7 +3627,6 @@
             // 
             // labelTDQD
             // 
-            this.labelTDQD.AutoSize = true;
             this.labelTDQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTDQD.Location = new System.Drawing.Point(446, 6);
             this.labelTDQD.Name = "labelTDQD";
@@ -3823,8 +3807,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle4;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -3887,12 +3871,13 @@
             // 
             // FormQLNS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1379, 687);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelThayDoiQuyDinh);
+            this.Controls.Add(this.panelTraCuu);
+            this.Controls.Add(this.panelBaoCaoCongNo);
+            this.Controls.Add(this.panelBaoCaoSachTon);
             this.Controls.Add(this.panelLapPhieuThuTien);
             this.Controls.Add(this.panelLapHoaDonBanSach);
             this.Controls.Add(this.panelNhapSach);
@@ -3900,20 +3885,13 @@
             this.Controls.Add(this.panelQuanLyKhac);
             this.Controls.Add(this.panelQuanLyDauSach);
             this.Controls.Add(this.panelQuanLySach);
-            this.Controls.Add(this.panelThayDoiQuyDinh);
-            this.Controls.Add(this.panelTraCuu);
-            this.Controls.Add(this.panelBaoCaoCongNo);
-            this.Controls.Add(this.panelBaoCaoSachTon);
             this.DoubleBuffered = true;
             this.Name = "FormQLNS";
             this.Text = "Quản lý nhà sách";
             this.panelMenu.ResumeLayout(false);
             this.panelMenuTHAYDOIQUYDINH.ResumeLayout(false);
-            this.panelMenuTHAYDOIQUYDINH.PerformLayout();
             this.panelMenuKINHDOANH.ResumeLayout(false);
-            this.panelMenuKINHDOANH.PerformLayout();
             this.panelMenuSACH.ResumeLayout(false);
-            this.panelMenuSACH.PerformLayout();
             this.panelNhapSach.ResumeLayout(false);
             this.panelNhapSach.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNS_ChiTietPhieuNhap)).EndInit();
