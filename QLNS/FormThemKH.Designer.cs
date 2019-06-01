@@ -43,10 +43,10 @@
             // labelThemKH
             // 
             this.labelThemKH.AutoSize = true;
-            this.labelThemKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThemKH.Location = new System.Drawing.Point(125, 22);
             this.labelThemKH.Name = "labelThemKH";
-            this.labelThemKH.Size = new System.Drawing.Size(207, 25);
+            this.labelThemKH.Size = new System.Drawing.Size(222, 25);
             this.labelThemKH.TabIndex = 4;
             this.labelThemKH.Text = "THÊM KHÁCH HÀNG";
             // 
@@ -61,7 +61,7 @@
             // 
             this.labelTenKH.AutoSize = true;
             this.labelTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenKH.Location = new System.Drawing.Point(128, 82);
+            this.labelTenKH.Location = new System.Drawing.Point(110, 82);
             this.labelTenKH.Name = "labelTenKH";
             this.labelTenKH.Size = new System.Drawing.Size(66, 20);
             this.labelTenKH.TabIndex = 31;
@@ -78,7 +78,7 @@
             // 
             this.labelDiaChi.AutoSize = true;
             this.labelDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDiaChi.Location = new System.Drawing.Point(133, 108);
+            this.labelDiaChi.Location = new System.Drawing.Point(110, 108);
             this.labelDiaChi.Name = "labelDiaChi";
             this.labelDiaChi.Size = new System.Drawing.Size(61, 20);
             this.labelDiaChi.TabIndex = 33;
@@ -112,7 +112,7 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(143, 166);
+            this.labelEmail.Location = new System.Drawing.Point(110, 166);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(51, 20);
             this.labelEmail.TabIndex = 37;
@@ -121,9 +121,9 @@
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(191, 214);
+            this.buttonLuu.Location = new System.Drawing.Point(191, 209);
             this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(75, 23);
+            this.buttonLuu.Size = new System.Drawing.Size(75, 28);
             this.buttonLuu.TabIndex = 39;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
@@ -131,8 +131,7 @@
             // 
             // FormThemKH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(451, 268);
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxEmail);

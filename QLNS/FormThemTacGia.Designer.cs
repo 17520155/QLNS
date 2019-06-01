@@ -64,10 +64,10 @@
             // labelThemTacGia
             // 
             this.labelThemTacGia.AutoSize = true;
-            this.labelThemTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThemTacGia.Location = new System.Drawing.Point(85, 29);
             this.labelThemTacGia.Name = "labelThemTacGia";
-            this.labelThemTacGia.Size = new System.Drawing.Size(155, 25);
+            this.labelThemTacGia.Size = new System.Drawing.Size(167, 25);
             this.labelThemTacGia.TabIndex = 40;
             this.labelThemTacGia.Text = "THÊM TÁC GIẢ";
             // 
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 225);
+            this.ClientSize = new System.Drawing.Size(341, 198);
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenTacGia);
             this.Controls.Add(this.labelTenTacGia);

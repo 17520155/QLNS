@@ -26,7 +26,7 @@ namespace QLNS
                 return;
             }
             SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = @"Data Source=DESKTOP-EN4M7RE\SQLEXPRESS;Initial Catalog=QLNS;Integrated Security=True";
+            connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
             SqlCommand command = new SqlCommand("ThemKhachHang", connection);
             command.CommandType = CommandType.StoredProcedure;

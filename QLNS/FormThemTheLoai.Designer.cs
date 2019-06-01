@@ -55,7 +55,7 @@
             // 
             this.labelTenTheLoai.AutoSize = true;
             this.labelTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTheLoai.Location = new System.Drawing.Point(46, 76);
+            this.labelTenTheLoai.Location = new System.Drawing.Point(42, 76);
             this.labelTenTheLoai.Name = "labelTenTheLoai";
             this.labelTenTheLoai.Size = new System.Drawing.Size(96, 20);
             this.labelTenTheLoai.TabIndex = 51;
@@ -64,10 +64,10 @@
             // labelThemTheLoai
             // 
             this.labelThemTheLoai.AutoSize = true;
-            this.labelThemTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThemTheLoai.Location = new System.Drawing.Point(80, 21);
             this.labelThemTheLoai.Name = "labelThemTheLoai";
-            this.labelThemTheLoai.Size = new System.Drawing.Size(165, 25);
+            this.labelThemTheLoai.Size = new System.Drawing.Size(178, 25);
             this.labelThemTheLoai.TabIndex = 50;
             this.labelThemTheLoai.Text = "THÊM THỂ LOẠI";
             // 

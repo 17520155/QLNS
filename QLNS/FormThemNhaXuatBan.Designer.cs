@@ -65,10 +65,10 @@
             // labelThemNhaXuatBan
             // 
             this.labelThemNhaXuatBan.AutoSize = true;
-            this.labelThemNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThemNhaXuatBan.Location = new System.Drawing.Point(113, 27);
             this.labelThemNhaXuatBan.Name = "labelThemNhaXuatBan";
-            this.labelThemNhaXuatBan.Size = new System.Drawing.Size(222, 25);
+            this.labelThemNhaXuatBan.Size = new System.Drawing.Size(239, 25);
             this.labelThemNhaXuatBan.TabIndex = 54;
             this.labelThemNhaXuatBan.Text = "THÊM NHÀ XUẤT BẢN";
             // 

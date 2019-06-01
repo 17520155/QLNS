@@ -50,7 +50,7 @@
             // 
             // textBoxTenNhaXuatBan
             // 
-            this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(512, 171);
+            this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(535, 171);
             this.textBoxTenNhaXuatBan.Name = "textBoxTenNhaXuatBan";
             this.textBoxTenNhaXuatBan.ReadOnly = true;
             this.textBoxTenNhaXuatBan.Size = new System.Drawing.Size(125, 22);
@@ -60,7 +60,7 @@
             // 
             this.labelTenNhaXuatBan.AutoSize = true;
             this.labelTenNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenNhaXuatBan.Location = new System.Drawing.Point(369, 171);
+            this.labelTenNhaXuatBan.Location = new System.Drawing.Point(392, 171);
             this.labelTenNhaXuatBan.Name = "labelTenNhaXuatBan";
             this.labelTenNhaXuatBan.Size = new System.Drawing.Size(137, 20);
             this.labelTenNhaXuatBan.TabIndex = 88;
@@ -97,7 +97,7 @@
             // 
             // textBoxTenTheLoai
             // 
-            this.textBoxTenTheLoai.Location = new System.Drawing.Point(512, 107);
+            this.textBoxTenTheLoai.Location = new System.Drawing.Point(535, 107);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
             this.textBoxTenTheLoai.ReadOnly = true;
             this.textBoxTenTheLoai.Size = new System.Drawing.Size(125, 22);
@@ -107,7 +107,7 @@
             // 
             this.labelTenTheLoai.AutoSize = true;
             this.labelTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTheLoai.Location = new System.Drawing.Point(410, 107);
+            this.labelTenTheLoai.Location = new System.Drawing.Point(392, 107);
             this.labelTenTheLoai.Name = "labelTenTheLoai";
             this.labelTenTheLoai.Size = new System.Drawing.Size(96, 20);
             this.labelTenTheLoai.TabIndex = 83;
@@ -116,16 +116,16 @@
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(293, 279);
+            this.buttonLuu.Location = new System.Drawing.Point(324, 279);
             this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(75, 23);
+            this.buttonLuu.Size = new System.Drawing.Size(75, 28);
             this.buttonLuu.TabIndex = 79;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
             // 
             // textBoxTenDauSach
             // 
-            this.textBoxTenDauSach.Location = new System.Drawing.Point(512, 79);
+            this.textBoxTenDauSach.Location = new System.Drawing.Point(535, 79);
             this.textBoxTenDauSach.Name = "textBoxTenDauSach";
             this.textBoxTenDauSach.ReadOnly = true;
             this.textBoxTenDauSach.Size = new System.Drawing.Size(125, 22);
@@ -135,7 +135,7 @@
             // 
             this.labelTenDauSach.AutoSize = true;
             this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenDauSach.Location = new System.Drawing.Point(396, 79);
+            this.labelTenDauSach.Location = new System.Drawing.Point(392, 79);
             this.labelTenDauSach.Name = "labelTenDauSach";
             this.labelTenDauSach.Size = new System.Drawing.Size(110, 20);
             this.labelTenDauSach.TabIndex = 77;
@@ -144,10 +144,10 @@
             // labelThemSach
             // 
             this.labelThemSach.AutoSize = true;
-            this.labelThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelThemSach.Location = new System.Drawing.Point(273, 31);
+            this.labelThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemSach.Location = new System.Drawing.Point(296, 31);
             this.labelThemSach.Name = "labelThemSach";
-            this.labelThemSach.Size = new System.Drawing.Size(131, 25);
+            this.labelThemSach.Size = new System.Drawing.Size(140, 25);
             this.labelThemSach.TabIndex = 76;
             this.labelThemSach.Text = "THÊM SÁCH";
             // 
@@ -174,7 +174,7 @@
             // 
             this.labelMaDauSach.AutoSize = true;
             this.labelMaDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaDauSach.Location = new System.Drawing.Point(55, 75);
+            this.labelMaDauSach.Location = new System.Drawing.Point(28, 75);
             this.labelMaDauSach.Name = "labelMaDauSach";
             this.labelMaDauSach.Size = new System.Drawing.Size(105, 20);
             this.labelMaDauSach.TabIndex = 94;
@@ -192,7 +192,7 @@
             // 
             this.labelTenTacGia.AutoSize = true;
             this.labelTenTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTacGia.Location = new System.Drawing.Point(64, 105);
+            this.labelTenTacGia.Location = new System.Drawing.Point(28, 107);
             this.labelTenTacGia.Name = "labelTenTacGia";
             this.labelTenTacGia.Size = new System.Drawing.Size(92, 20);
             this.labelTenTacGia.TabIndex = 97;
@@ -209,7 +209,7 @@
             // 
             this.labelNamXuaBan.AutoSize = true;
             this.labelNamXuaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNamXuaBan.Location = new System.Drawing.Point(48, 201);
+            this.labelNamXuaBan.Location = new System.Drawing.Point(28, 201);
             this.labelNamXuaBan.Name = "labelNamXuaBan";
             this.labelNamXuaBan.Size = new System.Drawing.Size(112, 20);
             this.labelNamXuaBan.TabIndex = 99;
