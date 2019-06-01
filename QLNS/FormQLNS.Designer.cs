@@ -3863,8 +3863,7 @@
             // 
             // FormQLNS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1379, 687);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelLapPhieuThuTien);
