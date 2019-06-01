@@ -2945,7 +2945,7 @@
             // 
             // dataGridViewLPTT_DanhSachPhieuThu
             // 
-            this.dataGridViewLPTT_DanhSachPhieuThu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(223)))), ((int)(((byte)(194)))));
+            this.dataGridViewLPTT_DanhSachPhieuThu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(233)))), ((int)(((byte)(194)))));
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
@@ -2983,7 +2983,7 @@
             // 
             // groupBoxLPTT_ChiTietThuTien
             // 
-            this.groupBoxLPTT_ChiTietThuTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(223)))), ((int)(((byte)(194)))));
+            this.groupBoxLPTT_ChiTietThuTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(233)))), ((int)(((byte)(194)))));
             this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.buttonLPTT_Luu);
             this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.labelLPTT_MaPhieuThu);
             this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.comboBoxLPTT_MaPhieuThu);
@@ -4213,17 +4213,17 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1379, 687);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelQuanLySach);
-            this.Controls.Add(this.panelThayDoiQuyDinh);
-            this.Controls.Add(this.panelTraCuu);
-            this.Controls.Add(this.panelBaoCaoCongNo);
-            this.Controls.Add(this.panelBaoCaoSachTon);
             this.Controls.Add(this.panelLapPhieuThuTien);
             this.Controls.Add(this.panelLapHoaDonBanSach);
             this.Controls.Add(this.panelLapPhieuNhapSach);
             this.Controls.Add(this.panelQuanLyKhachHang);
             this.Controls.Add(this.panelQuanLyKhac);
             this.Controls.Add(this.panelQuanLyDauSach);
+            this.Controls.Add(this.panelQuanLySach);
+            this.Controls.Add(this.panelThayDoiQuyDinh);
+            this.Controls.Add(this.panelTraCuu);
+            this.Controls.Add(this.panelBaoCaoCongNo);
+            this.Controls.Add(this.panelBaoCaoSachTon);
             this.DoubleBuffered = true;
             this.Name = "FormQLNS";
             this.Text = "Quản lý nhà sách";
