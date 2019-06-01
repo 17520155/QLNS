@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.labelThayDoiQuyDinh = new System.Windows.Forms.Label();
@@ -262,9 +262,39 @@
             this.labelQLKH_TenKH = new System.Windows.Forms.Label();
             this.textBoxQLKH_TenKH = new System.Windows.Forms.TextBox();
             this.panelLapPhieuThuTien = new System.Windows.Forms.Panel();
+            this.labelLPTT_DanhSachPhieuThuTien = new System.Windows.Forms.Label();
             this.dataGridViewLPTT_DanhSachPhieuThu = new System.Windows.Forms.DataGridView();
+            this.ColLPTT_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_MaPhieuThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_NgayThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColLPTT_SoTienTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelLPTT = new System.Windows.Forms.Label();
             this.groupBoxLPTT_ChiTietThuTien = new System.Windows.Forms.GroupBox();
+            this.buttonLPTT_Luu = new System.Windows.Forms.Button();
+            this.labelLPTT_MaPhieuThu = new System.Windows.Forms.Label();
+            this.comboBoxLPTT_MaPhieuThu = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerLPTT_NgayThu = new System.Windows.Forms.DateTimePicker();
+            this.labelLPTT_NgayThu = new System.Windows.Forms.Label();
+            this.labelLPTT_TenKH = new System.Windows.Forms.Label();
+            this.textBoxLPTT_TenKH = new System.Windows.Forms.TextBox();
+            this.labelLPTT_MaKH = new System.Windows.Forms.Label();
+            this.comboBoxLPTT_MaKH = new System.Windows.Forms.ComboBox();
+            this.labelLPTT_DienThoai = new System.Windows.Forms.Label();
+            this.textBoxLPTT_DiaChi = new System.Windows.Forms.TextBox();
+            this.textBoxLPTT_DienThoai = new System.Windows.Forms.TextBox();
+            this.labelLPTT_DiaChi = new System.Windows.Forms.Label();
+            this.buttonLPTT_CapNhat = new System.Windows.Forms.Button();
+            this.textBoxLPT_SoTienThu = new System.Windows.Forms.TextBox();
+            this.buttonLPTT_Xoa = new System.Windows.Forms.Button();
+            this.labelLPTT_SoTienThu = new System.Windows.Forms.Label();
+            this.buttonLPTT_Them = new System.Windows.Forms.Button();
+            this.textBoxLPTT_Email = new System.Windows.Forms.TextBox();
+            this.labelLPTT_Email = new System.Windows.Forms.Label();
             this.panelBaoCaoSachTon = new System.Windows.Forms.Panel();
             this.labelBCST_DanhSachBaoCao = new System.Windows.Forms.Label();
             this.buttonBCST_In = new System.Windows.Forms.Button();
@@ -341,36 +371,6 @@
             this.ColTC_NhaXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTC_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelTCS = new System.Windows.Forms.Label();
-            this.ColLPTT_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_MaPhieuThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_NgayThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLPTT_SoTienTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelLPTT_DanhSachPhieuThuTien = new System.Windows.Forms.Label();
-            this.labelLPTT_Email = new System.Windows.Forms.Label();
-            this.textBoxLPTT_Email = new System.Windows.Forms.TextBox();
-            this.buttonLPTT_Them = new System.Windows.Forms.Button();
-            this.labelLPTT_SoTienThu = new System.Windows.Forms.Label();
-            this.buttonLPTT_Xoa = new System.Windows.Forms.Button();
-            this.textBoxLPT_SoTienThu = new System.Windows.Forms.TextBox();
-            this.buttonLPTT_CapNhat = new System.Windows.Forms.Button();
-            this.labelLPTT_DiaChi = new System.Windows.Forms.Label();
-            this.textBoxLPTT_DienThoai = new System.Windows.Forms.TextBox();
-            this.textBoxLPTT_DiaChi = new System.Windows.Forms.TextBox();
-            this.labelLPTT_DienThoai = new System.Windows.Forms.Label();
-            this.comboBoxLPTT_MaKH = new System.Windows.Forms.ComboBox();
-            this.labelLPTT_MaKH = new System.Windows.Forms.Label();
-            this.textBoxLPTT_TenKH = new System.Windows.Forms.TextBox();
-            this.labelLPTT_TenKH = new System.Windows.Forms.Label();
-            this.labelLPTT_NgayThu = new System.Windows.Forms.Label();
-            this.dateTimePickerLPTT_NgayThu = new System.Windows.Forms.DateTimePicker();
-            this.comboBoxLPTT_MaPhieuThu = new System.Windows.Forms.ComboBox();
-            this.labelLPTT_MaPhieuThu = new System.Windows.Forms.Label();
-            this.buttonLPTT_Luu = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelMenuTHAYDOIQUYDINH.SuspendLayout();
             this.panelMenuKINHDOANH.SuspendLayout();
@@ -2797,6 +2797,16 @@
             this.panelLapPhieuThuTien.Size = new System.Drawing.Size(1070, 663);
             this.panelLapPhieuThuTien.TabIndex = 27;
             // 
+            // labelLPTT_DanhSachPhieuThuTien
+            // 
+            this.labelLPTT_DanhSachPhieuThuTien.AutoSize = true;
+            this.labelLPTT_DanhSachPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_DanhSachPhieuThuTien.Location = new System.Drawing.Point(29, 365);
+            this.labelLPTT_DanhSachPhieuThuTien.Name = "labelLPTT_DanhSachPhieuThuTien";
+            this.labelLPTT_DanhSachPhieuThuTien.Size = new System.Drawing.Size(273, 20);
+            this.labelLPTT_DanhSachPhieuThuTien.TabIndex = 16;
+            this.labelLPTT_DanhSachPhieuThuTien.Text = "--- Danh sách phiếu thu tiền ---";
+            // 
             // dataGridViewLPTT_DanhSachPhieuThu
             // 
             this.dataGridViewLPTT_DanhSachPhieuThu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(223)))), ((int)(((byte)(194)))));
@@ -2816,6 +2826,75 @@
             this.dataGridViewLPTT_DanhSachPhieuThu.RowTemplate.Height = 24;
             this.dataGridViewLPTT_DanhSachPhieuThu.Size = new System.Drawing.Size(1040, 259);
             this.dataGridViewLPTT_DanhSachPhieuThu.TabIndex = 15;
+            // 
+            // ColLPTT_STT
+            // 
+            this.ColLPTT_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColLPTT_STT.HeaderText = "STT";
+            this.ColLPTT_STT.Name = "ColLPTT_STT";
+            this.ColLPTT_STT.ReadOnly = true;
+            this.ColLPTT_STT.Width = 65;
+            // 
+            // ColLPTT_MaPhieuThu
+            // 
+            this.ColLPTT_MaPhieuThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_MaPhieuThu.FillWeight = 110F;
+            this.ColLPTT_MaPhieuThu.HeaderText = "Mã phiếu thu";
+            this.ColLPTT_MaPhieuThu.Name = "ColLPTT_MaPhieuThu";
+            this.ColLPTT_MaPhieuThu.ReadOnly = true;
+            // 
+            // ColLPTT_MaKH
+            // 
+            this.ColLPTT_MaKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_MaKH.FillWeight = 80F;
+            this.ColLPTT_MaKH.HeaderText = "Mã KH";
+            this.ColLPTT_MaKH.Name = "ColLPTT_MaKH";
+            this.ColLPTT_MaKH.ReadOnly = true;
+            // 
+            // ColLPTT_TenKH
+            // 
+            this.ColLPTT_TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_TenKH.FillWeight = 120F;
+            this.ColLPTT_TenKH.HeaderText = "Tên KH";
+            this.ColLPTT_TenKH.Name = "ColLPTT_TenKH";
+            this.ColLPTT_TenKH.ReadOnly = true;
+            // 
+            // ColLPTT_DienThoai
+            // 
+            this.ColLPTT_DienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_DienThoai.HeaderText = "Điện thoại";
+            this.ColLPTT_DienThoai.Name = "ColLPTT_DienThoai";
+            this.ColLPTT_DienThoai.ReadOnly = true;
+            // 
+            // ColLPTT_Email
+            // 
+            this.ColLPTT_Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_Email.FillWeight = 90F;
+            this.ColLPTT_Email.HeaderText = "Email";
+            this.ColLPTT_Email.Name = "ColLPTT_Email";
+            this.ColLPTT_Email.ReadOnly = true;
+            // 
+            // ColLPTT_DiaChi
+            // 
+            this.ColLPTT_DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_DiaChi.HeaderText = "Địa chỉ";
+            this.ColLPTT_DiaChi.Name = "ColLPTT_DiaChi";
+            this.ColLPTT_DiaChi.ReadOnly = true;
+            // 
+            // ColLPTT_NgayThu
+            // 
+            this.ColLPTT_NgayThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_NgayThu.FillWeight = 90F;
+            this.ColLPTT_NgayThu.HeaderText = "Ngày thu";
+            this.ColLPTT_NgayThu.Name = "ColLPTT_NgayThu";
+            this.ColLPTT_NgayThu.ReadOnly = true;
+            // 
+            // ColLPTT_SoTienTra
+            // 
+            this.ColLPTT_SoTienTra.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColLPTT_SoTienTra.HeaderText = "Số tiền trả";
+            this.ColLPTT_SoTienTra.Name = "ColLPTT_SoTienTra";
+            this.ColLPTT_SoTienTra.ReadOnly = true;
             // 
             // labelLPTT
             // 
@@ -2857,6 +2936,200 @@
             this.groupBoxLPTT_ChiTietThuTien.TabIndex = 2;
             this.groupBoxLPTT_ChiTietThuTien.TabStop = false;
             this.groupBoxLPTT_ChiTietThuTien.Text = "Chi tiết thu tiền";
+            // 
+            // buttonLPTT_Luu
+            // 
+            this.buttonLPTT_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLPTT_Luu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.buttonLPTT_Luu.Location = new System.Drawing.Point(498, 239);
+            this.buttonLPTT_Luu.Name = "buttonLPTT_Luu";
+            this.buttonLPTT_Luu.Size = new System.Drawing.Size(75, 33);
+            this.buttonLPTT_Luu.TabIndex = 19;
+            this.buttonLPTT_Luu.Text = "Lưu";
+            this.buttonLPTT_Luu.UseVisualStyleBackColor = true;
+            // 
+            // labelLPTT_MaPhieuThu
+            // 
+            this.labelLPTT_MaPhieuThu.AutoSize = true;
+            this.labelLPTT_MaPhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_MaPhieuThu.Location = new System.Drawing.Point(44, 37);
+            this.labelLPTT_MaPhieuThu.Name = "labelLPTT_MaPhieuThu";
+            this.labelLPTT_MaPhieuThu.Size = new System.Drawing.Size(92, 18);
+            this.labelLPTT_MaPhieuThu.TabIndex = 25;
+            this.labelLPTT_MaPhieuThu.Text = "Mã phiếu thu";
+            // 
+            // comboBoxLPTT_MaPhieuThu
+            // 
+            this.comboBoxLPTT_MaPhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxLPTT_MaPhieuThu.FormattingEnabled = true;
+            this.comboBoxLPTT_MaPhieuThu.Location = new System.Drawing.Point(142, 34);
+            this.comboBoxLPTT_MaPhieuThu.Name = "comboBoxLPTT_MaPhieuThu";
+            this.comboBoxLPTT_MaPhieuThu.Size = new System.Drawing.Size(106, 26);
+            this.comboBoxLPTT_MaPhieuThu.TabIndex = 26;
+            // 
+            // dateTimePickerLPTT_NgayThu
+            // 
+            this.dateTimePickerLPTT_NgayThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerLPTT_NgayThu.Location = new System.Drawing.Point(143, 183);
+            this.dateTimePickerLPTT_NgayThu.Name = "dateTimePickerLPTT_NgayThu";
+            this.dateTimePickerLPTT_NgayThu.Size = new System.Drawing.Size(200, 24);
+            this.dateTimePickerLPTT_NgayThu.TabIndex = 24;
+            // 
+            // labelLPTT_NgayThu
+            // 
+            this.labelLPTT_NgayThu.AutoSize = true;
+            this.labelLPTT_NgayThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_NgayThu.Location = new System.Drawing.Point(71, 185);
+            this.labelLPTT_NgayThu.Name = "labelLPTT_NgayThu";
+            this.labelLPTT_NgayThu.Size = new System.Drawing.Size(66, 18);
+            this.labelLPTT_NgayThu.TabIndex = 23;
+            this.labelLPTT_NgayThu.Text = "Ngày thu";
+            // 
+            // labelLPTT_TenKH
+            // 
+            this.labelLPTT_TenKH.AutoSize = true;
+            this.labelLPTT_TenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_TenKH.Location = new System.Drawing.Point(469, 69);
+            this.labelLPTT_TenKH.Name = "labelLPTT_TenKH";
+            this.labelLPTT_TenKH.Size = new System.Drawing.Size(58, 18);
+            this.labelLPTT_TenKH.TabIndex = 21;
+            this.labelLPTT_TenKH.Text = "Tên KH";
+            // 
+            // textBoxLPTT_TenKH
+            // 
+            this.textBoxLPTT_TenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLPTT_TenKH.Location = new System.Drawing.Point(533, 68);
+            this.textBoxLPTT_TenKH.Name = "textBoxLPTT_TenKH";
+            this.textBoxLPTT_TenKH.ReadOnly = true;
+            this.textBoxLPTT_TenKH.Size = new System.Drawing.Size(167, 24);
+            this.textBoxLPTT_TenKH.TabIndex = 22;
+            // 
+            // labelLPTT_MaKH
+            // 
+            this.labelLPTT_MaKH.AutoSize = true;
+            this.labelLPTT_MaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_MaKH.Location = new System.Drawing.Point(83, 68);
+            this.labelLPTT_MaKH.Name = "labelLPTT_MaKH";
+            this.labelLPTT_MaKH.Size = new System.Drawing.Size(54, 18);
+            this.labelLPTT_MaKH.TabIndex = 19;
+            this.labelLPTT_MaKH.Text = "Mã KH";
+            // 
+            // comboBoxLPTT_MaKH
+            // 
+            this.comboBoxLPTT_MaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxLPTT_MaKH.FormattingEnabled = true;
+            this.comboBoxLPTT_MaKH.Location = new System.Drawing.Point(143, 66);
+            this.comboBoxLPTT_MaKH.Name = "comboBoxLPTT_MaKH";
+            this.comboBoxLPTT_MaKH.Size = new System.Drawing.Size(106, 26);
+            this.comboBoxLPTT_MaKH.TabIndex = 20;
+            // 
+            // labelLPTT_DienThoai
+            // 
+            this.labelLPTT_DienThoai.AutoSize = true;
+            this.labelLPTT_DienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_DienThoai.Location = new System.Drawing.Point(63, 99);
+            this.labelLPTT_DienThoai.Name = "labelLPTT_DienThoai";
+            this.labelLPTT_DienThoai.Size = new System.Drawing.Size(74, 18);
+            this.labelLPTT_DienThoai.TabIndex = 21;
+            this.labelLPTT_DienThoai.Text = "Điện thoại";
+            // 
+            // textBoxLPTT_DiaChi
+            // 
+            this.textBoxLPTT_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLPTT_DiaChi.Location = new System.Drawing.Point(143, 128);
+            this.textBoxLPTT_DiaChi.Name = "textBoxLPTT_DiaChi";
+            this.textBoxLPTT_DiaChi.ReadOnly = true;
+            this.textBoxLPTT_DiaChi.Size = new System.Drawing.Size(324, 24);
+            this.textBoxLPTT_DiaChi.TabIndex = 17;
+            // 
+            // textBoxLPTT_DienThoai
+            // 
+            this.textBoxLPTT_DienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLPTT_DienThoai.Location = new System.Drawing.Point(143, 98);
+            this.textBoxLPTT_DienThoai.Name = "textBoxLPTT_DienThoai";
+            this.textBoxLPTT_DienThoai.ReadOnly = true;
+            this.textBoxLPTT_DienThoai.Size = new System.Drawing.Size(121, 24);
+            this.textBoxLPTT_DienThoai.TabIndex = 22;
+            // 
+            // labelLPTT_DiaChi
+            // 
+            this.labelLPTT_DiaChi.AutoSize = true;
+            this.labelLPTT_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_DiaChi.Location = new System.Drawing.Point(83, 129);
+            this.labelLPTT_DiaChi.Name = "labelLPTT_DiaChi";
+            this.labelLPTT_DiaChi.Size = new System.Drawing.Size(53, 18);
+            this.labelLPTT_DiaChi.TabIndex = 16;
+            this.labelLPTT_DiaChi.Text = "Địa chỉ";
+            // 
+            // buttonLPTT_CapNhat
+            // 
+            this.buttonLPTT_CapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLPTT_CapNhat.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.buttonLPTT_CapNhat.Location = new System.Drawing.Point(740, 239);
+            this.buttonLPTT_CapNhat.Name = "buttonLPTT_CapNhat";
+            this.buttonLPTT_CapNhat.Size = new System.Drawing.Size(75, 33);
+            this.buttonLPTT_CapNhat.TabIndex = 15;
+            this.buttonLPTT_CapNhat.Text = "Cập nhật";
+            this.buttonLPTT_CapNhat.UseVisualStyleBackColor = true;
+            // 
+            // textBoxLPT_SoTienThu
+            // 
+            this.textBoxLPT_SoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLPT_SoTienThu.Location = new System.Drawing.Point(533, 185);
+            this.textBoxLPT_SoTienThu.Name = "textBoxLPT_SoTienThu";
+            this.textBoxLPT_SoTienThu.Size = new System.Drawing.Size(120, 24);
+            this.textBoxLPT_SoTienThu.TabIndex = 14;
+            // 
+            // buttonLPTT_Xoa
+            // 
+            this.buttonLPTT_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLPTT_Xoa.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.buttonLPTT_Xoa.Location = new System.Drawing.Point(659, 239);
+            this.buttonLPTT_Xoa.Name = "buttonLPTT_Xoa";
+            this.buttonLPTT_Xoa.Size = new System.Drawing.Size(75, 33);
+            this.buttonLPTT_Xoa.TabIndex = 14;
+            this.buttonLPTT_Xoa.Text = "Xóa";
+            this.buttonLPTT_Xoa.UseVisualStyleBackColor = true;
+            // 
+            // labelLPTT_SoTienThu
+            // 
+            this.labelLPTT_SoTienThu.AutoSize = true;
+            this.labelLPTT_SoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_SoTienThu.Location = new System.Drawing.Point(449, 188);
+            this.labelLPTT_SoTienThu.Name = "labelLPTT_SoTienThu";
+            this.labelLPTT_SoTienThu.Size = new System.Drawing.Size(78, 18);
+            this.labelLPTT_SoTienThu.TabIndex = 13;
+            this.labelLPTT_SoTienThu.Text = "Số tiền thu";
+            // 
+            // buttonLPTT_Them
+            // 
+            this.buttonLPTT_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLPTT_Them.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.buttonLPTT_Them.Location = new System.Drawing.Point(578, 239);
+            this.buttonLPTT_Them.Name = "buttonLPTT_Them";
+            this.buttonLPTT_Them.Size = new System.Drawing.Size(75, 33);
+            this.buttonLPTT_Them.TabIndex = 13;
+            this.buttonLPTT_Them.Text = "Thêm";
+            this.buttonLPTT_Them.UseVisualStyleBackColor = true;
+            // 
+            // textBoxLPTT_Email
+            // 
+            this.textBoxLPTT_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLPTT_Email.Location = new System.Drawing.Point(533, 98);
+            this.textBoxLPTT_Email.Name = "textBoxLPTT_Email";
+            this.textBoxLPTT_Email.ReadOnly = true;
+            this.textBoxLPTT_Email.Size = new System.Drawing.Size(167, 24);
+            this.textBoxLPTT_Email.TabIndex = 10;
+            // 
+            // labelLPTT_Email
+            // 
+            this.labelLPTT_Email.AutoSize = true;
+            this.labelLPTT_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLPTT_Email.Location = new System.Drawing.Point(482, 98);
+            this.labelLPTT_Email.Name = "labelLPTT_Email";
+            this.labelLPTT_Email.Size = new System.Drawing.Size(45, 18);
+            this.labelLPTT_Email.TabIndex = 9;
+            this.labelLPTT_Email.Text = "Email";
             // 
             // panelBaoCaoSachTon
             // 
@@ -2973,8 +3246,8 @@
             // ColBCST_STT
             // 
             this.ColBCST_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle1;
             this.ColBCST_STT.HeaderText = "STT";
             this.ColBCST_STT.Name = "ColBCST_STT";
             this.ColBCST_STT.ReadOnly = true;
@@ -3550,8 +3823,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -3612,282 +3885,12 @@
             this.labelTCS.TabIndex = 2;
             this.labelTCS.Text = "TRA CỨU SÁCH";
             // 
-            // ColLPTT_STT
-            // 
-            this.ColLPTT_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColLPTT_STT.HeaderText = "STT";
-            this.ColLPTT_STT.Name = "ColLPTT_STT";
-            this.ColLPTT_STT.ReadOnly = true;
-            this.ColLPTT_STT.Width = 65;
-            // 
-            // ColLPTT_MaPhieuThu
-            // 
-            this.ColLPTT_MaPhieuThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_MaPhieuThu.FillWeight = 110F;
-            this.ColLPTT_MaPhieuThu.HeaderText = "Mã phiếu thu";
-            this.ColLPTT_MaPhieuThu.Name = "ColLPTT_MaPhieuThu";
-            this.ColLPTT_MaPhieuThu.ReadOnly = true;
-            // 
-            // ColLPTT_MaKH
-            // 
-            this.ColLPTT_MaKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_MaKH.FillWeight = 80F;
-            this.ColLPTT_MaKH.HeaderText = "Mã KH";
-            this.ColLPTT_MaKH.Name = "ColLPTT_MaKH";
-            this.ColLPTT_MaKH.ReadOnly = true;
-            // 
-            // ColLPTT_TenKH
-            // 
-            this.ColLPTT_TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_TenKH.FillWeight = 120F;
-            this.ColLPTT_TenKH.HeaderText = "Tên KH";
-            this.ColLPTT_TenKH.Name = "ColLPTT_TenKH";
-            this.ColLPTT_TenKH.ReadOnly = true;
-            // 
-            // ColLPTT_DienThoai
-            // 
-            this.ColLPTT_DienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_DienThoai.HeaderText = "Điện thoại";
-            this.ColLPTT_DienThoai.Name = "ColLPTT_DienThoai";
-            this.ColLPTT_DienThoai.ReadOnly = true;
-            // 
-            // ColLPTT_Email
-            // 
-            this.ColLPTT_Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_Email.FillWeight = 90F;
-            this.ColLPTT_Email.HeaderText = "Email";
-            this.ColLPTT_Email.Name = "ColLPTT_Email";
-            this.ColLPTT_Email.ReadOnly = true;
-            // 
-            // ColLPTT_DiaChi
-            // 
-            this.ColLPTT_DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_DiaChi.HeaderText = "Địa chỉ";
-            this.ColLPTT_DiaChi.Name = "ColLPTT_DiaChi";
-            this.ColLPTT_DiaChi.ReadOnly = true;
-            // 
-            // ColLPTT_NgayThu
-            // 
-            this.ColLPTT_NgayThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_NgayThu.FillWeight = 90F;
-            this.ColLPTT_NgayThu.HeaderText = "Ngày thu";
-            this.ColLPTT_NgayThu.Name = "ColLPTT_NgayThu";
-            this.ColLPTT_NgayThu.ReadOnly = true;
-            // 
-            // ColLPTT_SoTienTra
-            // 
-            this.ColLPTT_SoTienTra.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColLPTT_SoTienTra.HeaderText = "Số tiền trả";
-            this.ColLPTT_SoTienTra.Name = "ColLPTT_SoTienTra";
-            this.ColLPTT_SoTienTra.ReadOnly = true;
-            // 
-            // labelLPTT_DanhSachPhieuThuTien
-            // 
-            this.labelLPTT_DanhSachPhieuThuTien.AutoSize = true;
-            this.labelLPTT_DanhSachPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_DanhSachPhieuThuTien.Location = new System.Drawing.Point(29, 365);
-            this.labelLPTT_DanhSachPhieuThuTien.Name = "labelLPTT_DanhSachPhieuThuTien";
-            this.labelLPTT_DanhSachPhieuThuTien.Size = new System.Drawing.Size(273, 20);
-            this.labelLPTT_DanhSachPhieuThuTien.TabIndex = 16;
-            this.labelLPTT_DanhSachPhieuThuTien.Text = "--- Danh sách phiếu thu tiền ---";
-            // 
-            // labelLPTT_Email
-            // 
-            this.labelLPTT_Email.AutoSize = true;
-            this.labelLPTT_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_Email.Location = new System.Drawing.Point(482, 98);
-            this.labelLPTT_Email.Name = "labelLPTT_Email";
-            this.labelLPTT_Email.Size = new System.Drawing.Size(45, 18);
-            this.labelLPTT_Email.TabIndex = 9;
-            this.labelLPTT_Email.Text = "Email";
-            // 
-            // textBoxLPTT_Email
-            // 
-            this.textBoxLPTT_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLPTT_Email.Location = new System.Drawing.Point(533, 98);
-            this.textBoxLPTT_Email.Name = "textBoxLPTT_Email";
-            this.textBoxLPTT_Email.ReadOnly = true;
-            this.textBoxLPTT_Email.Size = new System.Drawing.Size(167, 24);
-            this.textBoxLPTT_Email.TabIndex = 10;
-            // 
-            // buttonLPTT_Them
-            // 
-            this.buttonLPTT_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLPTT_Them.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLPTT_Them.Location = new System.Drawing.Point(578, 239);
-            this.buttonLPTT_Them.Name = "buttonLPTT_Them";
-            this.buttonLPTT_Them.Size = new System.Drawing.Size(75, 33);
-            this.buttonLPTT_Them.TabIndex = 13;
-            this.buttonLPTT_Them.Text = "Thêm";
-            this.buttonLPTT_Them.UseVisualStyleBackColor = true;
-            // 
-            // labelLPTT_SoTienThu
-            // 
-            this.labelLPTT_SoTienThu.AutoSize = true;
-            this.labelLPTT_SoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_SoTienThu.Location = new System.Drawing.Point(449, 188);
-            this.labelLPTT_SoTienThu.Name = "labelLPTT_SoTienThu";
-            this.labelLPTT_SoTienThu.Size = new System.Drawing.Size(78, 18);
-            this.labelLPTT_SoTienThu.TabIndex = 13;
-            this.labelLPTT_SoTienThu.Text = "Số tiền thu";
-            // 
-            // buttonLPTT_Xoa
-            // 
-            this.buttonLPTT_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLPTT_Xoa.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLPTT_Xoa.Location = new System.Drawing.Point(659, 239);
-            this.buttonLPTT_Xoa.Name = "buttonLPTT_Xoa";
-            this.buttonLPTT_Xoa.Size = new System.Drawing.Size(75, 33);
-            this.buttonLPTT_Xoa.TabIndex = 14;
-            this.buttonLPTT_Xoa.Text = "Xóa";
-            this.buttonLPTT_Xoa.UseVisualStyleBackColor = true;
-            // 
-            // textBoxLPT_SoTienThu
-            // 
-            this.textBoxLPT_SoTienThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLPT_SoTienThu.Location = new System.Drawing.Point(533, 185);
-            this.textBoxLPT_SoTienThu.Name = "textBoxLPT_SoTienThu";
-            this.textBoxLPT_SoTienThu.Size = new System.Drawing.Size(120, 24);
-            this.textBoxLPT_SoTienThu.TabIndex = 14;
-            // 
-            // buttonLPTT_CapNhat
-            // 
-            this.buttonLPTT_CapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLPTT_CapNhat.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLPTT_CapNhat.Location = new System.Drawing.Point(740, 239);
-            this.buttonLPTT_CapNhat.Name = "buttonLPTT_CapNhat";
-            this.buttonLPTT_CapNhat.Size = new System.Drawing.Size(75, 33);
-            this.buttonLPTT_CapNhat.TabIndex = 15;
-            this.buttonLPTT_CapNhat.Text = "Cập nhật";
-            this.buttonLPTT_CapNhat.UseVisualStyleBackColor = true;
-            // 
-            // labelLPTT_DiaChi
-            // 
-            this.labelLPTT_DiaChi.AutoSize = true;
-            this.labelLPTT_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_DiaChi.Location = new System.Drawing.Point(83, 129);
-            this.labelLPTT_DiaChi.Name = "labelLPTT_DiaChi";
-            this.labelLPTT_DiaChi.Size = new System.Drawing.Size(53, 18);
-            this.labelLPTT_DiaChi.TabIndex = 16;
-            this.labelLPTT_DiaChi.Text = "Địa chỉ";
-            // 
-            // textBoxLPTT_DienThoai
-            // 
-            this.textBoxLPTT_DienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLPTT_DienThoai.Location = new System.Drawing.Point(143, 98);
-            this.textBoxLPTT_DienThoai.Name = "textBoxLPTT_DienThoai";
-            this.textBoxLPTT_DienThoai.ReadOnly = true;
-            this.textBoxLPTT_DienThoai.Size = new System.Drawing.Size(121, 24);
-            this.textBoxLPTT_DienThoai.TabIndex = 22;
-            // 
-            // textBoxLPTT_DiaChi
-            // 
-            this.textBoxLPTT_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLPTT_DiaChi.Location = new System.Drawing.Point(143, 128);
-            this.textBoxLPTT_DiaChi.Name = "textBoxLPTT_DiaChi";
-            this.textBoxLPTT_DiaChi.ReadOnly = true;
-            this.textBoxLPTT_DiaChi.Size = new System.Drawing.Size(324, 24);
-            this.textBoxLPTT_DiaChi.TabIndex = 17;
-            // 
-            // labelLPTT_DienThoai
-            // 
-            this.labelLPTT_DienThoai.AutoSize = true;
-            this.labelLPTT_DienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_DienThoai.Location = new System.Drawing.Point(63, 99);
-            this.labelLPTT_DienThoai.Name = "labelLPTT_DienThoai";
-            this.labelLPTT_DienThoai.Size = new System.Drawing.Size(74, 18);
-            this.labelLPTT_DienThoai.TabIndex = 21;
-            this.labelLPTT_DienThoai.Text = "Điện thoại";
-            // 
-            // comboBoxLPTT_MaKH
-            // 
-            this.comboBoxLPTT_MaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxLPTT_MaKH.FormattingEnabled = true;
-            this.comboBoxLPTT_MaKH.Location = new System.Drawing.Point(143, 66);
-            this.comboBoxLPTT_MaKH.Name = "comboBoxLPTT_MaKH";
-            this.comboBoxLPTT_MaKH.Size = new System.Drawing.Size(106, 26);
-            this.comboBoxLPTT_MaKH.TabIndex = 20;
-            // 
-            // labelLPTT_MaKH
-            // 
-            this.labelLPTT_MaKH.AutoSize = true;
-            this.labelLPTT_MaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_MaKH.Location = new System.Drawing.Point(83, 68);
-            this.labelLPTT_MaKH.Name = "labelLPTT_MaKH";
-            this.labelLPTT_MaKH.Size = new System.Drawing.Size(54, 18);
-            this.labelLPTT_MaKH.TabIndex = 19;
-            this.labelLPTT_MaKH.Text = "Mã KH";
-            // 
-            // textBoxLPTT_TenKH
-            // 
-            this.textBoxLPTT_TenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLPTT_TenKH.Location = new System.Drawing.Point(533, 68);
-            this.textBoxLPTT_TenKH.Name = "textBoxLPTT_TenKH";
-            this.textBoxLPTT_TenKH.ReadOnly = true;
-            this.textBoxLPTT_TenKH.Size = new System.Drawing.Size(167, 24);
-            this.textBoxLPTT_TenKH.TabIndex = 22;
-            // 
-            // labelLPTT_TenKH
-            // 
-            this.labelLPTT_TenKH.AutoSize = true;
-            this.labelLPTT_TenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_TenKH.Location = new System.Drawing.Point(469, 69);
-            this.labelLPTT_TenKH.Name = "labelLPTT_TenKH";
-            this.labelLPTT_TenKH.Size = new System.Drawing.Size(58, 18);
-            this.labelLPTT_TenKH.TabIndex = 21;
-            this.labelLPTT_TenKH.Text = "Tên KH";
-            // 
-            // labelLPTT_NgayThu
-            // 
-            this.labelLPTT_NgayThu.AutoSize = true;
-            this.labelLPTT_NgayThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_NgayThu.Location = new System.Drawing.Point(71, 185);
-            this.labelLPTT_NgayThu.Name = "labelLPTT_NgayThu";
-            this.labelLPTT_NgayThu.Size = new System.Drawing.Size(66, 18);
-            this.labelLPTT_NgayThu.TabIndex = 23;
-            this.labelLPTT_NgayThu.Text = "Ngày thu";
-            // 
-            // dateTimePickerLPTT_NgayThu
-            // 
-            this.dateTimePickerLPTT_NgayThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerLPTT_NgayThu.Location = new System.Drawing.Point(143, 183);
-            this.dateTimePickerLPTT_NgayThu.Name = "dateTimePickerLPTT_NgayThu";
-            this.dateTimePickerLPTT_NgayThu.Size = new System.Drawing.Size(200, 24);
-            this.dateTimePickerLPTT_NgayThu.TabIndex = 24;
-            // 
-            // comboBoxLPTT_MaPhieuThu
-            // 
-            this.comboBoxLPTT_MaPhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxLPTT_MaPhieuThu.FormattingEnabled = true;
-            this.comboBoxLPTT_MaPhieuThu.Location = new System.Drawing.Point(142, 34);
-            this.comboBoxLPTT_MaPhieuThu.Name = "comboBoxLPTT_MaPhieuThu";
-            this.comboBoxLPTT_MaPhieuThu.Size = new System.Drawing.Size(106, 26);
-            this.comboBoxLPTT_MaPhieuThu.TabIndex = 26;
-            // 
-            // labelLPTT_MaPhieuThu
-            // 
-            this.labelLPTT_MaPhieuThu.AutoSize = true;
-            this.labelLPTT_MaPhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLPTT_MaPhieuThu.Location = new System.Drawing.Point(44, 37);
-            this.labelLPTT_MaPhieuThu.Name = "labelLPTT_MaPhieuThu";
-            this.labelLPTT_MaPhieuThu.Size = new System.Drawing.Size(92, 18);
-            this.labelLPTT_MaPhieuThu.TabIndex = 25;
-            this.labelLPTT_MaPhieuThu.Text = "Mã phiếu thu";
-            // 
-            // buttonLPTT_Luu
-            // 
-            this.buttonLPTT_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLPTT_Luu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLPTT_Luu.Location = new System.Drawing.Point(498, 239);
-            this.buttonLPTT_Luu.Name = "buttonLPTT_Luu";
-            this.buttonLPTT_Luu.Size = new System.Drawing.Size(75, 33);
-            this.buttonLPTT_Luu.TabIndex = 19;
-            this.buttonLPTT_Luu.Text = "Lưu";
-            this.buttonLPTT_Luu.UseVisualStyleBackColor = true;
-            // 
             // FormQLNS
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1379, 687);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelLapPhieuThuTien);
@@ -3901,6 +3904,7 @@
             this.Controls.Add(this.panelTraCuu);
             this.Controls.Add(this.panelBaoCaoCongNo);
             this.Controls.Add(this.panelBaoCaoSachTon);
+            this.DoubleBuffered = true;
             this.Name = "FormQLNS";
             this.Text = "Quản lý nhà sách";
             this.panelMenu.ResumeLayout(false);
