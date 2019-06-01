@@ -42,7 +42,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.labelThayDoiQuyDinh = new System.Windows.Forms.Label();
@@ -392,6 +391,10 @@
             this.ColLHDBS_SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColLHDBS_DonGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColLHDBS_ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelMenuTRANGCHU = new System.Windows.Forms.Panel();
+            this.buttonTrangChu = new System.Windows.Forms.Button();
+            this.panelTrangChu = new System.Windows.Forms.Panel();
+            this.labelTC_QuanLyNhaSach = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelMenuTHAYDOIQUYDINH.SuspendLayout();
             this.panelMenuKINHDOANH.SuspendLayout();
@@ -431,6 +434,8 @@
             this.groupBoxTDQD.SuspendLayout();
             this.panelTraCuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).BeginInit();
+            this.panelMenuTRANGCHU.SuspendLayout();
+            this.panelTrangChu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -460,7 +465,7 @@
             // 
             this.panelMenuTHAYDOIQUYDINH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelMenuTHAYDOIQUYDINH.Controls.Add(this.labelThayDoiQuyDinh);
-            this.panelMenuTHAYDOIQUYDINH.Location = new System.Drawing.Point(-1, 506);
+            this.panelMenuTHAYDOIQUYDINH.Location = new System.Drawing.Point(-1, 549);
             this.panelMenuTHAYDOIQUYDINH.Name = "panelMenuTHAYDOIQUYDINH";
             this.panelMenuTHAYDOIQUYDINH.Size = new System.Drawing.Size(270, 38);
             this.panelMenuTHAYDOIQUYDINH.TabIndex = 18;
@@ -480,7 +485,7 @@
             // 
             this.panelMenuKINHDOANH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(251)))), ((int)(((byte)(224)))));
             this.panelMenuKINHDOANH.Controls.Add(this.labelKinhDoanh);
-            this.panelMenuKINHDOANH.Location = new System.Drawing.Point(-1, 300);
+            this.panelMenuKINHDOANH.Location = new System.Drawing.Point(-1, 343);
             this.panelMenuKINHDOANH.Name = "panelMenuKINHDOANH";
             this.panelMenuKINHDOANH.Size = new System.Drawing.Size(270, 38);
             this.panelMenuKINHDOANH.TabIndex = 17;
@@ -500,7 +505,7 @@
             // 
             this.panelMenuSACH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(209)))), ((int)(((byte)(237)))));
             this.panelMenuSACH.Controls.Add(this.labelSach);
-            this.panelMenuSACH.Location = new System.Drawing.Point(-1, 22);
+            this.panelMenuSACH.Location = new System.Drawing.Point(-1, 65);
             this.panelMenuSACH.Name = "panelMenuSACH";
             this.panelMenuSACH.Size = new System.Drawing.Size(270, 38);
             this.panelMenuSACH.TabIndex = 16;
@@ -522,7 +527,7 @@
             this.buttonThayDoiQuyDinh.FlatAppearance.BorderSize = 0;
             this.buttonThayDoiQuyDinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThayDoiQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThayDoiQuyDinh.Location = new System.Drawing.Point(68, 550);
+            this.buttonThayDoiQuyDinh.Location = new System.Drawing.Point(68, 593);
             this.buttonThayDoiQuyDinh.Name = "buttonThayDoiQuyDinh";
             this.buttonThayDoiQuyDinh.Size = new System.Drawing.Size(181, 31);
             this.buttonThayDoiQuyDinh.TabIndex = 15;
@@ -537,7 +542,7 @@
             this.buttonBaoCaoCongNo.FlatAppearance.BorderSize = 0;
             this.buttonBaoCaoCongNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBaoCaoCongNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBaoCaoCongNo.Location = new System.Drawing.Point(68, 455);
+            this.buttonBaoCaoCongNo.Location = new System.Drawing.Point(68, 498);
             this.buttonBaoCaoCongNo.Name = "buttonBaoCaoCongNo";
             this.buttonBaoCaoCongNo.Size = new System.Drawing.Size(192, 31);
             this.buttonBaoCaoCongNo.TabIndex = 13;
@@ -552,7 +557,7 @@
             this.buttonBaoCaoSachTon.FlatAppearance.BorderSize = 0;
             this.buttonBaoCaoSachTon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBaoCaoSachTon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBaoCaoSachTon.Location = new System.Drawing.Point(68, 249);
+            this.buttonBaoCaoSachTon.Location = new System.Drawing.Point(68, 292);
             this.buttonBaoCaoSachTon.Name = "buttonBaoCaoSachTon";
             this.buttonBaoCaoSachTon.Size = new System.Drawing.Size(181, 31);
             this.buttonBaoCaoSachTon.TabIndex = 12;
@@ -567,7 +572,7 @@
             this.buttonTraCuu.FlatAppearance.BorderSize = 0;
             this.buttonTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTraCuu.Location = new System.Drawing.Point(68, 212);
+            this.buttonTraCuu.Location = new System.Drawing.Point(68, 255);
             this.buttonTraCuu.Name = "buttonTraCuu";
             this.buttonTraCuu.Size = new System.Drawing.Size(181, 31);
             this.buttonTraCuu.TabIndex = 11;
@@ -582,7 +587,7 @@
             this.buttonLapPhieuThuTien.FlatAppearance.BorderSize = 0;
             this.buttonLapPhieuThuTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLapPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLapPhieuThuTien.Location = new System.Drawing.Point(68, 418);
+            this.buttonLapPhieuThuTien.Location = new System.Drawing.Point(68, 461);
             this.buttonLapPhieuThuTien.Name = "buttonLapPhieuThuTien";
             this.buttonLapPhieuThuTien.Size = new System.Drawing.Size(192, 31);
             this.buttonLapPhieuThuTien.TabIndex = 8;
@@ -597,7 +602,7 @@
             this.buttonQuanLyKhachHang.FlatAppearance.BorderSize = 0;
             this.buttonQuanLyKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLyKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuanLyKhachHang.Location = new System.Drawing.Point(68, 381);
+            this.buttonQuanLyKhachHang.Location = new System.Drawing.Point(68, 424);
             this.buttonQuanLyKhachHang.Name = "buttonQuanLyKhachHang";
             this.buttonQuanLyKhachHang.Size = new System.Drawing.Size(192, 31);
             this.buttonQuanLyKhachHang.TabIndex = 7;
@@ -612,7 +617,7 @@
             this.buttonLapHoaDonBanSach.FlatAppearance.BorderSize = 0;
             this.buttonLapHoaDonBanSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLapHoaDonBanSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLapHoaDonBanSach.Location = new System.Drawing.Point(68, 344);
+            this.buttonLapHoaDonBanSach.Location = new System.Drawing.Point(68, 387);
             this.buttonLapHoaDonBanSach.Name = "buttonLapHoaDonBanSach";
             this.buttonLapHoaDonBanSach.Size = new System.Drawing.Size(192, 31);
             this.buttonLapHoaDonBanSach.TabIndex = 6;
@@ -627,7 +632,7 @@
             this.buttonKhac.FlatAppearance.BorderSize = 0;
             this.buttonKhac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonKhac.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKhac.Location = new System.Drawing.Point(68, 177);
+            this.buttonKhac.Location = new System.Drawing.Point(68, 220);
             this.buttonKhac.Name = "buttonKhac";
             this.buttonKhac.Size = new System.Drawing.Size(181, 31);
             this.buttonKhac.TabIndex = 4;
@@ -642,7 +647,7 @@
             this.buttonQuanLyDauSach.FlatAppearance.BorderSize = 0;
             this.buttonQuanLyDauSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLyDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuanLyDauSach.Location = new System.Drawing.Point(68, 140);
+            this.buttonQuanLyDauSach.Location = new System.Drawing.Point(68, 183);
             this.buttonQuanLyDauSach.Name = "buttonQuanLyDauSach";
             this.buttonQuanLyDauSach.Size = new System.Drawing.Size(181, 31);
             this.buttonQuanLyDauSach.TabIndex = 3;
@@ -657,7 +662,7 @@
             this.buttonQuanLySach.FlatAppearance.BorderSize = 0;
             this.buttonQuanLySach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLySach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuanLySach.Location = new System.Drawing.Point(68, 103);
+            this.buttonQuanLySach.Location = new System.Drawing.Point(68, 146);
             this.buttonQuanLySach.Name = "buttonQuanLySach";
             this.buttonQuanLySach.Size = new System.Drawing.Size(181, 31);
             this.buttonQuanLySach.TabIndex = 2;
@@ -672,7 +677,7 @@
             this.buttonLapPhieuNhapSach.FlatAppearance.BorderSize = 0;
             this.buttonLapPhieuNhapSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLapPhieuNhapSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLapPhieuNhapSach.Location = new System.Drawing.Point(68, 66);
+            this.buttonLapPhieuNhapSach.Location = new System.Drawing.Point(68, 109);
             this.buttonLapPhieuNhapSach.Name = "buttonLapPhieuNhapSach";
             this.buttonLapPhieuNhapSach.Size = new System.Drawing.Size(181, 31);
             this.buttonLapPhieuNhapSach.TabIndex = 1;
@@ -2946,14 +2951,6 @@
             // dataGridViewLPTT_DanhSachPhieuThu
             // 
             this.dataGridViewLPTT_DanhSachPhieuThu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(233)))), ((int)(((byte)(194)))));
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewLPTT_DanhSachPhieuThu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewLPTT_DanhSachPhieuThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLPTT_DanhSachPhieuThu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColLPTT_STT,
@@ -3305,14 +3302,14 @@
             // dataGridViewBCST
             // 
             this.dataGridViewBCST.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBCST.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBCST.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewBCST.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBCST.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColBCST_STT,
@@ -3331,8 +3328,8 @@
             // ColBCST_STT
             // 
             this.ColBCST_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle11;
             this.ColBCST_STT.HeaderText = "STT";
             this.ColBCST_STT.Name = "ColBCST_STT";
             this.ColBCST_STT.ReadOnly = true;
@@ -3493,14 +3490,14 @@
             // dataGridViewBCCN
             // 
             this.dataGridViewBCCN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(233)))), ((int)(((byte)(194)))));
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBCCN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBCCN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewBCCN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBCCN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColBCCN_STT,
@@ -3910,14 +3907,14 @@
             // dataGridViewTC
             // 
             this.dataGridViewTC.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridViewTC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColTC_STT,
@@ -4011,8 +4008,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle14;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -4070,7 +4067,7 @@
             this.ColLPTT_STT.HeaderText = "STT";
             this.ColLPTT_STT.Name = "ColLPTT_STT";
             this.ColLPTT_STT.ReadOnly = true;
-            this.ColLPTT_STT.Width = 68;
+            this.ColLPTT_STT.Width = 65;
             // 
             // ColLPTT_MaPhieuThu
             // 
@@ -4206,12 +4203,59 @@
             this.ColLHDBS_ThanhTien.Name = "ColLHDBS_ThanhTien";
             this.ColLHDBS_ThanhTien.ReadOnly = true;
             // 
+            // panelMenuTRANGCHU
+            // 
+            this.panelMenuTRANGCHU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelMenuTRANGCHU.Controls.Add(this.buttonTrangChu);
+            this.panelMenuTRANGCHU.Location = new System.Drawing.Point(12, 26);
+            this.panelMenuTRANGCHU.Name = "panelMenuTRANGCHU";
+            this.panelMenuTRANGCHU.Size = new System.Drawing.Size(270, 38);
+            this.panelMenuTRANGCHU.TabIndex = 19;
+            // 
+            // buttonTrangChu
+            // 
+            this.buttonTrangChu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTrangChu.FlatAppearance.BorderSize = 0;
+            this.buttonTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTrangChu.Location = new System.Drawing.Point(4, 4);
+            this.buttonTrangChu.Name = "buttonTrangChu";
+            this.buttonTrangChu.Size = new System.Drawing.Size(181, 31);
+            this.buttonTrangChu.TabIndex = 2;
+            this.buttonTrangChu.Text = "TRANG CHỦ";
+            this.buttonTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTrangChu.UseVisualStyleBackColor = false;
+            this.buttonTrangChu.Click += new System.EventHandler(this.buttonTrangChu_Click);
+            // 
+            // panelTrangChu
+            // 
+            this.panelTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelTrangChu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTrangChu.Controls.Add(this.labelTC_QuanLyNhaSach);
+            this.panelTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelTrangChu.Location = new System.Drawing.Point(293, 12);
+            this.panelTrangChu.Name = "panelTrangChu";
+            this.panelTrangChu.Size = new System.Drawing.Size(1070, 663);
+            this.panelTrangChu.TabIndex = 28;
+            // 
+            // labelTC_QuanLyNhaSach
+            // 
+            this.labelTC_QuanLyNhaSach.AutoSize = true;
+            this.labelTC_QuanLyNhaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTC_QuanLyNhaSach.Location = new System.Drawing.Point(308, 179);
+            this.labelTC_QuanLyNhaSach.Name = "labelTC_QuanLyNhaSach";
+            this.labelTC_QuanLyNhaSach.Size = new System.Drawing.Size(512, 58);
+            this.labelTC_QuanLyNhaSach.TabIndex = 0;
+            this.labelTC_QuanLyNhaSach.Text = "QUẢN LÝ NHÀ SÁCH";
+            // 
             // FormQLNS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1379, 687);
+            this.Controls.Add(this.panelTrangChu);
+            this.Controls.Add(this.panelMenuTRANGCHU);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelLapPhieuThuTien);
             this.Controls.Add(this.panelLapHoaDonBanSach);
@@ -4291,6 +4335,9 @@
             this.panelTraCuu.ResumeLayout(false);
             this.panelTraCuu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).EndInit();
+            this.panelMenuTRANGCHU.ResumeLayout(false);
+            this.panelTrangChu.ResumeLayout(false);
+            this.panelTrangChu.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4646,6 +4693,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColLHDBS_SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColLHDBS_DonGiaBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColLHDBS_ThanhTien;
+        private System.Windows.Forms.Panel panelMenuTRANGCHU;
+        private System.Windows.Forms.Button buttonTrangChu;
+        private System.Windows.Forms.Panel panelTrangChu;
+        private System.Windows.Forms.Label labelTC_QuanLyNhaSach;
     }
 }
 

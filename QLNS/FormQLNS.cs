@@ -22,7 +22,7 @@ namespace QLNS
         public FormQLNS()
         {
             InitializeComponent();
-            panelLapPhieuNhapSach.BringToFront();
+            panelTrangChu.BringToFront();
         }
 
         private void buttonNhapSach_Click(object sender, EventArgs e)
@@ -116,6 +116,9 @@ namespace QLNS
             formThemSach.ShowDialog();
         }
 
-        
+        private void buttonTrangChu_Click(object sender, EventArgs e)
+        {
+            panelTrangChu.BringToFront();
+        }
     }
 }
