@@ -1,0 +1,16 @@
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe.config
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\QLNS.pdb
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csprojAssemblyReference.cache
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormQLNS.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemDauSach.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemKH.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemNhaXuatBan.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemSach.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemTacGia.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemTheLoai.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.cache
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.CoreCompileInputs.cache
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.exe
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.pdb

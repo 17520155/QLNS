@@ -37,27 +37,31 @@
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(127, 126);
+            this.buttonLuu.Location = new System.Drawing.Point(95, 102);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(75, 23);
+            this.buttonLuu.Size = new System.Drawing.Size(56, 19);
             this.buttonLuu.TabIndex = 53;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
+            this.buttonLuu.Click += new System.EventHandler(this.buttonLuu_Click);
             // 
             // textBoxTenTheLoai
             // 
-            this.textBoxTenTheLoai.Location = new System.Drawing.Point(144, 74);
+            this.textBoxTenTheLoai.Location = new System.Drawing.Point(108, 60);
+            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
-            this.textBoxTenTheLoai.Size = new System.Drawing.Size(125, 22);
+            this.textBoxTenTheLoai.Size = new System.Drawing.Size(95, 20);
             this.textBoxTenTheLoai.TabIndex = 52;
             // 
             // labelTenTheLoai
             // 
             this.labelTenTheLoai.AutoSize = true;
             this.labelTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTheLoai.Location = new System.Drawing.Point(42, 76);
+            this.labelTenTheLoai.Location = new System.Drawing.Point(32, 62);
+            this.labelTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenTheLoai.Name = "labelTenTheLoai";
-            this.labelTenTheLoai.Size = new System.Drawing.Size(96, 20);
+            this.labelTenTheLoai.Size = new System.Drawing.Size(83, 17);
             this.labelTenTheLoai.TabIndex = 51;
             this.labelTenTheLoai.Text = "Tên thể loại";
             // 
@@ -65,21 +69,23 @@
             // 
             this.labelThemTheLoai.AutoSize = true;
             this.labelThemTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelThemTheLoai.Location = new System.Drawing.Point(80, 21);
+            this.labelThemTheLoai.Location = new System.Drawing.Point(60, 17);
+            this.labelThemTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThemTheLoai.Name = "labelThemTheLoai";
-            this.labelThemTheLoai.Size = new System.Drawing.Size(178, 25);
+            this.labelThemTheLoai.Size = new System.Drawing.Size(144, 20);
             this.labelThemTheLoai.TabIndex = 50;
             this.labelThemTheLoai.Text = "THÊM THỂ LOẠI";
             // 
             // FormThemTheLoai
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 209);
+            this.ClientSize = new System.Drawing.Size(249, 170);
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenTheLoai);
             this.Controls.Add(this.labelTenTheLoai);
             this.Controls.Add(this.labelThemTheLoai);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormThemTheLoai";
             this.Text = "Thêm thể loại";
             this.ResumeLayout(false);

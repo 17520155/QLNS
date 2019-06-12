@@ -117,6 +117,77 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAlNJREFUSEu1
+        1DtoFUEUxvHJA2MTkoBKJKQIvsDCQnwXEosQkKClaGchQpoEI1oIFoIhgqUgVj5qUcEH+MKkEAQFQdRG
+        BUUhoIVG0RDf/2/3zDAzTrrrwo/sOfn23L0zu9cNjg79V8VmIxWbOY4T+JPZXsrmis0cxy0bOoNvdn6k
+        lM3923CuOav78Qka2o1ddv4Qy7Nscm3VSwrnFuAZbmAvrkDD5J1lVkS9HziOMegDz8bzqnxS1EF/sfcB
+        h7Aoyq3CKegD4uwvrE9mRhctgV+KY7iJSXRHGX3DsAwcG/EcF3AeuvY+mkImCp+xwCu0+b79bzMe4Ds+
+        4yJ6ssxK6Btoxu7QjwLb8NECU2i3vob7pdAT5M/fotMyq61W/wl6w1x/EgXnoGC1NBy6c9V6F1rRhbvW
+        G7eMf7KeoiOZmRT1AH3NWTShDVqWr2iNcluggZNWb7J6ymdCNinqoRqoZWhBM7Tmqrui3E5o4DWrt1p9
+        x2dCNimc24OfFu6znjZUtZZFd74Dr603bBm9M6qnsSaZGU6cO4jfUHAC1aPG0QO/gTE9xi2W6cBtqK+f
+        k/4wN5zUL5MCeky1PAux2P7XiXHcw1UMww/XDWhpl0H7JxvC3HBSb+gL6EP0gulO3mPAZ2Ic2p8D0P68
+        wWPo2nNJLinq9VUopmW7jkHL6EnbBz3vefYLliYz46JqOHcah9GHUfifD/3VUqy1Wl5iAOtwEtWmJ/Py
+        Ro5DG+g3WY2jdn4Z4d2YT7GZ47hkQ2MjpWyu2Mxx7MejTPKzPJ9is5GKzcYZcn8BF/nfUYO8zckAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAfVJREFUSEu9
+        1TtoU1Ecx/GkaIf6Km0FIbHEUSymVCiUdpKAS3xREJFKwKFz6KBd2qF0K6jQodAuhQ4FBwUfKIKrOGRR
+        l5ZCEUUQuwgiPvry+9NzLjc35yRNwu2BT7jn5P9I7uPcxIVifl84F+OgseuxjT912oKrljgX41Cx8BiH
+        0daEcUTrVizccJ1jYWQwrBj0IumJO4XfCNcNDh4h70lM4SnCifIeA56cPkxiB4oNko55ErqwbmJcfsLZ
+        TBgrJi5IaDVfqPBNpM38LmyMT8nE6vqM4HSo0WsoJgi2jd6Y+QckYX9RLSewZI6/o7NWozUz/4YDUEMb
+        U41ulGfmWM/TyVqNsriHITNfho3x+YQWdGMGl5VbtVEU4wx+mBifgitXGG9NTBA8hown+Dy+wMZav1D0
+        5HTgIjah2LJELeY8iYdQwCzmUUTKE3scXxGuXTaROVdyPRjXQ/WsigXZwGqDPkI7f7RmxUJcEteq0K3e
+        U4crcNWRRCnkFV7gARZwH9O4g1vQBehHGi2u62MxFqGaWTN3/s290GtA1+Q59IDrjjyLg6aw3coGbaNz
+        hp6VHC5B75tR3MYUtLFqH3uJd4jeumF6uPVK+Wzm/xvpoxGMI9A1vIoJPITrddJcIx+G9judjSfQ6Y2n
+        URijHUf/HUe/jEc+8RdIAi/Zq3el2wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAl5JREFUSEu9
+        1luIzVEUx/E9Mx4Y0VAm18hlFJMpo7wgJMJEKbk8SBpT40Eep5Q8KUpJopkX5RFFbi88euJBKcklL5qU
+        S+SS++X7+5+9a80+6z/OOGXX55zO2mvv9T/7v8/+n7DuQNd/4QbL0DbhEW7gENZgvJebc4Me2gp8xu/M
+        DzzAOfRgIRqqxucBD60db5EXKfMaV3EQq9DsTmzRZuA5vAlr9cKdPKFNhJZFyVqi3VgQ38/iKfJJPYNu
+        AaGNwe2YKAMledOwE2eQLsr6gMVVA+PgJlyGHfAT93ACWzCpZOwtpDFahY1FPE8sgiH0x8Th/IK+wWns
+        QBt0823OPixCp1fkMGzyvzqGUXiHT3mRvfAGjdQFNKIjfn5si+jle+yoxx00xzm1bIpVCtGW4mMM1uMZ
+        Ws3F749xzR1a8CoG6qHToM0UWYu0QrsU0K7RDsoHjoTOwGWmyHykI+tojIW7MXAeR3ARtf7iRRe53RSZ
+        AJ3w6ruCxlQoLdvUlBw7ZkOnsS7gPezkVp8Zo+18M8bvY5zpY49XOkqfKzQdR+txEk+QivRneadi/CVm
+        ZX3FsaLObbZjOLS52IBiWWKsF5rnK5bb/NhfLE+6is0YnSf9DW01vkHz7CnJCQ3QQ0pJoj1/Cd2Y4g2y
+        aPPwBhp73MuRykvlJvZBNzAVFO0o7Uqdf0sw5BFN02/wIZR7HU2236oOhDATabfpWWILa3n132ArtI2v
+        QXEVa8nnstxgQhsL3bcBDMIW1bNG7zoR5njjLTfooeledkJ/s3Rw6kH4BSu9/JwbrAVtMqZ7fdW6wh/U
+        CUf7fvtX4wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="ColNS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_TenDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_NhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_NamXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_SoLuongNhap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_DonGiaNhap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColNS_ThanhTien.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColNS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -162,6 +233,42 @@
   <metadata name="ColQLS_NamXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColQLS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLS_MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLS_TenDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLS_TacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLS_TheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLS_NhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLS_NamXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_DSS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_DSS_MaDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_DSS_TenDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_DSS_TacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_DSS_TheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColQLDS_DSS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -186,6 +293,24 @@
   <metadata name="ColQLDS_CTTG_TenTacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColQLDS_CTTG_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_CTTG_MaTacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLDS_CTTG_TenTacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLTL_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLTL_MaTheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLTL_TenTheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColQLK_QLTL_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -204,6 +329,15 @@
   <metadata name="ColQLK_QLTG_TacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColQLK_QLTG_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLTG_MaTacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLTG_TacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColQLK_QLNXB_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -211,6 +345,42 @@
     <value>True</value>
   </metadata>
   <metadata name="ColQLK_QLNXB_TenNhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLNXB_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLNXB_MaNhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLK_QLNXB_TenNhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_TenDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_NhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_NamXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_TheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_SoLuong.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_DonGiaBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLHDBS_ThanhTien.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="ColLHDBS_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -256,6 +426,51 @@
     <value>True</value>
   </metadata>
   <metadata name="ColQLKH_DiaChi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLKH_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLKH_MaKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLKH_TenKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLKH_Email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLKH_SDT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColQLKH_DiaChi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_MaPhieuThu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_MaKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_TenKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_DienThoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_Email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_DiaChi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_NgayThu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColLPTT_SoTienTra.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="ColLPTT_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -306,6 +521,48 @@
   <metadata name="ColBCST_TonCuoi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColBCST_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCST_MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCST_TenDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCST_TheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCST_TonDau.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCST_PhatSinh.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCST_TonCuoi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCCN_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCCN_MaKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCCN_TenKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCCN_DienThoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCCN_NoDau.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColBCCN_NoCuoi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ColBCCN_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -348,4 +605,201 @@
   <metadata name="ColTC_NamXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ColTC_STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTC_MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTC_TenDauSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTC_TheLoai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTC_TacGia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTC_NhaXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTC_NamXuatBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="buttonTrangChu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAARpJREFUSEvt
+        0j9KA0EUx/FBCyWFxNJOEIKVnYF0NhICuYJeQfEEXsEjWAa8gJ2tEhGsLGIKG0HstFAR9Tsyu7yZ/Smz
+        slb64EN23rw/uxDX3x3+KplskkwqxCwOsKXuvyKTKWIOI7zjDfvmzi9exILtKe9V0iLaOIEfbvmvmcFa
+        OJ/LfpUsEEu4CAOUI6yH53oLiBVMQvN3zsJv/gKii7vQmOtSzqoknNvEQ2iq4xmdyrzo4Nw2XqAG5LhH
+        L5pphu/A/wVVYx2PGEQLiD1cYwrVlOsJfs4VNsoF5TbnWlCNuU7tvM+Z0UEveIV/q9QN0tofLbi1NaZ2
+        1dQU/hdEtX90wTzGiWNbY2qXTU3hsFKXJpomk02SyeYM3QeF2BmZKTYuugAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABILAAASCwAAAAAAAAAA
+        AABMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcAwVaASsJXfsrCV375wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv+SGzH/liA3/aU1UYhMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDDWIBAwld+/cJX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv+SGzH/khsx/5cgOfxMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCVn60wld+/7uVuP+y2vn/suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg
+        //+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+SGzH/khsx/5Ib
+        Mf9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDCVn7pwld+/7PT8/+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg
+        //+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg
+        //+SGzH/khsx/5IbMf9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/7Ld/f+y4P//suD//7Lg//+y4P//suD//7Lg
+        //+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg//+y4P//suD//7Lg
+        //+y4P//suD//7Lg//+SGzH/khsx/5IbMf9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/5O74v+QueD/kLng/5C5
+        4P+QueD/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C5
+        4P+QueD/kLng/5C54P+QueD/kLng/5C54P+SGzH/khsx/5IbMf9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/6il
+        yv+RuuH/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C5
+        4P+QueD/kLng/5C54P+QueD/kLng/5C54P+QueD/kLng/5C54P+SGzH/khsx/5IbMf9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/7ZJ
+        bP9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCV37/wld+/8JXfv/CV37/wld+/7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps
+        //+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//8JXfv/CV37/wld+/8JX
+        fv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps
+        //+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//8JX
+        fv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/7Ps//+z7P//s+z//7Ps
+        //+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps
+        //+z7P//s+z//8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JXfv/CV37/wld+/7Ps
+        //+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps
+        //+z7P//s+z//7Ps//+z7P//s+z//8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCV37/wld+/8JX
+        fv/CV37/wld+/7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//7Ps
+        //+z7P//s+z//7Ps//+z7P//s+z//7Ps//+z7P//s+z//8JXfv/CV37/wld+/8JXfv9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwDCV37vwld+/8JXfv/CV37/wld+/8JYf//CWH//wlh//8JYf//CWH//wlh//8JYf//CWH//wlh//8JY
+        f//CWH//wlh//8JYf//CWH//wlh//8JYf//CWH//wlh//8JYf//CWH//wlh//8JXfv/CV37/wld+/8JX
+        fv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwDDV37Twld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDCWH+Xwld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwDDVX0zwld+/sJXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcAwld/jcJX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv9McEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAMJYfWDCWH7Gwld+7sJXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JXfv/CV37/wld+/8JX
+        fsRMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExw
+        RwBMcEcATHBHAExwRwBMcEcATHBHAExwRwBMcEcATHBHAExwRwD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA/8AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+A
+        AAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/
+        AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+A
+        AAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/
+        AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+AAAAB/wAA/4AAAAH/AAD/gAAAAf8AAP+A
+        AAAB/wAA/8AAAAH/AAD/4AAAAf8AAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAA=
+</value>
+  </data>
 </root>

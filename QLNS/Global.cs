@@ -13,7 +13,7 @@ namespace QLNS
 {
     static public class Global
     {
-        static string connectionStr = @"Data Source=DESKTOP-EN4M7RE\SQLEXPRESS;Initial Catalog=QLNS;Integrated Security=True";
+        static string connectionStr = @"Data Source=DESKTOP-2SM9U8H;Initial Catalog=QLNS;Integrated Security=True";
 
         public static string ConnectionStr { get => connectionStr;}
     }

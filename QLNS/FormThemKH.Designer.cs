@@ -33,7 +33,7 @@
             this.labelTenKH = new System.Windows.Forms.Label();
             this.textBoxDiaChi = new System.Windows.Forms.TextBox();
             this.labelDiaChi = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxDienThoai = new System.Windows.Forms.TextBox();
             this.labelDienThoai = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.labelThemKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThemKH.Location = new System.Drawing.Point(125, 22);
             this.labelThemKH.Name = "labelThemKH";
-            this.labelThemKH.Size = new System.Drawing.Size(222, 25);
+            this.labelThemKH.Size = new System.Drawing.Size(180, 20);
             this.labelThemKH.TabIndex = 4;
             this.labelThemKH.Text = "THÊM KHÁCH HÀNG";
             // 
@@ -54,7 +54,7 @@
             // 
             this.textBoxTenKH.Location = new System.Drawing.Point(200, 80);
             this.textBoxTenKH.Name = "textBoxTenKH";
-            this.textBoxTenKH.Size = new System.Drawing.Size(125, 22);
+            this.textBoxTenKH.Size = new System.Drawing.Size(125, 20);
             this.textBoxTenKH.TabIndex = 32;
             // 
             // labelTenKH
@@ -63,7 +63,7 @@
             this.labelTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTenKH.Location = new System.Drawing.Point(110, 82);
             this.labelTenKH.Name = "labelTenKH";
-            this.labelTenKH.Size = new System.Drawing.Size(66, 20);
+            this.labelTenKH.Size = new System.Drawing.Size(56, 17);
             this.labelTenKH.TabIndex = 31;
             this.labelTenKH.Text = "Tên KH";
             // 
@@ -71,7 +71,7 @@
             // 
             this.textBoxDiaChi.Location = new System.Drawing.Point(200, 108);
             this.textBoxDiaChi.Name = "textBoxDiaChi";
-            this.textBoxDiaChi.Size = new System.Drawing.Size(125, 22);
+            this.textBoxDiaChi.Size = new System.Drawing.Size(125, 20);
             this.textBoxDiaChi.TabIndex = 34;
             // 
             // labelDiaChi
@@ -80,16 +80,16 @@
             this.labelDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDiaChi.Location = new System.Drawing.Point(110, 108);
             this.labelDiaChi.Name = "labelDiaChi";
-            this.labelDiaChi.Size = new System.Drawing.Size(61, 20);
+            this.labelDiaChi.Size = new System.Drawing.Size(51, 17);
             this.labelDiaChi.TabIndex = 33;
             this.labelDiaChi.Text = "Địa chỉ";
             // 
-            // textBox1
+            // textBoxDienThoai
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
-            this.textBox1.TabIndex = 36;
+            this.textBoxDienThoai.Location = new System.Drawing.Point(200, 136);
+            this.textBoxDienThoai.Name = "textBoxDienThoai";
+            this.textBoxDienThoai.Size = new System.Drawing.Size(125, 20);
+            this.textBoxDienThoai.TabIndex = 36;
             // 
             // labelDienThoai
             // 
@@ -97,7 +97,7 @@
             this.labelDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDienThoai.Location = new System.Drawing.Point(110, 138);
             this.labelDienThoai.Name = "labelDienThoai";
-            this.labelDienThoai.Size = new System.Drawing.Size(84, 20);
+            this.labelDienThoai.Size = new System.Drawing.Size(72, 17);
             this.labelDienThoai.TabIndex = 35;
             this.labelDienThoai.Text = "Điện thoại";
             // 
@@ -105,7 +105,7 @@
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(200, 164);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(125, 22);
+            this.textBoxEmail.Size = new System.Drawing.Size(125, 20);
             this.textBoxEmail.TabIndex = 38;
             // 
             // labelEmail
@@ -114,7 +114,7 @@
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.Location = new System.Drawing.Point(110, 166);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(51, 20);
+            this.labelEmail.Size = new System.Drawing.Size(42, 17);
             this.labelEmail.TabIndex = 37;
             this.labelEmail.Text = "Email";
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelEmail);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxDienThoai);
             this.Controls.Add(this.labelDienThoai);
             this.Controls.Add(this.textBoxDiaChi);
             this.Controls.Add(this.labelDiaChi);
@@ -157,7 +157,7 @@
         private System.Windows.Forms.Label labelTenKH;
         private System.Windows.Forms.TextBox textBoxDiaChi;
         private System.Windows.Forms.Label labelDiaChi;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxDienThoai;
         private System.Windows.Forms.Label labelDienThoai;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelEmail;
