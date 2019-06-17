@@ -36,6 +36,8 @@ namespace QLNS
             if (count > 0)
             {
                 MessageBox.Show("Thêm Thành Công !");
+                textBoxTenTheLoai.Text = "";
+
 
             }
             else MessageBox.Show("Thêm thất bại!");

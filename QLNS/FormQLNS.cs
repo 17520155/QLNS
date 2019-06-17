@@ -146,6 +146,7 @@ namespace QLNS
         {
             Form formThemSach = new FormThemSach();
             formThemSach.ShowDialog();
+            LoadComboboxMaSach();
         }
 
         private void buttonTrangChu_Click(object sender, EventArgs e)
@@ -153,6 +154,6 @@ namespace QLNS
             panelTrangChu.BringToFront();
         }
 
-       
+        
     }
 }

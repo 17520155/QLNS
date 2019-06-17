@@ -36,39 +36,73 @@ namespace QLNS
 
         private void buttonLuu_Click(object sender, EventArgs e)
         {
-            
-            if (textBoxTenDauSach.Text=="")
+            int iCount = 0;
+            if (dataGridViewQLS_DanhSachSach.RowCount > 0)
             {
-                MessageBox.Show("Vui lòng nhập tên đầu sách");
-                return;
+                for (int i = 0; i <= dataGridViewQLS_DanhSachSach.RowCount - 1; i++)
+                {
+                    if (dataGridViewQLS_DanhSachSach.Rows[i].Cells[0].Value != null)
+                    {
+
+                        iCount++;
+
+                    }
+                    else continue;
+                }
             }
-            SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = Global.ConnectionStr;
-            connection.Open();
-            SqlCommand command = new SqlCommand("ThemDauSachMoi", connection);
-            command.CommandType = CommandType.StoredProcedure;
-            SqlParameter p = new SqlParameter("@TenDauSach", textBoxTenDauSach.Text);
-            command.Parameters.Add(p);            
-            p = new SqlParameter("@MaTheLoai", comboBoxMaTheLoai.Text);
-            command.Parameters.Add(p);
-            object obj = command.ExecuteScalar();
-            int id =Convert.ToInt32(obj);
-            for (int i = 0; i < dataGridViewQLS_DanhSachSach.Rows.Count; i++)
-            {
-                string MaTacGia = dataGridViewQLS_DanhSachSach.Rows[i].Cells[1].Value.ToString();
-                int tg = Convert.ToInt32(MaTacGia); 
-                SqlCommand Command = new SqlCommand("ThemChiTietTacGia",connection);
-                Command.CommandType = CommandType.StoredProcedure;
-                p = new SqlParameter("@MaDauSach",id);
-                Command.Parameters.Add(p);
-                p = new SqlParameter("@MaTacGia", tg);
-                Command.Parameters.Add(p);
-                Command.ExecuteNonQuery();
-            }
-            MessageBox.Show("Thêm thành công");
 
 
-            connection.Close();
+            if (iCount > 0)
+            {
+                try
+                {
+                    if (textBoxTenDauSach.Text == "")
+                    {
+                        MessageBox.Show("Vui lòng nhập tên đầu sách");
+                        return;
+                    }
+                    SqlConnection connection = new SqlConnection();
+                    connection.ConnectionString = Global.ConnectionStr;
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("ThemDauSachMoi", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    SqlParameter p = new SqlParameter("@TenDauSach", textBoxTenDauSach.Text);
+                    command.Parameters.Add(p);
+                    p = new SqlParameter("@MaTheLoai", comboBoxMaTheLoai.Text);
+                    command.Parameters.Add(p);
+                    object obj = command.ExecuteScalar();
+                    int id = Convert.ToInt32(obj);
+                    for (int i = 0; i < dataGridViewQLS_DanhSachSach.Rows.Count; i++)
+                    {
+                        string MaTacGia = dataGridViewQLS_DanhSachSach.Rows[i].Cells[1].Value.ToString();
+                        int tg = Convert.ToInt32(MaTacGia);
+                        SqlCommand Command = new SqlCommand("ThemChiTietTacGia", connection);
+                        Command.CommandType = CommandType.StoredProcedure;
+                        p = new SqlParameter("@MaDauSach", id);
+                        Command.Parameters.Add(p);
+                        p = new SqlParameter("@MaTacGia", tg);
+                        Command.Parameters.Add(p);
+                        Command.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("Thêm thành công");
+                    textBoxTenDauSach.Text = "";
+                    for (int i = 0; i < dataGridViewQLS_DanhSachSach.Rows.Count; i++)
+                    {
+                        dataGridViewQLS_DanhSachSach.Rows.Clear();
+                    }
+
+
+                    connection.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chưa có chi tiết tác giả");
+            }
 
         }
         public void LoadComboboxTheLoai()
@@ -178,7 +212,6 @@ namespace QLNS
                     MessageBox.Show("Đã có  tồn tại tác giả !");                    
                     dataGridViewQLS_DanhSachSach.Rows.Remove(dataGridViewQLS_DanhSachSach.Rows[i]);
                     dataGridViewQLS_DanhSachSach[0, indexRow-1].Value = dataGridViewQLS_DanhSachSach.Rows.Count;
-
                     return;
                 }
             }

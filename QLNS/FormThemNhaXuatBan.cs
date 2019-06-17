@@ -39,6 +39,7 @@ namespace QLNS
             if (count > 0)
             {
                 MessageBox.Show("Thành công");
+                textBoxTenNhaXuatBan.Text = "";
             }
 
             connection.Close();

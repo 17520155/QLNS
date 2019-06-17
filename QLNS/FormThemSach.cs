@@ -21,9 +21,9 @@ namespace QLNS
         private void buttonThemMaDauSach_Click(object sender, EventArgs e)
         {
             Form formThemDauSach = new FormThemDauSach();
+            formThemDauSach.ShowDialog();
             LoadComboboxMaNXB();
             LoadComboboxMaDauSach();
-            formThemDauSach.ShowDialog();
         }
 
         private void buttonThemMaNhaXuatBan_Click(object sender, EventArgs e)

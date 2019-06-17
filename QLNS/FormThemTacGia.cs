@@ -36,8 +36,10 @@ namespace QLNS
             if (count > 0)
             {
                 MessageBox.Show("Thêm Thành Công !");
+                textBoxTenTacGia.Text = "";
 
             }
+
             connection.Close();
         }
     }

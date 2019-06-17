@@ -118,6 +118,13 @@
     <Compile Include="QLNS_QLTheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="QLNS_ThayDoiQD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNS_TRACUU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sqlconnection.cs" />
     <EmbeddedResource Include="FormQLNS.resx">
       <DependentUpon>FormQLNS.cs</DependentUpon>
     </EmbeddedResource>

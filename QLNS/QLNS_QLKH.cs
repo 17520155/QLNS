@@ -157,40 +157,46 @@ namespace QLNS
         }
         private void buttonQLKH_CapNhat_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection();
-
-            connection.ConnectionString = Global.ConnectionStr;
-            connection.Open();
-
-            SqlCommand command = new SqlCommand("SuaKH", connection);
-
-            command.CommandType = CommandType.StoredProcedure;
-
-            int id = (int)dataGridViewQLKH_DanhSachKH.CurrentRow.Cells[1].Value;
-
-            SqlParameter p = new SqlParameter("@MaKH", id);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@HoTenKH", textBoxQLKH_TenKH.Text);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@DiaChi", textBoxQLKH_DiaChi.Text);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@DienThoai", textBoxQLKH_SDT.Text);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@Email", textBoxQLKH_Email.Text);
-            command.Parameters.Add(p);
-
-            int count = command.ExecuteNonQuery();
-            if (count > 0)
+            try
             {
-                MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!");
-                QLKHLoadData();
+                SqlConnection connection = new SqlConnection();
+                connection.ConnectionString = Global.ConnectionStr;
+                connection.Open();
 
+                SqlCommand command = new SqlCommand("SuaKH", connection);
+
+                command.CommandType = CommandType.StoredProcedure;
+
+                int id = (int)dataGridViewQLKH_DanhSachKH.CurrentRow.Cells[1].Value;
+
+                SqlParameter p = new SqlParameter("@MaKH", id);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@HoTenKH", textBoxQLKH_TenKH.Text);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@DiaChi", textBoxQLKH_DiaChi.Text);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@DienThoai", textBoxQLKH_SDT.Text);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@Email", textBoxQLKH_Email.Text);
+                command.Parameters.Add(p);
+
+                int count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!");
+                    QLKHLoadData();
+
+                }
+                connection.Close();
             }
-            connection.Close();
+            catch
+            {
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 

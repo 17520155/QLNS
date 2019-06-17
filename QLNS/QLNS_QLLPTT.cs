@@ -16,7 +16,7 @@ namespace QLNS
         private void buttonLPTT_Them_Click(object sender, EventArgs e)
         {
             buttonLPTT_Luu.Visible = true;
-            buttonLPTT_Them.Name = "Hủy";
+            buttonLPTT_Them.Text = "Hủy";
             buttonLPTT_Xoa.Enabled = false;
             buttonLPTT_CapNhat.Enabled = false;
             comboBoxLPTT_MaPhieuThu.Enabled = false;
@@ -29,7 +29,7 @@ namespace QLNS
         private void buttonLPTT_Luu_Click(object sender, EventArgs e)
         {
             buttonLPTT_Luu.Visible = false;
-            buttonLPTT_Them.Name = "Thêm";
+            buttonLPTT_Them.Text = "Thêm";
             buttonLPTT_Xoa.Enabled = true;
             buttonLPTT_CapNhat.Enabled = true;
             comboBoxLPTT_MaPhieuThu.Enabled = true;
@@ -46,8 +46,8 @@ namespace QLNS
             command.CommandType = CommandType.StoredProcedure;
             SqlParameter p = new SqlParameter("@MaKH", comboBoxLPTT_MaKH.Text);
             command.Parameters.Add(p);
-            DateTime datetime = Convert.ToDateTime(dateTimePickerLPTT_NgayThu.Text);
-            p = new SqlParameter("@NgayThuTien", datetime.ToString("yyyy-MM-dd"));
+            DateTime date = DateTime.ParseExact(dateTimePickerLPTT_NgayThu.Text, "dd-MM-yyyy", null);
+            p = new SqlParameter("@NgayThuTien", date);           
             command.Parameters.Add(p);
             p = new SqlParameter("@SoTienThu", textBoxLPT_SoTienThu.Text);
             command.Parameters.Add(p);
@@ -202,7 +202,59 @@ namespace QLNS
 
         private void buttonLPTT_CapNhat_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection connection = new SqlConnection();
+                connection.ConnectionString = Global.ConnectionStr;
+                connection.Open();
+                //Sua ngay thu tien
+                SqlCommand command = new SqlCommand("SuaNgayThuTien", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                //int id = (int)dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[1].Value;
+                int id =Convert.ToInt32(comboBoxLPTT_MaPhieuThu.Text);
+                SqlParameter p = new SqlParameter("@SoPhieuThu", id);
+                command.Parameters.Add(p);
+                DateTime date = DateTime.ParseExact(dateTimePickerLPTT_NgayThu.Text, "dd-MM-yyyy", null);
+                p = new SqlParameter("@NgayThuTien", date);
+                command.Parameters.Add(p);
+                int count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    QLPTT_LoadData();
 
+                }
+
+
+                //int count = command.ExecuteNonQuery();
+                //if (count > 0)
+                //{
+
+
+                //}
+                //Sua so tien thu
+
+                SqlCommand Command = new SqlCommand("SuaSoTienThu", connection);
+                Command.CommandType = CommandType.StoredProcedure;
+                p = new SqlParameter("@SoPhieuThu", id);
+                Command.Parameters.Add(p);
+                p = new SqlParameter("@SoTienThu", textBoxLPT_SoTienThu.Text);
+                Command.Parameters.Add(p);
+
+
+                count = Command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    QLPTT_LoadData();
+
+                }
+                
+                connection.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại ", "Thông báo",MessageBoxButtons.OK ,MessageBoxIcon.Error);
+            }
         }
 
         private void groupBoxLPTT_ChiTietThuTien_Enter(object sender, EventArgs e)
