@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonLuu = new System.Windows.Forms.Button();
             this.textBoxTenDauSach = new System.Windows.Forms.TextBox();
             this.labelThemDauSach = new System.Windows.Forms.Label();
@@ -47,20 +47,18 @@
             this.ColSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColMaTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTenTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelMaTheLoai = new System.Windows.Forms.Label();
             this.labelTenDauSach = new System.Windows.Forms.Label();
+            this.labelMaTheLoai = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLS_DanhSachSach)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(285, 487);
-            this.buttonLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonLuu.Location = new System.Drawing.Point(214, 396);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(75, 31);
+            this.buttonLuu.Size = new System.Drawing.Size(56, 25);
             this.buttonLuu.TabIndex = 61;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
@@ -68,29 +66,30 @@
             // 
             // textBoxTenDauSach
             // 
-            this.textBoxTenDauSach.Location = new System.Drawing.Point(149, 75);
-            this.textBoxTenDauSach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTenDauSach.Location = new System.Drawing.Point(112, 61);
+            this.textBoxTenDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenDauSach.Name = "textBoxTenDauSach";
-            this.textBoxTenDauSach.Size = new System.Drawing.Size(125, 22);
+            this.textBoxTenDauSach.Size = new System.Drawing.Size(95, 20);
             this.textBoxTenDauSach.TabIndex = 60;
             // 
             // labelThemDauSach
             // 
             this.labelThemDauSach.AutoSize = true;
             this.labelThemDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelThemDauSach.Location = new System.Drawing.Point(237, 30);
+            this.labelThemDauSach.Location = new System.Drawing.Point(178, 24);
+            this.labelThemDauSach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThemDauSach.Name = "labelThemDauSach";
-            this.labelThemDauSach.Size = new System.Drawing.Size(191, 25);
+            this.labelThemDauSach.Size = new System.Drawing.Size(155, 20);
             this.labelThemDauSach.TabIndex = 58;
             this.labelThemDauSach.Text = "THÊM ĐẦU SÁCH";
             // 
             // buttonThemMaTheLoai
             // 
             this.buttonThemMaTheLoai.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonThemMaTheLoai.Location = new System.Drawing.Point(277, 103);
-            this.buttonThemMaTheLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemMaTheLoai.Location = new System.Drawing.Point(208, 84);
+            this.buttonThemMaTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemMaTheLoai.Name = "buttonThemMaTheLoai";
-            this.buttonThemMaTheLoai.Size = new System.Drawing.Size(33, 23);
+            this.buttonThemMaTheLoai.Size = new System.Drawing.Size(25, 19);
             this.buttonThemMaTheLoai.TabIndex = 64;
             this.buttonThemMaTheLoai.Text = "+";
             this.buttonThemMaTheLoai.UseVisualStyleBackColor = true;
@@ -99,58 +98,60 @@
             // comboBoxMaTheLoai
             // 
             this.comboBoxMaTheLoai.FormattingEnabled = true;
-            this.comboBoxMaTheLoai.Location = new System.Drawing.Point(149, 103);
-            this.comboBoxMaTheLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMaTheLoai.Location = new System.Drawing.Point(112, 84);
+            this.comboBoxMaTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMaTheLoai.Name = "comboBoxMaTheLoai";
-            this.comboBoxMaTheLoai.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxMaTheLoai.Size = new System.Drawing.Size(92, 21);
             this.comboBoxMaTheLoai.TabIndex = 63;
             this.comboBoxMaTheLoai.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaTheLoai_SelectedIndexChanged);
             // 
             // textBoxTenTheLoai
             // 
-            this.textBoxTenTheLoai.Location = new System.Drawing.Point(460, 105);
-            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTenTheLoai.Location = new System.Drawing.Point(345, 85);
+            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
             this.textBoxTenTheLoai.ReadOnly = true;
-            this.textBoxTenTheLoai.Size = new System.Drawing.Size(125, 22);
+            this.textBoxTenTheLoai.Size = new System.Drawing.Size(95, 20);
             this.textBoxTenTheLoai.TabIndex = 66;
             // 
             // labelTenTheLoai
             // 
             this.labelTenTheLoai.AutoSize = true;
             this.labelTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTheLoai.Location = new System.Drawing.Point(357, 105);
+            this.labelTenTheLoai.Location = new System.Drawing.Point(268, 85);
+            this.labelTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenTheLoai.Name = "labelTenTheLoai";
-            this.labelTenTheLoai.Size = new System.Drawing.Size(96, 20);
+            this.labelTenTheLoai.Size = new System.Drawing.Size(83, 17);
             this.labelTenTheLoai.TabIndex = 65;
             this.labelTenTheLoai.Text = "Tên thể loại";
             // 
             // textBoxTenTacGia
             // 
-            this.textBoxTenTacGia.Location = new System.Drawing.Point(460, 169);
-            this.textBoxTenTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTenTacGia.Location = new System.Drawing.Point(345, 137);
+            this.textBoxTenTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTacGia.Name = "textBoxTenTacGia";
             this.textBoxTenTacGia.ReadOnly = true;
-            this.textBoxTenTacGia.Size = new System.Drawing.Size(125, 22);
+            this.textBoxTenTacGia.Size = new System.Drawing.Size(95, 20);
             this.textBoxTenTacGia.TabIndex = 71;
             // 
             // labelTenTacGia
             // 
             this.labelTenTacGia.AutoSize = true;
             this.labelTenTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTacGia.Location = new System.Drawing.Point(357, 169);
+            this.labelTenTacGia.Location = new System.Drawing.Point(268, 137);
+            this.labelTenTacGia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenTacGia.Name = "labelTenTacGia";
-            this.labelTenTacGia.Size = new System.Drawing.Size(92, 20);
+            this.labelTenTacGia.Size = new System.Drawing.Size(79, 17);
             this.labelTenTacGia.TabIndex = 70;
             this.labelTenTacGia.Text = "Tên tác giả";
             // 
             // buttonThemMaTacGia
             // 
             this.buttonThemMaTacGia.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonThemMaTacGia.Location = new System.Drawing.Point(277, 169);
-            this.buttonThemMaTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemMaTacGia.Location = new System.Drawing.Point(208, 137);
+            this.buttonThemMaTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemMaTacGia.Name = "buttonThemMaTacGia";
-            this.buttonThemMaTacGia.Size = new System.Drawing.Size(33, 23);
+            this.buttonThemMaTacGia.Size = new System.Drawing.Size(25, 19);
             this.buttonThemMaTacGia.TabIndex = 69;
             this.buttonThemMaTacGia.Text = "+";
             this.buttonThemMaTacGia.UseVisualStyleBackColor = true;
@@ -159,10 +160,10 @@
             // comboBoxMaTacGia
             // 
             this.comboBoxMaTacGia.FormattingEnabled = true;
-            this.comboBoxMaTacGia.Location = new System.Drawing.Point(149, 169);
-            this.comboBoxMaTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMaTacGia.Location = new System.Drawing.Point(112, 137);
+            this.comboBoxMaTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMaTacGia.Name = "comboBoxMaTacGia";
-            this.comboBoxMaTacGia.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxMaTacGia.Size = new System.Drawing.Size(92, 21);
             this.comboBoxMaTacGia.TabIndex = 68;
             this.comboBoxMaTacGia.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaTacGia_SelectedIndexChanged);
             // 
@@ -171,19 +172,20 @@
             this.labelMaTacGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMaTacGia.AutoSize = true;
             this.labelMaTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaTacGia.Location = new System.Drawing.Point(58, 169);
+            this.labelMaTacGia.Location = new System.Drawing.Point(44, 137);
+            this.labelMaTacGia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaTacGia.Name = "labelMaTacGia";
-            this.labelMaTacGia.Size = new System.Drawing.Size(87, 20);
+            this.labelMaTacGia.Size = new System.Drawing.Size(73, 17);
             this.labelMaTacGia.TabIndex = 67;
             this.labelMaTacGia.Text = "Mã tác giả";
             // 
             // buttonXoaChiTietTacGia
             // 
             this.buttonXoaChiTietTacGia.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonXoaChiTietTacGia.Location = new System.Drawing.Point(509, 197);
-            this.buttonXoaChiTietTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonXoaChiTietTacGia.Location = new System.Drawing.Point(382, 160);
+            this.buttonXoaChiTietTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.buttonXoaChiTietTacGia.Name = "buttonXoaChiTietTacGia";
-            this.buttonXoaChiTietTacGia.Size = new System.Drawing.Size(75, 31);
+            this.buttonXoaChiTietTacGia.Size = new System.Drawing.Size(56, 25);
             this.buttonXoaChiTietTacGia.TabIndex = 73;
             this.buttonXoaChiTietTacGia.Text = "Xóa";
             this.buttonXoaChiTietTacGia.UseVisualStyleBackColor = true;
@@ -192,10 +194,10 @@
             // buttonThemChiTietTacGia
             // 
             this.buttonThemChiTietTacGia.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonThemChiTietTacGia.Location = new System.Drawing.Point(429, 197);
-            this.buttonThemChiTietTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemChiTietTacGia.Location = new System.Drawing.Point(322, 160);
+            this.buttonThemChiTietTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemChiTietTacGia.Name = "buttonThemChiTietTacGia";
-            this.buttonThemChiTietTacGia.Size = new System.Drawing.Size(75, 31);
+            this.buttonThemChiTietTacGia.Size = new System.Drawing.Size(56, 25);
             this.buttonThemChiTietTacGia.TabIndex = 72;
             this.buttonThemChiTietTacGia.Text = "Thêm";
             this.buttonThemChiTietTacGia.UseVisualStyleBackColor = true;
@@ -203,24 +205,24 @@
             // 
             // dataGridViewQLS_DanhSachSach
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQLS_DanhSachSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQLS_DanhSachSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewQLS_DanhSachSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQLS_DanhSachSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColSTT,
             this.ColMaTacGia,
             this.ColTenTacGia});
-            this.dataGridViewQLS_DanhSachSach.Location = new System.Drawing.Point(53, 249);
-            this.dataGridViewQLS_DanhSachSach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewQLS_DanhSachSach.Location = new System.Drawing.Point(40, 202);
+            this.dataGridViewQLS_DanhSachSach.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewQLS_DanhSachSach.Name = "dataGridViewQLS_DanhSachSach";
             this.dataGridViewQLS_DanhSachSach.RowTemplate.Height = 24;
-            this.dataGridViewQLS_DanhSachSach.Size = new System.Drawing.Size(497, 212);
+            this.dataGridViewQLS_DanhSachSach.Size = new System.Drawing.Size(373, 172);
             this.dataGridViewQLS_DanhSachSach.TabIndex = 75;
             this.dataGridViewQLS_DanhSachSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewQLS_DanhSachSach_CellContentClick);
             // 
@@ -230,7 +232,7 @@
             this.ColSTT.HeaderText = "STT";
             this.ColSTT.Name = "ColSTT";
             this.ColSTT.ReadOnly = true;
-            this.ColSTT.Width = 68;
+            this.ColSTT.Width = 57;
             // 
             // ColMaTacGia
             // 
@@ -238,7 +240,7 @@
             this.ColMaTacGia.HeaderText = "Mã tác giả";
             this.ColMaTacGia.Name = "ColMaTacGia";
             this.ColMaTacGia.ReadOnly = true;
-            this.ColMaTacGia.Width = 106;
+            this.ColMaTacGia.Width = 99;
             // 
             // ColTenTacGia
             // 
@@ -247,49 +249,37 @@
             this.ColTenTacGia.Name = "ColTenTacGia";
             this.ColTenTacGia.ReadOnly = true;
             // 
-            // tableLayoutPanel1
+            // labelTenDauSach
             // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.labelTenDauSach, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.labelMaTheLoai, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 75);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(131, 52);
-            this.tableLayoutPanel1.TabIndex = 76;
+            this.labelTenDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTenDauSach.AutoSize = true;
+            this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTenDauSach.Location = new System.Drawing.Point(13, 86);
+            this.labelTenDauSach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTenDauSach.Name = "labelTenDauSach";
+            this.labelTenDauSach.Size = new System.Drawing.Size(95, 17);
+            this.labelTenDauSach.TabIndex = 76;
+            this.labelTenDauSach.Text = "Tên đầu sách";
             // 
             // labelMaTheLoai
             // 
             this.labelMaTheLoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMaTheLoai.AutoSize = true;
             this.labelMaTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaTheLoai.Location = new System.Drawing.Point(37, 0);
+            this.labelMaTheLoai.Location = new System.Drawing.Point(31, 64);
+            this.labelMaTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaTheLoai.Name = "labelMaTheLoai";
-            this.labelMaTheLoai.Size = new System.Drawing.Size(91, 20);
-            this.labelMaTheLoai.TabIndex = 64;
+            this.labelMaTheLoai.Size = new System.Drawing.Size(77, 17);
+            this.labelMaTheLoai.TabIndex = 77;
             this.labelMaTheLoai.Text = "Mã thể loại";
-            // 
-            // labelTenDauSach
-            // 
-            this.labelTenDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTenDauSach.AutoSize = true;
-            this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenDauSach.Location = new System.Drawing.Point(18, 26);
-            this.labelTenDauSach.Name = "labelTenDauSach";
-            this.labelTenDauSach.Size = new System.Drawing.Size(110, 20);
-            this.labelTenDauSach.TabIndex = 63;
-            this.labelTenDauSach.Text = "Tên đầu sách";
             // 
             // FormThemDauSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 530);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(480, 431);
+            this.Controls.Add(this.labelTenDauSach);
+            this.Controls.Add(this.labelMaTheLoai);
             this.Controls.Add(this.dataGridViewQLS_DanhSachSach);
             this.Controls.Add(this.buttonXoaChiTietTacGia);
             this.Controls.Add(this.buttonThemChiTietTacGia);
@@ -305,13 +295,11 @@
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenDauSach);
             this.Controls.Add(this.labelThemDauSach);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemDauSach";
             this.Text = "FormThemDauSach";
             this.Load += new System.EventHandler(this.FormThemDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLS_DanhSachSach)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,7 +325,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSTT;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColMaTacGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTenTacGia;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label labelTenDauSach;
         private System.Windows.Forms.Label labelMaTheLoai;
     }
