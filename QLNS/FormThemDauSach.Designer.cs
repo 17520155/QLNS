@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonLuu = new System.Windows.Forms.Button();
             this.textBoxTenDauSach = new System.Windows.Forms.TextBox();
-            this.labelTenDauSach = new System.Windows.Forms.Label();
             this.labelThemDauSach = new System.Windows.Forms.Label();
-            this.labelMaTheLoai = new System.Windows.Forms.Label();
             this.buttonThemMaTheLoai = new System.Windows.Forms.Button();
             this.comboBoxMaTheLoai = new System.Windows.Forms.ComboBox();
             this.textBoxTenTheLoai = new System.Windows.Forms.TextBox();
@@ -49,7 +47,11 @@
             this.ColSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColMaTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTenTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelMaTheLoai = new System.Windows.Forms.Label();
+            this.labelTenDauSach = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLS_DanhSachSach)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonLuu
@@ -72,17 +74,6 @@
             this.textBoxTenDauSach.Size = new System.Drawing.Size(125, 22);
             this.textBoxTenDauSach.TabIndex = 60;
             // 
-            // labelTenDauSach
-            // 
-            this.labelTenDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTenDauSach.AutoSize = true;
-            this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenDauSach.Location = new System.Drawing.Point(35, 75);
-            this.labelTenDauSach.Name = "labelTenDauSach";
-            this.labelTenDauSach.Size = new System.Drawing.Size(110, 20);
-            this.labelTenDauSach.TabIndex = 59;
-            this.labelTenDauSach.Text = "Tên đầu sách";
-            // 
             // labelThemDauSach
             // 
             this.labelThemDauSach.AutoSize = true;
@@ -92,17 +83,6 @@
             this.labelThemDauSach.Size = new System.Drawing.Size(191, 25);
             this.labelThemDauSach.TabIndex = 58;
             this.labelThemDauSach.Text = "THÊM ĐẦU SÁCH";
-            // 
-            // labelMaTheLoai
-            // 
-            this.labelMaTheLoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelMaTheLoai.AutoSize = true;
-            this.labelMaTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaTheLoai.Location = new System.Drawing.Point(54, 103);
-            this.labelMaTheLoai.Name = "labelMaTheLoai";
-            this.labelMaTheLoai.Size = new System.Drawing.Size(91, 20);
-            this.labelMaTheLoai.TabIndex = 62;
-            this.labelMaTheLoai.Text = "Mã thể loại";
             // 
             // buttonThemMaTheLoai
             // 
@@ -223,14 +203,14 @@
             // 
             // dataGridViewQLS_DanhSachSach
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewQLS_DanhSachSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQLS_DanhSachSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewQLS_DanhSachSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQLS_DanhSachSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColSTT,
@@ -267,11 +247,49 @@
             this.ColTenTacGia.Name = "ColTenTacGia";
             this.ColTenTacGia.ReadOnly = true;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.labelTenDauSach, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelMaTheLoai, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 75);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(131, 52);
+            this.tableLayoutPanel1.TabIndex = 76;
+            // 
+            // labelMaTheLoai
+            // 
+            this.labelMaTheLoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelMaTheLoai.AutoSize = true;
+            this.labelMaTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaTheLoai.Location = new System.Drawing.Point(37, 0);
+            this.labelMaTheLoai.Name = "labelMaTheLoai";
+            this.labelMaTheLoai.Size = new System.Drawing.Size(91, 20);
+            this.labelMaTheLoai.TabIndex = 64;
+            this.labelMaTheLoai.Text = "Mã thể loại";
+            // 
+            // labelTenDauSach
+            // 
+            this.labelTenDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTenDauSach.AutoSize = true;
+            this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTenDauSach.Location = new System.Drawing.Point(18, 26);
+            this.labelTenDauSach.Name = "labelTenDauSach";
+            this.labelTenDauSach.Size = new System.Drawing.Size(110, 20);
+            this.labelTenDauSach.TabIndex = 63;
+            this.labelTenDauSach.Text = "Tên đầu sách";
+            // 
             // FormThemDauSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 530);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dataGridViewQLS_DanhSachSach);
             this.Controls.Add(this.buttonXoaChiTietTacGia);
             this.Controls.Add(this.buttonThemChiTietTacGia);
@@ -284,16 +302,16 @@
             this.Controls.Add(this.labelTenTheLoai);
             this.Controls.Add(this.buttonThemMaTheLoai);
             this.Controls.Add(this.comboBoxMaTheLoai);
-            this.Controls.Add(this.labelMaTheLoai);
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenDauSach);
-            this.Controls.Add(this.labelTenDauSach);
             this.Controls.Add(this.labelThemDauSach);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormThemDauSach";
             this.Text = "FormThemDauSach";
             this.Load += new System.EventHandler(this.FormThemDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLS_DanhSachSach)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,9 +321,7 @@
 
         private System.Windows.Forms.Button buttonLuu;
         private System.Windows.Forms.TextBox textBoxTenDauSach;
-        private System.Windows.Forms.Label labelTenDauSach;
         private System.Windows.Forms.Label labelThemDauSach;
-        private System.Windows.Forms.Label labelMaTheLoai;
         private System.Windows.Forms.Button buttonThemMaTheLoai;
         private System.Windows.Forms.ComboBox comboBoxMaTheLoai;
         private System.Windows.Forms.TextBox textBoxTenTheLoai;
@@ -321,5 +337,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSTT;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColMaTacGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTenTacGia;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label labelTenDauSach;
+        private System.Windows.Forms.Label labelMaTheLoai;
     }
 }
