@@ -94,10 +94,7 @@ namespace QLNS
             panelBaoCaoCongNo.BringToFront();
         }
 
-        private void buttonThayDoiQuyDinh_Click(object sender, EventArgs e)
-        {
-            panelThayDoiQuyDinh.BringToFront();
-        }
+        
 
         private void buttonTraCuu_Click(object sender, EventArgs e)
         {

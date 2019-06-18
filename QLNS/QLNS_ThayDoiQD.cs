@@ -193,14 +193,22 @@ namespace QLNS
 
         private void groupBoxTDQD_Enter(object sender, EventArgs e)
         {
+            
+        }
+        private void panelThayDoiQuyDinh_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void buttonThayDoiQuyDinh_Click(object sender, EventArgs e)
+        {
+            panelThayDoiQuyDinh.BringToFront();
             TDQD_SoLuongNhapToiThieu();
             TDQD_SoLuongTonToiThieu();
             TDQD_TiLeDonGiaBan();
             TDQD_SoTienNoToiDa();
             TDQD_SoLuongTonToiThieuSauKhiBan();
         }
-        private void panelThayDoiQuyDinh_Paint(object sender, PaintEventArgs e)
-        {
-        }
     }
 }
+
