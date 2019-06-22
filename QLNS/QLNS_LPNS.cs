@@ -82,7 +82,6 @@ namespace QLNS
 
         private void buttonLPNS_Them_Click(object sender, EventArgs e)
         {
-            
 
             try
             {
@@ -94,8 +93,13 @@ namespace QLNS
                 else
                 {
                     dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
-                    dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
-                    int indexRow = dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1;
+                    if (dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count==0)
+                    {
+                        dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
+
+                    }
+                    int indexRow = dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count-1;
+                    kiemtraluu = 1;
                     int kt = 0;
                     for (int i = 0; i < dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1; i++)
                     {
@@ -121,44 +125,44 @@ namespace QLNS
                             {
 
                                 MessageBox.Show("Lỗi! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                                //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                             }
                             else
                             if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text))
                             {
                                 string str = "Số lượng nhập tối thiểu " + soluongnhaptoithieu.ToString();
                                 MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                                //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                             }
                             else
                             if (soluongtontoithieu < SLton)
                             {
                                 string str = "Mã sách "+ comboBoxLPNS_MaSach.Text+" Số lượng tồn " + soluongtontoithieu.ToString();
                                 MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
-                            }
-                            
+                                //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                            }                           
 
-                                return;
+                            return;
                         }
                         else
                         {
 
 
-                            dataGridViewLPNS_ChiTietPhieuNhap[0, indexRow].Value = dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count;
-                            dataGridViewLPNS_ChiTietPhieuNhap[1, indexRow].Value = comboBoxLPNS_MaSach.Text;
-                            dataGridViewLPNS_ChiTietPhieuNhap[2, indexRow].Value = textBoxLPNS_TenDauSach.Text;
-                            dataGridViewLPNS_ChiTietPhieuNhap[3, indexRow].Value = textBoxLPNS_NhaXuatBan.Text;
-                            dataGridViewLPNS_ChiTietPhieuNhap[4, indexRow].Value = textBoxLPNS_NamXuatBan.Text;
-                            dataGridViewLPNS_ChiTietPhieuNhap[5, indexRow].Value = textBoxLPNS_SoLuongNhap.Text;
-                            dataGridViewLPNS_ChiTietPhieuNhap[6, indexRow].Value = textBoxLPNS_DonGiaNhap.Text;
-                            float soluong = Convert.ToSingle(textBoxLPNS_SoLuongNhap.Text);
-                            float dongia = Convert.ToSingle(textBoxLPNS_DonGiaNhap.Text);
-                            dataGridViewLPNS_ChiTietPhieuNhap[7, indexRow].Value = (soluong * dongia).ToString();
-                            tongtien = tongtien + Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[7, indexRow].Value.ToString());
-                            textBoxLPNS_TongTien.Text = tongtien.ToString();
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[0].Value = dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count;
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[1].Value = comboBoxLPNS_MaSach.Text;
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[2].Value = textBoxLPNS_TenDauSach.Text;
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[3].Value = textBoxLPNS_NhaXuatBan.Text;
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[4].Value = textBoxLPNS_NamXuatBan.Text;
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[5].Value = textBoxLPNS_SoLuongNhap.Text;
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[6].Value = textBoxLPNS_DonGiaNhap.Text;
+                            float soluong = (float)Convert.ToDouble(textBoxLPNS_SoLuongNhap.Text);
+                            float dongia = (float)Convert.ToDouble(textBoxLPNS_DonGiaNhap.Text);
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[7].Value = String.Format("{0:0,0}", (soluong * dongia)).ToString();
+                            tongtien = tongtien + (float)Convert.ToDouble(dataGridViewLPNS_ChiTietPhieuNhap.Rows[indexRow].Cells[7].Value.ToString());
+                            textBoxLPNS_TongTien.Text = String.Format("{0:0,0}", tongtien).ToString();
                             textBoxLPNS_SoLuongNhap.Text = "";
                             textBoxLPNS_DonGiaNhap.Text = "";
+                            dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
                             MessageBox.Show("Thêm thành công ");
                             return;
                         }
@@ -167,7 +171,7 @@ namespace QLNS
                     else
                     {
                         MessageBox.Show("Đã tồn tại ");
-                        dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                        //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                         return;
                     }
 
@@ -188,11 +192,12 @@ namespace QLNS
                 DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
-                    int RowIndex = dataGridViewLPNS_ChiTietPhieuNhap.CurrentRow.Index;
-                    tongtien = tongtien - Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value.ToString());
-
-                    dataGridViewLPNS_ChiTietPhieuNhap.Rows.RemoveAt(RowIndex);
-                    textBoxLPNS_TongTien.Text = tongtien.ToString();
+                    
+                        int RowIndex = dataGridViewLPNS_ChiTietPhieuNhap.CurrentRow.Index;
+                        tongtien = tongtien - Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value.ToString());
+                        dataGridViewLPNS_ChiTietPhieuNhap.Rows.RemoveAt(RowIndex);
+                        textBoxLPNS_TongTien.Text = tongtien.ToString();
+                   
                 }
                 else return;
             }
@@ -207,27 +212,65 @@ namespace QLNS
         {
             try
             {
-
-                if (textBoxLPNS_SoLuongNhap.Text == "" || textBoxLPNS_DonGiaNhap.Text == "")
+                int SLton = LPNS_LietKeSLT(Convert.ToInt32(comboBoxLPNS_MaSach.Text));
+                int soluongnhaptoithieu = LPNS_SoLuongNhapToiThieu();
+                int soluongtontoithieu = LPNS_SoLuongTonToiThieu();
+                if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text) || soluongtontoithieu < SLton)
                 {
-                    MessageBox.Show("Lỗi ! Vui lòng nhập đầy đủ thông tin ");
+                    if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text) && soluongtontoithieu < SLton)
+                    {
+
+                        MessageBox.Show("Lỗi! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                    }
+                    else
+                    if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text))
+                    {
+                        string str = "Số lượng nhập tối thiểu " + soluongnhaptoithieu.ToString();
+                        MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                    }
+                    else
+                    if (soluongtontoithieu < SLton)
+                    {
+                        string str = "Mã sách " + comboBoxLPNS_MaSach.Text + " Số lượng tồn " + soluongtontoithieu.ToString();
+                        MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
+                    }
+
                     return;
                 }
                 else
                 {
 
-                    int RowIndex = dataGridViewLPNS_ChiTietPhieuNhap.CurrentRow.Index;
-                    float sl = Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[5, RowIndex].Value.ToString());
-                    float dg = Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[6, RowIndex].Value.ToString());
-                    dataGridViewLPNS_ChiTietPhieuNhap[5, RowIndex].Value = textBoxLPNS_SoLuongNhap.Text;
-                    dataGridViewLPNS_ChiTietPhieuNhap[6, RowIndex].Value = textBoxLPNS_DonGiaNhap.Text;
-                    float soluong = Convert.ToSingle(textBoxLPNS_SoLuongNhap.Text);
-                    float dongia = Convert.ToSingle(textBoxLPNS_DonGiaNhap.Text);
-                    dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value = (soluong * dongia).ToString();
-                    tongtien = tongtien - sl * dg;
-                    tongtien = tongtien + Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value.ToString());
-                    textBoxLPNS_TongTien.Text = tongtien.ToString();
-                    MessageBox.Show("Cập nhật thành công");
+                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dlr == DialogResult.Yes)
+                    {
+
+                        if (textBoxLPNS_SoLuongNhap.Text == "" || textBoxLPNS_DonGiaNhap.Text == "")
+                        {
+                            MessageBox.Show("Lỗi ! Vui lòng nhập đầy đủ thông tin ");
+                            return;
+                        }
+                        else
+                        {
+
+                            int RowIndex = dataGridViewLPNS_ChiTietPhieuNhap.CurrentRow.Index;
+                            float sl = Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[5, RowIndex].Value.ToString());
+                            float dg = Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[6, RowIndex].Value.ToString());
+                            dataGridViewLPNS_ChiTietPhieuNhap[5, RowIndex].Value = textBoxLPNS_SoLuongNhap.Text;
+                            dataGridViewLPNS_ChiTietPhieuNhap[6, RowIndex].Value = textBoxLPNS_DonGiaNhap.Text;
+                            float soluong = Convert.ToSingle(textBoxLPNS_SoLuongNhap.Text);
+                            float dongia = Convert.ToSingle(textBoxLPNS_DonGiaNhap.Text);
+                            dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value = (soluong * dongia).ToString();
+                            tongtien = tongtien - sl * dg;
+                            tongtien = tongtien + Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value.ToString());
+                            textBoxLPNS_TongTien.Text = tongtien.ToString();
+                            MessageBox.Show("Cập nhật thành công");
+                        }
+
+                    }
+                    else return;
                 }
                
             }
@@ -269,7 +312,17 @@ namespace QLNS
         }
         private void panelLapPhieuNhapSach_Paint(object sender, PaintEventArgs e)
         {
-            
+            if (kiemtraluu == 0)
+            {
+                
+                button_LPNS_luu.Visible = false;
+                dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
+                dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
+                dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
+                buttonLPNS_ThemMoi.Text = "Thêm mới";
+                textBoxLPNS_TongTien.Text = "";
+
+            }
             LoadComboboxMaSach();
         }
 
@@ -300,91 +353,96 @@ namespace QLNS
         }
         private void button_LPNS_luu_Click(object sender, EventArgs e)
         {
-
-            int iCount = 0;
-            if (dataGridViewLPNS_ChiTietPhieuNhap.RowCount > 0)
-                {
-                    for (int i = 0; i <= dataGridViewLPNS_ChiTietPhieuNhap.RowCount - 1; i++)
+            
+                int iCount = 0;
+                if (dataGridViewLPNS_ChiTietPhieuNhap.RowCount > 0)
                     {
-                        if (dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[0].Value != null)
+                        for (int i = 0; i <= dataGridViewLPNS_ChiTietPhieuNhap.RowCount - 1; i++)
                         {
+                            if (dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[0].Value != null)
+                            {
                             
-                                iCount++;
+                                    iCount++;
                             
+                            }
+                            else continue;
                         }
-                        else continue;
+                    }            
+
+                if ( iCount>0)
+                {
+                
+                    try
+                    {
+
+                        button_LPNS_luu.Visible = false;
+                        buttonLPNS_ThemMoi.Text = "Thêm mới";
+                        tongtien = 0;
+                        textBoxLPNS_TongTien.Text = tongtien.ToString();
+
+
+                        SqlConnection connection = new SqlConnection();
+                        connection.ConnectionString = Global.ConnectionStr;
+                        connection.Open();
+                        SqlCommand command = new SqlCommand("ThemPhieuNhapMoi", connection);
+                        command.CommandType = CommandType.StoredProcedure;
+                        DateTime date = DateTime.ParseExact(dateTimePicker_NgayNhap.Text, "dd-MM-yyyy", null);
+                        SqlParameter p = new SqlParameter("@NgayNhap", date);
+                        command.Parameters.Add(p);
+
+                        object obj = command.ExecuteScalar();
+                        int id = Convert.ToInt32(obj);
+                        for (int i = 0; i < dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count-1; i++)
+                        {
+                            string MaSach = dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[1].Value.ToString();
+                            int ms = Convert.ToInt32(MaSach);
+                            string sl = dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[5].Value.ToString();
+                            float sln = (float)Convert.ToDouble(sl);
+                            string dg = dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[6].Value.ToString();
+                            float dgn = (float)Convert.ToDouble(dg);
+                            SqlCommand Command = new SqlCommand("ThemChiTietPhieuNhap", connection);
+                            Command.CommandType = CommandType.StoredProcedure;
+                            p = new SqlParameter("@MaPhieuNhap", id);
+                            Command.Parameters.Add(p);
+                            p = new SqlParameter("@MaSach", ms);
+                            Command.Parameters.Add(p);
+                            p = new SqlParameter("@DonGiaNhap", dgn);
+                            Command.Parameters.Add(p);
+                            p = new SqlParameter("@SoLuongNhap", sln);
+                            Command.Parameters.Add(p);
+                            Command.ExecuteNonQuery();
+
+                        }                    
+                        dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();                   
+                        dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
+                        dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
+                        MessageBox.Show("Thêm thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                        textBoxLPNS_TongTien.Text = "";
+                        kiemtraluu = 0;
+                        connection.Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại ","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        kiemtraluu = 0;
                     }
                 }
-            
-
-            if ( iCount>0)
-            {
-                
-                try
+                else
                 {
-
                     button_LPNS_luu.Visible = false;
                     buttonLPNS_ThemMoi.Text = "Thêm mới";
                     tongtien = 0;
                     textBoxLPNS_TongTien.Text = tongtien.ToString();
+                    MessageBox.Show("Chưa có phiếu nhập nào","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    kiemtraluu = 0;
 
-
-                    SqlConnection connection = new SqlConnection();
-                    connection.ConnectionString = Global.ConnectionStr;
-                    connection.Open();
-                    SqlCommand command = new SqlCommand("ThemPhieuNhapMoi", connection);
-                    command.CommandType = CommandType.StoredProcedure;
-                    DateTime date = DateTime.ParseExact(dateTimePicker_NgayNhap.Text, "dd-MM-yyyy", null);
-                    SqlParameter p = new SqlParameter("@NgayNhap", date);
-                    command.Parameters.Add(p);
-
-                    object obj = command.ExecuteScalar();
-                    int id = Convert.ToInt32(obj);
-                    for (int i = 0; i < dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count; i++)
-                    {
-                        string MaSach = dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[1].Value.ToString();
-                        int ms = Convert.ToInt32(MaSach);
-                        string sl = dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[5].Value.ToString();
-                        int sln = Convert.ToInt32(sl);
-                        string dg = dataGridViewLPNS_ChiTietPhieuNhap.Rows[i].Cells[5].Value.ToString();
-                        int dgn = Convert.ToInt32(dg);
-                        SqlCommand Command = new SqlCommand("ThemChiTietPhieuNhap", connection);
-                        Command.CommandType = CommandType.StoredProcedure;
-                        p = new SqlParameter("@MaPhieuNhap", id);
-                        Command.Parameters.Add(p);
-                        p = new SqlParameter("@MaSach", ms);
-                        Command.Parameters.Add(p);
-                        p = new SqlParameter("@DonGiaNhap", dgn);
-                        Command.Parameters.Add(p);
-                        p = new SqlParameter("@SoLuongNhap", sln);
-                        Command.Parameters.Add(p);
-                        Command.ExecuteNonQuery();
-
-                    }
-
-                    for (int i = 0; i < dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count; i++)
-                    {
-                        dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
-                    }
-                    MessageBox.Show("Thêm thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
-                    textBoxLPNS_TongTien.Text = "";
-                    connection.Close();
                 }
-                catch
-                {
-                    MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại ","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Chưa có phiếu nhập nào","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
-
-            }
 
 
         }
         private void buttonLPNS_ThemMoi_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 1;
             textBoxLPNS_SoLuongNhap.Text = "";
             textBoxLPNS_DonGiaNhap.Text = "";
             comboBoxLPNS_MaSach.Text = "";
@@ -394,7 +452,24 @@ namespace QLNS
             button_LPNS_luu.Visible = true;
             buttonLPNS_ThemMoi.Text = "Hủy bỏ";
         }
+        private void buttonNhapSach_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelLapPhieuNhapSach.BringToFront();
 
+                }
+                else return;
+            }
+            else panelLapPhieuNhapSach.BringToFront();
+
+
+
+        }
 
 
     }

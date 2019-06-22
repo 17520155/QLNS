@@ -20,11 +20,12 @@ namespace QLNS
             buttonQLK_QLNXB_Luu.Visible = false;
             dataGridViewQLK_QLNXB.Enabled = true;
             comboBoxQLK_MaNhaXuatBan.Enabled = true;
-            buttonQLK_ThemNhaXuatBan.Name = "Thêm";
+            buttonQLK_ThemNhaXuatBan.Text = "Thêm";
             //
             if (textBoxQLK_TenNhaXuatBan.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên nhà xuất bản");
+                kiemtraluu = 0;
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -41,6 +42,8 @@ namespace QLNS
             if (count > 0)
             {
                 MessageBox.Show("Thành công !");
+                kiemtraluu = 0;
+                textBoxQLK_TenNhaXuatBan.Text = "";
                 QLNXB_LoadData();
 
             }
@@ -52,6 +55,7 @@ namespace QLNS
 
         private void buttonQLK_ThemNhaXuatBan_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 1;
             buttonQLK_XoaNhaXuatBan.Enabled = false;
             buttonQLK_CapNhatNhaXuatBan.Enabled = false;
             buttonQLK_QLNXB_Luu.Visible = true;
@@ -59,7 +63,7 @@ namespace QLNS
             comboBoxQLK_MaNhaXuatBan.Text = "";
             comboBoxQLK_MaNhaXuatBan.Enabled = false;
             textBoxQLK_TenNhaXuatBan.Text = "";
-            buttonQLK_ThemNhaXuatBan.Name = "Hủy";
+            buttonQLK_ThemNhaXuatBan.Text = "Hủy";
 
         }
 
@@ -136,31 +140,38 @@ namespace QLNS
 
         private void buttonQLK_CapNhatNhaXuatBan_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection();
-
-            connection.ConnectionString = Global.ConnectionStr;
-            connection.Open();
-
-            SqlCommand command = new SqlCommand("SuaNXB", connection);
-
-            command.CommandType = CommandType.StoredProcedure;
-
-            int id = (int)dataGridViewQLK_QLNXB.CurrentRow.Cells[1].Value;
-
-            SqlParameter p = new SqlParameter("@MaNXB", id);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@TenNXB", textBoxQLK_TenNhaXuatBan.Text);
-            command.Parameters.Add(p);
-
-            int count = command.ExecuteNonQuery();
-            if (count > 0)
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
             {
-                MessageBox.Show("Cập Nhật Thành Công !");
-                QLNXB_LoadData();
+                SqlConnection connection = new SqlConnection();
+
+                connection.ConnectionString = Global.ConnectionStr;
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("SuaNXB", connection);
+
+                command.CommandType = CommandType.StoredProcedure;
+
+                int id = (int)dataGridViewQLK_QLNXB.CurrentRow.Cells[1].Value;
+
+                SqlParameter p = new SqlParameter("@MaNXB", id);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@TenNXB", textBoxQLK_TenNhaXuatBan.Text);
+                command.Parameters.Add(p);
+
+                int count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Cập Nhật Thành Công !");
+                    QLNXB_LoadData();
+
+                }
+                connection.Close();
 
             }
-            connection.Close();
+            else return;
+            
 
         }
 

@@ -202,7 +202,18 @@ namespace QLNS
 
         private void buttonThayDoiQuyDinh_Click(object sender, EventArgs e)
         {
-            panelThayDoiQuyDinh.BringToFront();
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelThayDoiQuyDinh.BringToFront();
+
+                }
+                else return;
+            }
+            else panelThayDoiQuyDinh.BringToFront();
             TDQD_SoLuongNhapToiThieu();
             TDQD_SoLuongTonToiThieu();
             TDQD_TiLeDonGiaBan();

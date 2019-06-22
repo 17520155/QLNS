@@ -15,6 +15,7 @@ namespace QLNS
     {
          private void buttonQLK_ThemTheLoai_Click(object sender, EventArgs e)
          {
+            kiemtraluu = 1;
             buttonQLK_XoaTheLoai.Enabled = false;
             buttonQLK_CapNhatTheLoai.Enabled = false;
             buttonQLK_QLTL_Luu.Visible = true;
@@ -22,7 +23,7 @@ namespace QLNS
             comboBoxQLK__MaTheLoai.Text = "";
             comboBoxQLK__MaTheLoai.Enabled = false;
             textBoxQLK__TenTheLoai.Text = "";
-            buttonQLK_ThemTheLoai.Name = "Hủy";
+            buttonQLK_ThemTheLoai.Text = "Hủy";
          }
 
         private void buttonQLK_QLTL_Luu_Click(object sender, EventArgs e)
@@ -32,10 +33,11 @@ namespace QLNS
             buttonQLK_QLTL_Luu.Visible = false;
             dataGridViewQLK_QLTL.Enabled = true;
             comboBoxQLK__MaTheLoai.Enabled = true;
-            buttonQLK_ThemTacGia.Name = "Thêm";
+            buttonQLK_ThemTheLoai.Text = "Thêm";
             if (textBoxQLK__TenTheLoai.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên tác giả");
+                kiemtraluu = 0;
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -52,6 +54,8 @@ namespace QLNS
             if (count > 0)
             {
                 MessageBox.Show("Thành công !");
+                kiemtraluu = 0;
+                textBoxQLK__TenTheLoai.Text = "";
                 QLTL_LoadData();
 
             }
@@ -98,31 +102,39 @@ namespace QLNS
 
         private void buttonQLK_CapNhatTheLoai_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection();
-
-            connection.ConnectionString = Global.ConnectionStr;
-            connection.Open();
-
-            SqlCommand command = new SqlCommand("SuaTheLoai", connection);
-
-            command.CommandType = CommandType.StoredProcedure;
-
-            int id = (int)dataGridViewQLK_QLTL.CurrentRow.Cells[1].Value;
-
-            SqlParameter p = new SqlParameter("@MaTheLoai", id);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@TenTheLoai", textBoxQLK__TenTheLoai.Text);
-            command.Parameters.Add(p);
-
-            int count = command.ExecuteNonQuery();
-            if (count > 0)
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
             {
-                MessageBox.Show("Cập Nhật Thành Công !");
-                QLTL_LoadData();
+                SqlConnection connection = new SqlConnection();
+
+                connection.ConnectionString = Global.ConnectionStr;
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("SuaTheLoai", connection);
+
+                command.CommandType = CommandType.StoredProcedure;
+
+                int id = (int)dataGridViewQLK_QLTL.CurrentRow.Cells[1].Value;
+
+                SqlParameter p = new SqlParameter("@MaTheLoai", id);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@TenTheLoai", textBoxQLK__TenTheLoai.Text);
+                command.Parameters.Add(p);
+
+                int count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Cập Nhật Thành Công !");
+                    QLTL_LoadData();
+
+                }
+                connection.Close();
 
             }
-            connection.Close();
+            else return;
+
+            
 
         }
 

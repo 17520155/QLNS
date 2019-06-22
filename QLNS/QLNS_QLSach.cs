@@ -16,6 +16,7 @@ namespace QLNS
 
         private void buttonQLS_Luu_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 0;
             comboBoxQLS_MaSach.Enabled = true;            
             buttonQLS_Luu.Visible = false;
             buttonQLS_Xoa.Enabled = true;
@@ -50,6 +51,7 @@ namespace QLNS
 
         private void buttonQLS_Them_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 1;
             comboBoxQLS_MaSach.Enabled = false;
             comboBoxQLS_MaSach.Text = "";
             comboBoxQLS_MaDauSach.Text = "";
@@ -137,36 +139,43 @@ namespace QLNS
 
         private void buttonQLS_CapNhat_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection();
-
-            connection.ConnectionString = Global.ConnectionStr;
-            connection.Open();
-
-            SqlCommand command = new SqlCommand("SuaThongTinSach", connection);
-
-            command.CommandType = CommandType.StoredProcedure;
-
-            int masach = (int)dataGridViewQLS_DanhSachSach.CurrentRow.Cells[1].Value;
-            int manxb = Convert.ToInt32(comboBoxQLS_MaNhaXuatBan.Text);
-            int madausach= Convert.ToInt32(comboBoxQLS_MaDauSach.Text);
-            SqlParameter p = new SqlParameter("@MaSach",masach);
-            command.Parameters.Add(p);
-            p = new SqlParameter("@MaNXB", manxb);
-            command.Parameters.Add(p);
-            p = new SqlParameter("@NamXB", textBoxQLS_NamXuatBan.Text);
-            command.Parameters.Add(p);
-            p = new SqlParameter("@MaDauSach", madausach);
-            command.Parameters.Add(p);
-            int count = command.ExecuteNonQuery();
-            if (count > 0)
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
             {
-                MessageBox.Show("Cập nhật thông tin sách thành công !", "Thông báo!");
-                QLNSLoaddata();
+
+                SqlConnection connection = new SqlConnection();
+
+                connection.ConnectionString = Global.ConnectionStr;
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("SuaThongTinSach", connection);
+
+                command.CommandType = CommandType.StoredProcedure;
+
+                int masach = (int)dataGridViewQLS_DanhSachSach.CurrentRow.Cells[1].Value;
+                int manxb = Convert.ToInt32(comboBoxQLS_MaNhaXuatBan.Text);
+                int madausach = Convert.ToInt32(comboBoxQLS_MaDauSach.Text);
+                SqlParameter p = new SqlParameter("@MaSach", masach);
+                command.Parameters.Add(p);
+                p = new SqlParameter("@MaNXB", manxb);
+                command.Parameters.Add(p);
+                p = new SqlParameter("@NamXB", textBoxQLS_NamXuatBan.Text);
+                command.Parameters.Add(p);
+                p = new SqlParameter("@MaDauSach", madausach);
+                command.Parameters.Add(p);
+                int count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Cập nhật thông tin sách thành công !", "Thông báo!");
+                    QLNSLoaddata();
+
+                }
+                connection.Close();
 
             }
+            else return;
 
-           
-            connection.Close();
+            
         }
 
         private void comboBoxQLS_MaDauSach_SelectedIndexChanged(object sender, EventArgs e)
@@ -202,7 +211,7 @@ namespace QLNS
             connection.Open();
             SqlCommand command = new SqlCommand("LietKeNXBTheoMa", connection);
             string id = comboBoxQLS_MaNhaXuatBan.Text;
-            SqlParameter p = new SqlParameter("MaNXB", id);
+            SqlParameter p = new SqlParameter("MaNXB", Convert.ToInt32(id));
             command.Parameters.Add(p);
             command.CommandType = CommandType.StoredProcedure;
             command.ExecuteNonQuery();
@@ -274,6 +283,25 @@ namespace QLNS
         }
         private void panelQuanLySach_Paint(object sender, PaintEventArgs e)
         {
+            if (kiemtraluu == 0)
+            {
+                comboBoxQLS_MaSach.Enabled = true;
+                comboBoxQLS_MaSach.Text = "";
+                comboBoxQLS_MaDauSach.Text = "";
+                textBoxQLS_TenDauSach.Text = "";
+                textBoxQLS_TacGia.Text = "";
+                textBoxQLS_TheLoai.Text = "";
+                comboBoxQLS_MaNhaXuatBan.Text = "";
+                textBoxQLS_TenNhaXuarBan.Text = "";
+                textBoxQLS_NamXuatBan.Text = "";
+                buttonQLS_Luu.Visible = false;
+                buttonQLS_Xoa.Enabled = true;
+                buttonQLS_CapNhat.Enabled = true;
+                buttonQLS_Them.Text = "Thêm";
+                dataGridViewQLS_DanhSachSach.Enabled = true;                
+
+            }
+
             dataGridViewQLS_DanhSachSach.AutoGenerateColumns = false;
             dataGridViewQLS_DanhSachSach.Columns[0].DataPropertyName = "STT";
             dataGridViewQLS_DanhSachSach.Columns[1].DataPropertyName = "MaSach";
@@ -288,5 +316,24 @@ namespace QLNS
            
 
         }
+        private void buttonQuanLySach_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelQuanLySach.BringToFront();
+
+                }
+                else return;
+            }
+            else panelQuanLySach.BringToFront();
+
+
+        }
+
+
     }
 }

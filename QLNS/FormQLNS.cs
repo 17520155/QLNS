@@ -25,25 +25,25 @@ namespace QLNS
             InitializeComponent();
             panelTrangChu.BringToFront();
         }
+        public int kiemtraluu = 0;
 
-        private void buttonNhapSach_Click(object sender, EventArgs e)
-        {
-            panelLapPhieuNhapSach.BringToFront();
-        }
-
-        private void buttonQuanLySach_Click(object sender, EventArgs e)
-        {
-            panelQuanLySach.BringToFront();
-        }
-
-        private void buttonQuanLyDauSach_Click(object sender, EventArgs e)
-        {
-            panelQuanLyDauSach.BringToFront();
-        }
+       
 
         private void buttonKhac_Click(object sender, EventArgs e)
         {
-            panelQuanLyKhac.BringToFront();
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelQuanLyKhac.BringToFront();
+
+                }
+                else return;
+            }
+            else panelQuanLyKhac.BringToFront();
+
             //QLTacGia
             dataGridViewQLK_QLTG.AutoGenerateColumns = false;
             dataGridViewQLK_QLTG.Columns[0].DataPropertyName = "STT";
@@ -67,13 +67,37 @@ namespace QLNS
 
         private void buttonLapHoaDonBanSach_Click(object sender, EventArgs e)
         {
-            panelLapHoaDonBanSach.BringToFront();
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelLapHoaDonBanSach.BringToFront();
+
+                }
+                else return;
+            }
+            else  panelLapHoaDonBanSach.BringToFront();
+           
             LPHD_LoadComboboxMaKH();
         }
 
         private void buttonQuanLyKhachHang_Click(object sender, EventArgs e)
         {
-            panelQuanLyKhachHang.BringToFront();
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelQuanLyKhachHang.BringToFront();
+
+                }
+                else return;
+            }
+            else panelQuanLyKhachHang.BringToFront();
+
 
 
 
@@ -81,25 +105,43 @@ namespace QLNS
 
         private void buttonLapPhieuThuTien_Click(object sender, EventArgs e)
         {
-            panelLapPhieuThuTien.BringToFront();
-        }
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelLapPhieuThuTien.BringToFront();
 
-        private void buttonBaoCaoSachTon_Click(object sender, EventArgs e)
-        {
-            panelBaoCaoSachTon.BringToFront();
-        }
+                }
+                else return;
+            }
+            else panelLapPhieuThuTien.BringToFront();
 
-        private void buttonBaoCaoCongNo_Click(object sender, EventArgs e)
-        {
-            panelBaoCaoCongNo.BringToFront();
         }
 
         
 
-        private void buttonTraCuu_Click(object sender, EventArgs e)
+        private void buttonBaoCaoCongNo_Click(object sender, EventArgs e)
         {
-            panelTraCuu.BringToFront();
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelBaoCaoCongNo.BringToFront();
+
+                }
+                else return;
+            }
+            else panelBaoCaoCongNo.BringToFront();
+
+
         }
+
+        
+
 
         private void buttonLHDBS_ThemMaKH_Click(object sender, EventArgs e)
         {
@@ -148,9 +190,48 @@ namespace QLNS
 
         private void buttonTrangChu_Click(object sender, EventArgs e)
         {
-            panelTrangChu.BringToFront();
-        }
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelTrangChu.BringToFront();
 
-        
+                }
+                else return;
+            }
+            else panelTrangChu.BringToFront();
+
+
+        }
+        private void panelQuanLyKhac_Paint(object sender, PaintEventArgs e)
+        {
+            if (kiemtraluu == 0)
+            {
+                //Nha xuat ban
+                buttonQLK_XoaNhaXuatBan.Enabled = true;
+                buttonQLK_CapNhatNhaXuatBan.Enabled = true;
+                buttonQLK_QLNXB_Luu.Visible = false;
+                dataGridViewQLK_QLNXB.Enabled = true;
+                comboBoxQLK_MaNhaXuatBan.Enabled = true;
+                buttonQLK_ThemNhaXuatBan.Text = "Thêm";
+                //tac gia
+                buttonQLK_XoaTacGia.Enabled = true;
+                buttonQLK_CapNhatTacGia.Enabled = true;
+                buttonQLK_QLTG_Luu.Visible = false;
+                dataGridViewQLK_QLTG.Enabled = true;
+                comboBoxQLK_MaTacGia.Enabled = true;
+                buttonQLK_ThemTacGia.Text = "Thêm";
+                //the loai
+                buttonQLK_XoaTheLoai.Enabled = true;
+                buttonQLK_CapNhatTheLoai.Enabled = true;
+                buttonQLK_QLTL_Luu.Visible = false;
+                dataGridViewQLK_QLTL.Enabled = true;
+                comboBoxQLK__MaTheLoai.Enabled = true;
+                buttonQLK_ThemTheLoai.Text = "Thêm";
+
+            }
+        }
     }
 }

@@ -32,9 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -1873,6 +1870,7 @@
             this.panelQuanLyKhac.Name = "panelQuanLyKhac";
             this.panelQuanLyKhac.Size = new System.Drawing.Size(1070, 663);
             this.panelQuanLyKhac.TabIndex = 24;
+            this.panelQuanLyKhac.Paint += new System.Windows.Forms.PaintEventHandler(this.panelQuanLyKhac_Paint);
             // 
             // groupBoxQLK_QLTL
             // 
@@ -1962,14 +1960,6 @@
             this.ColQLK_QLTL_STT,
             this.ColQLK_QLTL_MaTheLoai,
             this.ColQLK_QLTL_TenTheLoai});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewQLK_QLTL.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewQLK_QLTL.Location = new System.Drawing.Point(7, 189);
             this.dataGridViewQLK_QLTL.Name = "dataGridViewQLK_QLTL";
             this.dataGridViewQLK_QLTL.RowTemplate.Height = 24;
@@ -1991,7 +1981,7 @@
             this.ColQLK_QLTL_MaTheLoai.HeaderText = "Mã thể loại";
             this.ColQLK_QLTL_MaTheLoai.Name = "ColQLK_QLTL_MaTheLoai";
             this.ColQLK_QLTL_MaTheLoai.ReadOnly = true;
-            this.ColQLK_QLTL_MaTheLoai.Width = 113;
+            this.ColQLK_QLTL_MaTheLoai.Width = 104;
             // 
             // ColQLK_QLTL_TenTheLoai
             // 
@@ -2099,14 +2089,6 @@
             this.ColQLK_QLNXB_STT,
             this.ColQLK_QLNXB_MaNhaXuatBan,
             this.ColQLK_QLNXB_TenNhaXuatBan});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewQLK_QLNXB.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewQLK_QLNXB.Location = new System.Drawing.Point(12, 191);
             this.dataGridViewQLK_QLNXB.Name = "dataGridViewQLK_QLNXB";
             this.dataGridViewQLK_QLNXB.RowTemplate.Height = 24;
@@ -2268,22 +2250,14 @@
             // 
             // dataGridViewQLK_QLTG
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewQLK_QLTG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(209)))), ((int)(((byte)(237)))));
             this.dataGridViewQLK_QLTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQLK_QLTG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColQLK_QLTG_STT,
             this.ColQLK_QLTG_MaTacGia,
             this.ColQLK_QLTG_TacGia});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewQLK_QLTG.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewQLK_QLTG.Location = new System.Drawing.Point(10, 191);
             this.dataGridViewQLK_QLTG.Name = "dataGridViewQLK_QLTG";
             this.dataGridViewQLK_QLTG.RowTemplate.Height = 24;
@@ -2305,7 +2279,7 @@
             this.ColQLK_QLTG_MaTacGia.HeaderText = "Mã tác giả";
             this.ColQLK_QLTG_MaTacGia.Name = "ColQLK_QLTG_MaTacGia";
             this.ColQLK_QLTG_MaTacGia.ReadOnly = true;
-            this.ColQLK_QLTG_MaTacGia.Width = 108;
+            this.ColQLK_QLTG_MaTacGia.Width = 99;
             // 
             // ColQLK_QLTG_TacGia
             // 
@@ -2738,6 +2712,7 @@
             this.textBoxLHDBS_DonGiaBan.Name = "textBoxLHDBS_DonGiaBan";
             this.textBoxLHDBS_DonGiaBan.Size = new System.Drawing.Size(100, 21);
             this.textBoxLHDBS_DonGiaBan.TabIndex = 14;
+            this.textBoxLHDBS_DonGiaBan.TextChanged += new System.EventHandler(this.textBoxLHDBS_DonGiaBan_TextChanged);
             // 
             // buttonLHDBS_Xoa
             // 
@@ -3520,6 +3495,7 @@
             this.panelBaoCaoSachTon.Name = "panelBaoCaoSachTon";
             this.panelBaoCaoSachTon.Size = new System.Drawing.Size(1070, 663);
             this.panelBaoCaoSachTon.TabIndex = 28;
+            this.panelBaoCaoSachTon.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBaoCaoSachTon_Paint);
             // 
             // labelBCST_DanhSachBaoCao
             // 
@@ -3550,6 +3526,7 @@
             this.buttonBCST_XemBaoCao.TabIndex = 31;
             this.buttonBCST_XemBaoCao.Text = "Xem báo cáo";
             this.buttonBCST_XemBaoCao.UseVisualStyleBackColor = true;
+            this.buttonBCST_XemBaoCao.Click += new System.EventHandler(this.buttonBCST_XemBaoCao_Click);
             // 
             // textBoxBCST_Nam
             // 
@@ -3617,8 +3594,8 @@
             // ColBCST_STT
             // 
             this.ColBCST_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColBCST_STT.DefaultCellStyle = dataGridViewCellStyle2;
             this.ColBCST_STT.HeaderText = "STT";
             this.ColBCST_STT.Name = "ColBCST_STT";
             this.ColBCST_STT.ReadOnly = true;
@@ -4213,8 +4190,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle3;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -4344,8 +4321,6 @@
             this.ClientSize = new System.Drawing.Size(1370, 687);
             this.Controls.Add(this.panelMenuTRANGCHU);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelTrangChu);
-            this.Controls.Add(this.panelLapPhieuThuTien);
             this.Controls.Add(this.panelLapHoaDonBanSach);
             this.Controls.Add(this.panelLapPhieuNhapSach);
             this.Controls.Add(this.panelQuanLyKhachHang);
@@ -4356,6 +4331,8 @@
             this.Controls.Add(this.panelTraCuu);
             this.Controls.Add(this.panelBaoCaoCongNo);
             this.Controls.Add(this.panelBaoCaoSachTon);
+            this.Controls.Add(this.panelTrangChu);
+            this.Controls.Add(this.panelLapPhieuThuTien);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQLNS";

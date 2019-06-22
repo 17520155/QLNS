@@ -14,45 +14,105 @@ namespace QLNS
 {
     public partial class FormQLNS : Form
     {
+        private void buttonQuanLyDauSach_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelQuanLyDauSach.BringToFront();
+
+                }
+                else return;
+            }
+            else panelQuanLyDauSach.BringToFront();
+        }
         private void buttonQLDS_ThemChiTietTacGia_Click(object sender, EventArgs e)
         {
+            
             dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
-            dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
+            if (dataGridViewQLDS_ChiTietTacGia.Rows.Count == 0)
+            {
+                dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
+
+            }
+            
             int indexRow = dataGridViewQLDS_ChiTietTacGia.Rows.Count - 1;
-            dataGridViewQLDS_ChiTietTacGia[0, indexRow].Value = dataGridViewQLDS_ChiTietTacGia.Rows.Count;
-            dataGridViewQLDS_ChiTietTacGia[1, indexRow].Value = comboBoxQLDS_ThemMaTacGia.Text;
-            dataGridViewQLDS_ChiTietTacGia[2, indexRow].Value = textBoxQLDS_TenTacGia.Text;
-            //kiem tra trung
+            kiemtraluu = 1;
+            int kt = 0;
             for (int i = 0; i < dataGridViewQLDS_ChiTietTacGia.Rows.Count - 1; i++)
             {
                 if (comboBoxQLDS_ThemMaTacGia.Text == dataGridViewQLDS_ChiTietTacGia.Rows[i].Cells[1].Value.ToString())
                 {
-                    MessageBox.Show("Đã có  tồn tại tác giả !");
-                    dataGridViewQLDS_ChiTietTacGia.Rows.Remove(dataGridViewQLDS_ChiTietTacGia.Rows[i]);
-                    dataGridViewQLDS_ChiTietTacGia[0, indexRow - 1].Value = dataGridViewQLDS_ChiTietTacGia.Rows.Count;
-
-                    return;
+                    kt = 1;
+                    break;
                 }
+                else
+                {
+                    kt = 0;
+                }
+
             }
+            if(kt==0)
+            {
+                dataGridViewQLDS_ChiTietTacGia[0, indexRow].Value = dataGridViewQLDS_ChiTietTacGia.Rows.Count;
+                dataGridViewQLDS_ChiTietTacGia[1, indexRow].Value = comboBoxQLDS_ThemMaTacGia.Text;
+                dataGridViewQLDS_ChiTietTacGia[2, indexRow].Value = textBoxQLDS_TenTacGia.Text;
+                dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
+                MessageBox.Show("Thêm thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                return;
+
+            }
+            else
+            {
+                MessageBox.Show("Đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //dataGridViewQLDS_ChiTietTacGia[0, indexRow].Value = dataGridViewQLDS_ChiTietTacGia.Rows.Count;
+            //dataGridViewQLDS_ChiTietTacGia[1, indexRow].Value = comboBoxQLDS_ThemMaTacGia.Text;
+            //dataGridViewQLDS_ChiTietTacGia[2, indexRow].Value = textBoxQLDS_TenTacGia.Text;
+            //kiem tra trung
+            //for (int i = 0; i < dataGridViewQLDS_ChiTietTacGia.Rows.Count - 1; i++)
+            //{
+            //    if (comboBoxQLDS_ThemMaTacGia.Text == dataGridViewQLDS_ChiTietTacGia.Rows[i].Cells[1].Value.ToString())
+            //    {
+            //        MessageBox.Show("Đã có  tồn tại tác giả !");
+            //        dataGridViewQLDS_ChiTietTacGia.Rows.Remove(dataGridViewQLDS_ChiTietTacGia.Rows[i]);
+            //        dataGridViewQLDS_ChiTietTacGia[0, indexRow - 1].Value = dataGridViewQLDS_ChiTietTacGia.Rows.Count;
+            //        return;
+            //    }
+            //}
 
         }
 
         private void buttonQLDS_XoaChiTietTacGia_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dlr == DialogResult.Yes)
+            try
             {
-                try
+                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
                 {
                     int RowIndex = dataGridViewQLDS_ChiTietTacGia.CurrentRow.Index;
-                    dataGridViewQLDS_ChiTietTacGia.Rows.RemoveAt(RowIndex);
+                    if (dataGridViewQLDS_ChiTietTacGia.Rows[RowIndex].Cells[0].Value == null)
+                    {
+
+                        MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại");
+                        return;
+
+                    }
+                    else  dataGridViewQLDS_ChiTietTacGia.Rows.RemoveAt(RowIndex);
+                    return;
+
+
                 }
-                catch
-                {
-                    MessageBox.Show("Chưa có tác giả !");
-                }
+                else return;
             }
-            else return;
+            catch
+            {
+                MessageBox.Show("Chưa có tác giả !");
+            }
         }
 
         private void comboBoxQLDS_ThemMaTacGia_SelectedIndexChanged(object sender, EventArgs e)
@@ -99,15 +159,15 @@ namespace QLNS
         private void buttonQLDS_Luu_Click(object sender, EventArgs e)
         {
             buttonQLDS_Luu.Visible = false;
-            buttonQLDS_ThemDauSach.Name = "Thêm";
+            buttonQLDS_ThemDauSach.Text = "Thêm";
             buttonQLDS_XoaDauSach.Enabled = true;
             buttonQLDS_CapNhatDauSach.Enabled = true;
             comboBoxQLDS_MaDauSach.Enabled = true;
             dataGridViewQLDS_DanhSachDauSach.Enabled = true;
-
             if (textBoxQLDS_TenDauSach.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên đầu sách");
+                kiemtraluu = 0;
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -121,7 +181,7 @@ namespace QLNS
             command.Parameters.Add(p);
             object obj = command.ExecuteScalar();
             int id = Convert.ToInt32(obj);
-            for (int i = 0; i < dataGridViewQLDS_ChiTietTacGia.Rows.Count; i++)
+            for (int i = 0; i < dataGridViewQLDS_ChiTietTacGia.Rows.Count-1; i++)
             {
                 string MaTacGia = dataGridViewQLDS_ChiTietTacGia.Rows[i].Cells[1].Value.ToString();
                 int tg = Convert.ToInt32(MaTacGia);
@@ -134,19 +194,21 @@ namespace QLNS
                 Command.ExecuteNonQuery();
             }
             QLDS_LoadData();
+            kiemtraluu = 0;
 
-            for (int i = 0; i < dataGridViewQLDS_ChiTietTacGia.Rows.Count; i++)
-            {
-                dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
-            }
+            dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
+            dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
+            dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
+
             MessageBox.Show("Thêm thành công");
             connection.Close();
         }
 
         private void buttonQLDS_ThemDauSach_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 1;
             buttonQLDS_Luu.Visible = true;
-            buttonQLDS_ThemDauSach.Name = "Hủy";
+            buttonQLDS_ThemDauSach.Text = "Hủy";
             buttonQLDS_XoaDauSach.Enabled = false;
             buttonQLDS_CapNhatDauSach.Enabled = false;
             comboBoxQLDS_MaDauSach.Enabled = false;
@@ -192,33 +254,40 @@ namespace QLNS
 
         private void buttonQLDS_CapNhatDauSach_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection();
-
-            connection.ConnectionString = Global.ConnectionStr;
-            connection.Open();
-
-            SqlCommand command = new SqlCommand("SuaDauSach", connection);
-
-            command.CommandType = CommandType.StoredProcedure;
-
-            int id = (int)dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[1].Value;
-
-            SqlParameter p = new SqlParameter("@MaDauSach", id);
-            command.Parameters.Add(p);
-
-            p = new SqlParameter("@TenDauSach", textBoxQLDS_TenDauSach.Text);
-            command.Parameters.Add(p);
-            p = new SqlParameter("@MaTheLoai", Convert.ToInt32(comboBoxQLDS_MaTheLoai.Text));
-            command.Parameters.Add(p);
-
-            int count = command.ExecuteNonQuery();
-            if (count > 0)
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
             {
-                MessageBox.Show("Cập Nhật Thành Công !");
-                QLDS_LoadData();
 
+                SqlConnection connection = new SqlConnection();
+
+                connection.ConnectionString = Global.ConnectionStr;
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("SuaDauSach", connection);
+
+                command.CommandType = CommandType.StoredProcedure;
+
+                int id = (int)dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[1].Value;
+
+                SqlParameter p = new SqlParameter("@MaDauSach", id);
+                command.Parameters.Add(p);
+
+                p = new SqlParameter("@TenDauSach", textBoxQLDS_TenDauSach.Text);
+                command.Parameters.Add(p);
+                p = new SqlParameter("@MaTheLoai", Convert.ToInt32(comboBoxQLDS_MaTheLoai.Text));
+                command.Parameters.Add(p);
+
+                int count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Cập Nhật Thành Công !");
+                    QLDS_LoadData();
+
+                }
+                connection.Close();
             }
-            connection.Close();
+            else return;
+            
 
         }
         public void LoadComboboxTheloai()
@@ -314,6 +383,22 @@ namespace QLNS
         }
         private void panelQuanLyDauSach_Paint(object sender, PaintEventArgs e)
         {
+            if (kiemtraluu == 0)
+            {
+
+                dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
+                dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
+                dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);          
+
+                buttonQLDS_Luu.Visible = false;
+                buttonQLDS_ThemDauSach.Text = "Thêm";
+                buttonQLDS_XoaDauSach.Enabled = true;
+                buttonQLDS_CapNhatDauSach.Enabled = true;
+                comboBoxQLDS_MaDauSach.Enabled = true;               
+                dataGridViewQLDS_DanhSachDauSach.Enabled = true;
+
+            }
+
             dataGridViewQLDS_DanhSachDauSach.AutoGenerateColumns = false;
             dataGridViewQLDS_DanhSachDauSach.Columns[0].DataPropertyName = "STT";
             dataGridViewQLDS_DanhSachDauSach.Columns[1].DataPropertyName = "MaDauSach";
