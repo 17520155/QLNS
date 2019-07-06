@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QLNS_BCCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QLNS_BCST.cs">
       <SubType>Form</SubType>
     </Compile>

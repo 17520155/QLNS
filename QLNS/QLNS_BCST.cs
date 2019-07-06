@@ -33,31 +33,55 @@ namespace QLNS
             for (int i = 0; i < dt.Rows.Count; i++)
                 dt.Rows[i]["STT"] = i + 1;
             dataGridViewBCST.DataSource = dt;
+            if(dataGridViewBCST.Rows.Count==1)
+            {
+                string str = "Chưa tạo báo cáo tháng " + comboBoxBCST_Thang.Text + " năm " + textBoxBCST_Nam.Text;
+                MessageBox.Show(str,"Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                
+            }
+
             connection.Close();
 
+        }       
+        
+        public void BCTS_Datagrid()
+        {
+            dataGridViewBCST.AutoGenerateColumns = false;
+            dataGridViewBCST.Columns[0].DataPropertyName = "STT";
+            dataGridViewBCST.Columns[1].DataPropertyName = "MaSach";
+            dataGridViewBCST.Columns[2].DataPropertyName = "TenDauSach";
+            dataGridViewBCST.Columns[3].DataPropertyName = "TenTheLoai";
+            dataGridViewBCST.Columns[4].DataPropertyName = "TonDau";
+            dataGridViewBCST.Columns[5].DataPropertyName = "PhatSinh";
+            dataGridViewBCST.Columns[6].DataPropertyName = "TonCuoi";
+            BCST_LoadData();
+
         }
+
         private void buttonBCST_XemBaoCao_Click(object sender, EventArgs e)
         {
-            /*SqlConnection connections = new SqlConnection();
-            connections.ConnectionString = Global.ConnectionStr;
-            connections.Open();
-            SqlCommand Command = new SqlCommand("KhoiTaoBaoCaoTon", connections);
-            SqlParameter p = new SqlParameter("@Thang", 5);
-            Command.Parameters.Add(p);
-            p = new SqlParameter("@Nam", 2019);
-            Command.Parameters.Add(p);
-            Command.CommandType = CommandType.StoredProcedure;
-            Command.ExecuteNonQuery();
-            connections.Close();
-            */
-            if(comboBoxBCST_Thang.Text.Trim()=="" || textBoxBCST_Nam.Text.Trim()=="")
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             try
             {
+                SqlConnection connectionss = new SqlConnection();
+                connectionss.ConnectionString = Global.ConnectionStr;
+                connectionss.Open();
+                SqlCommand Commands = new SqlCommand("KhoiTaoBaoCaoTon", connectionss);              
+                Commands.CommandType = CommandType.StoredProcedure;
+                Commands.ExecuteNonQuery();
+                connectionss.Close();
+            }
+            catch
+            {
 
+
+
+                if (comboBoxBCST_Thang.Text.Trim() == "" || textBoxBCST_Nam.Text.Trim() == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                try
+                {
                     SqlConnection connection = new SqlConnection();
                     connection.ConnectionString = Global.ConnectionStr;
                     connection.Open();
@@ -69,51 +93,31 @@ namespace QLNS
                     command.CommandType = CommandType.StoredProcedure;
                     command.ExecuteNonQuery();
                     connection.Close();
-                    dataGridViewBCST.AutoGenerateColumns = false;
-                    dataGridViewBCST.Columns[0].DataPropertyName = "STT";
-                    dataGridViewBCST.Columns[1].DataPropertyName = "MaSach";
-                    dataGridViewBCST.Columns[2].DataPropertyName = "TenDauSach";
-                    dataGridViewBCST.Columns[3].DataPropertyName = "TenTheLoai";
-                    dataGridViewBCST.Columns[4].DataPropertyName = "TonDau";
-                    dataGridViewBCST.Columns[5].DataPropertyName = "PhatSinh";
-                    dataGridViewBCST.Columns[6].DataPropertyName = "TonCuoi";
-                    BCST_LoadData();
+                    BCTS_Datagrid();
 
-
-
-
+                }
+                catch
+                {
+                    //int thang = BCTS_LietKeThang(Convert.ToInt32(comboBoxBCST_Thang.Text));
+                    //int nam = BCTS_LietKeNam(Convert.ToInt32(textBoxBCST_Nam.Text));                    
+                   BCTS_Datagrid();
+                }
             }
-            catch
-            {
-                dataGridViewBCST.AutoGenerateColumns = false;
-                dataGridViewBCST.Columns[0].DataPropertyName = "STT";
-                dataGridViewBCST.Columns[1].DataPropertyName = "MaSach";
-                dataGridViewBCST.Columns[2].DataPropertyName = "TenDauSach";
-                dataGridViewBCST.Columns[3].DataPropertyName = "TenTheLoai";
-                dataGridViewBCST.Columns[4].DataPropertyName = "TonDau";
-                dataGridViewBCST.Columns[5].DataPropertyName = "PhatSinh";
-                dataGridViewBCST.Columns[6].DataPropertyName = "TonCuoi";
-                BCST_LoadData();
-            }
-           
-
         }
-        
-        public int thang=0;
+        public int thang = 0;
         private void panelBaoCaoSachTon_Paint(object sender, PaintEventArgs e)
         {
             if (thang < 12)
             {
                 for (int i = 0; i < 12; i++)
                 {
-                    comboBoxBCST_Thang.Items.Add((i+1).ToString());                    
+                    comboBoxBCST_Thang.Items.Add((i + 1).ToString());
                     comboBoxBCST_Thang.DisplayMember = (i + 1).ToString();
                     thang++;
                 }
                 comboBoxBCST_Thang.SelectedIndex = 0;
             }
             else return;
-
         }
         private void buttonBaoCaoSachTon_Click(object sender, EventArgs e)
         {
@@ -129,7 +133,6 @@ namespace QLNS
                 else return;
             }
             else panelBaoCaoSachTon.BringToFront();
-
         }
 
 

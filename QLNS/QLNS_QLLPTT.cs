@@ -27,6 +27,7 @@ namespace QLNS
             comboBoxLPTT_MaPhieuThu.Text = "";
 
         }
+
         private void buttonLPTT_Luu_Click(object sender, EventArgs e)
         {
             buttonLPTT_Luu.Visible = false;
@@ -41,11 +42,38 @@ namespace QLNS
                 kiemtraluu = 0;
                 return;
             }
-            float tienno=LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
-            if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
+            if (kiemtrasotienthu() == 1)
             {
-                MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                float tienno = LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
+                if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
+                {
+                    MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    SqlConnection connection = new SqlConnection();
+                    connection.ConnectionString = Global.ConnectionStr;
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("ThemPhieuThu", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    SqlParameter p = new SqlParameter("@MaKH", comboBoxLPTT_MaKH.Text);
+                    command.Parameters.Add(p);
+                    DateTime date = DateTime.ParseExact(dateTimePickerLPTT_NgayThu.Text, "dd-MM-yyyy", null);
+                    p = new SqlParameter("@NgayThuTien", date);
+                    command.Parameters.Add(p);
+                    p = new SqlParameter("@SoTienThu", textBoxLPT_SoTienThu.Text);
+                    command.Parameters.Add(p);
+                    int count = command.ExecuteNonQuery();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Thêm Thành Công !");
+                        kiemtraluu = 0;
+                        QLPTT_LoadData();
+
+                    }
+                    connection.Close();
+                }
             }
             else
             {
@@ -88,6 +116,8 @@ namespace QLNS
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 dt.Rows[i]["STT"] = i + 1;
+
+
             }
             dataGridViewLPTT_DanhSachPhieuThu.DataSource = dt;
             QLPT_LoadComboboxPhieuThu();
@@ -170,7 +200,7 @@ namespace QLNS
                 textBoxLPTT_Email.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[5].Value);
                 textBoxLPTT_DiaChi.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[6].Value);
                 dateTimePickerLPTT_NgayThu.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[7].Value);
-                //textBoxLPT_SoTienThu.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[8].Value);
+                textBoxLPT_SoTienThu.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[8].Value);
             }
 
         }
@@ -218,11 +248,60 @@ namespace QLNS
         {
             try
             {
-                float tienno = LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
-                if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
+                if (kiemtrasotienthu() == 1)
                 {
-                    MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    float tienno = LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
+                    if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
+                    {
+                        MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    else
+                    {
+                        DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (dlr == DialogResult.Yes)
+                        {
+
+                            SqlConnection connection = new SqlConnection();
+                            connection.ConnectionString = Global.ConnectionStr;
+                            connection.Open();
+                            //Sua ngay thu tien
+                            SqlCommand command = new SqlCommand("SuaNgayThuTien", connection);
+                            command.CommandType = CommandType.StoredProcedure;
+                            //int id = (int)dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[1].Value;
+                            int id = Convert.ToInt32(comboBoxLPTT_MaPhieuThu.Text);
+                            SqlParameter p = new SqlParameter("@SoPhieuThu", id);
+                            command.Parameters.Add(p);
+                            DateTime date = DateTime.ParseExact(dateTimePickerLPTT_NgayThu.Text, "dd-MM-yyyy", null);
+                            p = new SqlParameter("@NgayThuTien", date);
+                            command.Parameters.Add(p);
+                            int count = command.ExecuteNonQuery();
+                            if (count > 0)
+                            {
+                                QLPTT_LoadData();
+
+                            }
+
+                            SqlCommand Command = new SqlCommand("SuaSoTienThu", connection);
+                            Command.CommandType = CommandType.StoredProcedure;
+                            p = new SqlParameter("@SoPhieuThu", id);
+                            Command.Parameters.Add(p);
+                            p = new SqlParameter("@SoTienThu", textBoxLPT_SoTienThu.Text);
+                            Command.Parameters.Add(p);
+
+
+                            count = Command.ExecuteNonQuery();
+                            if (count > 0)
+                            {
+                                MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                                QLPTT_LoadData();
+
+                            }
+
+                            connection.Close();
+                        }
+                        else return;
+                    }
                 }
                 else
                 {
@@ -269,6 +348,7 @@ namespace QLNS
                         connection.Close();
                     }
                     else return;
+
                 }
 
                 
@@ -314,6 +394,27 @@ namespace QLNS
             QLPTT_LoadData();
             
 
+
+        }
+
+        public int kiemtrasotienthu()
+        {
+            
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = Global.ConnectionStr;
+            connection.Open();
+            //int id;
+            SqlCommand command = new SqlCommand("LietKeKiemTraSoTienThu", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.ExecuteNonQuery();
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            adapter.SelectCommand = command;
+            adapter.Fill(dt);
+            string ktsotienthu = dt.Rows[0]["GiaTri"].ToString().Trim();
+
+            connection.Close();
+            return Convert.ToInt32(ktsotienthu);
 
         }
 

@@ -109,6 +109,26 @@ namespace QLNS
             connection.Close();
 
         }
+        public void TDQD_KiemTraSoTienThu()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = Global.ConnectionStr;
+            connection.Open();
+
+            SqlCommand command = new SqlCommand("LietKeKiemTraSoTienThu", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.ExecuteNonQuery();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                string kiemtrasotienthu = (string)reader["GiaTri"].ToString();
+                if (Convert.ToInt32(kiemtrasotienthu) == 1) radioButtonTDQD_KiemTraSoTienThu_Yes.Checked = true;
+                else if (Convert.ToInt32(kiemtrasotienthu) == 0) radioButtonButtonTDQD_KiemTraSoTienThu_No.Checked = true;
+
+            }
+            connection.Close();
+
+        }
         private void buttonButtonTDQD_Luu_Click(object sender, EventArgs e)
         {
             //textBoxTDQD_SoLuongNhapToiThieu.Text = "";
@@ -186,6 +206,31 @@ namespace QLNS
                 TDQD_TiLeDonGiaBan();
 
             }
+
+            SqlCommand command6 = new SqlCommand("SuaKiemTraSoTienThu", connection);
+            command6.CommandType = CommandType.StoredProcedure;
+            //int id = (int)dataGridViewQLKH_DanhSachKH.CurrentRow.Cells[1].Value;
+            if (radioButtonTDQD_KiemTraSoTienThu_Yes.Checked == true)
+            {
+
+                value = 1;
+
+            }
+            else
+             if (radioButtonButtonTDQD_KiemTraSoTienThu_No.Checked == true)
+             {
+                value = 0;
+             }
+            p = new SqlParameter("@GiaTri", value);
+            command6.Parameters.Add(p);
+            count = command6.ExecuteNonQuery();
+            if (count > 0)
+            {
+                TDQD_KiemTraSoTienThu();
+
+            }
+
+
             MessageBox.Show("Cập nhật thành công");
             connection.Close();
 
@@ -219,6 +264,7 @@ namespace QLNS
             TDQD_TiLeDonGiaBan();
             TDQD_SoTienNoToiDa();
             TDQD_SoLuongTonToiThieuSauKhiBan();
+            TDQD_KiemTraSoTienThu();
         }
     }
 }

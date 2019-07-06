@@ -118,9 +118,7 @@ namespace QLNS
             }
             else panelLapPhieuThuTien.BringToFront();
 
-        }
-
-        
+        }        
 
         private void buttonBaoCaoCongNo_Click(object sender, EventArgs e)
         {
@@ -138,9 +136,7 @@ namespace QLNS
             else panelBaoCaoCongNo.BringToFront();
 
 
-        }
-
-        
+        }       
 
 
         private void buttonLHDBS_ThemMaKH_Click(object sender, EventArgs e)
@@ -233,5 +229,89 @@ namespace QLNS
 
             }
         }
+
+        private void FormQLNS_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+        }
+
+        private void FormQLNS_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Control)
+            {
+                //phím tắt thoát chương trình
+                if (e.KeyCode.Equals(Keys.X))
+                {
+                    DialogResult result = MessageBox.Show("Bạn chắc chắn muốn thoát", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    if (result == DialogResult.OK)
+                        this.Close();
+                    else return;
+                }
+                //phím tắt tra cứu
+                if (e.KeyCode.Equals(Keys.F))
+                {
+                    buttonTraCuu_Click(null, null);
+                }
+                //phím tắt thêm khách hàng
+                if (e.KeyCode.Equals(Keys.H))
+                {
+                    buttonQuanLyKhachHang_Click(null, null);
+                }
+                //phím tắt  trang chủ
+                if (e.KeyCode.Equals(Keys.O))
+                {
+                    buttonTrangChu_Click(null, null);
+                }
+                //phím tắt LPNS
+                if (e.KeyCode.Equals(Keys.L))
+                {
+                    buttonNhapSach_Click(null, null);
+                }
+                //phím tắt QLS
+                if (e.KeyCode.Equals(Keys.S))
+                {
+                    buttonQuanLySach_Click(null, null);
+                }
+                //Phím tắt QLDS
+                if (e.KeyCode.Equals(Keys.D))
+                {
+                    buttonQuanLyDauSach_Click(null, null);
+                }
+                //Phím tắt QLkhác
+                if (e.KeyCode.Equals(Keys.K))
+                {
+                    buttonKhac_Click(null, null);
+                }
+                //phím tắt báo cáo tồn
+                if (e.KeyCode.Equals(Keys.A))
+                {
+                    buttonBaoCaoSachTon_Click(null, null);
+                }
+                //phím tắt lập hóa đơn
+                if (e.KeyCode.Equals(Keys.B))
+                {
+                    buttonLapHoaDonBanSach_Click(null, null);
+                }                
+                //phím tắt LPTT
+                if (e.KeyCode.Equals(Keys.T))
+                {
+                    buttonLapPhieuThuTien_Click(null, null);
+                }
+                //phím tắt lập phiếu nợ
+                if (e.KeyCode.Equals(Keys.N))
+                {
+                    buttonBaoCaoCongNo_Click(null, null);
+                }
+                //phím tắt thay đổi qui định
+                if (e.KeyCode.Equals(Keys.Q))
+                {
+                    buttonThayDoiQuyDinh_Click(null, null);
+                }
+
+
+            }
+        }
+
+       
     }
 }

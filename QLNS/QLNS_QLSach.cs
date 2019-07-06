@@ -185,7 +185,7 @@ namespace QLNS
             connection.Open();
             SqlCommand command = new SqlCommand("LietKeDauSach4Bang", connection);
             string id = comboBoxQLS_MaDauSach.Text;
-            SqlParameter p = new SqlParameter("MaDauSach", id);
+            SqlParameter p = new SqlParameter("MaDauSach", Convert.ToInt32(id));
             command.Parameters.Add(p);
             command.CommandType = CommandType.StoredProcedure;
             command.ExecuteNonQuery();
