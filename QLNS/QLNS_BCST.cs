@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,42 +20,50 @@ namespace QLNS
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
             SqlCommand command = new SqlCommand("LietKeBaoCaoTon", connection);
+
             SqlParameter p = new SqlParameter("@Thang", Convert.ToInt32(comboBoxBCST_Thang.Text));
             command.Parameters.Add(p);
             p = new SqlParameter("@Nam", Convert.ToInt32(textBoxBCST_Nam.Text));
             command.Parameters.Add(p);
             command.CommandType = CommandType.StoredProcedure;
-            command.ExecuteNonQuery();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dt.Columns.Add("STT");
-            for (int i = 0; i < dt.Rows.Count; i++)
-                dt.Rows[i]["STT"] = i + 1;
-            dataGridViewBCST.DataSource = dt;
-            if(dataGridViewBCST.Rows.Count==1)
+            DataSet ds = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(ds);
+            reportViewerBCST.ProcessingMode = ProcessingMode.Local;
+            reportViewerBCST.LocalReport.ReportPath = "ReportBCST.rdlc";
+            if (ds.Tables[0].Rows.Count > 0)
             {
-                string str = "Chưa tạo báo cáo tháng " + comboBoxBCST_Thang.Text + " năm " + textBoxBCST_Nam.Text;
-                MessageBox.Show(str,"Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                
-            }
+                //
+                ReportParameter rpt1 = new ReportParameter("Thang", comboBoxBCST_Thang.Text);
+                this.reportViewerBCST.LocalReport.SetParameters(new ReportParameter[] { rpt1 });
 
+                rpt1 = new ReportParameter("Nam", textBoxBCST_Nam.Text);
+                this.reportViewerBCST.LocalReport.SetParameters(new ReportParameter[] { rpt1 });
+                this.reportViewerBCST.RefreshReport();
+                //
+                ReportDataSource rds = new ReportDataSource();
+                rds.Name = "DataSetBCST";
+                rds.Value = ds.Tables[0];
+                reportViewerBCST.LocalReport.DataSources.Clear();
+                reportViewerBCST.LocalReport.DataSources.Add(rds);
+                reportViewerBCST.RefreshReport();
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Chưa tạo báo cáo ", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                reportViewerBCST.Clear();
+                return;
+            }
             connection.Close();
 
-        }       
-        
+
+        }
+
         public void BCTS_Datagrid()
         {
-            dataGridViewBCST.AutoGenerateColumns = false;
-            dataGridViewBCST.Columns[0].DataPropertyName = "STT";
-            dataGridViewBCST.Columns[1].DataPropertyName = "MaSach";
-            dataGridViewBCST.Columns[2].DataPropertyName = "TenDauSach";
-            dataGridViewBCST.Columns[3].DataPropertyName = "TenTheLoai";
-            dataGridViewBCST.Columns[4].DataPropertyName = "TonDau";
-            dataGridViewBCST.Columns[5].DataPropertyName = "PhatSinh";
-            dataGridViewBCST.Columns[6].DataPropertyName = "TonCuoi";
-            BCST_LoadData();
+            
 
         }
 
@@ -93,14 +102,13 @@ namespace QLNS
                     command.CommandType = CommandType.StoredProcedure;
                     command.ExecuteNonQuery();
                     connection.Close();
-                    BCTS_Datagrid();
+                    BCST_LoadData();
 
                 }
                 catch
                 {
-                    //int thang = BCTS_LietKeThang(Convert.ToInt32(comboBoxBCST_Thang.Text));
-                    //int nam = BCTS_LietKeNam(Convert.ToInt32(textBoxBCST_Nam.Text));                    
-                   BCTS_Datagrid();
+                                  
+                    BCST_LoadData();
                 }
             }
         }
@@ -134,6 +142,7 @@ namespace QLNS
             }
             else panelBaoCaoSachTon.BringToFront();
         }
+
 
 
     }

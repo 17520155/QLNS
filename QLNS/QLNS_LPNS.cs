@@ -323,6 +323,9 @@ namespace QLNS
                 textBoxLPNS_TongTien.Text = "";
 
             }
+            ToolTip t = new ToolTip();
+            string str = "Số lượng nhập nhỏ hơn :" + LPNS_SoLuongNhapToiThieu().ToString();
+            t.SetToolTip(textBoxLPNS_SoLuongNhap,str);
             LoadComboboxMaSach();
         }
 

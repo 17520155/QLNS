@@ -232,7 +232,13 @@ namespace QLNS
 
         private void FormQLNS_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'QLNSDataSet.LietKeBaoCaoTon' table. You can move, or remove it, as needed.
+            //this.LietKeBaoCaoTonTableAdapter.Fill(this.QLNSDataSet.LietKeBaoCaoTon);
+            // TODO: This line of code loads data into the 'QLNSDataSet1.LietKeBaoCaoCongNo' table. You can move, or remove it, as needed.
+            //this.LietKeBaoCaoCongNoTableAdapter.Fill(this.QLNSDataSet1.LietKeBaoCaoCongNo);
             this.KeyPreview = true;
+            //this.reportViewerBCST.RefreshReport();
+            //this.reportViewerBCCN.RefreshReport();
         }
 
         private void FormQLNS_KeyUp(object sender, KeyEventArgs e)

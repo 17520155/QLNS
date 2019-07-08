@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,47 +16,55 @@ namespace QLNS
     {
         public void BCCN_LoadData()
         {
+
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
             SqlCommand command = new SqlCommand("LietKeBaoCaoCongNo", connection);
+
             SqlParameter p = new SqlParameter("@Thang", Convert.ToInt32(comboBoxBCCN_Thang.Text));
             command.Parameters.Add(p);
             p = new SqlParameter("@Nam", Convert.ToInt32(textBoxBCCN_Nam.Text));
             command.Parameters.Add(p);
             command.CommandType = CommandType.StoredProcedure;
-            command.ExecuteNonQuery();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dt.Columns.Add("STT");
-            for (int i = 0; i < dt.Rows.Count; i++)
-                dt.Rows[i]["STT"] = i + 1;
-            dataGridViewBCCN.DataSource = dt;
-            if (dataGridViewBCCN.Rows.Count == 1)
+            DataSet ds = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(ds);
+            reportViewerBCCN.ProcessingMode = ProcessingMode.Local;
+            reportViewerBCCN.LocalReport.ReportPath = "ReportBCCN.rdlc";
+            if (ds.Tables[0].Rows.Count > 0)
             {
-                string str = "Chưa tạo báo cáo tháng " + comboBoxBCCN_Thang.Text + " năm " + textBoxBCCN_Nam.Text;
-                MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //
+                ReportParameter rpt1 = new ReportParameter("Thang", comboBoxBCCN_Thang.Text);
+                this.reportViewerBCCN.LocalReport.SetParameters(new ReportParameter[] { rpt1 });
 
+                rpt1 = new ReportParameter("Nam", textBoxBCCN_Nam.Text);
+                this.reportViewerBCCN.LocalReport.SetParameters(new ReportParameter[] { rpt1 });
+                this.reportViewerBCCN.RefreshReport();
+                //
+
+                ReportDataSource rds = new ReportDataSource();
+                rds.Name = "DataSetBCCN";
+                rds.Value = ds.Tables[0];
+                reportViewerBCCN.LocalReport.DataSources.Clear();
+                reportViewerBCCN.LocalReport.DataSources.Add(rds);
+                reportViewerBCCN.RefreshReport();
+                return;
             }
+            else
+            {
+                MessageBox.Show("Chưa tạo báo cáo ", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                reportViewerBCCN.Clear();
+                return;
+            }
             connection.Close();
 
-        }
-        public void BCCN_Datagridview()
-        {
-            dataGridViewBCCN.AutoGenerateColumns = false;
-            dataGridViewBCCN.Columns[0].DataPropertyName = "STT";
-            dataGridViewBCCN.Columns[1].DataPropertyName = "MaKH";
-            dataGridViewBCCN.Columns[2].DataPropertyName = "HoTenKH";
-            dataGridViewBCCN.Columns[3].DataPropertyName = "DienThoai";
-            dataGridViewBCCN.Columns[4].DataPropertyName = "NoDau";
-            dataGridViewBCCN.Columns[5].DataPropertyName = "PhatSinh";
-            dataGridViewBCCN.Columns[6].DataPropertyName = "NoCuoi";
-            BCCN_LoadData();
+
+
 
         }
+
         private void buttonBCCN_XemBaoCao_Click(object sender, EventArgs e)
         {
             try
@@ -80,17 +89,7 @@ namespace QLNS
                 }
                 try
                 {
-                    /*SqlConnection connections = new SqlConnection();
-                    connections.ConnectionString = Global.ConnectionStr;
-                    connections.Open();
-                    SqlCommand Command = new SqlCommand("XoaBaoCaoTon", connections);
-                    SqlParameter p = new SqlParameter("@Thang", Convert.ToInt32(comboBoxBCST_Thang.Text));
-                    Command.Parameters.Add(p);
-                    p = new SqlParameter("@Nam", Convert.ToInt32(textBoxBCST_Nam.Text));
-                    Command.Parameters.Add(p);
-                    Command.CommandType = CommandType.StoredProcedure;
-                    Command.ExecuteNonQuery();
-                    connections.Close();*/
+
 
                     SqlConnection connection = new SqlConnection();
                     connection.ConnectionString = Global.ConnectionStr;
@@ -104,14 +103,14 @@ namespace QLNS
                     command.ExecuteNonQuery();
 
                     connection.Close();
-                    BCCN_Datagridview();
+                    BCCN_LoadData();
 
                 }
                 catch
                 {
                     //int thang = BCTS_LietKeThang(Convert.ToInt32(comboBoxBCST_Thang.Text));
                     //int nam = BCTS_LietKeNam(Convert.ToInt32(textBoxBCST_Nam.Text));                    
-                    BCCN_Datagridview();
+                    BCCN_LoadData();
                 }
             }
 
