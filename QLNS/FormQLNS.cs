@@ -318,6 +318,20 @@ namespace QLNS
             }
         }
 
-        
+        private void buttonTrangChu_Click_1(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    panelTrangChu.BringToFront();
+
+                }
+                else return;
+            }
+            else panelTrangChu.BringToFront();
+        }
     }
 }

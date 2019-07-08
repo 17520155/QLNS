@@ -131,11 +131,14 @@ namespace QLNS
         }
         private void buttonButtonTDQD_Luu_Click(object sender, EventArgs e)
         {
-            //textBoxTDQD_SoLuongNhapToiThieu.Text = "";
-            //textBoxTDQD_SoLuongTonToiDa.Text = "";
-            //textBoxTDQD_SoTienNoToiDa.Text = "";
-            //textBoxTDQD_SoLuongTonToiThieu.Text = "";
-            //textBoxTDQD_TiLeDonGiaBan.Text = "";
+            textBoxTDQD_SoLuongNhapToiThieu.Enabled = false;
+            textBoxTDQD_SoLuongTonToiDa.Enabled = false;
+            textBoxTDQD_SoTienNoToiDa.Enabled = false;
+            textBoxTDQD_SoLuongTonToiThieu.Enabled = false;
+            textBoxTDQD_TiLeDonGiaBan.Enabled = false;
+            radioButtonTDQD_KiemTraSoTienThu_Yes.Enabled = false;
+            radioButtonButtonTDQD_KiemTraSoTienThu_No.Enabled = false;
+
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
@@ -231,7 +234,7 @@ namespace QLNS
             }
 
 
-            MessageBox.Show("Cập nhật thành công");
+            MessageBox.Show("Thay đổi qui định thành công! ", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
             connection.Close();
 
         }
@@ -247,6 +250,13 @@ namespace QLNS
 
         private void buttonThayDoiQuyDinh_Click(object sender, EventArgs e)
         {
+            textBoxTDQD_SoLuongNhapToiThieu.Enabled = false;
+            textBoxTDQD_SoLuongTonToiDa.Enabled = false;
+            textBoxTDQD_SoTienNoToiDa.Enabled = false;
+            textBoxTDQD_SoLuongTonToiThieu.Enabled = false;
+            textBoxTDQD_TiLeDonGiaBan.Enabled = false;
+            radioButtonTDQD_KiemTraSoTienThu_Yes.Enabled = false;
+            radioButtonButtonTDQD_KiemTraSoTienThu_No.Enabled = false;
             if (kiemtraluu == 1)
             {
                 DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -265,6 +275,16 @@ namespace QLNS
             TDQD_SoTienNoToiDa();
             TDQD_SoLuongTonToiThieuSauKhiBan();
             TDQD_KiemTraSoTienThu();
+        }
+        private void buttonButtonTDQD_Sua_Click(object sender, EventArgs e)
+        {
+            textBoxTDQD_SoLuongNhapToiThieu.Enabled = true;
+            textBoxTDQD_SoLuongTonToiDa.Enabled = true;
+            textBoxTDQD_SoTienNoToiDa.Enabled = true;
+            textBoxTDQD_SoLuongTonToiThieu.Enabled = true;
+            textBoxTDQD_TiLeDonGiaBan.Enabled = true;
+            radioButtonTDQD_KiemTraSoTienThu_Yes.Enabled = true;
+            radioButtonButtonTDQD_KiemTraSoTienThu_No.Enabled = true;
         }
     }
 }

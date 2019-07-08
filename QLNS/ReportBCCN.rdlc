@@ -380,7 +380,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>MaKH</rd:DefaultName>
@@ -580,7 +582,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSetBCCN</DataSetName>
             <Top>0.18403in</Top>
-            <Left>0.38542in</Left>
+            <Left>0.88542in</Left>
             <Height>0.70014in</Height>
             <Width>8.96872in</Width>
             <Style>
@@ -644,6 +646,7 @@
                       <Value>="Tháng: "&amp;Parameters!Thang.Value &amp; "/"&amp; Parameters!Nam.Value</Value>
                       <Style>
                         <FontStyle>Italic</FontStyle>
+                        <FontSize>12pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -695,11 +698,22 @@
                     <TextAlign>Center</TextAlign>
                   </Style>
                 </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Kí tên</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
               <Top>0.06944in</Top>
               <Left>8.02602in</Left>
-              <Height>0.31375in</Height>
+              <Height>0.56598in</Height>
               <Width>1.69792in</Width>
               <Style>
                 <Border>

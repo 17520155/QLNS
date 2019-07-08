@@ -33,7 +33,7 @@ namespace QLNS
             connection.Close();
             return (float)Convert.ToDouble(sotienno);
         }
-        
+        public int themmoihd = 0;
         private void textBoxLHDBS_DonGiaBan_TextChanged(object sender, EventArgs e)
         {
             
@@ -381,6 +381,29 @@ namespace QLNS
                 textBox_LHDBS_ConLai.Text = "";
 
             }
+            if (themmoihd == 0)
+            {
+                buttonLHDBS_Them.Enabled = false;
+                buttonLHDBS_Xoa.Enabled = false;
+                buttonLHDBS_CapNhat.Enabled = false;
+                dataGridViewLHDBS_DanhSachMua.Enabled = false;
+                buttonLHDBS_ThemMoi.Visible = true;
+                LHDBS_huy.Visible = false;
+                LapHoaDon_LuuHD.Visible = false;
+
+
+            }
+            else
+            {
+                buttonLHDBS_Them.Enabled = true;
+                buttonLHDBS_Xoa.Enabled = true;
+                buttonLHDBS_CapNhat.Enabled = true;
+                dataGridViewLHDBS_DanhSachMua.Enabled = true;
+                buttonLHDBS_ThemMoi.Visible = false;
+                LHDBS_huy.Visible = true;
+                LapHoaDon_LuuHD.Visible = true;
+
+            }
             LHDBS_LoadComboboxMaSach();
 
         }
@@ -401,6 +424,7 @@ namespace QLNS
         }
         private void LapHoaDon_LuuHD_Click(object sender, EventArgs e)
         {
+            themmoihd = 0;
             int iCount = 0;
             if (dataGridViewLHDBS_DanhSachMua.RowCount > 0)
             {
@@ -521,11 +545,32 @@ namespace QLNS
         private void buttonLHDBS_ThemMoi_Click(object sender, EventArgs e)
         {
             kiemtraluu = 1;
+            themmoihd = 1;
             textBoxLHDBS_SoTienTra.Text = "";
             textBoxLHDBS_SoLuong.Text = "";
             textBoxLHDBS_DonGiaBan.Text = "";
             LapHoaDon_LuuHD.Visible = true;
-            buttonLHDBS_ThemMoi.Text = "Hủy";
+
+            textBoxLHDBS_TongTien.Text = "0";
+            dataGridViewLHDBS_DanhSachMua.Rows.Clear();
+            dataGridViewLHDBS_DanhSachMua.AllowUserToAddRows = false;
+            dataGridViewLHDBS_DanhSachMua.Rows.Add(1);
+        }
+        private void LHDBS_huy_Click(object sender, EventArgs e)
+        {
+
+            kiemtraluu = 0;
+            themmoihd = 0;
+            textBoxLHDBS_SoTienTra.Text = "";
+            textBoxLHDBS_SoLuong.Text = "";
+            textBoxLHDBS_DonGiaBan.Text = "";
+            LapHoaDon_LuuHD.Visible = false;
+            //buttonLHDBS_ThemMoi.Text = "Thêm mới";
+
+            textBoxLHDBS_TongTien.Text = "0";
+            dataGridViewLHDBS_DanhSachMua.Rows.Clear();
+            dataGridViewLHDBS_DanhSachMua.AllowUserToAddRows = false;
+            dataGridViewLHDBS_DanhSachMua.Rows.Add(1);
         }
     }
 }

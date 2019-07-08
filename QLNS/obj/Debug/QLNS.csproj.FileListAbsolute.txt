@@ -1,7 +1,6 @@
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe.config
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\QLNS.pdb
-C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csprojAssemblyReference.cache
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormQLNS.resources
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemDauSach.resources
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormThemKH.resources
@@ -52,3 +51,4 @@ C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\zh-HANS\Microsoft.ReportViewe
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.CopyComplete
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\ReportBCCN.rdlc
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csprojAssemblyReference.cache
