@@ -30,6 +30,8 @@ namespace QLNS
         {
             Form formThemNhaXuatBan = new FormThemNhaXuatBan();
             formThemNhaXuatBan.ShowDialog();
+            LoadComboboxMaNXB();
+
         }
 
         public void LoadComboboxMaDauSach()
@@ -86,7 +88,7 @@ namespace QLNS
                 string tendausach = (string)reader["TenDauSach"].ToString();
                 textBoxTenDauSach.Text = tendausach;
                 string tentacgia = (string)reader["TenTacGia"].ToString();
-                textBoxTenTacGia.Text = tentacgia;
+                //textBoxTenTacGia.Text = tentacgia;
                 string tentheloai = (string)reader["TenTheLoai"].ToString();
                 textBoxTenTheLoai.Text = tentheloai; 
             }
@@ -140,7 +142,7 @@ namespace QLNS
                 MessageBox.Show("Thêm Thành Công !");
                 comboBoxMaDauSach.Text = "";
                 textBoxTenDauSach.Text = "";
-                textBoxTenTacGia.Text = "";
+                //textBoxTenTacGia.Text = "";
                 textBoxTenTheLoai.Text = "";
                 comboBoxMaNhaXuatBan.Text = "";
                 textBoxTenNhaXuatBan.Text = "";

@@ -14,6 +14,7 @@ namespace QLNS
     public partial class FormQLNS : Form
     {
         public float tongtien = 0;
+        public int themmoi=0;
         public int LPNS_SoLuongNhapToiThieu()
         {
             
@@ -323,6 +324,27 @@ namespace QLNS
                 textBoxLPNS_TongTien.Text = "";
 
             }
+            if(themmoi==0)
+            {
+                buttonLPNS_Them.Enabled = false;
+                buttonLPNS_Xoa.Enabled = false;
+                buttonLPNS_CapNhat.Enabled = false;
+                dataGridViewLPNS_ChiTietPhieuNhap.Enabled = false;
+                buttonLPNS_ThemMoi.Visible = true;
+                buttonLPNS_huy.Visible = false;
+
+
+            }
+            else
+            {
+                buttonLPNS_Them.Enabled = true;
+                buttonLPNS_Xoa.Enabled = true;
+                buttonLPNS_CapNhat.Enabled = true;
+                dataGridViewLPNS_ChiTietPhieuNhap.Enabled = true;
+                buttonLPNS_ThemMoi.Visible = false;
+                buttonLPNS_huy.Visible = true;
+
+            }
             ToolTip t = new ToolTip();
             string str = "Số lượng nhập nhỏ hơn :" + LPNS_SoLuongNhapToiThieu().ToString();
             t.SetToolTip(textBoxLPNS_SoLuongNhap,str);
@@ -356,8 +378,10 @@ namespace QLNS
         }
         private void button_LPNS_luu_Click(object sender, EventArgs e)
         {
-            
+
+            themmoi = 0;
                 int iCount = 0;
+                
                 if (dataGridViewLPNS_ChiTietPhieuNhap.RowCount > 0)
                     {
                         for (int i = 0; i <= dataGridViewLPNS_ChiTietPhieuNhap.RowCount - 1; i++)
@@ -445,6 +469,7 @@ namespace QLNS
         }
         private void buttonLPNS_ThemMoi_Click(object sender, EventArgs e)
         {
+            themmoi = 1;
             kiemtraluu = 1;
             textBoxLPNS_SoLuongNhap.Text = "";
             textBoxLPNS_DonGiaNhap.Text = "";
@@ -454,6 +479,33 @@ namespace QLNS
             textBoxLPNS_NamXuatBan.Text = "";
             button_LPNS_luu.Visible = true;
             buttonLPNS_ThemMoi.Text = "Hủy bỏ";
+            textBoxLPNS_TongTien.Text ="0";
+            dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
+            dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
+            dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
+
+            
+
+
+
+        }
+        private void buttonLPNS_huy_Click(object sender, EventArgs e)
+        {
+            themmoi = 0;
+            kiemtraluu = 0;
+            button_LPNS_luu.Visible = false;
+            textBoxLPNS_SoLuongNhap.Text = "";
+            textBoxLPNS_DonGiaNhap.Text = "";
+            comboBoxLPNS_MaSach.Text = "";
+            textBoxLPNS_TenDauSach.Text = "";
+            textBoxLPNS_NhaXuatBan.Text = "";
+            textBoxLPNS_NamXuatBan.Text = "";
+            button_LPNS_luu.Visible = true;
+            buttonLPNS_ThemMoi.Text = "Thêm mới";
+            textBoxLPNS_TongTien.Text = "0";
+            dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
+            dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
+            dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
         }
         private void buttonNhapSach_Click(object sender, EventArgs e)
         {

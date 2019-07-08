@@ -254,24 +254,24 @@
             this.labelTenDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTenDauSach.AutoSize = true;
             this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenDauSach.Location = new System.Drawing.Point(13, 86);
+            this.labelTenDauSach.Location = new System.Drawing.Point(29, 88);
             this.labelTenDauSach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenDauSach.Name = "labelTenDauSach";
-            this.labelTenDauSach.Size = new System.Drawing.Size(95, 17);
+            this.labelTenDauSach.Size = new System.Drawing.Size(77, 17);
             this.labelTenDauSach.TabIndex = 76;
-            this.labelTenDauSach.Text = "Tên đầu sách";
+            this.labelTenDauSach.Text = "Mã thể loại";
             // 
             // labelMaTheLoai
             // 
             this.labelMaTheLoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMaTheLoai.AutoSize = true;
             this.labelMaTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaTheLoai.Location = new System.Drawing.Point(31, 64);
+            this.labelMaTheLoai.Location = new System.Drawing.Point(11, 62);
             this.labelMaTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaTheLoai.Name = "labelMaTheLoai";
-            this.labelMaTheLoai.Size = new System.Drawing.Size(77, 17);
+            this.labelMaTheLoai.Size = new System.Drawing.Size(95, 17);
             this.labelMaTheLoai.TabIndex = 77;
-            this.labelMaTheLoai.Text = "Mã thể loại";
+            this.labelMaTheLoai.Text = "Tên đầu sách";
             // 
             // FormThemDauSach
             // 

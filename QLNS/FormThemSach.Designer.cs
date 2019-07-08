@@ -42,8 +42,6 @@
             this.buttonThemMaDauSach = new System.Windows.Forms.Button();
             this.comboBoxMaDauSach = new System.Windows.Forms.ComboBox();
             this.labelMaDauSach = new System.Windows.Forms.Label();
-            this.textBoxTenTacGia = new System.Windows.Forms.TextBox();
-            this.labelTenTacGia = new System.Windows.Forms.Label();
             this.textBoxNamXuatBan = new System.Windows.Forms.TextBox();
             this.labelNamXuaBan = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -51,7 +49,7 @@
             // textBoxTenNhaXuatBan
             // 
             this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(401, 139);
-            this.textBoxTenNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTenNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenNhaXuatBan.Name = "textBoxTenNhaXuatBan";
             this.textBoxTenNhaXuatBan.ReadOnly = true;
             this.textBoxTenNhaXuatBan.Size = new System.Drawing.Size(95, 20);
@@ -72,7 +70,7 @@
             // 
             this.buttonThemMaNhaXuatBan.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonThemMaNhaXuatBan.Location = new System.Drawing.Point(220, 139);
-            this.buttonThemMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonThemMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemMaNhaXuatBan.Name = "buttonThemMaNhaXuatBan";
             this.buttonThemMaNhaXuatBan.Size = new System.Drawing.Size(25, 19);
             this.buttonThemMaNhaXuatBan.TabIndex = 87;
@@ -84,7 +82,7 @@
             // 
             this.comboBoxMaNhaXuatBan.FormattingEnabled = true;
             this.comboBoxMaNhaXuatBan.Location = new System.Drawing.Point(124, 139);
-            this.comboBoxMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMaNhaXuatBan.Name = "comboBoxMaNhaXuatBan";
             this.comboBoxMaNhaXuatBan.Size = new System.Drawing.Size(92, 21);
             this.comboBoxMaNhaXuatBan.TabIndex = 86;
@@ -104,7 +102,7 @@
             // textBoxTenTheLoai
             // 
             this.textBoxTenTheLoai.Location = new System.Drawing.Point(401, 87);
-            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
             this.textBoxTenTheLoai.ReadOnly = true;
             this.textBoxTenTheLoai.Size = new System.Drawing.Size(95, 20);
@@ -125,7 +123,7 @@
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonLuu.Location = new System.Drawing.Point(243, 227);
-            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLuu.Name = "buttonLuu";
             this.buttonLuu.Size = new System.Drawing.Size(56, 23);
             this.buttonLuu.TabIndex = 79;
@@ -136,7 +134,7 @@
             // textBoxTenDauSach
             // 
             this.textBoxTenDauSach.Location = new System.Drawing.Point(401, 64);
-            this.textBoxTenDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTenDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenDauSach.Name = "textBoxTenDauSach";
             this.textBoxTenDauSach.ReadOnly = true;
             this.textBoxTenDauSach.Size = new System.Drawing.Size(95, 20);
@@ -168,7 +166,7 @@
             // 
             this.buttonThemMaDauSach.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonThemMaDauSach.Location = new System.Drawing.Point(220, 61);
-            this.buttonThemMaDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonThemMaDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemMaDauSach.Name = "buttonThemMaDauSach";
             this.buttonThemMaDauSach.Size = new System.Drawing.Size(25, 19);
             this.buttonThemMaDauSach.TabIndex = 96;
@@ -180,7 +178,7 @@
             // 
             this.comboBoxMaDauSach.FormattingEnabled = true;
             this.comboBoxMaDauSach.Location = new System.Drawing.Point(124, 61);
-            this.comboBoxMaDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMaDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMaDauSach.Name = "comboBoxMaDauSach";
             this.comboBoxMaDauSach.Size = new System.Drawing.Size(92, 21);
             this.comboBoxMaDauSach.TabIndex = 95;
@@ -197,30 +195,10 @@
             this.labelMaDauSach.TabIndex = 94;
             this.labelMaDauSach.Text = "Mã đầu sách";
             // 
-            // textBoxTenTacGia
-            // 
-            this.textBoxTenTacGia.Location = new System.Drawing.Point(124, 85);
-            this.textBoxTenTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxTenTacGia.Name = "textBoxTenTacGia";
-            this.textBoxTenTacGia.ReadOnly = true;
-            this.textBoxTenTacGia.Size = new System.Drawing.Size(95, 20);
-            this.textBoxTenTacGia.TabIndex = 98;
-            // 
-            // labelTenTacGia
-            // 
-            this.labelTenTacGia.AutoSize = true;
-            this.labelTenTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTacGia.Location = new System.Drawing.Point(21, 87);
-            this.labelTenTacGia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelTenTacGia.Name = "labelTenTacGia";
-            this.labelTenTacGia.Size = new System.Drawing.Size(79, 17);
-            this.labelTenTacGia.TabIndex = 97;
-            this.labelTenTacGia.Text = "Tên tác giả";
-            // 
             // textBoxNamXuatBan
             // 
             this.textBoxNamXuatBan.Location = new System.Drawing.Point(124, 163);
-            this.textBoxNamXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNamXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNamXuatBan.Name = "textBoxNamXuatBan";
             this.textBoxNamXuatBan.Size = new System.Drawing.Size(95, 20);
             this.textBoxNamXuatBan.TabIndex = 100;
@@ -243,8 +221,6 @@
             this.ClientSize = new System.Drawing.Size(517, 278);
             this.Controls.Add(this.textBoxNamXuatBan);
             this.Controls.Add(this.labelNamXuaBan);
-            this.Controls.Add(this.textBoxTenTacGia);
-            this.Controls.Add(this.labelTenTacGia);
             this.Controls.Add(this.buttonThemMaDauSach);
             this.Controls.Add(this.comboBoxMaDauSach);
             this.Controls.Add(this.labelMaDauSach);
@@ -259,7 +235,7 @@
             this.Controls.Add(this.textBoxTenDauSach);
             this.Controls.Add(this.labelTenDauSach);
             this.Controls.Add(this.labelThemSach);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemSach";
             this.Text = "FormThemSach";
             this.Load += new System.EventHandler(this.FormThemSach_Load);
@@ -283,8 +259,6 @@
         private System.Windows.Forms.Button buttonThemMaDauSach;
         private System.Windows.Forms.ComboBox comboBoxMaDauSach;
         private System.Windows.Forms.Label labelMaDauSach;
-        private System.Windows.Forms.TextBox textBoxTenTacGia;
-        private System.Windows.Forms.Label labelTenTacGia;
         private System.Windows.Forms.TextBox textBoxNamXuatBan;
         private System.Windows.Forms.Label labelNamXuaBan;
     }

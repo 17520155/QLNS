@@ -29,16 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLNS));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LietKeBaoCaoTonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QLNSDataSet = new QLNS.QLNSDataSet();
             this.LietKeBaoCaoCongNoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QLNSDataSet1 = new QLNS.QLNSDataSet1();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelMenuTRANGCHU = new System.Windows.Forms.Panel();
+            this.buttonTrangChu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelMenuTHAYDOIQUYDINH = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.labelThayDoiQuyDinh = new System.Windows.Forms.Label();
@@ -379,14 +382,13 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.LietKeBaoCaoCongNoTableAdapter = new QLNS.QLNSDataSet1TableAdapters.LietKeBaoCaoCongNoTableAdapter();
             this.LietKeBaoCaoTonTableAdapter = new QLNS.QLNSDataSetTableAdapters.LietKeBaoCaoTonTableAdapter();
-            this.panelMenuTRANGCHU = new System.Windows.Forms.Panel();
-            this.buttonTrangChu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLPNS_huy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LietKeBaoCaoTonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QLNSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LietKeBaoCaoCongNoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QLNSDataSet1)).BeginInit();
             this.panelMenu.SuspendLayout();
+            this.panelMenuTRANGCHU.SuspendLayout();
             this.panelMenuTHAYDOIQUYDINH.SuspendLayout();
             this.panelMenuKINHDOANH.SuspendLayout();
             this.panelMenuSACH.SuspendLayout();
@@ -424,7 +426,6 @@
             this.panelTraCuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).BeginInit();
             this.panelTrangChu.SuspendLayout();
-            this.panelMenuTRANGCHU.SuspendLayout();
             this.SuspendLayout();
             // 
             // LietKeBaoCaoTonBindingSource
@@ -470,6 +471,46 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(270, 663);
             this.panelMenu.TabIndex = 0;
+            // 
+            // panelMenuTRANGCHU
+            // 
+            this.panelMenuTRANGCHU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelMenuTRANGCHU.Controls.Add(this.buttonTrangChu);
+            this.panelMenuTRANGCHU.Controls.Add(this.button1);
+            this.panelMenuTRANGCHU.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelMenuTRANGCHU.Location = new System.Drawing.Point(-1, 15);
+            this.panelMenuTRANGCHU.Name = "panelMenuTRANGCHU";
+            this.panelMenuTRANGCHU.Size = new System.Drawing.Size(270, 38);
+            this.panelMenuTRANGCHU.TabIndex = 20;
+            // 
+            // buttonTrangChu
+            // 
+            this.buttonTrangChu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTrangChu.FlatAppearance.BorderSize = 0;
+            this.buttonTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("buttonTrangChu.Image")));
+            this.buttonTrangChu.Location = new System.Drawing.Point(8, 5);
+            this.buttonTrangChu.Name = "buttonTrangChu";
+            this.buttonTrangChu.Size = new System.Drawing.Size(38, 31);
+            this.buttonTrangChu.TabIndex = 3;
+            this.buttonTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTrangChu.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(37, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 33);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "TRANG CHỦ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.button1, "Ctrl+O");
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panelMenuTHAYDOIQUYDINH
             // 
@@ -756,6 +797,7 @@
             // 
             this.panelLapPhieuNhapSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(209)))), ((int)(((byte)(237)))));
             this.panelLapPhieuNhapSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLapPhieuNhapSach.Controls.Add(this.buttonLPNS_huy);
             this.panelLapPhieuNhapSach.Controls.Add(this.button_LPNS_luu);
             this.panelLapPhieuNhapSach.Controls.Add(this.dateTimePicker_NgayNhap);
             this.panelLapPhieuNhapSach.Controls.Add(this.label1);
@@ -1741,7 +1783,7 @@
             this.ColQLDS_CTTG_MaTacGia.HeaderText = "Mã tác giả";
             this.ColQLDS_CTTG_MaTacGia.Name = "ColQLDS_CTTG_MaTacGia";
             this.ColQLDS_CTTG_MaTacGia.ReadOnly = true;
-            this.ColQLDS_CTTG_MaTacGia.Width = 108;
+            this.ColQLDS_CTTG_MaTacGia.Width = 99;
             // 
             // ColQLDS_CTTG_TenTacGia
             // 
@@ -2006,7 +2048,7 @@
             this.ColQLK_QLTL_MaTheLoai.HeaderText = "Mã thể loại";
             this.ColQLK_QLTL_MaTheLoai.Name = "ColQLK_QLTL_MaTheLoai";
             this.ColQLK_QLTL_MaTheLoai.ReadOnly = true;
-            this.ColQLK_QLTL_MaTheLoai.Width = 113;
+            this.ColQLK_QLTL_MaTheLoai.Width = 104;
             // 
             // ColQLK_QLTL_TenTheLoai
             // 
@@ -2275,8 +2317,8 @@
             // 
             // dataGridViewQLK_QLTG
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewQLK_QLTG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(209)))), ((int)(((byte)(237)))));
             this.dataGridViewQLK_QLTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQLK_QLTG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2304,7 +2346,7 @@
             this.ColQLK_QLTG_MaTacGia.HeaderText = "Mã tác giả";
             this.ColQLK_QLTG_MaTacGia.Name = "ColQLK_QLTG_MaTacGia";
             this.ColQLK_QLTG_MaTacGia.ReadOnly = true;
-            this.ColQLK_QLTG_MaTacGia.Width = 108;
+            this.ColQLK_QLTG_MaTacGia.Width = 99;
             // 
             // ColQLK_QLTG_TacGia
             // 
@@ -3523,9 +3565,9 @@
             // 
             // reportViewerBCST
             // 
-            reportDataSource1.Name = "DataSetBCST";
-            reportDataSource1.Value = this.LietKeBaoCaoTonBindingSource;
-            this.reportViewerBCST.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource5.Name = "DataSetBCST";
+            reportDataSource5.Value = this.LietKeBaoCaoTonBindingSource;
+            this.reportViewerBCST.LocalReport.DataSources.Add(reportDataSource5);
             this.reportViewerBCST.LocalReport.ReportEmbeddedResource = "QLNS.ReportBCST.rdlc";
             this.reportViewerBCST.Location = new System.Drawing.Point(51, 189);
             this.reportViewerBCST.Name = "reportViewerBCST";
@@ -3620,9 +3662,9 @@
             // 
             // reportViewerBCCN
             // 
-            reportDataSource2.Name = "DataSetBCCN";
-            reportDataSource2.Value = this.LietKeBaoCaoCongNoBindingSource;
-            this.reportViewerBCCN.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource6.Name = "DataSetBCCN";
+            reportDataSource6.Value = this.LietKeBaoCaoCongNoBindingSource;
+            this.reportViewerBCCN.LocalReport.DataSources.Add(reportDataSource6);
             this.reportViewerBCCN.LocalReport.ReportEmbeddedResource = "QLNS.ReportBCCN.rdlc";
             this.reportViewerBCCN.Location = new System.Drawing.Point(33, 184);
             this.reportViewerBCCN.Name = "reportViewerBCCN";
@@ -4049,8 +4091,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle6;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -4145,45 +4187,15 @@
             // 
             this.LietKeBaoCaoTonTableAdapter.ClearBeforeFill = true;
             // 
-            // panelMenuTRANGCHU
+            // buttonLPNS_huy
             // 
-            this.panelMenuTRANGCHU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panelMenuTRANGCHU.Controls.Add(this.buttonTrangChu);
-            this.panelMenuTRANGCHU.Controls.Add(this.button1);
-            this.panelMenuTRANGCHU.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMenuTRANGCHU.Location = new System.Drawing.Point(-1, 15);
-            this.panelMenuTRANGCHU.Name = "panelMenuTRANGCHU";
-            this.panelMenuTRANGCHU.Size = new System.Drawing.Size(270, 38);
-            this.panelMenuTRANGCHU.TabIndex = 20;
-            // 
-            // buttonTrangChu
-            // 
-            this.buttonTrangChu.BackColor = System.Drawing.Color.Transparent;
-            this.buttonTrangChu.FlatAppearance.BorderSize = 0;
-            this.buttonTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("buttonTrangChu.Image")));
-            this.buttonTrangChu.Location = new System.Drawing.Point(8, 5);
-            this.buttonTrangChu.Name = "buttonTrangChu";
-            this.buttonTrangChu.Size = new System.Drawing.Size(38, 31);
-            this.buttonTrangChu.TabIndex = 3;
-            this.buttonTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTrangChu.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(37, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "TRANG CHỦ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.button1, "Ctrl+O");
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonLPNS_huy.Location = new System.Drawing.Point(965, 623);
+            this.buttonLPNS_huy.Name = "buttonLPNS_huy";
+            this.buttonLPNS_huy.Size = new System.Drawing.Size(90, 33);
+            this.buttonLPNS_huy.TabIndex = 24;
+            this.buttonLPNS_huy.Text = "Hủy bỏ";
+            this.buttonLPNS_huy.UseVisualStyleBackColor = true;
+            this.buttonLPNS_huy.Click += new System.EventHandler(this.buttonLPNS_huy_Click);
             // 
             // FormQLNS
             // 
@@ -4192,9 +4204,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1370, 687);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelTrangChu);
-            this.Controls.Add(this.panelLapPhieuThuTien);
-            this.Controls.Add(this.panelLapHoaDonBanSach);
             this.Controls.Add(this.panelLapPhieuNhapSach);
             this.Controls.Add(this.panelQuanLyKhachHang);
             this.Controls.Add(this.panelQuanLyKhac);
@@ -4204,6 +4213,9 @@
             this.Controls.Add(this.panelTraCuu);
             this.Controls.Add(this.panelBaoCaoCongNo);
             this.Controls.Add(this.panelBaoCaoSachTon);
+            this.Controls.Add(this.panelTrangChu);
+            this.Controls.Add(this.panelLapPhieuThuTien);
+            this.Controls.Add(this.panelLapHoaDonBanSach);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQLNS";
@@ -4215,6 +4227,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LietKeBaoCaoCongNoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QLNSDataSet1)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.panelMenuTRANGCHU.ResumeLayout(false);
             this.panelMenuTHAYDOIQUYDINH.ResumeLayout(false);
             this.panelMenuTHAYDOIQUYDINH.PerformLayout();
             this.panelMenuKINHDOANH.ResumeLayout(false);
@@ -4278,7 +4291,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTC)).EndInit();
             this.panelTrangChu.ResumeLayout(false);
             this.panelTrangChu.PerformLayout();
-            this.panelMenuTRANGCHU.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4633,6 +4645,7 @@
         private System.Windows.Forms.Panel panelMenuTRANGCHU;
         private System.Windows.Forms.Button buttonTrangChu;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLPNS_huy;
     }
 }
 
