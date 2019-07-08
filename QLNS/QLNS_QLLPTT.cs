@@ -17,7 +17,9 @@ namespace QLNS
         {
             kiemtraluu = 1;
             buttonLPTT_Luu.Visible = true;
-            buttonLPTT_Them.Text = "Hủy";
+            buttonLPTT_huy.Visible = true;
+            buttonLPTT_Them.Visible = false;
+            //buttonLPTT_Them.Text = "Hủy";
             buttonLPTT_Xoa.Enabled = false;
             buttonLPTT_CapNhat.Enabled = false;
             comboBoxLPTT_MaPhieuThu.Enabled = false;
@@ -31,6 +33,8 @@ namespace QLNS
         private void buttonLPTT_Luu_Click(object sender, EventArgs e)
         {
             buttonLPTT_Luu.Visible = false;
+            buttonLPTT_huy.Visible = false;
+            buttonLPTT_Them.Visible = true;
             buttonLPTT_Them.Text = "Thêm";
             buttonLPTT_Xoa.Enabled = true;
             buttonLPTT_CapNhat.Enabled = true;
@@ -370,7 +374,8 @@ namespace QLNS
             if (kiemtraluu == 0)
             {
                 buttonLPTT_Luu.Visible = false;
-                buttonLPTT_Them.Text = "Thêm";
+                buttonLPTT_Them.Visible =true;
+                buttonLPTT_huy.Visible = false;
                 buttonLPTT_Xoa.Enabled = true;
                 buttonLPTT_CapNhat.Enabled = true;
                 comboBoxLPTT_MaPhieuThu.Enabled = true;
@@ -396,7 +401,22 @@ namespace QLNS
 
 
         }
+        private void buttonLPTT_huy_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            buttonLPTT_Luu.Visible = false;
+            buttonLPTT_huy.Visible = false;
+            buttonLPTT_Them.Visible = true;
+            //buttonLPTT_Them.Text = "Hủy";
+            buttonLPTT_Xoa.Enabled = true;
+            buttonLPTT_CapNhat.Enabled = true;
+            comboBoxLPTT_MaPhieuThu.Enabled = true;
+            dateTimePickerLPTT_NgayThu.Text = "";
+            textBoxLPT_SoTienThu.Text = "";
+            dataGridViewLPTT_DanhSachPhieuThu.Enabled = true;
+            comboBoxLPTT_MaPhieuThu.Text = "";
 
+        }
         public int kiemtrasotienthu()
         {
             
@@ -415,6 +435,30 @@ namespace QLNS
 
             connection.Close();
             return Convert.ToInt32(ktsotienthu);
+
+        }
+        private void buttonLapPhieuThuTien_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    buttonLPTT_Luu.Visible = false;
+                    buttonLPTT_Them.Visible = true;
+                    buttonLPTT_huy.Visible = false;
+                    buttonLPTT_Xoa.Enabled = true;
+                    buttonLPTT_CapNhat.Enabled = true;
+                    comboBoxLPTT_MaPhieuThu.Enabled = true;
+                    dataGridViewLPTT_DanhSachPhieuThu.Enabled = true;
+                    textBoxLPT_SoTienThu.Text = "";
+                    panelLapPhieuThuTien.BringToFront();
+
+                }
+                else return;
+            }
+            else panelLapPhieuThuTien.BringToFront();
 
         }
 

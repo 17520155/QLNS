@@ -37,9 +37,10 @@
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(195, 134);
+            this.buttonLuu.Location = new System.Drawing.Point(156, 107);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(75, 23);
+            this.buttonLuu.Size = new System.Drawing.Size(60, 18);
             this.buttonLuu.TabIndex = 57;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
@@ -47,18 +48,20 @@
             // 
             // textBoxTenNhaXuatBan
             // 
-            this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(226, 79);
+            this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(181, 63);
+            this.textBoxTenNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxTenNhaXuatBan.Name = "textBoxTenNhaXuatBan";
-            this.textBoxTenNhaXuatBan.Size = new System.Drawing.Size(125, 22);
+            this.textBoxTenNhaXuatBan.Size = new System.Drawing.Size(101, 20);
             this.textBoxTenNhaXuatBan.TabIndex = 56;
             // 
             // labelTenNhaXuatBan
             // 
             this.labelTenNhaXuatBan.AutoSize = true;
             this.labelTenNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenNhaXuatBan.Location = new System.Drawing.Point(83, 79);
+            this.labelTenNhaXuatBan.Location = new System.Drawing.Point(66, 63);
+            this.labelTenNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenNhaXuatBan.Name = "labelTenNhaXuatBan";
-            this.labelTenNhaXuatBan.Size = new System.Drawing.Size(137, 20);
+            this.labelTenNhaXuatBan.Size = new System.Drawing.Size(119, 17);
             this.labelTenNhaXuatBan.TabIndex = 55;
             this.labelTenNhaXuatBan.Text = "Tên nhà xuất bản";
             // 
@@ -66,22 +69,25 @@
             // 
             this.labelThemNhaXuatBan.AutoSize = true;
             this.labelThemNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelThemNhaXuatBan.Location = new System.Drawing.Point(113, 27);
+            this.labelThemNhaXuatBan.Location = new System.Drawing.Point(90, 22);
+            this.labelThemNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThemNhaXuatBan.Name = "labelThemNhaXuatBan";
-            this.labelThemNhaXuatBan.Size = new System.Drawing.Size(239, 25);
+            this.labelThemNhaXuatBan.Size = new System.Drawing.Size(193, 20);
             this.labelThemNhaXuatBan.TabIndex = 54;
             this.labelThemNhaXuatBan.Text = "THÊM NHÀ XUẤT BẢN";
             // 
             // FormThemNhaXuatBan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(450, 220);
+            this.ClientSize = new System.Drawing.Size(360, 176);
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenNhaXuatBan);
             this.Controls.Add(this.labelTenNhaXuatBan);
             this.Controls.Add(this.labelThemNhaXuatBan);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormThemNhaXuatBan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm nhà xuất bản";
             this.ResumeLayout(false);
             this.PerformLayout();

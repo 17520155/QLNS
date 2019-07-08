@@ -15,12 +15,16 @@ namespace QLNS
     {
         private void buttonQLK_QLNXB_Luu_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 0;
             buttonQLK_XoaNhaXuatBan.Enabled = true;
             buttonQLK_CapNhatNhaXuatBan.Enabled = true;
             buttonQLK_QLNXB_Luu.Visible = false;
             dataGridViewQLK_QLNXB.Enabled = true;
+            comboBoxQLK_MaNhaXuatBan.Text = "";
             comboBoxQLK_MaNhaXuatBan.Enabled = true;
-            buttonQLK_ThemNhaXuatBan.Text = "Thêm";
+            textBoxQLK_TenNhaXuatBan.Text = "";
+            buttonQLK_ThemNhaXuatBan.Visible = true;
+            buttonQLK_QLTL_huynxb.Visible = false;
             //
             if (textBoxQLK_TenNhaXuatBan.Text == "")
             {
@@ -63,7 +67,8 @@ namespace QLNS
             comboBoxQLK_MaNhaXuatBan.Text = "";
             comboBoxQLK_MaNhaXuatBan.Enabled = false;
             textBoxQLK_TenNhaXuatBan.Text = "";
-            buttonQLK_ThemNhaXuatBan.Text = "Hủy";
+            buttonQLK_ThemNhaXuatBan.Visible =false;
+            buttonQLK_QLTL_huynxb.Visible = true;
 
         }
 
@@ -183,6 +188,19 @@ namespace QLNS
             dataGridViewQLK_QLNXB.Columns[2].DataPropertyName = "TenNXB";
             QLNXB_LoadData();
 
+        }
+        private void buttonQLK_QLTL_huynxb_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            buttonQLK_XoaNhaXuatBan.Enabled = true;
+            buttonQLK_CapNhatNhaXuatBan.Enabled = true;
+            buttonQLK_QLNXB_Luu.Visible = false;
+            dataGridViewQLK_QLNXB.Enabled = true;
+            comboBoxQLK_MaNhaXuatBan.Text = "";
+            comboBoxQLK_MaNhaXuatBan.Enabled = true;
+            textBoxQLK_TenNhaXuatBan.Text = "";
+            buttonQLK_ThemNhaXuatBan.Visible = true;
+            buttonQLK_QLTL_huynxb.Visible = false;
         }
     }
 }

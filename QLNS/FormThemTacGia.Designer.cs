@@ -38,7 +38,7 @@
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonLuu.Location = new System.Drawing.Point(99, 109);
-            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLuu.Name = "buttonLuu";
             this.buttonLuu.Size = new System.Drawing.Size(56, 19);
             this.buttonLuu.TabIndex = 49;
@@ -49,7 +49,7 @@
             // textBoxTenTacGia
             // 
             this.textBoxTenTacGia.Location = new System.Drawing.Point(112, 67);
-            this.textBoxTenTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTenTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTacGia.Name = "textBoxTenTacGia";
             this.textBoxTenTacGia.Size = new System.Drawing.Size(95, 20);
             this.textBoxTenTacGia.TabIndex = 42;
@@ -85,8 +85,9 @@
             this.Controls.Add(this.textBoxTenTacGia);
             this.Controls.Add(this.labelTenTacGia);
             this.Controls.Add(this.labelThemTacGia);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemTacGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm tác giả";
             this.ResumeLayout(false);
             this.PerformLayout();

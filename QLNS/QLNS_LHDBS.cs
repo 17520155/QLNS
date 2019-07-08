@@ -441,6 +441,12 @@ namespace QLNS
             }
             if (iCount > 0)
             {
+                if(textBoxLHDBS_SoTienTra.Text.Trim()=="")
+                {
+                    MessageBox.Show("Vui lòng nhập số tiền trả");
+                    textBoxLHDBS_TongTien.Text = "";
+                    return;
+                }
                 try
                 {
                     
@@ -571,6 +577,34 @@ namespace QLNS
             dataGridViewLHDBS_DanhSachMua.Rows.Clear();
             dataGridViewLHDBS_DanhSachMua.AllowUserToAddRows = false;
             dataGridViewLHDBS_DanhSachMua.Rows.Add(1);
+        }
+        private void buttonLapHoaDonBanSach_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    themmoihd = 0;
+                    LapHoaDon_LuuHD.Visible = false;
+                    buttonLPNS_huy.Visible = false;
+                    dataGridViewLHDBS_DanhSachMua.Rows.Clear();
+                    dataGridViewLHDBS_DanhSachMua.AllowUserToAddRows = false;
+                    dataGridViewLHDBS_DanhSachMua.Rows.Add(1);
+                    textBoxLHDBS_TongTien.Text = "";
+                    tongtienmua = 0;
+                    textBoxLHDBS_SoTienTra.Text = "";
+                    textBoxLHDBS_SoLuong.Text = "";
+                    textBox_LHDBS_ConLai.Text = "";
+                    panelLapHoaDonBanSach.BringToFront();
+
+                }
+                else return;
+            }
+            else panelLapHoaDonBanSach.BringToFront();
+
+            LPHD_LoadComboboxMaKH();
         }
     }
 }

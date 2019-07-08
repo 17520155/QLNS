@@ -16,12 +16,20 @@ namespace QLNS
 
         private void buttonQLS_Luu_Click(object sender, EventArgs e)
         {
-            kiemtraluu = 0;
-            comboBoxQLS_MaSach.Enabled = true;            
+            comboBoxQLS_MaSach.Enabled = true;
+            comboBoxQLS_MaSach.Text = "";
+            comboBoxQLS_MaDauSach.Text = "";
+            textBoxQLS_TenDauSach.Text = "";
+            textBoxQLS_TacGia.Text = "";
+            textBoxQLS_TheLoai.Text = "";
+            comboBoxQLS_MaNhaXuatBan.Text = "";
+            textBoxQLS_TenNhaXuarBan.Text = "";
+            textBoxQLS_NamXuatBan.Text = "";
             buttonQLS_Luu.Visible = false;
             buttonQLS_Xoa.Enabled = true;
             buttonQLS_CapNhat.Enabled = true;
-            buttonQLS_Them.Name = "Thêm";
+            buttonQLS_huy.Visible = false;
+            buttonQLS_Them.Visible = true;
             dataGridViewQLS_DanhSachSach.Enabled = true;
             if (textBoxQLS_NamXuatBan.Text == "")
             {
@@ -49,25 +57,7 @@ namespace QLNS
             connection.Close();
         }
 
-        private void buttonQLS_Them_Click(object sender, EventArgs e)
-        {
-            kiemtraluu = 1;
-            comboBoxQLS_MaSach.Enabled = false;
-            comboBoxQLS_MaSach.Text = "";
-            comboBoxQLS_MaDauSach.Text = "";
-            textBoxQLS_TenDauSach.Text = "";
-            textBoxQLS_TacGia.Text = "";
-            textBoxQLS_TheLoai.Text = "";
-            comboBoxQLS_MaNhaXuatBan.Text = "";
-            textBoxQLS_TenNhaXuarBan.Text = "";
-            textBoxQLS_NamXuatBan.Text = "";
-            buttonQLS_Luu.Visible = true;
-            buttonQLS_Xoa.Enabled = false;
-            buttonQLS_CapNhat.Enabled = false;
-            buttonQLS_Them.Name = "Hủy";
-            dataGridViewQLS_DanhSachSach.Enabled = false;
-
-        }
+        
         public void LoadComboboxMaDauSach()
         {
             SqlConnection connection = new SqlConnection();
@@ -297,9 +287,9 @@ namespace QLNS
                 buttonQLS_Luu.Visible = false;
                 buttonQLS_Xoa.Enabled = true;
                 buttonQLS_CapNhat.Enabled = true;
-                buttonQLS_Them.Text = "Thêm";
-                dataGridViewQLS_DanhSachSach.Enabled = true;                
-
+                buttonQLS_huy.Visible = false;
+                buttonQLS_Them.Visible = true;
+                dataGridViewQLS_DanhSachSach.Enabled = true;
             }
 
             dataGridViewQLS_DanhSachSach.AutoGenerateColumns = false;
@@ -324,6 +314,21 @@ namespace QLNS
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
+                    comboBoxQLS_MaSach.Enabled = true;
+                    comboBoxQLS_MaSach.Text = "";
+                    comboBoxQLS_MaDauSach.Text = "";
+                    textBoxQLS_TenDauSach.Text = "";
+                    textBoxQLS_TacGia.Text = "";
+                    textBoxQLS_TheLoai.Text = "";
+                    comboBoxQLS_MaNhaXuatBan.Text = "";
+                    textBoxQLS_TenNhaXuarBan.Text = "";
+                    textBoxQLS_NamXuatBan.Text = "";
+                    buttonQLS_Luu.Visible = false;
+                    buttonQLS_Xoa.Enabled = true;
+                    buttonQLS_CapNhat.Enabled = true;
+                    buttonQLS_huy.Visible = false;
+                    buttonQLS_Them.Visible = true;
+                    dataGridViewQLS_DanhSachSach.Enabled = true;
                     panelQuanLySach.BringToFront();
 
                 }
@@ -334,6 +339,45 @@ namespace QLNS
 
         }
 
+        private void buttonQLS_Them_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 1;
+            comboBoxQLS_MaSach.Enabled = false;
+            comboBoxQLS_MaSach.Text = "";
+            comboBoxQLS_MaDauSach.Text = "";
+            textBoxQLS_TenDauSach.Text = "";
+            textBoxQLS_TacGia.Text = "";
+            textBoxQLS_TheLoai.Text = "";
+            comboBoxQLS_MaNhaXuatBan.Text = "";
+            textBoxQLS_TenNhaXuarBan.Text = "";
+            textBoxQLS_NamXuatBan.Text = "";
+            buttonQLS_Luu.Visible = true;
+            buttonQLS_Xoa.Enabled = false;
+            buttonQLS_CapNhat.Enabled = false;
+            buttonQLS_huy.Visible = true;
+            buttonQLS_Them.Visible = false;
+            dataGridViewQLS_DanhSachSach.Enabled = false;
 
+        }
+        private void buttonQLS_huy_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            comboBoxQLS_MaSach.Enabled = true;
+            comboBoxQLS_MaSach.Text = "";
+            comboBoxQLS_MaDauSach.Text = "";
+            textBoxQLS_TenDauSach.Text = "";
+            textBoxQLS_TacGia.Text = "";
+            textBoxQLS_TheLoai.Text = "";
+            comboBoxQLS_MaNhaXuatBan.Text = "";
+            textBoxQLS_TenNhaXuarBan.Text = "";
+            textBoxQLS_NamXuatBan.Text = "";
+            buttonQLS_Luu.Visible = false;
+            buttonQLS_Xoa.Enabled = true;
+            buttonQLS_CapNhat.Enabled = true;
+            buttonQLS_huy.Visible = false;
+            buttonQLS_Them.Visible = true;
+            dataGridViewQLS_DanhSachSach.Enabled = true;
+
+        }
     }
 }

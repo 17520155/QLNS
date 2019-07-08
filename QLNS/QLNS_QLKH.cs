@@ -22,7 +22,9 @@ namespace QLNS
                 buttonQLKH_Luu.Visible = false;
                 buttonQLKH_Xoa.Enabled = true;
                 buttonQLKH_CapNhat.Enabled = true;
-                buttonQLKH_Them.Text = "Thêm";
+                buttonQLKH_huy.Visible = false;
+                buttonQLKH_Them.Visible = true;
+                //buttonQLKH_Them.Text = "Thêm";
                 dataGridViewQLKH_DanhSachKH.Enabled = true;
                 textBoxQLKH_DiaChi.Text = "";
                 textBoxQLKH_Email.Text = "";
@@ -88,7 +90,9 @@ namespace QLNS
             buttonQLKH_Luu.Visible = false;
             buttonQLKH_Xoa.Enabled = true;
             buttonQLKH_CapNhat.Enabled = true;
-            buttonQLKH_Them.Text = "Thêm";
+            buttonQLKH_Them.Visible = true;
+            buttonQLKH_huy.Visible = false;
+            //buttonQLKH_Them.Text = "Thêm";
             dataGridViewQLKH_DanhSachKH.Enabled = true;
 
             if (textBoxQLKH_TenKH.Text == "" || textBoxQLKH_DiaChi.Text=="" || textBoxQLKH_SDT.Text=="" || textBoxQLKH_Email.Text=="")
@@ -139,7 +143,8 @@ namespace QLNS
             buttonQLKH_Xoa.Enabled = false;
             buttonQLKH_CapNhat.Enabled = false;
             dataGridViewQLKH_DanhSachKH.Enabled = false;
-            buttonQLKH_Them.Text = "Hủy";
+            buttonQLKH_Them.Visible = false;
+            buttonQLKH_huy.Visible = true;
             connection.Close();
         }
         private void buttonQLKH_Xoa_Click(object sender, EventArgs e)
@@ -224,6 +229,60 @@ namespace QLNS
             {
                 MessageBox.Show("Lỗi! Vui lòng kiểm tra lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void buttonQLKH_huy_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = Global.ConnectionStr;
+            connection.Open();
+            comboBoxQLKH_MaKH.Text = "";
+            comboBoxQLKH_MaKH.Enabled = true;
+            buttonQLKH_Luu.Visible = false;
+            textBoxQLKH_DiaChi.Text = "";
+            textBoxQLKH_Email.Text = "";
+            textBoxQLKH_SDT.Text = "";
+            textBoxQLKH_TenKH.Text = "";
+            buttonQLKH_Xoa.Enabled = true;
+            buttonQLKH_CapNhat.Enabled = true;
+            dataGridViewQLKH_DanhSachKH.Enabled = true;
+            buttonQLKH_Them.Visible = true;
+            buttonQLKH_huy.Visible = false;
+            connection.Close();
+        }
+        private void buttonQuanLyKhachHang_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+
+                    comboBoxQLKH_MaKH.Enabled = true;
+                    buttonQLKH_Luu.Visible = false;
+                    buttonQLKH_Xoa.Enabled = true;
+                    buttonQLKH_CapNhat.Enabled = true;
+                    buttonQLKH_huy.Visible = false;
+                    buttonQLKH_Them.Visible = true;
+                    //buttonQLKH_Them.Text = "Thêm";
+                    dataGridViewQLKH_DanhSachKH.Enabled = true;
+                    textBoxQLKH_DiaChi.Text = "";
+                    textBoxQLKH_Email.Text = "";
+                    textBoxQLKH_SDT.Text = "";
+                    textBoxQLKH_TenKH.Text = "";
+                    comboBoxQLKH_MaKH.Text = "";
+
+                    panelQuanLyKhachHang.BringToFront();
+
+                }
+                else return;
+            }
+            else panelQuanLyKhachHang.BringToFront();
+
+
+
+
         }
 
 

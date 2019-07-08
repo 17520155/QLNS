@@ -23,17 +23,22 @@ namespace QLNS
             comboBoxQLK__MaTheLoai.Text = "";
             comboBoxQLK__MaTheLoai.Enabled = false;
             textBoxQLK__TenTheLoai.Text = "";
-            buttonQLK_ThemTheLoai.Text = "Hủy";
+            buttonQLK_ThemTheLoai.Visible = false;
+            buttonQLK_QLTL_huytheloai.Visible = true;
          }
 
         private void buttonQLK_QLTL_Luu_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 0;
             buttonQLK_XoaTheLoai.Enabled = true;
             buttonQLK_CapNhatTheLoai.Enabled = true;
             buttonQLK_QLTL_Luu.Visible = false;
             dataGridViewQLK_QLTL.Enabled = true;
+            comboBoxQLK__MaTheLoai.Text = "";
             comboBoxQLK__MaTheLoai.Enabled = true;
-            buttonQLK_ThemTheLoai.Text = "Thêm";
+            textBoxQLK__TenTheLoai.Text = "";
+            buttonQLK_ThemTheLoai.Visible = true;
+            buttonQLK_QLTL_huytheloai.Visible = false;
             if (textBoxQLK__TenTheLoai.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên tác giả");
@@ -177,6 +182,19 @@ namespace QLNS
             dataGridViewQLK_QLTL.Columns[1].DataPropertyName = "MaTheLoai";
             dataGridViewQLK_QLTL.Columns[2].DataPropertyName = "TenTheLoai";
             QLTL_LoadData();
+        }
+        private void buttonQLK_QLTL_huytheloai_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            buttonQLK_XoaTheLoai.Enabled = true;
+            buttonQLK_CapNhatTheLoai.Enabled = true;
+            buttonQLK_QLTL_Luu.Visible = false;
+            dataGridViewQLK_QLTL.Enabled = true;
+            comboBoxQLK__MaTheLoai.Text = "";
+            comboBoxQLK__MaTheLoai.Enabled = true;
+            textBoxQLK__TenTheLoai.Text = "";
+            buttonQLK_ThemTheLoai.Visible = true;
+            buttonQLK_QLTL_huytheloai.Visible = false;
         }
     }
 }

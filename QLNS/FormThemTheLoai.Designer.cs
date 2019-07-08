@@ -38,7 +38,7 @@
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonLuu.Location = new System.Drawing.Point(95, 102);
-            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLuu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLuu.Name = "buttonLuu";
             this.buttonLuu.Size = new System.Drawing.Size(56, 19);
             this.buttonLuu.TabIndex = 53;
@@ -49,7 +49,7 @@
             // textBoxTenTheLoai
             // 
             this.textBoxTenTheLoai.Location = new System.Drawing.Point(108, 60);
-            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
             this.textBoxTenTheLoai.Size = new System.Drawing.Size(95, 20);
             this.textBoxTenTheLoai.TabIndex = 52;
@@ -85,8 +85,9 @@
             this.Controls.Add(this.textBoxTenTheLoai);
             this.Controls.Add(this.labelTenTheLoai);
             this.Controls.Add(this.labelThemTheLoai);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemTheLoai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm thể loại";
             this.ResumeLayout(false);
             this.PerformLayout();

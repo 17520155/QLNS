@@ -31,9 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLNS));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LietKeBaoCaoTonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QLNSDataSet = new QLNS.QLNSDataSet();
             this.LietKeBaoCaoCongNoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -111,6 +114,7 @@
             this.ColQLS_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelQLS = new System.Windows.Forms.Label();
             this.groupBoxQLS = new System.Windows.Forms.GroupBox();
+            this.buttonQLS_huy = new System.Windows.Forms.Button();
             this.buttonQLS_Luu = new System.Windows.Forms.Button();
             this.comboBoxQLS_MaNhaXuatBan = new System.Windows.Forms.ComboBox();
             this.buttonQLS_ThemMaNhaXuatBan = new System.Windows.Forms.Button();
@@ -143,6 +147,7 @@
             this.ColQLDS_DSS_TheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelQLDS = new System.Windows.Forms.Label();
             this.groupBoxQLDS_ThongTinDauSach = new System.Windows.Forms.GroupBox();
+            this.buttonQLDS_huy = new System.Windows.Forms.Button();
             this.buttonQLDS_Luu = new System.Windows.Forms.Button();
             this.buttonQLDS_CapNhatDauSach = new System.Windows.Forms.Button();
             this.buttonQLDS_XoaDauSach = new System.Windows.Forms.Button();
@@ -170,6 +175,7 @@
             this.textBoxQLDS_TenDauSach = new System.Windows.Forms.TextBox();
             this.panelQuanLyKhac = new System.Windows.Forms.Panel();
             this.groupBoxQLK_QLTL = new System.Windows.Forms.GroupBox();
+            this.buttonQLK_QLTL_huytheloai = new System.Windows.Forms.Button();
             this.labelQLK_QLTL_DanhSachTheLoai = new System.Windows.Forms.Label();
             this.buttonQLK_QLTL_Luu = new System.Windows.Forms.Button();
             this.buttonQLK_CapNhatTheLoai = new System.Windows.Forms.Button();
@@ -185,6 +191,7 @@
             this.textBoxQLK__TenTheLoai = new System.Windows.Forms.TextBox();
             this.labelQLK = new System.Windows.Forms.Label();
             this.groupBoxQLK_QLNXB = new System.Windows.Forms.GroupBox();
+            this.buttonQLK_QLTL_huynxb = new System.Windows.Forms.Button();
             this.labelQLK_QLNXB_DanhSachNhaXuatBan = new System.Windows.Forms.Label();
             this.buttonQLK_QLNXB_Luu = new System.Windows.Forms.Button();
             this.dataGridViewQLK_QLNXB = new System.Windows.Forms.DataGridView();
@@ -199,6 +206,7 @@
             this.labelQLK_TenNhaXuatBan = new System.Windows.Forms.Label();
             this.textBoxQLK_TenNhaXuatBan = new System.Windows.Forms.TextBox();
             this.groupBoxQLK_QLTG = new System.Windows.Forms.GroupBox();
+            this.buttonQLK_huytacgia = new System.Windows.Forms.Button();
             this.labelQLK_QLTG_DanhSachTacGia = new System.Windows.Forms.Label();
             this.buttonQLK_QLTG_Luu = new System.Windows.Forms.Button();
             this.buttonQLK_CapNhatTacGia = new System.Windows.Forms.Button();
@@ -272,6 +280,7 @@
             this.ColQLKH_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelQLKH = new System.Windows.Forms.Label();
             this.groupBoxQLKH_ChiTietKH = new System.Windows.Forms.GroupBox();
+            this.buttonQLKH_huy = new System.Windows.Forms.Button();
             this.buttonQLKH_Luu = new System.Windows.Forms.Button();
             this.buttonQLKH_CapNhat = new System.Windows.Forms.Button();
             this.buttonQLKH_Xoa = new System.Windows.Forms.Button();
@@ -300,6 +309,7 @@
             this.ColLPTT_SoTienTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelLPTT = new System.Windows.Forms.Label();
             this.groupBoxLPTT_ChiTietThuTien = new System.Windows.Forms.GroupBox();
+            this.buttonLPTT_huy = new System.Windows.Forms.Button();
             this.buttonLPTT_Luu = new System.Windows.Forms.Button();
             this.labelLPTT_MaPhieuThu = new System.Windows.Forms.Label();
             this.comboBoxLPTT_MaPhieuThu = new System.Windows.Forms.ComboBox();
@@ -502,6 +512,7 @@
             // buttonTrangChu
             // 
             this.buttonTrangChu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTrangChu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonTrangChu.FlatAppearance.BorderSize = 0;
             this.buttonTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -623,6 +634,7 @@
             // buttonThayDoiQuyDinh
             // 
             this.buttonThayDoiQuyDinh.BackColor = System.Drawing.Color.Transparent;
+            this.buttonThayDoiQuyDinh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonThayDoiQuyDinh.FlatAppearance.BorderSize = 0;
             this.buttonThayDoiQuyDinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThayDoiQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -639,6 +651,7 @@
             // buttonBaoCaoCongNo
             // 
             this.buttonBaoCaoCongNo.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBaoCaoCongNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBaoCaoCongNo.FlatAppearance.BorderSize = 0;
             this.buttonBaoCaoCongNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBaoCaoCongNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -655,6 +668,7 @@
             // buttonBaoCaoSachTon
             // 
             this.buttonBaoCaoSachTon.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBaoCaoSachTon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBaoCaoSachTon.FlatAppearance.BorderSize = 0;
             this.buttonBaoCaoSachTon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBaoCaoSachTon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -671,6 +685,7 @@
             // buttonTraCuu
             // 
             this.buttonTraCuu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTraCuu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonTraCuu.FlatAppearance.BorderSize = 0;
             this.buttonTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -687,6 +702,7 @@
             // buttonLapPhieuThuTien
             // 
             this.buttonLapPhieuThuTien.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLapPhieuThuTien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLapPhieuThuTien.FlatAppearance.BorderSize = 0;
             this.buttonLapPhieuThuTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLapPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -703,6 +719,7 @@
             // buttonQuanLyKhachHang
             // 
             this.buttonQuanLyKhachHang.BackColor = System.Drawing.Color.Transparent;
+            this.buttonQuanLyKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonQuanLyKhachHang.FlatAppearance.BorderSize = 0;
             this.buttonQuanLyKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLyKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -719,6 +736,7 @@
             // buttonLapHoaDonBanSach
             // 
             this.buttonLapHoaDonBanSach.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLapHoaDonBanSach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLapHoaDonBanSach.FlatAppearance.BorderSize = 0;
             this.buttonLapHoaDonBanSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLapHoaDonBanSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -735,6 +753,7 @@
             // buttonKhac
             // 
             this.buttonKhac.BackColor = System.Drawing.Color.Transparent;
+            this.buttonKhac.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonKhac.FlatAppearance.BorderSize = 0;
             this.buttonKhac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonKhac.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -751,6 +770,7 @@
             // buttonQuanLyDauSach
             // 
             this.buttonQuanLyDauSach.BackColor = System.Drawing.Color.Transparent;
+            this.buttonQuanLyDauSach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonQuanLyDauSach.FlatAppearance.BorderSize = 0;
             this.buttonQuanLyDauSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLyDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -767,6 +787,7 @@
             // buttonQuanLySach
             // 
             this.buttonQuanLySach.BackColor = System.Drawing.Color.Transparent;
+            this.buttonQuanLySach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonQuanLySach.FlatAppearance.BorderSize = 0;
             this.buttonQuanLySach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuanLySach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -783,6 +804,7 @@
             // buttonLapPhieuNhapSach
             // 
             this.buttonLapPhieuNhapSach.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLapPhieuNhapSach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLapPhieuNhapSach.FlatAppearance.BorderSize = 0;
             this.buttonLapPhieuNhapSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLapPhieuNhapSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -826,6 +848,7 @@
             this.buttonLPNS_huy.TabIndex = 24;
             this.buttonLPNS_huy.Text = "Hủy bỏ";
             this.buttonLPNS_huy.UseVisualStyleBackColor = true;
+            this.buttonLPNS_huy.Visible = false;
             this.buttonLPNS_huy.Click += new System.EventHandler(this.buttonLPNS_huy_Click);
             // 
             // button_LPNS_luu
@@ -1296,6 +1319,7 @@
             // groupBoxQLS
             // 
             this.groupBoxQLS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
+            this.groupBoxQLS.Controls.Add(this.buttonQLS_huy);
             this.groupBoxQLS.Controls.Add(this.buttonQLS_Luu);
             this.groupBoxQLS.Controls.Add(this.comboBoxQLS_MaNhaXuatBan);
             this.groupBoxQLS.Controls.Add(this.buttonQLS_ThemMaNhaXuatBan);
@@ -1325,6 +1349,17 @@
             this.groupBoxQLS.TabIndex = 2;
             this.groupBoxQLS.TabStop = false;
             this.groupBoxQLS.Text = "Thông tin sách";
+            // 
+            // buttonQLS_huy
+            // 
+            this.buttonQLS_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQLS_huy.Location = new System.Drawing.Point(512, 213);
+            this.buttonQLS_huy.Name = "buttonQLS_huy";
+            this.buttonQLS_huy.Size = new System.Drawing.Size(75, 30);
+            this.buttonQLS_huy.TabIndex = 23;
+            this.buttonQLS_huy.Text = "Hủy";
+            this.buttonQLS_huy.UseVisualStyleBackColor = true;
+            this.buttonQLS_huy.Click += new System.EventHandler(this.buttonQLS_huy_Click);
             // 
             // buttonQLS_Luu
             // 
@@ -1646,6 +1681,7 @@
             // groupBoxQLDS_ThongTinDauSach
             // 
             this.groupBoxQLDS_ThongTinDauSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
+            this.groupBoxQLDS_ThongTinDauSach.Controls.Add(this.buttonQLDS_huy);
             this.groupBoxQLDS_ThongTinDauSach.Controls.Add(this.buttonQLDS_Luu);
             this.groupBoxQLDS_ThongTinDauSach.Controls.Add(this.buttonQLDS_CapNhatDauSach);
             this.groupBoxQLDS_ThongTinDauSach.Controls.Add(this.buttonQLDS_XoaDauSach);
@@ -1667,6 +1703,17 @@
             this.groupBoxQLDS_ThongTinDauSach.TabIndex = 2;
             this.groupBoxQLDS_ThongTinDauSach.TabStop = false;
             this.groupBoxQLDS_ThongTinDauSach.Text = "Thông tin đầu sách";
+            // 
+            // buttonQLDS_huy
+            // 
+            this.buttonQLDS_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQLDS_huy.Location = new System.Drawing.Point(763, 302);
+            this.buttonQLDS_huy.Name = "buttonQLDS_huy";
+            this.buttonQLDS_huy.Size = new System.Drawing.Size(75, 33);
+            this.buttonQLDS_huy.TabIndex = 27;
+            this.buttonQLDS_huy.Text = "Hủy";
+            this.buttonQLDS_huy.UseVisualStyleBackColor = true;
+            this.buttonQLDS_huy.Click += new System.EventHandler(this.buttonQLDS_huy_Click);
             // 
             // buttonQLDS_Luu
             // 
@@ -1955,6 +2002,7 @@
             // groupBoxQLK_QLTL
             // 
             this.groupBoxQLK_QLTL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
+            this.groupBoxQLK_QLTL.Controls.Add(this.buttonQLK_QLTL_huytheloai);
             this.groupBoxQLK_QLTL.Controls.Add(this.labelQLK_QLTL_DanhSachTheLoai);
             this.groupBoxQLK_QLTL.Controls.Add(this.buttonQLK_QLTL_Luu);
             this.groupBoxQLK_QLTL.Controls.Add(this.buttonQLK_CapNhatTheLoai);
@@ -1973,6 +2021,17 @@
             this.groupBoxQLK_QLTL.TabStop = false;
             this.groupBoxQLK_QLTL.Text = " Quản lý thể loại";
             this.groupBoxQLK_QLTL.Enter += new System.EventHandler(this.groupBoxQLK_QLTL_Enter);
+            // 
+            // buttonQLK_QLTL_huytheloai
+            // 
+            this.buttonQLK_QLTL_huytheloai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQLK_QLTL_huytheloai.Location = new System.Drawing.Point(106, 102);
+            this.buttonQLK_QLTL_huytheloai.Name = "buttonQLK_QLTL_huytheloai";
+            this.buttonQLK_QLTL_huytheloai.Size = new System.Drawing.Size(75, 35);
+            this.buttonQLK_QLTL_huytheloai.TabIndex = 32;
+            this.buttonQLK_QLTL_huytheloai.Text = "Hủy";
+            this.buttonQLK_QLTL_huytheloai.UseVisualStyleBackColor = true;
+            this.buttonQLK_QLTL_huytheloai.Click += new System.EventHandler(this.buttonQLK_QLTL_huytheloai_Click);
             // 
             // labelQLK_QLTL_DanhSachTheLoai
             // 
@@ -2040,6 +2099,14 @@
             this.ColQLK_QLTL_STT,
             this.ColQLK_QLTL_MaTheLoai,
             this.ColQLK_QLTL_TenTheLoai});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewQLK_QLTL.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewQLK_QLTL.Location = new System.Drawing.Point(7, 189);
             this.dataGridViewQLK_QLTL.Name = "dataGridViewQLK_QLTL";
             this.dataGridViewQLK_QLTL.RowTemplate.Height = 24;
@@ -2061,7 +2128,7 @@
             this.ColQLK_QLTL_MaTheLoai.HeaderText = "Mã thể loại";
             this.ColQLK_QLTL_MaTheLoai.Name = "ColQLK_QLTL_MaTheLoai";
             this.ColQLK_QLTL_MaTheLoai.ReadOnly = true;
-            this.ColQLK_QLTL_MaTheLoai.Width = 104;
+            this.ColQLK_QLTL_MaTheLoai.Width = 113;
             // 
             // ColQLK_QLTL_TenTheLoai
             // 
@@ -2120,6 +2187,7 @@
             // groupBoxQLK_QLNXB
             // 
             this.groupBoxQLK_QLNXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
+            this.groupBoxQLK_QLNXB.Controls.Add(this.buttonQLK_QLTL_huynxb);
             this.groupBoxQLK_QLNXB.Controls.Add(this.labelQLK_QLNXB_DanhSachNhaXuatBan);
             this.groupBoxQLK_QLNXB.Controls.Add(this.buttonQLK_QLNXB_Luu);
             this.groupBoxQLK_QLNXB.Controls.Add(this.dataGridViewQLK_QLNXB);
@@ -2138,6 +2206,17 @@
             this.groupBoxQLK_QLNXB.TabStop = false;
             this.groupBoxQLK_QLNXB.Text = " Quản lý nhà xuất bản";
             this.groupBoxQLK_QLNXB.Enter += new System.EventHandler(this.groupBoxQLK_QLNXB_Enter);
+            // 
+            // buttonQLK_QLTL_huynxb
+            // 
+            this.buttonQLK_QLTL_huynxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQLK_QLTL_huynxb.Location = new System.Drawing.Point(105, 99);
+            this.buttonQLK_QLTL_huynxb.Name = "buttonQLK_QLTL_huynxb";
+            this.buttonQLK_QLTL_huynxb.Size = new System.Drawing.Size(75, 35);
+            this.buttonQLK_QLTL_huynxb.TabIndex = 36;
+            this.buttonQLK_QLTL_huynxb.Text = "Hủy";
+            this.buttonQLK_QLTL_huynxb.UseVisualStyleBackColor = true;
+            this.buttonQLK_QLTL_huynxb.Click += new System.EventHandler(this.buttonQLK_QLTL_huynxb_Click);
             // 
             // labelQLK_QLNXB_DanhSachNhaXuatBan
             // 
@@ -2169,6 +2248,14 @@
             this.ColQLK_QLNXB_STT,
             this.ColQLK_QLNXB_MaNhaXuatBan,
             this.ColQLK_QLNXB_TenNhaXuatBan});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewQLK_QLNXB.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewQLK_QLNXB.Location = new System.Drawing.Point(12, 191);
             this.dataGridViewQLK_QLNXB.Name = "dataGridViewQLK_QLNXB";
             this.dataGridViewQLK_QLNXB.RowTemplate.Height = 24;
@@ -2275,6 +2362,7 @@
             // groupBoxQLK_QLTG
             // 
             this.groupBoxQLK_QLTG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(175)))), ((int)(((byte)(223)))));
+            this.groupBoxQLK_QLTG.Controls.Add(this.buttonQLK_huytacgia);
             this.groupBoxQLK_QLTG.Controls.Add(this.labelQLK_QLTG_DanhSachTacGia);
             this.groupBoxQLK_QLTG.Controls.Add(this.buttonQLK_QLTG_Luu);
             this.groupBoxQLK_QLTG.Controls.Add(this.buttonQLK_CapNhatTacGia);
@@ -2293,6 +2381,17 @@
             this.groupBoxQLK_QLTG.TabStop = false;
             this.groupBoxQLK_QLTG.Text = " Quản lý tác giả";
             this.groupBoxQLK_QLTG.Enter += new System.EventHandler(this.groupBoxQLK_QLTG_Enter);
+            // 
+            // buttonQLK_huytacgia
+            // 
+            this.buttonQLK_huytacgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQLK_huytacgia.Location = new System.Drawing.Point(106, 100);
+            this.buttonQLK_huytacgia.Name = "buttonQLK_huytacgia";
+            this.buttonQLK_huytacgia.Size = new System.Drawing.Size(75, 35);
+            this.buttonQLK_huytacgia.TabIndex = 29;
+            this.buttonQLK_huytacgia.Text = "Hủy";
+            this.buttonQLK_huytacgia.UseVisualStyleBackColor = true;
+            this.buttonQLK_huytacgia.Click += new System.EventHandler(this.buttonQLK_huytacgia_Click);
             // 
             // labelQLK_QLTG_DanhSachTacGia
             // 
@@ -2330,14 +2429,22 @@
             // 
             // dataGridViewQLK_QLTG
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewQLK_QLTG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(209)))), ((int)(((byte)(237)))));
             this.dataGridViewQLK_QLTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQLK_QLTG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColQLK_QLTG_STT,
             this.ColQLK_QLTG_MaTacGia,
             this.ColQLK_QLTG_TacGia});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewQLK_QLTG.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewQLK_QLTG.Location = new System.Drawing.Point(10, 191);
             this.dataGridViewQLK_QLTG.Name = "dataGridViewQLK_QLTG";
             this.dataGridViewQLK_QLTG.RowTemplate.Height = 24;
@@ -2359,7 +2466,7 @@
             this.ColQLK_QLTG_MaTacGia.HeaderText = "Mã tác giả";
             this.ColQLK_QLTG_MaTacGia.Name = "ColQLK_QLTG_MaTacGia";
             this.ColQLK_QLTG_MaTacGia.ReadOnly = true;
-            this.ColQLK_QLTG_MaTacGia.Width = 99;
+            this.ColQLK_QLTG_MaTacGia.Width = 108;
             // 
             // ColQLK_QLTG_TacGia
             // 
@@ -3045,6 +3152,7 @@
             // groupBoxQLKH_ChiTietKH
             // 
             this.groupBoxQLKH_ChiTietKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(233)))), ((int)(((byte)(194)))));
+            this.groupBoxQLKH_ChiTietKH.Controls.Add(this.buttonQLKH_huy);
             this.groupBoxQLKH_ChiTietKH.Controls.Add(this.buttonQLKH_Luu);
             this.groupBoxQLKH_ChiTietKH.Controls.Add(this.buttonQLKH_CapNhat);
             this.groupBoxQLKH_ChiTietKH.Controls.Add(this.buttonQLKH_Xoa);
@@ -3066,6 +3174,18 @@
             this.groupBoxQLKH_ChiTietKH.TabIndex = 2;
             this.groupBoxQLKH_ChiTietKH.TabStop = false;
             this.groupBoxQLKH_ChiTietKH.Text = "Chi tiết KH";
+            // 
+            // buttonQLKH_huy
+            // 
+            this.buttonQLKH_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQLKH_huy.Location = new System.Drawing.Point(511, 157);
+            this.buttonQLKH_huy.Name = "buttonQLKH_huy";
+            this.buttonQLKH_huy.Size = new System.Drawing.Size(75, 33);
+            this.buttonQLKH_huy.TabIndex = 36;
+            this.buttonQLKH_huy.Text = "Hủy";
+            this.buttonQLKH_huy.UseVisualStyleBackColor = true;
+            this.buttonQLKH_huy.Visible = false;
+            this.buttonQLKH_huy.Click += new System.EventHandler(this.buttonQLKH_huy_Click);
             // 
             // buttonQLKH_Luu
             // 
@@ -3338,6 +3458,7 @@
             // groupBoxLPTT_ChiTietThuTien
             // 
             this.groupBoxLPTT_ChiTietThuTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(233)))), ((int)(((byte)(194)))));
+            this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.buttonLPTT_huy);
             this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.buttonLPTT_Luu);
             this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.labelLPTT_MaPhieuThu);
             this.groupBoxLPTT_ChiTietThuTien.Controls.Add(this.comboBoxLPTT_MaPhieuThu);
@@ -3366,6 +3487,17 @@
             this.groupBoxLPTT_ChiTietThuTien.TabStop = false;
             this.groupBoxLPTT_ChiTietThuTien.Text = "Chi tiết thu tiền";
             this.groupBoxLPTT_ChiTietThuTien.Enter += new System.EventHandler(this.groupBoxLPTT_ChiTietThuTien_Enter);
+            // 
+            // buttonLPTT_huy
+            // 
+            this.buttonLPTT_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLPTT_huy.Location = new System.Drawing.Point(578, 239);
+            this.buttonLPTT_huy.Name = "buttonLPTT_huy";
+            this.buttonLPTT_huy.Size = new System.Drawing.Size(75, 33);
+            this.buttonLPTT_huy.TabIndex = 27;
+            this.buttonLPTT_huy.Text = "Hủy";
+            this.buttonLPTT_huy.UseVisualStyleBackColor = true;
+            this.buttonLPTT_huy.Click += new System.EventHandler(this.buttonLPTT_huy_Click);
             // 
             // buttonLPTT_Luu
             // 
@@ -3542,7 +3674,7 @@
             // 
             this.buttonLPTT_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLPTT_Them.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLPTT_Them.Location = new System.Drawing.Point(578, 239);
+            this.buttonLPTT_Them.Location = new System.Drawing.Point(579, 240);
             this.buttonLPTT_Them.Name = "buttonLPTT_Them";
             this.buttonLPTT_Them.Size = new System.Drawing.Size(75, 33);
             this.buttonLPTT_Them.TabIndex = 13;
@@ -4127,8 +4259,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle5;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -4230,6 +4362,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1370, 675);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelQuanLyKhac);
+            this.Controls.Add(this.panelQuanLyDauSach);
+            this.Controls.Add(this.panelQuanLySach);
             this.Controls.Add(this.panelThayDoiQuyDinh);
             this.Controls.Add(this.panelTraCuu);
             this.Controls.Add(this.panelBaoCaoCongNo);
@@ -4239,13 +4374,9 @@
             this.Controls.Add(this.panelLapHoaDonBanSach);
             this.Controls.Add(this.panelLapPhieuNhapSach);
             this.Controls.Add(this.panelQuanLyKhachHang);
-            this.Controls.Add(this.panelQuanLyKhac);
-            this.Controls.Add(this.panelQuanLyDauSach);
-            this.Controls.Add(this.panelQuanLySach);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FormQLNS";
             this.Text = "Quản lý nhà sách";
             this.Load += new System.EventHandler(this.FormQLNS_Load);
@@ -4377,7 +4508,6 @@
         private System.Windows.Forms.TextBox textBoxQLS_TenNhaXuarBan;
         private System.Windows.Forms.Button buttonQLS_Xoa;
         private System.Windows.Forms.Label labelQLS_TenNhaXuatBan;
-        private System.Windows.Forms.Button buttonQLS_Them;
         private System.Windows.Forms.Label labelQLS_MaNhaXuatBan;
         private System.Windows.Forms.Label labelQLS_MaSach;
         private System.Windows.Forms.TextBox textBoxQLS_TheLoai;
@@ -4676,6 +4806,14 @@
         private System.Windows.Forms.Button buttonLPNS_huy;
         private System.Windows.Forms.Button LHDBS_huy;
         private System.Windows.Forms.Button buttonButtonTDQD_Sua;
+        private System.Windows.Forms.Button buttonLPTT_huy;
+        private System.Windows.Forms.Button buttonQLKH_huy;
+        private System.Windows.Forms.Button buttonQLDS_huy;
+        private System.Windows.Forms.Button buttonQLS_huy;
+        private System.Windows.Forms.Button buttonQLS_Them;
+        private System.Windows.Forms.Button buttonQLK_QLTL_huytheloai;
+        private System.Windows.Forms.Button buttonQLK_QLTL_huynxb;
+        private System.Windows.Forms.Button buttonQLK_huytacgia;
     }
 }
 

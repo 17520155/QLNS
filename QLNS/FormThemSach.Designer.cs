@@ -237,6 +237,7 @@
             this.Controls.Add(this.labelThemSach);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormThemSach";
             this.Load += new System.EventHandler(this.FormThemSach_Load);
             this.ResumeLayout(false);

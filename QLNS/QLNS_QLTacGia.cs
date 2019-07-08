@@ -21,18 +21,23 @@ namespace QLNS
             buttonQLK_QLTG_Luu.Visible = true;
             dataGridViewQLK_QLTG.Enabled = false;
             comboBoxQLK_MaTacGia.Text = "";
+            buttonQLK_huytacgia.Visible = true;
             comboBoxQLK_MaTacGia.Enabled = false;
             textBoxQLK_TenTacGia.Text = "";
-            buttonQLK_ThemTacGia.Text = "Hủy";
+            buttonQLK_ThemTacGia.Visible =false;
         }
         private void buttonQLK_QLTG_Luu_Click(object sender, EventArgs e)
         {
+            kiemtraluu = 0;
             buttonQLK_XoaTacGia.Enabled = true;
             buttonQLK_CapNhatTacGia.Enabled = true;
             buttonQLK_QLTG_Luu.Visible = false;
             dataGridViewQLK_QLTG.Enabled = true;
+            comboBoxQLK_MaTacGia.Text = "";
+            buttonQLK_huytacgia.Visible = false;
             comboBoxQLK_MaTacGia.Enabled = true;
-            buttonQLK_ThemTacGia.Text = "Thêm";
+            textBoxQLK_TenTacGia.Text = "";
+            buttonQLK_ThemTacGia.Visible = true;
             //
             if (textBoxQLK_TenTacGia.Text == "")
             {
@@ -176,6 +181,19 @@ namespace QLNS
             else return;
 
            
+        }
+        private void buttonQLK_huytacgia_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            buttonQLK_XoaTacGia.Enabled = true;
+            buttonQLK_CapNhatTacGia.Enabled = true;
+            buttonQLK_QLTG_Luu.Visible = false;
+            dataGridViewQLK_QLTG.Enabled = true;
+            comboBoxQLK_MaTacGia.Text = "";
+            buttonQLK_huytacgia.Visible = false;
+            comboBoxQLK_MaTacGia.Enabled = true;
+            textBoxQLK_TenTacGia.Text = "";
+            buttonQLK_ThemTacGia.Visible = true;
         }
     }
 }

@@ -22,6 +22,18 @@ namespace QLNS
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
+                    buttonQLDS_Luu.Visible = false;
+                    buttonQLDS_huy.Visible = false;
+                    buttonQLDS_ThemDauSach.Visible = true;
+                    buttonQLDS_XoaDauSach.Enabled = true;
+                    buttonQLDS_CapNhatDauSach.Enabled = true;
+                    comboBoxQLDS_MaDauSach.Enabled = true;
+                    comboBoxQLDS_MaDauSach.Text = "";
+                    textBoxQLDS_TenDauSach.Text = "";
+                    textBoxQLDS_TheLoai.Text = "";
+                    comboBoxQLDS_MaTheLoai.Text = "";
+                    dataGridViewQLDS_DanhSachDauSach.Enabled = true;
+
                     panelQuanLyDauSach.BringToFront();
 
                 }
@@ -159,10 +171,15 @@ namespace QLNS
         private void buttonQLDS_Luu_Click(object sender, EventArgs e)
         {
             buttonQLDS_Luu.Visible = false;
-            buttonQLDS_ThemDauSach.Text = "Thêm";
+            buttonQLDS_huy.Visible = false;
+            buttonQLDS_ThemDauSach.Visible = true;
             buttonQLDS_XoaDauSach.Enabled = true;
             buttonQLDS_CapNhatDauSach.Enabled = true;
             comboBoxQLDS_MaDauSach.Enabled = true;
+            comboBoxQLDS_MaDauSach.Text = "";
+            textBoxQLDS_TenDauSach.Text = "";
+            textBoxQLDS_TheLoai.Text = "";
+            comboBoxQLDS_MaTheLoai.Text = "";
             dataGridViewQLDS_DanhSachDauSach.Enabled = true;
             if (textBoxQLDS_TenDauSach.Text == "")
             {
@@ -208,7 +225,8 @@ namespace QLNS
         {
             kiemtraluu = 1;
             buttonQLDS_Luu.Visible = true;
-            buttonQLDS_ThemDauSach.Text = "Hủy";
+            buttonQLDS_huy.Visible = true;
+            buttonQLDS_ThemDauSach.Visible = false;
             buttonQLDS_XoaDauSach.Enabled = false;
             buttonQLDS_CapNhatDauSach.Enabled = false;
             comboBoxQLDS_MaDauSach.Enabled = false;
@@ -388,13 +406,18 @@ namespace QLNS
 
                 dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
                 dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
-                dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);          
+                dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
 
                 buttonQLDS_Luu.Visible = false;
-                buttonQLDS_ThemDauSach.Text = "Thêm";
+                buttonQLDS_huy.Visible = false;
+                buttonQLDS_ThemDauSach.Visible = true;
                 buttonQLDS_XoaDauSach.Enabled = true;
                 buttonQLDS_CapNhatDauSach.Enabled = true;
-                comboBoxQLDS_MaDauSach.Enabled = true;               
+                comboBoxQLDS_MaDauSach.Enabled = true;
+                comboBoxQLDS_MaDauSach.Text = "";
+                textBoxQLDS_TenDauSach.Text = "";
+                textBoxQLDS_TheLoai.Text = "";
+                comboBoxQLDS_MaTheLoai.Text = "";
                 dataGridViewQLDS_DanhSachDauSach.Enabled = true;
 
             }
@@ -413,6 +436,21 @@ namespace QLNS
         private void comboBoxQLDS_MaDauSach_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        private void buttonQLDS_huy_Click(object sender, EventArgs e)
+        {
+            kiemtraluu = 0;
+            buttonQLDS_Luu.Visible = false;
+            buttonQLDS_huy.Visible = false;
+            buttonQLDS_ThemDauSach.Visible = true;
+            buttonQLDS_XoaDauSach.Enabled = true;
+            buttonQLDS_CapNhatDauSach.Enabled = true;
+            comboBoxQLDS_MaDauSach.Enabled = true;
+            comboBoxQLDS_MaDauSach.Text = "";
+            textBoxQLDS_TenDauSach.Text = "";
+            textBoxQLDS_TheLoai.Text = "";
+            comboBoxQLDS_MaTheLoai.Text = "";
+            dataGridViewQLDS_DanhSachDauSach.Enabled = true;
         }
 
     }

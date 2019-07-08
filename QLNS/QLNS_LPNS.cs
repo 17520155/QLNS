@@ -317,6 +317,7 @@ namespace QLNS
             {
                 
                 button_LPNS_luu.Visible = false;
+                themmoi = 0;
                 dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
                 dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
                 dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
@@ -515,6 +516,14 @@ namespace QLNS
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
+                    button_LPNS_luu.Visible = false;
+                    themmoi = 0;
+                    dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
+                    dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
+                    dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
+                    buttonLPNS_ThemMoi.Text = "Thêm mới";
+                    textBoxLPNS_TongTien.Text = "";
+
                     panelLapPhieuNhapSach.BringToFront();
 
                 }

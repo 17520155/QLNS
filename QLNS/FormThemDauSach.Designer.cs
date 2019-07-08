@@ -297,6 +297,7 @@
             this.Controls.Add(this.labelThemDauSach);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemDauSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormThemDauSach";
             this.Load += new System.EventHandler(this.FormThemDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLS_DanhSachSach)).EndInit();
