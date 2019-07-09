@@ -51,7 +51,7 @@ namespace QLNS
             }
             else
             {
-                MessageBox.Show("Chưa tạo báo cáo ", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa tạo báo cáo!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 reportViewerBCST.Clear();
                 return;
@@ -86,7 +86,7 @@ namespace QLNS
 
                 if (comboBoxBCST_Thang.Text.Trim() == "" || textBoxBCST_Nam.Text.Trim() == "")
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 try
@@ -131,7 +131,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Configuration;
 
 enum Panel_Type
 {
@@ -22,6 +24,19 @@ namespace QLNS
     {
         public FormQLNS()
         {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            StreamReader sr = new StreamReader("DataFolder//ConStr.txt");
+            string str = sr.ReadLine();
+            sr.Close();
+            string tmpconStr = string.Format("Data Source={0};Initial Catalog=QLNS;Integrated Security=True", str);
+            SqlConnection cn = new SqlConnection(tmpconStr);
+            cn.Open();
+            cn.Close();
+            config.ConnectionStrings.ConnectionStrings["Myconnectionstring"].ConnectionString = tmpconStr;
+            config.ConnectionStrings.ConnectionStrings["Myconnectionstring"].ProviderName = "System.Data.SqlClient";
+            config.Save(ConfigurationSaveMode.Modified);
+            Global.ConnectionStr = tmpconStr;
+
             InitializeComponent();
             panelTrangChu.BringToFront();
             
@@ -34,7 +49,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
@@ -105,7 +120,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
@@ -169,7 +184,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
@@ -241,7 +256,7 @@ namespace QLNS
                 //phím tắt thoát chương trình
                 if (e.KeyCode.Equals(Keys.X))
                 {
-                    DialogResult result = MessageBox.Show("Bạn chắc chắn muốn thoát", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    DialogResult result = MessageBox.Show("Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                     if (result == DialogResult.OK)
                         this.Close();
                     else return;
@@ -315,7 +330,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;

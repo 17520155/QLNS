@@ -21,7 +21,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
@@ -987,7 +987,7 @@ namespace QLNS
             else
             {
                 if (textBoxTC_NamXuatBan.Text.Trim() == "" && textBoxTC_TenSach.Text.Trim() == "" && textBoxTC_TacGia.Text.Trim() == "" && textBoxTC_NhaXuatBan.Text.Trim() == "" && textBoxTC_TheLoai.Text.Trim() == "")
-                    MessageBox.Show("Không tìm thấy kết quả ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("Không tìm thấy kết quả!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
 
             connection.Close();

@@ -124,7 +124,7 @@ namespace QLNS
         {
             if (textBoxNamXuatBan.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập năm xuất bản");
+                MessageBox.Show("Vui lòng nhập năm xuất bản!");
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -141,7 +141,7 @@ namespace QLNS
             int count = command.ExecuteNonQuery();
             if (count > 0)
             {
-                MessageBox.Show("Thêm Thành Công !");
+                MessageBox.Show("Thêm thành công!");
                 comboBoxMaDauSach.Text = "";
                 textBoxTenDauSach.Text = "";
                 //textBoxTenTacGia.Text = "";
@@ -159,6 +159,16 @@ namespace QLNS
         {
             LoadComboboxMaDauSach();
             LoadComboboxMaNXB();
+
+        }
+
+        private void labelMaNhaXuatBan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNamXuatBan_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

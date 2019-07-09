@@ -28,7 +28,7 @@ namespace QLNS
             //
             if (textBoxQLK_TenNhaXuatBan.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập tên nhà xuất bản");
+                MessageBox.Show("Lỗi! Vui lòng nhập tên nhà xuất bản!");
                 kiemtraluu = 0;
                 comboBoxQLK_MaNhaXuatBan.Text = "";
                 textBoxQLK_TenNhaXuatBan.Text = "";
@@ -47,7 +47,7 @@ namespace QLNS
 
             if (count > 0)
             {
-                MessageBox.Show("Thành công !");
+                MessageBox.Show("Thêm thành công!");
                 kiemtraluu = 0;
                 textBoxQLK_TenNhaXuatBan.Text = "";
                 QLNXB_LoadData();
@@ -116,7 +116,7 @@ namespace QLNS
 
         private void buttonQLK_XoaNhaXuatBan_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 try
@@ -132,7 +132,7 @@ namespace QLNS
                     int count = command.ExecuteNonQuery();
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa Thành Công !");
+                        MessageBox.Show("Xóa thành công!");
                         QLNXB_LoadData();
 
                     }
@@ -140,7 +140,7 @@ namespace QLNS
                 }
                 catch
                 {
-                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại");
+                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
                 }
             }
             else return;
@@ -149,7 +149,7 @@ namespace QLNS
 
         private void buttonQLK_CapNhatNhaXuatBan_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 SqlConnection connection = new SqlConnection();
@@ -172,7 +172,7 @@ namespace QLNS
                 int count = command.ExecuteNonQuery();
                 if (count > 0)
                 {
-                    MessageBox.Show("Cập Nhật Thành Công !");
+                    MessageBox.Show("Cập nhật thành công!");
                     QLNXB_LoadData();
 
                 }

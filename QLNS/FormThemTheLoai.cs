@@ -22,7 +22,7 @@ namespace QLNS
         {
             if (textBoxTenTheLoai.Text == "")
             {
-                MessageBox.Show("Nhập tên nhà xuất bản");
+                MessageBox.Show("Thông Báo");
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -35,12 +35,12 @@ namespace QLNS
             int count = command.ExecuteNonQuery();
             if (count > 0)
             {
-                MessageBox.Show("Thêm Thành Công !");
+                MessageBox.Show("Thêm thành công!");
                 textBoxTenTheLoai.Text = "";
 
 
             }
-            else MessageBox.Show("Thêm thất bại!");
+            else MessageBox.Show("Không thể thực hiện thao tác thêm!");
             connection.Close();
         }
     }

@@ -22,7 +22,7 @@ namespace QLNS
         {
             if (textBoxTenNhaXuatBan.Text == "")
             {
-                MessageBox.Show("Nhập tên nhà xuất bản");
+                MessageBox.Show("Thông Báo");
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -38,7 +38,7 @@ namespace QLNS
 
             if (count > 0)
             {
-                MessageBox.Show("Thành công");
+                MessageBox.Show("Thêm thành công");
                 textBoxTenNhaXuatBan.Text = "";
             }
 

@@ -35,14 +35,14 @@ namespace QLNS
             buttonLPTT_Luu.Visible = false;
             buttonLPTT_huy.Visible = false;
             buttonLPTT_Them.Visible = true;
-            buttonLPTT_Them.Text = "Thêm";
+            //buttonLPTT_Them.Text = "Thêm";
             buttonLPTT_Xoa.Enabled = true;
             buttonLPTT_CapNhat.Enabled = true;
             comboBoxLPTT_MaPhieuThu.Enabled = true;
             dataGridViewLPTT_DanhSachPhieuThu.Enabled = true;
             if (textBoxLPT_SoTienThu.Text.Trim() =="")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Lỗi! Vui lòng nhập đầy đủ thông tin!");
                 kiemtraluu = 0;
                 return;
             }
@@ -51,7 +51,7 @@ namespace QLNS
                 float tienno = LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
                 if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
                 {
-                    MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 else
@@ -71,7 +71,7 @@ namespace QLNS
                     int count = command.ExecuteNonQuery();
                     if (count > 0)
                     {
-                        MessageBox.Show("Thêm Thành Công !");
+                        MessageBox.Show("Thêm thành công!");
                         kiemtraluu = 0;
                         QLPTT_LoadData();
 
@@ -96,7 +96,7 @@ namespace QLNS
                 int count = command.ExecuteNonQuery();
                 if (count > 0)
                 {
-                    MessageBox.Show("Thêm Thành Công !");
+                    MessageBox.Show("Thêm thành công!");
                     kiemtraluu = 0;
                     QLPTT_LoadData();
 
@@ -213,7 +213,7 @@ namespace QLNS
 
         private void buttonLPTT_Xoa_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 try
@@ -229,7 +229,7 @@ namespace QLNS
                     int count = command.ExecuteNonQuery();
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa Thành Công !");
+                        MessageBox.Show("Xóa thành công!");
                         QLPTT_LoadData();
 
                     }
@@ -240,7 +240,7 @@ namespace QLNS
                     comboBoxLPTT_MaPhieuThu.Text = "";
                     dateTimePickerLPTT_NgayThu.Text = "";
                     textBoxLPT_SoTienThu.Text = "";
-                    MessageBox.Show("Lỗi, Vui lòng kiểm tra lại !");
+                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
                 }
 
             }
@@ -259,12 +259,12 @@ namespace QLNS
                     float tienno = LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
                     if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
                     {
-                        MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     else
                     {
-                        DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (dlr == DialogResult.Yes)
                         {
 
@@ -299,7 +299,7 @@ namespace QLNS
                             count = Command.ExecuteNonQuery();
                             if (count > 0)
                             {
-                                MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                                MessageBox.Show("Cập nhật thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                                 QLPTT_LoadData();
 
                             }
@@ -311,7 +311,7 @@ namespace QLNS
                 }
                 else
                 {
-                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dlr == DialogResult.Yes)
                     {
 
@@ -361,7 +361,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại ", "Thông báo",MessageBoxButtons.OK ,MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại! ", "Thông Báo",MessageBoxButtons.OK ,MessageBoxIcon.Error);
             }
         }
 
@@ -443,7 +443,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;

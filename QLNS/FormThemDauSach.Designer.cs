@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemDauSach));
             this.buttonLuu = new System.Windows.Forms.Button();
             this.textBoxTenDauSach = new System.Windows.Forms.TextBox();
             this.labelThemDauSach = new System.Windows.Forms.Label();
@@ -118,7 +119,7 @@
             // 
             this.labelTenTheLoai.AutoSize = true;
             this.labelTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTheLoai.Location = new System.Drawing.Point(268, 85);
+            this.labelTenTheLoai.Location = new System.Drawing.Point(258, 86);
             this.labelTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenTheLoai.Name = "labelTenTheLoai";
             this.labelTenTheLoai.Size = new System.Drawing.Size(83, 17);
@@ -138,7 +139,7 @@
             // 
             this.labelTenTacGia.AutoSize = true;
             this.labelTenTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTacGia.Location = new System.Drawing.Point(268, 137);
+            this.labelTenTacGia.Location = new System.Drawing.Point(258, 137);
             this.labelTenTacGia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenTacGia.Name = "labelTenTacGia";
             this.labelTenTacGia.Size = new System.Drawing.Size(79, 17);
@@ -172,7 +173,7 @@
             this.labelMaTacGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMaTacGia.AutoSize = true;
             this.labelMaTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaTacGia.Location = new System.Drawing.Point(44, 137);
+            this.labelMaTacGia.Location = new System.Drawing.Point(15, 138);
             this.labelMaTacGia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaTacGia.Name = "labelMaTacGia";
             this.labelMaTacGia.Size = new System.Drawing.Size(73, 17);
@@ -182,7 +183,7 @@
             // buttonXoaChiTietTacGia
             // 
             this.buttonXoaChiTietTacGia.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonXoaChiTietTacGia.Location = new System.Drawing.Point(382, 160);
+            this.buttonXoaChiTietTacGia.Location = new System.Drawing.Point(382, 163);
             this.buttonXoaChiTietTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.buttonXoaChiTietTacGia.Name = "buttonXoaChiTietTacGia";
             this.buttonXoaChiTietTacGia.Size = new System.Drawing.Size(56, 25);
@@ -194,7 +195,7 @@
             // buttonThemChiTietTacGia
             // 
             this.buttonThemChiTietTacGia.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonThemChiTietTacGia.Location = new System.Drawing.Point(322, 160);
+            this.buttonThemChiTietTacGia.Location = new System.Drawing.Point(322, 163);
             this.buttonThemChiTietTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemChiTietTacGia.Name = "buttonThemChiTietTacGia";
             this.buttonThemChiTietTacGia.Size = new System.Drawing.Size(56, 25);
@@ -254,7 +255,7 @@
             this.labelTenDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTenDauSach.AutoSize = true;
             this.labelTenDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenDauSach.Location = new System.Drawing.Point(29, 88);
+            this.labelTenDauSach.Location = new System.Drawing.Point(15, 88);
             this.labelTenDauSach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenDauSach.Name = "labelTenDauSach";
             this.labelTenDauSach.Size = new System.Drawing.Size(77, 17);
@@ -295,6 +296,7 @@
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenDauSach);
             this.Controls.Add(this.labelThemDauSach);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemDauSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

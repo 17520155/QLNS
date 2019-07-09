@@ -9,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.IO;
 
 namespace QLNS
 {
-    public static class Global
+    public class Global
     {
         private static string connectionStr = ConfigurationManager.ConnectionStrings["MyconnectionString"].ConnectionString;
 
-        public static string ConnectionStr { get => connectionStr; }
+        public static string ConnectionStr { get => connectionStr; set => connectionStr = value; }
     }
 }

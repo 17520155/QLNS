@@ -73,13 +73,13 @@ namespace QLNS
                 dataGridViewQLDS_ChiTietTacGia[1, indexRow].Value = comboBoxQLDS_ThemMaTacGia.Text;
                 dataGridViewQLDS_ChiTietTacGia[2, indexRow].Value = textBoxQLDS_TenTacGia.Text;
                 dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
-                MessageBox.Show("Thêm thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                MessageBox.Show("Thêm thành công!","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                 return;
 
             }
             else
             {
-                MessageBox.Show("Đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đã tồn tại!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             //dataGridViewQLDS_ChiTietTacGia[0, indexRow].Value = dataGridViewQLDS_ChiTietTacGia.Rows.Count;
@@ -103,14 +103,14 @@ namespace QLNS
         {
             try
             {
-                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     int RowIndex = dataGridViewQLDS_ChiTietTacGia.CurrentRow.Index;
                     if (dataGridViewQLDS_ChiTietTacGia.Rows[RowIndex].Cells[0].Value == null)
                     {
 
-                        MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại");
+                        MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
                         return;
 
                     }
@@ -123,7 +123,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Chưa có tác giả !");
+                MessageBox.Show("Chưa có tác giả!");
             }
         }
 
@@ -181,7 +181,7 @@ namespace QLNS
             dataGridViewQLDS_DanhSachDauSach.Enabled = true;
             if (textBoxQLDS_TenDauSach.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập tên đầu sách");
+                MessageBox.Show("Vui lòng nhập tên đầu sách!");
                 kiemtraluu = 0;
                 comboBoxQLDS_MaDauSach.Text = "";
                 textBoxQLDS_TenDauSach.Text = "";
@@ -219,7 +219,7 @@ namespace QLNS
             dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
             dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
 
-            MessageBox.Show("Thêm thành công");
+            MessageBox.Show("Thêm thành công!");
             comboBoxQLDS_MaDauSach.Text = "";
             textBoxQLDS_TenDauSach.Text = "";
             textBoxQLDS_TheLoai.Text = "";
@@ -246,7 +246,7 @@ namespace QLNS
 
         private void buttonQLDS_XoaDauSach_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 try
@@ -278,7 +278,7 @@ namespace QLNS
 
         private void buttonQLDS_CapNhatDauSach_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
 
@@ -304,7 +304,7 @@ namespace QLNS
                 int count = command.ExecuteNonQuery();
                 if (count > 0)
                 {
-                    MessageBox.Show("Cập Nhật Thành Công !");
+                    MessageBox.Show("Cập nhật thành công!");
                     QLDS_LoadData();
 
                 }

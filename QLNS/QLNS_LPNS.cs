@@ -88,7 +88,7 @@ namespace QLNS
             {
                 if (textBoxLPNS_SoLuongNhap.Text == "" || textBoxLPNS_DonGiaNhap.Text == "")
                 {
-                    MessageBox.Show("Lỗi ! Vui lòng nhập đầy đủ thông tin ");
+                    MessageBox.Show("Lỗi! Vui lòng nhập đầy đủ thông tin!");
                     return;
                 }
                 else
@@ -125,21 +125,21 @@ namespace QLNS
                             if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text) && soluongtontoithieu < SLton)
                             {
 
-                                MessageBox.Show("Lỗi! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Lỗi! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                             }
                             else
                             if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text))
                             {
                                 string str = "Số lượng nhập tối thiểu " + soluongnhaptoithieu.ToString();
-                                MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                             }
                             else
                             if (soluongtontoithieu < SLton)
                             {
                                 string str = "Mã sách "+ comboBoxLPNS_MaSach.Text+" Số lượng tồn " + soluongtontoithieu.ToString();
-                                MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                             }                           
 
@@ -164,14 +164,14 @@ namespace QLNS
                             textBoxLPNS_SoLuongNhap.Text = "";
                             textBoxLPNS_DonGiaNhap.Text = "";
                             dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
-                            MessageBox.Show("Thêm thành công ");
+                            MessageBox.Show("Thêm thành công!");
                             return;
                         }
 
                     }
                     else
                     {
-                        MessageBox.Show("Đã tồn tại ");
+                        MessageBox.Show("Đã tồn tại!");
                         //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                         return;
                     }
@@ -181,7 +181,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại");
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
             }
 
         }
@@ -190,7 +190,7 @@ namespace QLNS
         {
             try
             {
-                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     
@@ -204,7 +204,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại");
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
             }
 
         }
@@ -221,21 +221,21 @@ namespace QLNS
                     if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text) && soluongtontoithieu < SLton)
                     {
 
-                        MessageBox.Show("Lỗi! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Lỗi! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                     }
                     else
                     if (soluongnhaptoithieu > Convert.ToInt32(textBoxLPNS_SoLuongNhap.Text))
                     {
                         string str = "Số lượng nhập tối thiểu " + soluongnhaptoithieu.ToString();
-                        MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                     }
                     else
                     if (soluongtontoithieu < SLton)
                     {
                         string str = "Mã sách " + comboBoxLPNS_MaSach.Text + " Số lượng tồn " + soluongtontoithieu.ToString();
-                        MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         //dataGridViewLPNS_ChiTietPhieuNhap.Rows.Remove(dataGridViewLPNS_ChiTietPhieuNhap.Rows[dataGridViewLPNS_ChiTietPhieuNhap.Rows.Count - 1]);
                     }
 
@@ -244,13 +244,13 @@ namespace QLNS
                 else
                 {
 
-                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dlr == DialogResult.Yes)
                     {
 
                         if (textBoxLPNS_SoLuongNhap.Text == "" || textBoxLPNS_DonGiaNhap.Text == "")
                         {
-                            MessageBox.Show("Lỗi ! Vui lòng nhập đầy đủ thông tin ");
+                            MessageBox.Show("Lỗi! Vui lòng nhập đầy đủ thông tin!");
                             return;
                         }
                         else
@@ -267,7 +267,7 @@ namespace QLNS
                             tongtien = tongtien - sl * dg;
                             tongtien = tongtien + Convert.ToSingle(dataGridViewLPNS_ChiTietPhieuNhap[7, RowIndex].Value.ToString());
                             textBoxLPNS_TongTien.Text = tongtien.ToString();
-                            MessageBox.Show("Cập nhật thành công");
+                            MessageBox.Show("Cập nhật thành công!");
                         }
 
                     }
@@ -277,7 +277,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại");
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
             }
         }        
 
@@ -299,7 +299,7 @@ namespace QLNS
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
-            SqlCommand command = new SqlCommand("LietKeSach", connection);
+            SqlCommand command = new SqlCommand("LietKeSachTheoSoLuongTon", connection);
             command.CommandType = CommandType.StoredProcedure;
             command.ExecuteNonQuery();
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -348,7 +348,7 @@ namespace QLNS
 
             }
             ToolTip t = new ToolTip();
-            string str = "Số lượng nhập nhỏ hơn :" + LPNS_SoLuongNhapToiThieu().ToString();
+            string str = "Số lượng nhập tối thiểu là " + LPNS_SoLuongNhapToiThieu().ToString();
             t.SetToolTip(textBoxLPNS_SoLuongNhap,str);
             LoadComboboxMaSach();
         }
@@ -448,14 +448,14 @@ namespace QLNS
                         dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();                   
                         dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
                         dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
-                        MessageBox.Show("Thêm thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                        MessageBox.Show("Thêm thành công!","Thông Báo!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                         textBoxLPNS_TongTien.Text = "";
                         kiemtraluu = 0;
                         connection.Close();
                     }
                     catch
                     {
-                        MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại ","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
                         kiemtraluu = 0;
                     }
                 }
@@ -465,7 +465,7 @@ namespace QLNS
                     buttonLPNS_ThemMoi.Text = "Thêm mới";
                     tongtien = 0;
                     textBoxLPNS_TongTien.Text = tongtien.ToString();
-                    MessageBox.Show("Chưa có phiếu nhập nào","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Chưa có phiếu nhập nào!","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     kiemtraluu = 0;
 
                 }
@@ -516,7 +516,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;

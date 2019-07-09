@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemKH));
             this.labelThemKH = new System.Windows.Forms.Label();
             this.textBoxTenKH = new System.Windows.Forms.TextBox();
             this.labelTenKH = new System.Windows.Forms.Label();
@@ -143,7 +144,9 @@
             this.Controls.Add(this.textBoxTenKH);
             this.Controls.Add(this.labelTenKH);
             this.Controls.Add(this.labelThemKH);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormThemKH";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm khách hàng";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemSach));
             this.textBoxTenNhaXuatBan = new System.Windows.Forms.TextBox();
             this.labelTenNhaXuatBan = new System.Windows.Forms.Label();
             this.buttonThemMaNhaXuatBan = new System.Windows.Forms.Button();
@@ -48,7 +49,7 @@
             // 
             // textBoxTenNhaXuatBan
             // 
-            this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(401, 139);
+            this.textBoxTenNhaXuatBan.Location = new System.Drawing.Point(413, 139);
             this.textBoxTenNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenNhaXuatBan.Name = "textBoxTenNhaXuatBan";
             this.textBoxTenNhaXuatBan.ReadOnly = true;
@@ -69,7 +70,7 @@
             // buttonThemMaNhaXuatBan
             // 
             this.buttonThemMaNhaXuatBan.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonThemMaNhaXuatBan.Location = new System.Drawing.Point(220, 139);
+            this.buttonThemMaNhaXuatBan.Location = new System.Drawing.Point(238, 139);
             this.buttonThemMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemMaNhaXuatBan.Name = "buttonThemMaNhaXuatBan";
             this.buttonThemMaNhaXuatBan.Size = new System.Drawing.Size(25, 19);
@@ -81,7 +82,7 @@
             // comboBoxMaNhaXuatBan
             // 
             this.comboBoxMaNhaXuatBan.FormattingEnabled = true;
-            this.comboBoxMaNhaXuatBan.Location = new System.Drawing.Point(124, 139);
+            this.comboBoxMaNhaXuatBan.Location = new System.Drawing.Point(142, 139);
             this.comboBoxMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMaNhaXuatBan.Name = "comboBoxMaNhaXuatBan";
             this.comboBoxMaNhaXuatBan.Size = new System.Drawing.Size(92, 21);
@@ -92,16 +93,17 @@
             // 
             this.labelMaNhaXuatBan.AutoSize = true;
             this.labelMaNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaNhaXuatBan.Location = new System.Drawing.Point(21, 141);
+            this.labelMaNhaXuatBan.Location = new System.Drawing.Point(21, 139);
             this.labelMaNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaNhaXuatBan.Name = "labelMaNhaXuatBan";
             this.labelMaNhaXuatBan.Size = new System.Drawing.Size(113, 17);
             this.labelMaNhaXuatBan.TabIndex = 85;
             this.labelMaNhaXuatBan.Text = "Mã nhà xuất bản";
+            this.labelMaNhaXuatBan.Click += new System.EventHandler(this.labelMaNhaXuatBan_Click);
             // 
             // textBoxTenTheLoai
             // 
-            this.textBoxTenTheLoai.Location = new System.Drawing.Point(401, 87);
+            this.textBoxTenTheLoai.Location = new System.Drawing.Point(413, 87);
             this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
             this.textBoxTenTheLoai.ReadOnly = true;
@@ -122,7 +124,7 @@
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(243, 227);
+            this.buttonLuu.Location = new System.Drawing.Point(260, 227);
             this.buttonLuu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLuu.Name = "buttonLuu";
             this.buttonLuu.Size = new System.Drawing.Size(56, 23);
@@ -133,7 +135,7 @@
             // 
             // textBoxTenDauSach
             // 
-            this.textBoxTenDauSach.Location = new System.Drawing.Point(401, 64);
+            this.textBoxTenDauSach.Location = new System.Drawing.Point(413, 64);
             this.textBoxTenDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenDauSach.Name = "textBoxTenDauSach";
             this.textBoxTenDauSach.ReadOnly = true;
@@ -165,7 +167,7 @@
             // buttonThemMaDauSach
             // 
             this.buttonThemMaDauSach.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonThemMaDauSach.Location = new System.Drawing.Point(220, 61);
+            this.buttonThemMaDauSach.Location = new System.Drawing.Point(238, 61);
             this.buttonThemMaDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.buttonThemMaDauSach.Name = "buttonThemMaDauSach";
             this.buttonThemMaDauSach.Size = new System.Drawing.Size(25, 19);
@@ -177,7 +179,7 @@
             // comboBoxMaDauSach
             // 
             this.comboBoxMaDauSach.FormattingEnabled = true;
-            this.comboBoxMaDauSach.Location = new System.Drawing.Point(124, 61);
+            this.comboBoxMaDauSach.Location = new System.Drawing.Point(142, 61);
             this.comboBoxMaDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMaDauSach.Name = "comboBoxMaDauSach";
             this.comboBoxMaDauSach.Size = new System.Drawing.Size(92, 21);
@@ -188,7 +190,7 @@
             // 
             this.labelMaDauSach.AutoSize = true;
             this.labelMaDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaDauSach.Location = new System.Drawing.Point(21, 61);
+            this.labelMaDauSach.Location = new System.Drawing.Point(21, 64);
             this.labelMaDauSach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaDauSach.Name = "labelMaDauSach";
             this.labelMaDauSach.Size = new System.Drawing.Size(89, 17);
@@ -197,11 +199,12 @@
             // 
             // textBoxNamXuatBan
             // 
-            this.textBoxNamXuatBan.Location = new System.Drawing.Point(124, 163);
+            this.textBoxNamXuatBan.Location = new System.Drawing.Point(142, 163);
             this.textBoxNamXuatBan.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNamXuatBan.Name = "textBoxNamXuatBan";
             this.textBoxNamXuatBan.Size = new System.Drawing.Size(95, 20);
             this.textBoxNamXuatBan.TabIndex = 100;
+            this.textBoxNamXuatBan.TextChanged += new System.EventHandler(this.textBoxNamXuatBan_TextChanged);
             // 
             // labelNamXuaBan
             // 
@@ -218,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 278);
+            this.ClientSize = new System.Drawing.Size(563, 298);
             this.Controls.Add(this.textBoxNamXuatBan);
             this.Controls.Add(this.labelNamXuaBan);
             this.Controls.Add(this.buttonThemMaDauSach);
@@ -235,6 +238,7 @@
             this.Controls.Add(this.textBoxTenDauSach);
             this.Controls.Add(this.labelTenDauSach);
             this.Controls.Add(this.labelThemSach);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemTheLoai));
             this.buttonLuu = new System.Windows.Forms.Button();
             this.textBoxTenTheLoai = new System.Windows.Forms.TextBox();
             this.labelTenTheLoai = new System.Windows.Forms.Label();
@@ -37,10 +38,10 @@
             // buttonLuu
             // 
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonLuu.Location = new System.Drawing.Point(95, 102);
+            this.buttonLuu.Location = new System.Drawing.Point(112, 102);
             this.buttonLuu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(56, 19);
+            this.buttonLuu.Size = new System.Drawing.Size(56, 28);
             this.buttonLuu.TabIndex = 53;
             this.buttonLuu.Text = "Lưu";
             this.buttonLuu.UseVisualStyleBackColor = true;
@@ -48,17 +49,17 @@
             // 
             // textBoxTenTheLoai
             // 
-            this.textBoxTenTheLoai.Location = new System.Drawing.Point(108, 60);
+            this.textBoxTenTheLoai.Location = new System.Drawing.Point(115, 61);
             this.textBoxTenTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenTheLoai.Name = "textBoxTenTheLoai";
-            this.textBoxTenTheLoai.Size = new System.Drawing.Size(95, 20);
+            this.textBoxTenTheLoai.Size = new System.Drawing.Size(120, 20);
             this.textBoxTenTheLoai.TabIndex = 52;
             // 
             // labelTenTheLoai
             // 
             this.labelTenTheLoai.AutoSize = true;
             this.labelTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTheLoai.Location = new System.Drawing.Point(32, 62);
+            this.labelTenTheLoai.Location = new System.Drawing.Point(26, 61);
             this.labelTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenTheLoai.Name = "labelTenTheLoai";
             this.labelTenTheLoai.Size = new System.Drawing.Size(83, 17);
@@ -80,11 +81,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 170);
+            this.ClientSize = new System.Drawing.Size(271, 170);
             this.Controls.Add(this.buttonLuu);
             this.Controls.Add(this.textBoxTenTheLoai);
             this.Controls.Add(this.labelTenTheLoai);
             this.Controls.Add(this.labelThemTheLoai);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemTheLoai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

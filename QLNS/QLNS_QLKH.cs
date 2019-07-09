@@ -97,7 +97,7 @@ namespace QLNS
 
             if (textBoxQLKH_TenKH.Text == "" || textBoxQLKH_DiaChi.Text=="" || textBoxQLKH_SDT.Text=="" || textBoxQLKH_Email.Text=="")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Lỗi! Vui lòng nhập đầy đủ thông tin!");
                 kiemtraluu = 0;
                 return;
             }
@@ -119,7 +119,7 @@ namespace QLNS
             int count = command.ExecuteNonQuery();
             if (count > 0)
             {
-                MessageBox.Show("Thêm Thành Công !");
+                MessageBox.Show("Thêm thành công!");
                 kiemtraluu = 0;
                 QLKHLoadData();               
 
@@ -149,7 +149,7 @@ namespace QLNS
         }
         private void buttonQLKH_Xoa_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 try
@@ -165,7 +165,7 @@ namespace QLNS
                     int count = command.ExecuteNonQuery();
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa Thành Công !");
+                        MessageBox.Show("Xóa thành công!");
                         QLKHLoadData();
 
                     }
@@ -173,7 +173,7 @@ namespace QLNS
                 }
                 catch
                 {
-                    MessageBox.Show("Lỗi, Vui lòng kiểm tra lại !");
+                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
                 }
             }
             else return;
@@ -183,7 +183,7 @@ namespace QLNS
         {
             try
             {
-                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
 
@@ -215,7 +215,7 @@ namespace QLNS
                     int count = command.ExecuteNonQuery();
                     if (count > 0)
                     {
-                        MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!");
+                        MessageBox.Show("Cập nhật thành công!", "Thông Báo");
                         QLKHLoadData();
 
                     }
@@ -227,7 +227,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void buttonQLKH_huy_Click(object sender, EventArgs e)
@@ -254,7 +254,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;

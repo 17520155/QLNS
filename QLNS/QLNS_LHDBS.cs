@@ -246,7 +246,7 @@ namespace QLNS
                         if (SLtonmin > SLTon-Convert.ToInt32(textBoxLHDBS_SoLuong.Text))
                         {
                             string str = "Số lượng tồn tối thiểu " + SLtonmin.ToString();
-                            MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             //dataGridViewLHDBS_DanhSachMua.Rows.Remove(dataGridViewLHDBS_DanhSachMua.Rows[dataGridViewLHDBS_DanhSachMua.Rows.Count - 1]);
                         }
                         else
@@ -268,14 +268,14 @@ namespace QLNS
                             textBoxLHDBS_SoLuong.Text = "";
                             textBoxLHDBS_DonGiaBan.Text = "";
                             dataGridViewLHDBS_DanhSachMua.Rows.Add(1);
-                            MessageBox.Show("Thêm thành công ");
+                            MessageBox.Show("Thêm thành công!");
                             return;
                         }
 
                     }
                     else
                     {
-                        MessageBox.Show("Đã tồn tại ");
+                        MessageBox.Show("Đã tồn tại!");
                         //dataGridViewLHDBS_DanhSachMua.Rows.Remove(dataGridViewLHDBS_DanhSachMua.Rows[dataGridViewLHDBS_DanhSachMua.Rows.Count - 1]);
                         return;
                     }
@@ -285,7 +285,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi ! Vui lòng kiểm tra lại");
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
             }
             
 
@@ -295,7 +295,7 @@ namespace QLNS
         {
             try
             {
-                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     int RowIndex = dataGridViewLHDBS_DanhSachMua.CurrentRow.Index;
@@ -307,7 +307,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại");
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
             }
         }
 
@@ -320,19 +320,19 @@ namespace QLNS
                 if (SLtonmin > SLTon - Convert.ToInt32(textBoxLHDBS_SoLuong.Text))
                 {
                     string str = "Số lượng tồn tối thiểu " + SLtonmin.ToString();
-                    MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     //dataGridViewLHDBS_DanhSachMua.Rows.Remove(dataGridViewLHDBS_DanhSachMua.Rows[dataGridViewLHDBS_DanhSachMua.Rows.Count - 1]);
                 }
                 else
                 {
 
-                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muôn cập nhật?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn cập nhật?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dlr == DialogResult.Yes)
                     {
 
                         if (textBoxLHDBS_SoLuong.Text == "" || textBoxLHDBS_DonGiaBan.Text == "")
                         {
-                            MessageBox.Show("Lỗi ! Vui lòng nhập đầy đủ thông tin ");
+                            MessageBox.Show("Lỗi! Vui lòng nhập đầy đủ thông tin!");
                             return;
                         }
                         else
@@ -349,7 +349,7 @@ namespace QLNS
                             tongtienmua = tongtienmua - sl * dg;
                             tongtienmua = tongtienmua + Convert.ToSingle(dataGridViewLHDBS_DanhSachMua[8, RowIndex].Value.ToString());
                             textBoxLHDBS_TongTien.Text = tongtienmua.ToString();
-                            MessageBox.Show("Cập nhật thành công");
+                            MessageBox.Show("Cập nhật thành công!");
                         }
                     }
                     else return;
@@ -360,7 +360,7 @@ namespace QLNS
             }
             catch
             {
-                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại");
+                MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
             }
 
         }
@@ -444,7 +444,7 @@ namespace QLNS
             {
                 if(textBoxLHDBS_SoTienTra.Text.Trim()=="")
                 {
-                    MessageBox.Show("Vui lòng nhập số tiền trả");
+                    MessageBox.Show("Vui lòng nhập số tiền trả!");
                     textBoxLHDBS_TongTien.Text = "";
                     return;
                 }
@@ -458,7 +458,7 @@ namespace QLNS
                     if (sotiennotoida < sotienno)
                     {
                         string str = "Số tiền nợ lớn hơn " + sotiennotoida.ToString();
-                        MessageBox.Show(str, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(str, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     else
@@ -528,12 +528,12 @@ namespace QLNS
                     LapHoaDon_LuuHD.Visible = false;
                     buttonLHDBS_ThemMoi.Text = "Thêm mới";
                     kiemtraluu = 0;
-                    MessageBox.Show("Lỗi Vui lòng kiểm tra lại");
+                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
                 }
             }
             else
             {
-                MessageBox.Show("Chưa có chi tiết hóa đơn");
+                MessageBox.Show("Chưa có chi tiết hóa đơn!");
                 return;
             }
         }
@@ -583,7 +583,7 @@ namespace QLNS
         {
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;

@@ -53,7 +53,7 @@ namespace QLNS
             }
             else
             {
-                MessageBox.Show("Chưa tạo báo cáo ", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa tạo báo cáo!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 reportViewerBCCN.Clear();
                 return;
@@ -84,7 +84,7 @@ namespace QLNS
 
                 if (comboBoxBCCN_Thang.Text.Trim() == "" || textBoxBCCN_Nam.Text.Trim() == "")
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 try

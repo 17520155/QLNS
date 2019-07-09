@@ -155,7 +155,7 @@ namespace QLNS
             int count = command1.ExecuteNonQuery();
             if (count > 0)
             {
-                //MessageBox.Show("Cập Nhật Thành Công !", "Thông báo!");
+                //MessageBox.Show("Cập Nhật Thành Công!", "Thông Báo!");
                 TDQD_SoLuongNhapToiThieu();
 
             }
@@ -237,7 +237,7 @@ namespace QLNS
             }
 
 
-            MessageBox.Show("Thay đổi qui định thành công! ", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+            MessageBox.Show("Thay đổi qui định thành công! ", "Thông Báo", MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
             connection.Close();
 
         }
@@ -262,7 +262,7 @@ namespace QLNS
             radioButtonButtonTDQD_KiemTraSoTienThu_No.Enabled = false;
             if (kiemtraluu == 1)
             {
-                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
