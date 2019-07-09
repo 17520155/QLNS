@@ -34,15 +34,17 @@ namespace QLNS
             buttonQLK_CapNhatTheLoai.Enabled = true;
             buttonQLK_QLTL_Luu.Visible = false;
             dataGridViewQLK_QLTL.Enabled = true;
-            comboBoxQLK__MaTheLoai.Text = "";
+            
             comboBoxQLK__MaTheLoai.Enabled = true;
-            textBoxQLK__TenTheLoai.Text = "";
+            
             buttonQLK_ThemTheLoai.Visible = true;
             buttonQLK_QLTL_huytheloai.Visible = false;
             if (textBoxQLK__TenTheLoai.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên tác giả");
                 kiemtraluu = 0;
+                comboBoxQLK__MaTheLoai.Text = "";
+                textBoxQLK__TenTheLoai.Text = "";
                 return;
             }
             SqlConnection connection = new SqlConnection();

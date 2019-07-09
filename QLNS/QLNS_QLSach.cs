@@ -16,15 +16,8 @@ namespace QLNS
 
         private void buttonQLS_Luu_Click(object sender, EventArgs e)
         {
-            comboBoxQLS_MaSach.Enabled = true;
-            comboBoxQLS_MaSach.Text = "";
-            comboBoxQLS_MaDauSach.Text = "";
-            textBoxQLS_TenDauSach.Text = "";
-            textBoxQLS_TacGia.Text = "";
-            textBoxQLS_TheLoai.Text = "";
-            comboBoxQLS_MaNhaXuatBan.Text = "";
-            textBoxQLS_TenNhaXuarBan.Text = "";
-            textBoxQLS_NamXuatBan.Text = "";
+            kiemtraluu = 0;
+            comboBoxQLS_MaSach.Enabled = true;            
             buttonQLS_Luu.Visible = false;
             buttonQLS_Xoa.Enabled = true;
             buttonQLS_CapNhat.Enabled = true;
@@ -34,6 +27,14 @@ namespace QLNS
             if (textBoxQLS_NamXuatBan.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập năm xuất bản");
+                comboBoxQLS_MaSach.Text = "";
+                comboBoxQLS_MaDauSach.Text = "";
+                textBoxQLS_TenDauSach.Text = "";
+                textBoxQLS_TacGia.Text = "";
+                textBoxQLS_TheLoai.Text = "";
+                comboBoxQLS_MaNhaXuatBan.Text = "";
+                textBoxQLS_TenNhaXuarBan.Text = "";
+                textBoxQLS_NamXuatBan.Text = "";
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -52,6 +53,14 @@ namespace QLNS
             {
                 MessageBox.Show("Thêm Thành Công !");
                 QLNSLoaddata();
+                comboBoxQLS_MaSach.Text = "";
+                comboBoxQLS_MaDauSach.Text = "";
+                textBoxQLS_TenDauSach.Text = "";
+                textBoxQLS_TacGia.Text = "";
+                textBoxQLS_TheLoai.Text = "";
+                comboBoxQLS_MaNhaXuatBan.Text = "";
+                textBoxQLS_TenNhaXuarBan.Text = "";
+                textBoxQLS_NamXuatBan.Text = "";
             }
 
             connection.Close();
@@ -70,9 +79,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+           
+            comboBoxQLS_MaDauSach.DisplayMember = dt.Columns[0].ToString();
+            comboBoxQLS_MaDauSach.ValueMember = dt.Columns[0].ToString();
             comboBoxQLS_MaDauSach.DataSource = dt;
-            comboBoxQLS_MaDauSach.DisplayMember = "MaDauSach";
-            comboBoxQLS_MaDauSach.ValueMember = "MaDauSach";
             connection.Close();
 
         }
@@ -88,9 +98,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxQLS_MaNhaXuatBan.DisplayMember = dt.Columns[0].ToString();
+            comboBoxQLS_MaNhaXuatBan.ValueMember = dt.Columns[0].ToString();
             comboBoxQLS_MaNhaXuatBan.DataSource = dt;
-            comboBoxQLS_MaNhaXuatBan.DisplayMember = "MaNXB";
-            comboBoxQLS_MaNhaXuatBan.ValueMember = "MaNXB";
             connection.Close();
 
         }

@@ -46,9 +46,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxMaDauSach.DisplayMember = dt.Columns[0].ToString();
+            comboBoxMaDauSach.ValueMember = dt.Columns[0].ToString();
             comboBoxMaDauSach.DataSource = dt;
-            comboBoxMaDauSach.DisplayMember = "MaDauSach";
-            comboBoxMaDauSach.ValueMember = "MaDauSach";
             connection.Close();
 
         }
@@ -64,9 +65,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxMaNhaXuatBan.DisplayMember = dt.Columns[0].ToString();
+            comboBoxMaNhaXuatBan.ValueMember = dt.Columns[0].ToString();
             comboBoxMaNhaXuatBan.DataSource = dt;
-            comboBoxMaNhaXuatBan.DisplayMember = "MaNXB";
-            comboBoxMaNhaXuatBan.ValueMember = "MaNXB";
             connection.Close();
 
         }

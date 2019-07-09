@@ -305,11 +305,12 @@ namespace QLNS
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
-            adapter.Fill(dt);
+            adapter.Fill(dt);            
+            comboBoxLPNS_MaSach.DisplayMember = dt.Columns[0].ToString();
+            comboBoxLPNS_MaSach.ValueMember = dt.Columns[0].ToString();
             comboBoxLPNS_MaSach.DataSource = dt;
-            comboBoxLPNS_MaSach.DisplayMember = "MaSach";
-            comboBoxLPNS_MaSach.ValueMember = "MaSach";
             connection.Close();
+           
         }
         private void panelLapPhieuNhapSach_Paint(object sender, PaintEventArgs e)
         {
@@ -354,12 +355,15 @@ namespace QLNS
 
         private void comboBoxLPNS_MaSach_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(comboBoxLPNS_MaSach.Text))
+            {
+                return;
+            }
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
             SqlCommand command = new SqlCommand("LietKeSachMaSachTenDauSachNXB", connection);
-            string id = comboBoxLPNS_MaSach.Text;
-            SqlParameter p = new SqlParameter("MaSach", id);
+            SqlParameter p = new SqlParameter("@MaSach", Convert.ToInt32(comboBoxLPNS_MaSach.Text));
             command.Parameters.Add(p);
             command.CommandType = CommandType.StoredProcedure;
             command.ExecuteNonQuery();

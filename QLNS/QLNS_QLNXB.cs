@@ -20,9 +20,9 @@ namespace QLNS
             buttonQLK_CapNhatNhaXuatBan.Enabled = true;
             buttonQLK_QLNXB_Luu.Visible = false;
             dataGridViewQLK_QLNXB.Enabled = true;
-            comboBoxQLK_MaNhaXuatBan.Text = "";
+            
             comboBoxQLK_MaNhaXuatBan.Enabled = true;
-            textBoxQLK_TenNhaXuatBan.Text = "";
+            
             buttonQLK_ThemNhaXuatBan.Visible = true;
             buttonQLK_QLTL_huynxb.Visible = false;
             //
@@ -30,6 +30,8 @@ namespace QLNS
             {
                 MessageBox.Show("Vui lòng nhập tên nhà xuất bản");
                 kiemtraluu = 0;
+                comboBoxQLK_MaNhaXuatBan.Text = "";
+                textBoxQLK_TenNhaXuatBan.Text = "";
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -49,6 +51,8 @@ namespace QLNS
                 kiemtraluu = 0;
                 textBoxQLK_TenNhaXuatBan.Text = "";
                 QLNXB_LoadData();
+                comboBoxQLK_MaNhaXuatBan.Text = "";
+                textBoxQLK_TenNhaXuatBan.Text = "";
 
             }
 

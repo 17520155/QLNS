@@ -140,9 +140,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxLPTT_MaPhieuThu.DisplayMember = dt.Columns[0].ToString();
+            comboBoxLPTT_MaPhieuThu.ValueMember = dt.Columns[0].ToString();
             comboBoxLPTT_MaPhieuThu.DataSource = dt;
-            comboBoxLPTT_MaPhieuThu.DisplayMember = "SoPhieuThu";
-            comboBoxLPTT_MaPhieuThu.ValueMember = "SoPhieuThu";
             connection.Close();
 
         }
@@ -158,9 +159,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxLPTT_MaKH.DisplayMember = dt.Columns[0].ToString();
+            comboBoxLPTT_MaKH.ValueMember = dt.Columns[0].ToString();
             comboBoxLPTT_MaKH.DataSource = dt;
-            comboBoxLPTT_MaKH.DisplayMember = "MaKH";
-            comboBoxLPTT_MaKH.ValueMember = "MaKH";
             connection.Close();
         }
         private void comboBoxLPTT_MaKH_SelectedIndexChanged(object sender, EventArgs e)

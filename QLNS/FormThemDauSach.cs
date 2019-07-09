@@ -117,9 +117,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxMaTheLoai.DisplayMember = dt.Columns[0].ToString();
+            comboBoxMaTheLoai.ValueMember = dt.Columns[0].ToString();
             comboBoxMaTheLoai.DataSource = dt;
-            comboBoxMaTheLoai.DisplayMember = "MaTheLoai";
-            comboBoxMaTheLoai.ValueMember = "MaTheLoai";
             connection.Close();
 
         }
@@ -135,9 +136,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxMaTacGia.DisplayMember = dt.Columns[0].ToString();
+            comboBoxMaTacGia.ValueMember = dt.Columns[0].ToString();
             comboBoxMaTacGia.DataSource = dt;
-            comboBoxMaTacGia.DisplayMember = "MaTacGia";
-            comboBoxMaTacGia.ValueMember = "MaTacGia";
             connection.Close();
 
         }

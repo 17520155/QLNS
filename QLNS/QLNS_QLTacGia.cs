@@ -33,16 +33,18 @@ namespace QLNS
             buttonQLK_CapNhatTacGia.Enabled = true;
             buttonQLK_QLTG_Luu.Visible = false;
             dataGridViewQLK_QLTG.Enabled = true;
-            comboBoxQLK_MaTacGia.Text = "";
+            
             buttonQLK_huytacgia.Visible = false;
             comboBoxQLK_MaTacGia.Enabled = true;
-            textBoxQLK_TenTacGia.Text = "";
+            
             buttonQLK_ThemTacGia.Visible = true;
             //
             if (textBoxQLK_TenTacGia.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên tác giả");
                 kiemtraluu = 0;
+                textBoxQLK_TenTacGia.Text = "";
+                comboBoxQLK_MaTacGia.Text = "";
                 return;
             }
             SqlConnection connection = new SqlConnection();

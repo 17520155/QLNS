@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace QLNS
 {
-    static public class Global
+    public static class Global
     {
-        static string connectionStr = @"Data Source=.\;Initial Catalog=QLNS;Integrated Security=True";
+        private static string connectionStr = "Data Source=DESKTOP-2SM9U8H;Initial Catalog=QLNS;Integrated Security=True";
 
-        public static string ConnectionStr { get => connectionStr;}
+        public static string ConnectionStr { get => connectionStr; set => connectionStr = value; }
     }
 }

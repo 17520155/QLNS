@@ -162,9 +162,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxQLDS_ThemMaTacGia.DisplayMember = dt.Columns[0].ToString();
+            comboBoxQLDS_ThemMaTacGia.ValueMember = dt.Columns[0].ToString();
             comboBoxQLDS_ThemMaTacGia.DataSource = dt;
-            comboBoxQLDS_ThemMaTacGia.DisplayMember = "MaTacGia";
-            comboBoxQLDS_ThemMaTacGia.ValueMember = "MaTacGia";
             connection.Close();
 
         }
@@ -176,15 +177,16 @@ namespace QLNS
             buttonQLDS_XoaDauSach.Enabled = true;
             buttonQLDS_CapNhatDauSach.Enabled = true;
             comboBoxQLDS_MaDauSach.Enabled = true;
-            comboBoxQLDS_MaDauSach.Text = "";
-            textBoxQLDS_TenDauSach.Text = "";
-            textBoxQLDS_TheLoai.Text = "";
-            comboBoxQLDS_MaTheLoai.Text = "";
+            
             dataGridViewQLDS_DanhSachDauSach.Enabled = true;
             if (textBoxQLDS_TenDauSach.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên đầu sách");
                 kiemtraluu = 0;
+                comboBoxQLDS_MaDauSach.Text = "";
+                textBoxQLDS_TenDauSach.Text = "";
+                textBoxQLDS_TheLoai.Text = "";
+                comboBoxQLDS_MaTheLoai.Text = "";
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -218,6 +220,10 @@ namespace QLNS
             dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
 
             MessageBox.Show("Thêm thành công");
+            comboBoxQLDS_MaDauSach.Text = "";
+            textBoxQLDS_TenDauSach.Text = "";
+            textBoxQLDS_TheLoai.Text = "";
+            comboBoxQLDS_MaTheLoai.Text = "";
             connection.Close();
         }
 
@@ -320,9 +326,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxQLDS_MaTheLoai.DisplayMember = dt.Columns[0].ToString();
+            comboBoxQLDS_MaTheLoai.ValueMember = dt.Columns[0].ToString();
             comboBoxQLDS_MaTheLoai.DataSource = dt;
-            comboBoxQLDS_MaTheLoai.DisplayMember = "MaTheLoai";
-            comboBoxQLDS_MaTheLoai.ValueMember = "MaTheLoai";
             connection.Close();
 
         }
@@ -394,9 +401,10 @@ namespace QLNS
             DataTable dt = new DataTable();
             adapter.SelectCommand = command;
             adapter.Fill(dt);
+            
+            comboBoxQLDS_MaDauSach.DisplayMember = dt.Columns[0].ToString();
+            comboBoxQLDS_MaDauSach.ValueMember = dt.Columns[0].ToString();
             comboBoxQLDS_MaDauSach.DataSource = dt;
-            comboBoxQLDS_MaDauSach.DisplayMember = "MaDauSach";
-            comboBoxQLDS_MaDauSach.ValueMember = "MaDauSach";
             connection.Close();
         }
         private void panelQuanLyDauSach_Paint(object sender, PaintEventArgs e)
