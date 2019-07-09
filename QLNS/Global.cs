@@ -8,13 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace QLNS
 {
     public static class Global
     {
-        private static string connectionStr = "Data Source=DESKTOP-2SM9U8H;Initial Catalog=QLNS;Integrated Security=True";
+        private static string connectionStr = ConfigurationManager.ConnectionStrings["MyconnectionString"].ConnectionString;
 
-        public static string ConnectionStr { get => connectionStr; set => connectionStr = value; }
+        public static string ConnectionStr { get => connectionStr; }
     }
 }

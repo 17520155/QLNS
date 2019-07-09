@@ -131,6 +131,9 @@ namespace QLNS
         }
         private void buttonButtonTDQD_Luu_Click(object sender, EventArgs e)
         {
+            buttonButtonTDQD_Luu.Enabled = false;
+            buttonButtonTDQD_huy.Visible = false;
+            buttonButtonTDQD_Sua.Visible = true;
             textBoxTDQD_SoLuongNhapToiThieu.Enabled = false;
             textBoxTDQD_SoLuongTonToiDa.Enabled = false;
             textBoxTDQD_SoTienNoToiDa.Enabled = false;
@@ -278,13 +281,30 @@ namespace QLNS
         }
         private void buttonButtonTDQD_Sua_Click(object sender, EventArgs e)
         {
+            buttonButtonTDQD_Luu.Enabled = true;
             textBoxTDQD_SoLuongNhapToiThieu.Enabled = true;
+            buttonButtonTDQD_huy.Visible = true;
+            buttonButtonTDQD_Sua.Visible = false;
             textBoxTDQD_SoLuongTonToiDa.Enabled = true;
             textBoxTDQD_SoTienNoToiDa.Enabled = true;
             textBoxTDQD_SoLuongTonToiThieu.Enabled = true;
             textBoxTDQD_TiLeDonGiaBan.Enabled = true;
             radioButtonTDQD_KiemTraSoTienThu_Yes.Enabled = true;
             radioButtonButtonTDQD_KiemTraSoTienThu_No.Enabled = true;
+        }
+        private void buttonButtonTDQD_huy_Click(object sender, EventArgs e)
+        {
+            buttonButtonTDQD_Luu.Enabled = false;
+            textBoxTDQD_SoLuongNhapToiThieu.Enabled = false;
+            buttonButtonTDQD_huy.Visible = false;
+            buttonButtonTDQD_Sua.Visible = true;
+            textBoxTDQD_SoLuongTonToiDa.Enabled = false;
+            textBoxTDQD_SoTienNoToiDa.Enabled = false;
+            textBoxTDQD_SoLuongTonToiThieu.Enabled = false;
+            textBoxTDQD_TiLeDonGiaBan.Enabled = false;
+            radioButtonTDQD_KiemTraSoTienThu_Yes.Enabled = false;
+            radioButtonButtonTDQD_KiemTraSoTienThu_No.Enabled = false;
+            buttonThayDoiQuyDinh_Click(null, null);
         }
     }
 }

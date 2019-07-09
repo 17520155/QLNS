@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLNS));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LietKeBaoCaoTonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QLNSDataSet = new QLNS.QLNSDataSet();
             this.LietKeBaoCaoCongNoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -345,6 +345,7 @@
             this.comboBoxBCCN_Thang = new System.Windows.Forms.ComboBox();
             this.labelBCCN = new System.Windows.Forms.Label();
             this.panelThayDoiQuyDinh = new System.Windows.Forms.Panel();
+            this.buttonButtonTDQD_huy = new System.Windows.Forms.Button();
             this.buttonButtonTDQD_Sua = new System.Windows.Forms.Button();
             this.buttonButtonTDQD_Luu = new System.Windows.Forms.Button();
             this.labelTDQD = new System.Windows.Forms.Label();
@@ -2398,8 +2399,8 @@
             // 
             // dataGridViewQLK_QLTG
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewQLK_QLTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewQLK_QLTG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(209)))), ((int)(((byte)(237)))));
             this.dataGridViewQLK_QLTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQLK_QLTG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3683,9 +3684,9 @@
             // 
             // reportViewerBCST
             // 
-            reportDataSource1.Name = "DataSetBCST";
-            reportDataSource1.Value = this.LietKeBaoCaoTonBindingSource;
-            this.reportViewerBCST.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource5.Name = "DataSetBCST";
+            reportDataSource5.Value = this.LietKeBaoCaoTonBindingSource;
+            this.reportViewerBCST.LocalReport.DataSources.Add(reportDataSource5);
             this.reportViewerBCST.LocalReport.ReportEmbeddedResource = "QLNS.ReportBCST.rdlc";
             this.reportViewerBCST.Location = new System.Drawing.Point(51, 189);
             this.reportViewerBCST.Name = "reportViewerBCST";
@@ -3780,9 +3781,9 @@
             // 
             // reportViewerBCCN
             // 
-            reportDataSource2.Name = "DataSetBCCN";
-            reportDataSource2.Value = this.LietKeBaoCaoCongNoBindingSource;
-            this.reportViewerBCCN.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource6.Name = "DataSetBCCN";
+            reportDataSource6.Value = this.LietKeBaoCaoCongNoBindingSource;
+            this.reportViewerBCCN.LocalReport.DataSources.Add(reportDataSource6);
             this.reportViewerBCCN.LocalReport.ReportEmbeddedResource = "QLNS.ReportBCCN.rdlc";
             this.reportViewerBCCN.Location = new System.Drawing.Point(33, 184);
             this.reportViewerBCCN.Name = "reportViewerBCCN";
@@ -3860,6 +3861,7 @@
             // 
             this.panelThayDoiQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelThayDoiQuyDinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThayDoiQuyDinh.Controls.Add(this.buttonButtonTDQD_huy);
             this.panelThayDoiQuyDinh.Controls.Add(this.buttonButtonTDQD_Sua);
             this.panelThayDoiQuyDinh.Controls.Add(this.buttonButtonTDQD_Luu);
             this.panelThayDoiQuyDinh.Controls.Add(this.labelTDQD);
@@ -3870,6 +3872,17 @@
             this.panelThayDoiQuyDinh.Size = new System.Drawing.Size(1070, 663);
             this.panelThayDoiQuyDinh.TabIndex = 34;
             this.panelThayDoiQuyDinh.Paint += new System.Windows.Forms.PaintEventHandler(this.panelThayDoiQuyDinh_Paint);
+            // 
+            // buttonButtonTDQD_huy
+            // 
+            this.buttonButtonTDQD_huy.Location = new System.Drawing.Point(650, 422);
+            this.buttonButtonTDQD_huy.Name = "buttonButtonTDQD_huy";
+            this.buttonButtonTDQD_huy.Size = new System.Drawing.Size(75, 33);
+            this.buttonButtonTDQD_huy.TabIndex = 49;
+            this.buttonButtonTDQD_huy.Text = "Hủy ";
+            this.buttonButtonTDQD_huy.UseVisualStyleBackColor = true;
+            this.buttonButtonTDQD_huy.Visible = false;
+            this.buttonButtonTDQD_huy.Click += new System.EventHandler(this.buttonButtonTDQD_huy_Click);
             // 
             // buttonButtonTDQD_Sua
             // 
@@ -3884,6 +3897,7 @@
             // buttonButtonTDQD_Luu
             // 
             this.buttonButtonTDQD_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonButtonTDQD_Luu.Enabled = false;
             this.buttonButtonTDQD_Luu.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonButtonTDQD_Luu.Location = new System.Drawing.Point(731, 422);
             this.buttonButtonTDQD_Luu.Name = "buttonButtonTDQD_Luu";
@@ -4220,8 +4234,8 @@
             // ColTC_STT
             // 
             this.ColTC_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ColTC_STT.DefaultCellStyle = dataGridViewCellStyle6;
             this.ColTC_STT.HeaderText = "STT";
             this.ColTC_STT.Name = "ColTC_STT";
             this.ColTC_STT.ReadOnly = true;
@@ -4323,11 +4337,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1370, 675);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelLapPhieuNhapSach);
-            this.Controls.Add(this.panelQuanLyKhachHang);
-            this.Controls.Add(this.panelQuanLyKhac);
-            this.Controls.Add(this.panelQuanLyDauSach);
-            this.Controls.Add(this.panelQuanLySach);
             this.Controls.Add(this.panelThayDoiQuyDinh);
             this.Controls.Add(this.panelTraCuu);
             this.Controls.Add(this.panelBaoCaoCongNo);
@@ -4335,6 +4344,11 @@
             this.Controls.Add(this.panelTrangChu);
             this.Controls.Add(this.panelLapPhieuThuTien);
             this.Controls.Add(this.panelLapHoaDonBanSach);
+            this.Controls.Add(this.panelLapPhieuNhapSach);
+            this.Controls.Add(this.panelQuanLyKhachHang);
+            this.Controls.Add(this.panelQuanLyKhac);
+            this.Controls.Add(this.panelQuanLyDauSach);
+            this.Controls.Add(this.panelQuanLySach);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -4774,6 +4788,7 @@
         private System.Windows.Forms.Button buttonQLK_QLTL_huytheloai;
         private System.Windows.Forms.Button buttonQLK_QLTL_huynxb;
         private System.Windows.Forms.Button buttonQLK_huytacgia;
+        private System.Windows.Forms.Button buttonButtonTDQD_huy;
     }
 }
 

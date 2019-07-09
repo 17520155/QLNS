@@ -52,3 +52,4 @@ C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\zh-HANT\Microsoft.ReportViewe
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.CopyComplete
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\ReportBCCN.rdlc
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csprojAssemblyReference.cache
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\App.config

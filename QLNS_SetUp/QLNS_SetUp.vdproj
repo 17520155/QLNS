@@ -45,12 +45,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_5BE871C9171B470EA9B6B2A545011245"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_7CEAD85A8C524C1F8C5B7D090EDE0B48"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -267,26 +261,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5BE871C9171B470EA9B6B2A545011245"
-            {
-            "SourcePath" = "8:..\\QLNS\\bin\\Debug\\DataFolder\\ConStr.txt"
-            "TargetName" = "8:ConStr.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_F715C476A24E4DE6914967A18667FA5F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7CEAD85A8C524C1F8C5B7D090EDE0B48"
             {
             "SourcePath" = "8:..\\..\\Data\\Data.sql"
@@ -488,7 +462,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QLNS_SetUp"
         "ProductCode" = "8:{CF868789-D5B0-4426-A804-603A9ECD510E}"
-        "PackageCode" = "8:{57BC2357-0AD5-491E-A7F4-D70634430EAE}"
+        "PackageCode" = "8:{4102097B-5393-4289-813B-0D2B1BDC6AC7}"
         "UpgradeCode" = "8:{4A7227CF-0B7E-4875-A4EB-774DD822A88E}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
