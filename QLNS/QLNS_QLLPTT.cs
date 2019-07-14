@@ -29,7 +29,11 @@ namespace QLNS
             comboBoxLPTT_MaPhieuThu.Text = "";
 
         }
-
+        public string hoten;
+        public string diachi;
+        public string email;
+        public string sdt;
+        public string sotienthu;
         private void buttonLPTT_Luu_Click(object sender, EventArgs e)
         {
             buttonLPTT_Luu.Visible = false;
@@ -49,6 +53,7 @@ namespace QLNS
             if (kiemtrasotienthu() == 1)
             {
                 float tienno = LHDBS_LietKeSoTienNo(Convert.ToInt32(comboBoxLPTT_MaKH.Text));
+
                 if (tienno < (float)Convert.ToDouble(textBoxLPT_SoTienThu.Text))
                 {
                     MessageBox.Show("Số tiền thu vượt quá số tiền đang nợ!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -72,6 +77,12 @@ namespace QLNS
                     if (count > 0)
                     {
                         MessageBox.Show("Thêm thành công!");
+                        hoten = textBoxLPTT_TenKH.Text;
+                        diachi = textBoxLPTT_DiaChi.Text;
+                        sdt = textBoxLPTT_DienThoai.Text;
+                        email = textBoxLPTT_Email.Text;
+                        sotienthu = textBoxLPT_SoTienThu.Text;
+
                         kiemtraluu = 0;
                         QLPTT_LoadData();
 
@@ -97,7 +108,13 @@ namespace QLNS
                 if (count > 0)
                 {
                     MessageBox.Show("Thêm thành công!");
+                    hoten = textBoxLPTT_TenKH.Text;
+                    diachi = textBoxLPTT_DiaChi.Text;
+                    sdt = textBoxLPTT_DienThoai.Text;
+                    email = textBoxLPTT_Email.Text;
+                    sotienthu = textBoxLPT_SoTienThu.Text;
                     kiemtraluu = 0;
+
                     QLPTT_LoadData();
 
                 }
@@ -119,11 +136,13 @@ namespace QLNS
             dt.Columns.Add("STT");
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                dt.Rows[i]["STT"] = i + 1;
+                dt.Rows[i]["STT"] = i + 1;             
 
 
             }
+            
             dataGridViewLPTT_DanhSachPhieuThu.DataSource = dt;
+
             QLPT_LoadComboboxPhieuThu();
             connection.Close();
 
@@ -152,7 +171,7 @@ namespace QLNS
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
-            SqlCommand command = new SqlCommand("LietKeKhachHang", connection);
+            SqlCommand command = new SqlCommand("LietKeKhachHangNo", connection);
             command.CommandType = CommandType.StoredProcedure;
             command.ExecuteNonQuery();
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -206,7 +225,7 @@ namespace QLNS
                 textBoxLPTT_Email.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[5].Value);
                 textBoxLPTT_DiaChi.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[6].Value);
                 dateTimePickerLPTT_NgayThu.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[7].Value);
-                textBoxLPT_SoTienThu.Text = Convert.ToString(dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[8].Value);
+                textBoxLPT_SoTienThu.Text = String.Format("{0:0,0}",dataGridViewLPTT_DanhSachPhieuThu.CurrentRow.Cells[8].Value);
             }
 
         }
@@ -373,6 +392,7 @@ namespace QLNS
 
         private void panelLapPhieuThuTien_Paint(object sender, PaintEventArgs e)
         {
+            
             if (kiemtraluu == 0)
             {
                 buttonLPTT_Luu.Visible = false;
@@ -461,6 +481,17 @@ namespace QLNS
                 else return;
             }
             else panelLapPhieuThuTien.BringToFront();
+
+        }
+        private void LPTT_in_Click(object sender, EventArgs e)
+        {
+            
+            string str = hoten + "+" + diachi + "+" +
+                sdt + "+" + email + "+" + sotienthu;
+            FormInPT formInPT = new FormInPT();
+            
+            formInPT.Message = str;
+            formInPT.ShowDialog();
 
         }
 

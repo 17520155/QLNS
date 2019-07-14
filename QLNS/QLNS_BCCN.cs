@@ -21,7 +21,6 @@ namespace QLNS
             connection.ConnectionString = Global.ConnectionStr;
             connection.Open();
             SqlCommand command = new SqlCommand("LietKeBaoCaoCongNo", connection);
-
             SqlParameter p = new SqlParameter("@Thang", Convert.ToInt32(comboBoxBCCN_Thang.Text));
             command.Parameters.Add(p);
             p = new SqlParameter("@Nam", Convert.ToInt32(textBoxBCCN_Nam.Text));
@@ -32,7 +31,7 @@ namespace QLNS
             adapter.Fill(ds);
             reportViewerBCCN.ProcessingMode = ProcessingMode.Local;
             reportViewerBCCN.LocalReport.ReportPath = "ReportBCCN.rdlc";
-            if (ds.Tables[0].Rows.Count > 0)
+            if (ds.Tables[0].Rows.Count >0)
             {
                 //
                 ReportParameter rpt1 = new ReportParameter("Thang", comboBoxBCCN_Thang.Text);
@@ -87,7 +86,7 @@ namespace QLNS
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                try
+                /*try
                 {
 
 
@@ -101,15 +100,35 @@ namespace QLNS
                     command.Parameters.Add(p);
                     command.CommandType = CommandType.StoredProcedure;
                     command.ExecuteNonQuery();
+                    connection.Close();
 
+                    BCCN_LoadData();
+
+                }
+                catch
+                {
+                                        
+                    BCCN_LoadData();
+                }*/
+                try
+                {
+                    SqlConnection connection = new SqlConnection();
+                    connection.ConnectionString = Global.ConnectionStr;
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("TaoBaoCaoCongNo", connection);
+                    SqlParameter p = new SqlParameter("@Thang", Convert.ToInt32(comboBoxBCCN_Thang.Text));
+                    command.Parameters.Add(p);
+                    p = new SqlParameter("@Nam", Convert.ToInt32(textBoxBCCN_Nam.Text));
+                    command.Parameters.Add(p);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.ExecuteNonQuery();
                     connection.Close();
                     BCCN_LoadData();
 
                 }
                 catch
                 {
-                    //int thang = BCTS_LietKeThang(Convert.ToInt32(comboBoxBCST_Thang.Text));
-                    //int nam = BCTS_LietKeNam(Convert.ToInt32(textBoxBCST_Nam.Text));                    
+
                     BCCN_LoadData();
                 }
             }

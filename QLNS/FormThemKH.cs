@@ -22,7 +22,8 @@ namespace QLNS
         {
             if (textBoxTenKH.Text == "")
             {
-                MessageBox.Show("Thông Báo");
+                MessageBox.Show("Vui lòng nhập tên khách hàng!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
                 return;
             }
           
@@ -45,7 +46,7 @@ namespace QLNS
 
             if (count > 0)
             {
-                MessageBox.Show("Thêm thành công!");
+                MessageBox.Show("Thêm thành công!","Thông Báo!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                 textBoxTenKH.Text = "";
                 textBoxDiaChi.Text = "";
                 textBoxDienThoai.Text = "";

@@ -20,9 +20,9 @@ namespace QLNS
 
         private void buttonLuu_Click(object sender, EventArgs e)
         {
-            if (textBoxTenTacGia.Text == "")
+            if (textBoxTenTacGia.Text.Trim() == "")
             {
-                MessageBox.Show("Thông Báo");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin","Thông Báo", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -35,7 +35,7 @@ namespace QLNS
             int count = command.ExecuteNonQuery();
             if (count > 0)
             {
-                MessageBox.Show("Thêm thành công!");
+                MessageBox.Show("Thêm thành công!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 textBoxTenTacGia.Text = "";
 
             }

@@ -319,6 +319,10 @@ namespace QLNS
                 
                 button_LPNS_luu.Visible = false;
                 themmoi = 0;
+                dateTimePicker_NgayNhap.Enabled = false;
+                comboBoxLPNS_MaSach.Enabled = false;
+                textBoxLPNS_SoLuongNhap.Enabled = false;
+                textBoxLPNS_DonGiaNhap.Enabled = false;
                 dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();
                 dataGridViewLPNS_ChiTietPhieuNhap.AllowUserToAddRows = false;
                 dataGridViewLPNS_ChiTietPhieuNhap.Rows.Add(1);
@@ -385,7 +389,11 @@ namespace QLNS
         {
 
             themmoi = 0;
-                int iCount = 0;
+            textBoxLPNS_SoLuongNhap.Enabled = false;
+            textBoxLPNS_DonGiaNhap.Enabled = false;
+            dateTimePicker_NgayNhap.Enabled = false;
+            comboBoxLPNS_MaSach.Enabled = false;
+            int iCount = 0;
                 
                 if (dataGridViewLPNS_ChiTietPhieuNhap.RowCount > 0)
                     {
@@ -476,6 +484,10 @@ namespace QLNS
         {
             themmoi = 1;
             kiemtraluu = 1;
+            textBoxLPNS_SoLuongNhap.Enabled = true;
+            textBoxLPNS_DonGiaNhap.Enabled = true;
+            dateTimePicker_NgayNhap.Enabled = true;
+            comboBoxLPNS_MaSach.Enabled = true;
             textBoxLPNS_SoLuongNhap.Text = "";
             textBoxLPNS_DonGiaNhap.Text = "";
             comboBoxLPNS_MaSach.Text = "";
@@ -498,6 +510,10 @@ namespace QLNS
         {
             themmoi = 0;
             kiemtraluu = 0;
+            textBoxLPNS_SoLuongNhap.Enabled = false;
+            textBoxLPNS_DonGiaNhap.Enabled = false;
+            dateTimePicker_NgayNhap.Enabled = false;
+            comboBoxLPNS_MaSach.Enabled = false;
             button_LPNS_luu.Visible = false;
             textBoxLPNS_SoLuongNhap.Text = "";
             textBoxLPNS_DonGiaNhap.Text = "";
@@ -520,6 +536,10 @@ namespace QLNS
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
+                    textBoxLPNS_SoLuongNhap.Enabled = false;
+                    textBoxLPNS_DonGiaNhap.Enabled = false;
+                    dateTimePicker_NgayNhap.Enabled = false;
+                    comboBoxLPNS_MaSach.Enabled = false;
                     button_LPNS_luu.Visible = false;
                     themmoi = 0;
                     dataGridViewLPNS_ChiTietPhieuNhap.Rows.Clear();

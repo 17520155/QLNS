@@ -240,13 +240,11 @@ namespace QLNS
 
         private void FormQLNS_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'QLNSDataSet.LietKeBaoCaoTon' table. You can move, or remove it, as needed.
-            //this.LietKeBaoCaoTonTableAdapter.Fill(this.QLNSDataSet.LietKeBaoCaoTon);
-            // TODO: This line of code loads data into the 'QLNSDataSet1.LietKeBaoCaoCongNo' table. You can move, or remove it, as needed.
-            //this.LietKeBaoCaoCongNoTableAdapter.Fill(this.QLNSDataSet1.LietKeBaoCaoCongNo);
+            QLDS_LoadData();
+            QLNSLoaddata();
+            LoadComboboxMaSach();           
             this.KeyPreview = true;
-            //this.reportViewerBCST.RefreshReport();
-            //this.reportViewerBCCN.RefreshReport();
+          
         }
 
         private void FormQLNS_KeyUp(object sender, KeyEventArgs e)
@@ -341,7 +339,43 @@ namespace QLNS
             }
             else panelTrangChu.BringToFront();
         }
+        private void buttonLapHoaDonBanSach_Click(object sender, EventArgs e)
+        {
+            if (kiemtraluu == 1)
+            {
+                DialogResult dlr = MessageBox.Show("Dữ liệu chưa được lưu! Bạn chắc chắn muốn thoát?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dlr == DialogResult.Yes)
+                {
+                    kiemtraluu = 0;
+                    themmoihd = 0;
+                    comboBoxLHDBS_MaKH.Enabled = false;
+                    dateTimePickerLHDBS_NgayNhap.Enabled = false;
+                    comboBoxLHDBS_MaSach.Enabled = false;
+                    textBoxLHDBS_SoLuong.Enabled = false;
+                    textBoxLHDBS_DonGiaBan.Enabled = false;
+                    LapHoaDon_LuuHD.Visible = false;
+                    buttonLPNS_huy.Visible = false;
+                    dataGridViewLHDBS_DanhSachMua.Rows.Clear();
+                    dataGridViewLHDBS_DanhSachMua.AllowUserToAddRows = false;
+                    dataGridViewLHDBS_DanhSachMua.Rows.Add(1);
+                    textBoxLHDBS_TongTien.Text = "";
+                    tongtienmua = 0;
+                    textBoxLHDBS_SoTienTra.Text = "";
+                    textBoxLHDBS_SoLuong.Text = "";
+                    textBox_LHDBS_ConLai.Text = "";
+                    panelLapHoaDonBanSach.BringToFront();
 
-        
+                }
+                else return;
+            }
+            else panelLapHoaDonBanSach.BringToFront();
+
+            LPHD_LoadComboboxMaKH();
+        }
+
+        private void dataGridViewQLDS_ChiTietTacGia_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

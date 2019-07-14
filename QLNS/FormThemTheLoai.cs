@@ -22,7 +22,7 @@ namespace QLNS
         {
             if (textBoxTenTheLoai.Text == "")
             {
-                MessageBox.Show("Thông Báo");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin ","Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -35,7 +35,7 @@ namespace QLNS
             int count = command.ExecuteNonQuery();
             if (count > 0)
             {
-                MessageBox.Show("Thêm thành công!");
+                MessageBox.Show("Thêm thành công!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 textBoxTenTheLoai.Text = "";
 
 

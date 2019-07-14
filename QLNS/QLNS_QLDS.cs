@@ -22,6 +22,11 @@ namespace QLNS
                 if (dlr == DialogResult.Yes)
                 {
                     kiemtraluu = 0;
+                    dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
+                    dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
+                    buttonQLDS_ThemChiTietTacGia.Enabled = false;
+                    buttonQLDS_XoaChiTietTacGia.Enabled = false;
+                    dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
                     buttonQLDS_Luu.Visible = false;
                     buttonQLDS_huy.Visible = false;
                     buttonQLDS_ThemDauSach.Visible = true;
@@ -33,7 +38,6 @@ namespace QLNS
                     textBoxQLDS_TheLoai.Text = "";
                     comboBoxQLDS_MaTheLoai.Text = "";
                     dataGridViewQLDS_DanhSachDauSach.Enabled = true;
-
                     panelQuanLyDauSach.BringToFront();
 
                 }
@@ -173,6 +177,9 @@ namespace QLNS
         {
             buttonQLDS_Luu.Visible = false;
             buttonQLDS_huy.Visible = false;
+            
+            buttonQLDS_ThemChiTietTacGia.Enabled = false;
+            buttonQLDS_XoaChiTietTacGia.Enabled = false;
             buttonQLDS_ThemDauSach.Visible = true;
             buttonQLDS_XoaDauSach.Enabled = true;
             buttonQLDS_CapNhatDauSach.Enabled = true;
@@ -187,6 +194,9 @@ namespace QLNS
                 textBoxQLDS_TenDauSach.Text = "";
                 textBoxQLDS_TheLoai.Text = "";
                 comboBoxQLDS_MaTheLoai.Text = "";
+                dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
+                dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
+                dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
                 return;
             }
             SqlConnection connection = new SqlConnection();
@@ -215,21 +225,24 @@ namespace QLNS
             QLDS_LoadData();
             kiemtraluu = 0;
 
-            dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
-            dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
-            dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
+            
 
             MessageBox.Show("Thêm thành công!");
             comboBoxQLDS_MaDauSach.Text = "";
             textBoxQLDS_TenDauSach.Text = "";
             textBoxQLDS_TheLoai.Text = "";
             comboBoxQLDS_MaTheLoai.Text = "";
+            dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
+            dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
+            dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
             connection.Close();
         }
 
         private void buttonQLDS_ThemDauSach_Click(object sender, EventArgs e)
         {
             kiemtraluu = 1;
+            buttonQLDS_ThemChiTietTacGia.Enabled = true;
+            buttonQLDS_XoaChiTietTacGia.Enabled = true;
             buttonQLDS_Luu.Visible = true;
             buttonQLDS_huy.Visible = true;
             buttonQLDS_ThemDauSach.Visible = false;
@@ -362,15 +375,11 @@ namespace QLNS
             {
                 comboBoxQLDS_MaDauSach.Text = Convert.ToString(dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[1].Value);
                 textBoxQLDS_TenDauSach.Text = Convert.ToString(dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[2].Value);
-                //comboBoxQLDS_MaTheLoai.Text = Convert.ToString(dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[3].Value);
+                comboBoxQLDS_MaTheLoai.Text = Convert.ToString(dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[3].Value);
                 textBoxQLDS_TheLoai.Text = Convert.ToString(dataGridViewQLDS_DanhSachDauSach.CurrentRow.Cells[4].Value);
             }
         }
 
-        private void dataGridViewQLDS_ChiTietTacGia_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
         public void QLDS_LoadData()
         {
             SqlConnection connection = new SqlConnection();
@@ -386,7 +395,8 @@ namespace QLNS
             dt.Columns.Add("STT");
             for (int i = 0; i < dt.Rows.Count; i++)
                 dt.Rows[i]["STT"] = i + 1;
-            dataGridViewQLDS_DanhSachDauSach.DataSource = dt;
+            dataGridViewQLDS_DanhSachDauSach.AutoGenerateColumns = false;
+            dataGridViewQLDS_DanhSachDauSach.DataSource = dt;            
             connection.Close();
         }
         public void QLDS_LoadMaDauSach()
@@ -411,7 +421,8 @@ namespace QLNS
         {
             if (kiemtraluu == 0)
             {
-
+                buttonQLDS_ThemChiTietTacGia.Enabled = false;
+                buttonQLDS_XoaChiTietTacGia.Enabled = false;
                 dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
                 dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
                 dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
@@ -422,10 +433,10 @@ namespace QLNS
                 buttonQLDS_XoaDauSach.Enabled = true;
                 buttonQLDS_CapNhatDauSach.Enabled = true;
                 comboBoxQLDS_MaDauSach.Enabled = true;
-                comboBoxQLDS_MaDauSach.Text = "";
-                textBoxQLDS_TenDauSach.Text = "";
-                textBoxQLDS_TheLoai.Text = "";
-                comboBoxQLDS_MaTheLoai.Text = "";
+                //comboBoxQLDS_MaDauSach.Text = "";
+                //textBoxQLDS_TenDauSach.Text = "";
+                //textBoxQLDS_TheLoai.Text = "";
+                //comboBoxQLDS_MaTheLoai.Text = "";
                 dataGridViewQLDS_DanhSachDauSach.Enabled = true;
 
             }
@@ -448,6 +459,11 @@ namespace QLNS
         private void buttonQLDS_huy_Click(object sender, EventArgs e)
         {
             kiemtraluu = 0;
+            buttonQLDS_ThemChiTietTacGia.Enabled = false;
+            buttonQLDS_XoaChiTietTacGia.Enabled = false;
+            dataGridViewQLDS_ChiTietTacGia.Rows.Clear();
+            dataGridViewQLDS_ChiTietTacGia.AllowUserToAddRows = false;
+            dataGridViewQLDS_ChiTietTacGia.Rows.Add(1);
             buttonQLDS_Luu.Visible = false;
             buttonQLDS_huy.Visible = false;
             buttonQLDS_ThemDauSach.Visible = true;
@@ -462,4 +478,8 @@ namespace QLNS
         }
 
     }
+
+
+
 }
+

@@ -254,15 +254,12 @@ namespace QLNS
             adapter.SelectCommand = command;
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-
             dt.Columns.Add("STT");
             for (int i = 0; i < dt.Rows.Count; i++)
             dt.Rows[i]["STT"] = i + 1;
-
+            dataGridViewQLS_DanhSachSach.AutoGenerateColumns = false;
             dataGridViewQLS_DanhSachSach.DataSource = dt;
             QLNSLoadComboboxMaSach();
-
-
             connection.Close();
         }
         public void QLNSLoadComboboxMaSach()

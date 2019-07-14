@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing.Printing;
 
 namespace QLNS
 {
@@ -1002,11 +1002,69 @@ namespace QLNS
             dataGridViewTC.Columns[4].DataPropertyName = "TenTacGia";
             dataGridViewTC.Columns[5].DataPropertyName = "TenNXB";
             dataGridViewTC.Columns[6].DataPropertyName = "NamXB";
-            //TraCuu();
+            //TraCuu();           
 
-
+        }
+        private void buttonTC_XuatFile_Click(object sender, EventArgs e)
+        {
             
 
         }
+        private void buttonTC_In_Click(object sender, EventArgs e)
+        {
+            if (printDialog1.ShowDialog() == DialogResult.OK) // this displays the dialog box and performs actions dependant on which option chosen.
+            {
+                printDocument1.Print();
+            }
+
+        }
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            int columnPosition = 0;
+            int rowPosition = 25;
+
+            DrawHeader(new Font(this.Font, FontStyle.Bold), e.Graphics, ref columnPosition, ref rowPosition); // runs the DrawHeader function
+
+            rowPosition += 35; 
+
+            DrawGridBody(e.Graphics, ref columnPosition, ref rowPosition);
+        }
+        
+
+        
+
+        private int DrawHeader(Font boldFont, Graphics g, ref int columnPosition, ref int rowPosition)
+        {
+            foreach (DataGridViewColumn dc in dataGridViewTC.Columns)
+            {
+
+
+                g.DrawString(dc.HeaderText, boldFont, Brushes.Black, (float)columnPosition, (float)rowPosition);
+                columnPosition += dc.Width + 5;  
+            }
+
+            return columnPosition;
+        }
+
+        
+        private void DrawGridBody(Graphics g, ref int columnPosition, ref int rowPosition)
+        {
+            foreach (DataRow dr in ((DataTable)dataGridViewTC.DataSource).Rows)
+            {
+                columnPosition = 0;
+
+                g.DrawLine(Pens.Black, new Point(0, rowPosition), new Point(this.Width, rowPosition));
+
+                foreach (DataGridViewColumn dc in dataGridViewTC.Columns)
+                {
+                    string text = dr[dc.DataPropertyName].ToString();
+                    g.DrawString(text, this.Font, Brushes.Black, (float)columnPosition, (float)rowPosition + 10f); 
+                    columnPosition += dc.Width + 5;
+                }
+
+                rowPosition = rowPosition + 35; 
+            }
+        }
+
     }
 }

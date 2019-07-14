@@ -29,7 +29,6 @@ D:\Learning\HK4\CNPM\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.cache
 D:\Learning\HK4\CNPM\QLNS\QLNS\obj\Debug\QLNS.csproj.CoreCompileInputs.cache
 D:\Learning\HK4\CNPM\QLNS\QLNS\obj\Debug\QLNS.exe
 D:\Learning\HK4\CNPM\QLNS\QLNS\obj\Debug\QLNS.pdb
-C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.exe.config
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\RdlCompile.cache
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\RdlCompile.compiled
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\ReportBCST.rdlc
@@ -52,4 +51,15 @@ C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\zh-HANT\Microsoft.ReportViewe
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.CopyComplete
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\ReportBCCN.rdlc
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\App.config
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\Spire.License.dll
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\Spire.Pdf.dll
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\Microsoft.mshtml.dll
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\Spire.License.xml
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\Spire.Pdf.xml
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\itextsharp.dll
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\itextsharp.xml
 C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.csprojAssemblyReference.cache
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormInHD.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\ReportInHD.rdlc
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\obj\Debug\QLNS.FormInPT.resources
+C:\Users\LêVănNhật\Desktop\QLNS\QLNS\bin\Debug\ReportPhieuThu.rdlc

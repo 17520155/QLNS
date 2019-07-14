@@ -33,9 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.WinForms">
       <HintPath>..\..\..\source\repos\WindowsFormsApp1\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.7.46, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.5.7.0\lib\net46\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=5.7.0.2046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.5.7.0\lib\net46\Spire.Pdf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -52,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormInHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInHD.Designer.cs">
+      <DependentUpon>FormInHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInPT.Designer.cs">
+      <DependentUpon>FormInPT.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLNSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -61,6 +82,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="QLNS_BCCN.cs">
       <SubType>Form</SubType>
@@ -146,6 +177,12 @@
     <Compile Include="QLNS_TRACUU.cs">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="FormInHD.resx">
+      <DependentUpon>FormInHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInPT.resx">
+      <DependentUpon>FormInPT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormQLNS.resx">
       <DependentUpon>FormQLNS.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +219,13 @@
     <EmbeddedResource Include="ReportBCST.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportInHD.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPhieuThu.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -213,10 +257,33 @@
     <None Include="QLNSDataSet1.xss">
       <DependentUpon>QLNSDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="QLNSDataSet2.xsc">
+      <DependentUpon>QLNSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSDataSet2.xss">
+      <DependentUpon>QLNSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet3.xsc">
+      <DependentUpon>QLNSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSDataSet3.xss">
+      <DependentUpon>QLNSDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

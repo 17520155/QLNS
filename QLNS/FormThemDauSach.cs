@@ -58,7 +58,7 @@ namespace QLNS
                 {
                     if (textBoxTenDauSach.Text == "")
                     {
-                        MessageBox.Show("Vui lòng nhập tên đầu sách!");
+                        MessageBox.Show("Vui lòng nhập tên đầu sách!", "Thông Báo!", MessageBoxButtons.OK,MessageBoxIcon.Error);
                         return;
                     }
                     SqlConnection connection = new SqlConnection();
@@ -84,7 +84,7 @@ namespace QLNS
                         Command.Parameters.Add(p);
                         Command.ExecuteNonQuery();
                     }
-                    MessageBox.Show("Thêm thành công!");
+                    MessageBox.Show("Thêm thành công!","Thông Báo!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                     textBoxTenDauSach.Text = "";
                     for (int i = 0; i < dataGridViewQLS_DanhSachSach.Rows.Count; i++)
                     {
@@ -96,12 +96,12 @@ namespace QLNS
                 }
                 catch
                 {
-                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!");
+                    MessageBox.Show("Lỗi! Vui lòng kiểm tra lại!","Thông Báo!",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Chưa có chi tiết tác giả!");
+                MessageBox.Show("Chưa có chi tiết tác giả!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -211,7 +211,7 @@ namespace QLNS
             {
                 if (comboBoxMaTacGia.Text == dataGridViewQLS_DanhSachSach.Rows[i].Cells[1].Value.ToString())
                 {
-                    MessageBox.Show("Đã tồn tại tác giả!");                    
+                    MessageBox.Show("Đã tồn tại tác giả!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);                    
                     dataGridViewQLS_DanhSachSach.Rows.Remove(dataGridViewQLS_DanhSachSach.Rows[i]);
                     dataGridViewQLS_DanhSachSach[0, indexRow-1].Value = dataGridViewQLS_DanhSachSach.Rows.Count;
                     return;
@@ -229,7 +229,7 @@ namespace QLNS
 
         private void buttonXoaChiTietTacGia_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 int RowIndex = dataGridViewQLS_DanhSachSach.CurrentRow.Index;
